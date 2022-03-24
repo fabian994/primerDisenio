@@ -1,0 +1,13 @@
+.imagen{
+  position: center;
+  background: url(pirineos.png);
+  background-blend-mode: hard-light;
+}
+
+*{
+  position: absolute;
+  width: 1440px;
+  height: 200px;
+  background: linear-gradient(180deg, #0BAA4A 5.83%, #E5A73C 84.68%, #E5A73C 150.83%);
+  mix-blend-mode: normal;
+}

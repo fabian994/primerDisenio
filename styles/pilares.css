@@ -19,7 +19,7 @@
 
 #nav_bar{
     width: 400px;
-    height: 1742px;
+    height: 1842px;
     background-color: #08903E;
     position: absolute;
     right: 0px;
@@ -31,11 +31,15 @@
     height: 185px;
 }
 
-.lineamientos_con_la_marca{
-    width: 635px;
+.fondo_slide{
+    width: 915px;
+    height: 390px;
+    background-color: #08903E;
     text-align: justify;
     padding-top: 14px;
     padding-bottom: 70px;
+    color: #EBE3D5;
+    border-radius: 14px;
 }
 
 #rendimix_logo{
@@ -423,7 +427,7 @@ footer{
     background-color: rgba(71, 71, 71, 0.6);
     /*padding: 5px;
     left: 7%;*/
-    top: 19px;
+    top: 11px;
     /*transform: translate(-50%, -50%);*/
 }
 

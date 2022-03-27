@@ -39,7 +39,7 @@ p{
     
     text-align: justify;
     padding-left: 120px;
-    padding-right: 120px;
+    padding-right: 440px;
     padding-top: 80px;
     padding-bottom: 80px;
 }
@@ -61,7 +61,7 @@ p{
 #producto_descripcion{
     text-align: justify;
     padding-left: 60px;
-    width: 700px;
+    width: 450px;
 }
 
 .Boton_conoceMas{ /*Tiene link a sitio externo tres estrellas */
@@ -86,9 +86,83 @@ p{
     background: #519C45;
 }
 
+#bm_pdf_download{
+    padding-top: 110px;
+    font-weight: bold;
+    font-size: 30px;
+    color: #EBE3D5;
+    width: 164px;
+    padding-left: 17px;
+    height: 127px;
+}
+
+#bm_pdf_link{
+    width: 247px;
+    height: 25px;
+    padding-top: 4px;
+    font-size: 14px;
+    text-decoration: underline;
+    color: #E5A73C;
+    padding-left: 30px;
+    padding-bottom: 15px;
+}
+
+#line{
+
+    width: 230px;
+    height: 2px;
+    background-color: #EBE3D5;
+    border-radius: 25px;
+    padding-left: 80px;
+}
+
+#bm_receipts_pdf_download{
+
+    padding-top: 70px;
+    font-weight: bold;
+    font-size: 30px;
+    color: #EBE3D5;
+    width: 164px;
+    padding-left: 17px;
+    height: 200px;
+}
+
+#bm_receipts_pdf_link{
+    width: 247px;
+    height: 25px;
+    padding-top: 4px;
+    font-size: 14px;
+    text-decoration: underline;
+    color: #E5A73C;
+    padding-left: 30px;
+    padding-bottom: 15px;
+}
+
+#rel_products{
+    padding-top: 70px;
+    font-weight: bold;
+    font-size: 30px;
+    color: #EBE3D5;
+    width: 164px;
+    padding-left: 17px;
+    height: 100px;
+}
+
+#rel_products_link{
+    width: 247px;
+    height: 25px;
+    padding-top: 4px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #E5A73C;
+    padding-left: 30px;
+    padding-bottom: 60px;
+}
+
 #items{
     padding-left: 36px;
 }
+
 
 footer{
     width: 100%;

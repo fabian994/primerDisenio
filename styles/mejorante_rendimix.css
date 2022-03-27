@@ -31,9 +31,20 @@
 
 .lineamientos_con_la_marca{
     width: 635px;
+    background-color: #08903E;
     text-align: justify;
     padding-top: 14px;
     padding-bottom: 70px;
+    color: #EBE3D5;
+    border-radius: 14px;
+}
+
+#lineamientos_titulo{
+    margin: 18px;
+}
+
+#lineamientos_descripcion{
+    margin: 18px;
 }
 
 #rendimix_logo{

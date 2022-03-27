@@ -53,17 +53,38 @@ p{
     padding-bottom: 15px;
 }
 
-#img_producto{
-    width: 178px;
-    border-radius: 25px;
-}
-
 #producto_descripcion{
     text-align: justify;
     padding-left: 60px;
     width: 450px;
 }
 
+
+.atributos{
+    display: inline-flex;
+    height: 540;
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #E5A73C;
+    border-radius: 14px;
+}
+
+#cuadro_de_atributos{
+    text-align: justify;
+    padding-left: 60px;
+    width: 450px;
+    padding-top: 22px;
+    text-align: justify;
+    color: #1E412F;
+}
+
+
+#img_producto{
+    width: 178px;
+    border-radius: 25px;
+}
 .Boton_conoceMas{ /*Tiene link a sitio externo tres estrellas */
     background: #519C45;
     color: white;
@@ -80,11 +101,7 @@ p{
     color: #519C45;
 }
 
-#cuadrado{
-    height: 100%;
-    width: 100%;
-    background: #519C45;
-}
+
 
 #bm_pdf_download{
     padding-top: 110px;

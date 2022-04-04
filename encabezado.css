@@ -1,6 +1,13 @@
+@font-face {
+  font-family: Montserrat;
+  src: url(styles/Montserrat-Regular.otf);
+}
+
+
 *{
   padding: 0px;
   margin: 0px;
+  font-family: Montserrat;
 }
 
 header{
@@ -17,7 +24,7 @@ header{
 
 #portal_clientes{
   background-color: #E5A73C;
-  width: 125px;
+  width: 138px;
   height: 20px;
   border-radius: 25px;
 }

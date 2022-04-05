@@ -72,13 +72,45 @@
         padding-bottom: 100px;
     }
 
-    .atributos{
+    #atributos{
         background-color: #E5A73C;
         border-radius: 14px;
         width: 65%;
         height: 540px;
     }
 
+    /* Animacion de la descripcion de los atributos */
+
+    .atributos_a {
+        -webkit-animation: atributos_a 0.7s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+                animation: atributos_a 0.7s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    }
+
+    @-webkit-keyframes atributos_a {
+        0% {
+        -webkit-filter: blur(12px);
+                filter: blur(12px);
+        opacity: 0;
+        }
+        100% {
+        -webkit-filter: blur(0px);
+                filter: blur(0px);
+        opacity: 1;
+        }
+    }
+    @keyframes atributos_a {
+        0% {
+        -webkit-filter: blur(12px);
+                filter: blur(12px);
+        opacity: 0;
+        }
+        100% {
+        -webkit-filter: blur(0px);
+                filter: blur(0px);
+        opacity: 1;
+        }
+    }
+    
     #cuadro_de_atributos{
         width: 65%;
         margin: 22px;
@@ -92,7 +124,7 @@
         text-align: justify;
     }
 
-    #plus {
+    #plus, #plus_plus {
         position: relative;
         display: inline-block;
         cursor: pointer;
@@ -106,7 +138,7 @@
         font-family: inherit;
     }
     
-    #plus {
+    #plus, #plus_plus {
         width: 28rem;
         height: auto;
     }
@@ -121,8 +153,21 @@
         background: #08903E;
         border-radius: 1.625rem;
     }
+
+    #plus_plus #circulo_p{
+
+        transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+        position: relative;
+        display: block;
+        margin: 0;
+        width: 3rem;
+        height: 3rem;
+        background: #E5A73C;
+        border-radius: 1.625rem;
+        
+    }
     
-    #plus #circulo #flecha {
+    #plus #circulo #flecha, #plus_plus #circulo_p #flecha {
         transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
         position: absolute;
         top: 0;
@@ -131,7 +176,7 @@
         background: #fff;
     }
     
-    #plus #circulo #flecha {
+    #plus #circulo #flecha, #plus_plus #circulo_p #flecha {
         transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
         left: 0.625rem;
         width: 1.125rem;
@@ -139,7 +184,7 @@
         background: none;
     }
     
-    #plus #circulo #flecha::before {
+    #plus #circulo #flecha::before, #plus_plus #circulo_p #flecha::before {
         position: absolute;
         content: "";
         top: -0.29rem;
@@ -151,7 +196,7 @@
         transform: rotate(45deg);
     }
     
-    #plus #texto_en_boton {
+    #plus #texto_en_boton, #plus_plus #texto_en_boton {
         transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
         position: absolute;
         top: 0;
@@ -166,17 +211,51 @@
         text-align: center;
         text-transform: uppercase;
     }
+
+    /* Animacion del cuadro de atributos */
+
+    .button_t {
+        -webkit-animation: button_t 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+                animation: button_t 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    }
+
+    @-webkit-keyframes button_t {
+        0% {
+        letter-spacing: -0.5em;
+        -webkit-filter: blur(12px);
+                filter: blur(12px);
+        opacity: 0;
+        }
+        100% {
+        -webkit-filter: blur(0px);
+                filter: blur(0px);
+        opacity: 1;
+        }
+    }
+    @keyframes button_t {
+        0% {
+        letter-spacing: -0.5em;
+        -webkit-filter: blur(12px);
+                filter: blur(12px);
+        opacity: 0;
+        }
+        100% {
+        -webkit-filter: blur(0px);
+                filter: blur(0px);
+        opacity: 1;
+        }
+    }
     
-    #plus:hover #circulo {
+    #plus:hover #circulo, #plus_plus:hover #circulo_p {
         width: 100%;
     }
     
-    #plus:hover  #flecha {
+    #plus:hover  #flecha, #plus_plus:hover #flecha {
         background: #fff;
         transform: translate(1rem, 0);
     }
     
-    #plus:hover #texto_en_boton {
+    #plus:hover #texto_en_boton, #plus_plus:hover #texto_en_boton {
         color: #fff;
     }
 

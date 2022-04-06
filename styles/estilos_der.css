@@ -1,12 +1,18 @@
-*{
+body{
     margin: 0%;
     padding: 0%;
 }
+h2{
+    align-self: center;
+    color: white;
+}
+.container{
+  display: flex;
+    flex-direction: row;
+}
 
 .body{
-    padding-left: 120px;
-    padding-top: 80px;
-    padding-bottom: 80px;
+    width: 70%;
 
 }
 
@@ -18,11 +24,9 @@
 }
 
 #nav_bar{
-    width: 400px;
-    height: 1759px;
-    background-color: #08903E;
-    position: absolute;
-    right: 0px;
+  background-color: #08903E;
+  width: 30%;
+
 }
 
 .tres_estrellas{
@@ -70,15 +74,16 @@
 
  /* estilos para pagina de derivados y ¿quienes somos? */
 #deriv_descripcion{
-    width: 850px;
-    text-align: justify-all;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 .titulos{
-  
+
   color: #519C45;
   font-size: 36pt;
   width: 90%;
+  margin-left: 32%;
 }
 
 #seg_box{
@@ -206,13 +211,11 @@ dd{
     padding-left: 36px;
 }
 
-footer{
+.foot_con{
     width: 100%;
-    height: 220px;
+    height: 35vh;
     background-color: #324D53;
-    z-index: 1;
-    position: relative;
-    
+
 }
 
 #footer_items{
@@ -327,3 +330,40 @@ footer{
     padding-left: 17px;
     height: 50px;
 }
+
+.tabla_prod{
+    margin-left: 10%;
+    width: 80%;
+    
+}
+#fila_tabla{
+    height: 30vh;
+    background-color: green;
+    display: flex;
+    flex-direction: row;
+}
+#celda_imagen{
+    width: 30%;
+    background-color: grey;
+
+}
+#info_tabla{
+    width: 75%;
+    text-align: justify; 
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 3%;
+}
+#info_tabla_am{
+    width: 75%;
+    text-align: justify; 
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: #FFC627;
+    padding-top: 3%;
+}
+#tabla_image{
+    width: 100%;
+    height: 100%;
+}
+

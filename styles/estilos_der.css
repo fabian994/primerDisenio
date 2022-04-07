@@ -76,6 +76,7 @@ h2{
 #deriv_descripcion{
     margin-left: 10%;
     margin-right: 10%;
+    font-family: 'Open Sans';
 }
 
 .titulos{
@@ -83,7 +84,7 @@ h2{
   color: #519C45;
   font-size: 36pt;
   width: 90%;
-  margin-left: 32%;
+  margin-left: 23%;
 }
 
 #seg_box{
@@ -111,7 +112,7 @@ h2{
 }
 
 #catalogo_tabla{
-    padding-left: 14px;
+    padding-left: 20%;
 }
 
 dt{
@@ -213,7 +214,7 @@ dd{
 
 .foot_con{
     width: 100%;
-    height: 35vh;
+    height: 45vh;
     background-color: #324D53;
 
 }
@@ -337,7 +338,7 @@ dd{
     
 }
 #fila_tabla{
-    height: 30vh;
+    height: 40vh;
     background-color: green;
     display: flex;
     flex-direction: row;
@@ -347,6 +348,7 @@ dd{
     background-color: grey;
 
 }
+
 #info_tabla{
     width: 75%;
     text-align: justify; 
@@ -365,5 +367,87 @@ dd{
 #tabla_image{
     width: 100%;
     height: 100%;
+}
+
+
+ /* estilos para display de evolución ¿quienes somos? */
+#fila_ev{
+    height: 15vh;
+    background-color: green;
+    display: flex;
+    flex-direction: row;
+}
+#celda_ev{
+    width: 40%;
+    background-color: grey;
+    text-align: center;
+    padding-top: 3%;
+
+}
+
+#info_ev{
+    width: 75%;
+    text-align: justify; 
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 3%;
+    background-color: #FFC627;
+
+}
+/* Estilos para mision,vision,valores y politicas ¿quines somos? */
+
+.cuadro_carac{
+    margin-left: 10%;
+    width: 80%;
+
+}
+
+#fila_carac{
+    height: 20vh;
+    display: flex;
+    flex-direction: row;
+}
+
+#apartado_carac{
+    width: 45%;
+    margin-right: 5%;
+    margin-left: 5%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+
+  
+}
+#titulo_ap{
+    background-color: green;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    border-radius: 7px;
+
+}
+#titulo_ap_am{
+    background-color: grey;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    border-radius: 7px;
+    background-color: #FFC627;
+    font-size: 13px;
+
+}
+#info_ap{
+    /*background-color: grey;*/
+    width: 90%;
+    height: 55;
+    margin: auto;
+    text-align: justify;
+    padding: 5%;
+    border-radius: 7px;
+    border-color: blue;
+    
+    
 }
 

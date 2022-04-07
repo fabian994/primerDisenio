@@ -1,11 +1,18 @@
 body{
     margin: 0%;
     padding: 0%;
+    font-family: Montserrat;
 }
 h2{
     align-self: center;
     color: white;
 }
+
+@font-face {
+    font-family: Montserrat;
+    src: url(Montserrat-Regular.otf);
+}
+
 .container{
   display: flex;
     flex-direction: row;
@@ -76,7 +83,7 @@ h2{
 #deriv_descripcion{
     margin-left: 10%;
     margin-right: 10%;
-    font-family: 'Open Sans';
+    font-family: Montserrat;
 }
 
 .titulos{
@@ -179,7 +186,7 @@ dd{
 #bm_receipts_pdf_link{
     width: 247px;
     height: 25px;
-    padding-top: 4px;
+    padding-top: 54px;
     font-size: 14px;
     text-decoration: underline;
     color: #E5A73C;
@@ -355,6 +362,7 @@ dd{
     padding-left: 5%;
     padding-right: 5%;
     padding-top: 3%;
+    font-family: Montserrat;
 }
 #info_tabla_am{
     width: 75%;
@@ -363,6 +371,7 @@ dd{
     padding-right: 5%;
     background-color: #FFC627;
     padding-top: 3%;
+    font-family: Montserrat;
 }
 #tabla_image{
     width: 100%;
@@ -392,6 +401,7 @@ dd{
     padding-right: 5%;
     padding-top: 3%;
     background-color: #FFC627;
+    font-family: Montserrat;
 
 }
 /* Estilos para mision,vision,valores y politicas ¿quines somos? */
@@ -426,6 +436,7 @@ dd{
     margin: auto;
     text-align: center;
     border-radius: 7px;
+    font-family: Montserrat;
 
 }
 #titulo_ap_am{
@@ -436,7 +447,7 @@ dd{
     border-radius: 7px;
     background-color: #FFC627;
     font-size: 13px;
-
+    font-family: Montserrat;
 }
 #info_ap{
     /*background-color: grey;*/
@@ -447,6 +458,7 @@ dd{
     padding: 5%;
     border-radius: 7px;
     border-color: blue;
+    font-family: Montserrat;
     
     
 }

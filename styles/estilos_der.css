@@ -20,7 +20,6 @@ h2{
 
 .body{
     width: 70%;
-
 }
 
 #header_image{
@@ -33,7 +32,7 @@ h2{
 #nav_bar{
   background-color: #08903E;
   width: 30%;
-
+  padding-bottom: 20%;
 }
 
 .tres_estrellas{
@@ -230,7 +229,7 @@ dd{
 }
 
 #footer_items{
-    padding-top: 25px;
+    padding-top: 0px;
     padding-left: 2.5%;
     height: 150px;
     display: inline-flex;
@@ -248,7 +247,7 @@ dd{
     font-weight: lighter;
     width: 252px;
     height: 134px;
-    padding-top: 15px;
+    padding-top: 0px;
 }
 
 #footer_items_2{
@@ -274,7 +273,7 @@ dd{
     font-size: 10pt;
     color: #EBE3D5;
     font-weight: lighter;
-    padding-top: 17px;
+    padding-top: 0px;
     padding-left: 77px;
 }
 
@@ -289,7 +288,7 @@ dd{
     font-size: 10pt;
     color: #EBE3D5;
     font-weight: lighter;
-    padding-top: 17px;
+    padding-top: 0px;
     padding-left: 77px;
 }
 
@@ -307,7 +306,7 @@ dd{
 
 #fb_icon{
     display: inline-flex;
-    padding-top: 17px;
+    padding-top: 0px;
     padding-left: 14px;
 }
 
@@ -326,7 +325,7 @@ dd{
 
 #privacy_adv{
     text-align: center;
-    padding-top: 12px;
+    padding-top: 0px;
     font-size: 10pt;
     color: #EBE3D5;
     font-weight: lighter;

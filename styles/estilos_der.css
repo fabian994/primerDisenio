@@ -84,6 +84,7 @@ h2{
     margin-left: 10%;
     margin-right: 10%;
     font-family: Montserrat;
+    text-align: justify;
 }
 
 .titulos{
@@ -91,7 +92,7 @@ h2{
   color: #519C45;
   font-size: 36pt;
   width: 90%;
-  margin-left: 23%;
+  margin-left: 14%;
 }
 
 #seg_box{
@@ -345,7 +346,7 @@ dd{
     
 }
 #fila_tabla{
-    height: 40vh;
+    height: 45vh;
     background-color: green;
     display: flex;
     flex-direction: row;

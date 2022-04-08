@@ -469,10 +469,45 @@ dd{
 
 /* Id para efectos js*/
 
-#text_1988{
-    
+
+#boton_1{
+    background-color:#FFC627;
+    border: 0;
+    font-size: 24px;
+}
+#boton_2{
+    background-color:#FFC627;
+    border: 0;
+    font-size: 24px;
 }
 
 
+#text_1991{
+    color: white;
 }
+#text_2001{
+    color: white;
+}
+#text_2004{
+    color: white;
+}
+#text_2009{
+    color: white;
+}
+#text_2011{
+    color: white;
+}
+#text_2014{
+    color: white;
+}
+#text_2016{
+    color: white;
+}
+#text_2018{
+    color: white;
+}
+#text_2020{
+    color: white;
+}
+
 

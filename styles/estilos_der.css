@@ -375,7 +375,7 @@ dd{
 
  /* estilos para display de evolución ¿quienes somos? */
 #fila_ev{
-    height: 20vh;
+    height: 30vh;
     background-color: green;
     display: flex;
     flex-direction: row;
@@ -407,7 +407,7 @@ dd{
 }
 
 #fila_carac{
-    height: 20vh;
+    height: 30vh;
     display: flex;
     flex-direction: row;
 }

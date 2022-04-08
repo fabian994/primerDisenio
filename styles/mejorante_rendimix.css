@@ -30,7 +30,7 @@
     #nav_bar{
         top: 200px;
         width: 400px;
-        height: 1490px;
+        height: 300%;
         background-color: #08903E;
         position: absolute;
         right: 0px;
@@ -77,7 +77,7 @@
         background-color: #E5A73C;
         border-radius: 14px;
         width: 65%;
-        height: 540px;
+        height: 70%;
     }
 
     /* Animacion de la descripcion de los atributos */
@@ -123,6 +123,13 @@
     #descripcion_atributos{
         width: 145%;
         text-align: justify;
+        padding-bottom: 50%;
+    }
+
+    #descripcion_atributos_plus{
+        width: 145%;
+        text-align: justify;
+        padding-bottom: 50%;
     }
 
     #plus, #plus_plus {

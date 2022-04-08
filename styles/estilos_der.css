@@ -383,7 +383,7 @@ dd{
 
  /* estilos para display de evolución ¿quienes somos? */
 #fila_ev{
-    height: 15vh;
+    height: 20vh;
     background-color: green;
     display: flex;
     flex-direction: row;
@@ -463,5 +463,16 @@ dd{
     font-family: Montserrat;
     
     
+}
+
+
+
+/* Id para efectos js*/
+
+#text_1988{
+    
+}
+
+
 }
 

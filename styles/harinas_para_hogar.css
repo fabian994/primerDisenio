@@ -1,0 +1,240 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+p{
+    font-family: Montserrat;
+    color: white ;
+}
+
+.titulo26{
+    font-family: Montserrat;
+    color: white;
+    font-size: 26pt;
+}
+
+.body{
+    padding-left: 120px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+#header_image{
+    background-color: #282936;
+    color: whitesmoke;
+    width: 100%;
+    height: 200px;
+}
+
+#nav_bar{
+    width: 400px;
+    height: 1459px;
+    background-color: #519C45;
+    position: absolute;
+    right: 0px;
+}
+
+.Harinas_descripcion{
+    
+    text-align: justify;
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.harinas_hogar{
+    display: inline-flex;
+    text-align: center;
+    height: 225px;
+    width: 100%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 10%;
+    align-content: center; 
+}
+
+.tabla_harinas_hogar{
+    align: center;
+    border: none;
+    border-radius: 10px;
+    padding-left: 10%;
+    width: 90%;
+
+}
+
+#tabla_fila1{
+    align: center;
+    border: none;
+    border-radius: 10px;
+    background-color: #ffc627;
+}
+
+#tabla_fila2{
+    align: center;
+    border: none;
+    border-radius: 10px;
+    background-color: #519C45;
+}
+
+#img_producto{
+    border: none;
+    border-radius: 10px;
+    padding-left: 0.5%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    padding-right: 0.5%;
+    width: 225px;
+    
+}
+
+#producto_descripcion{
+    border: none;
+    text-align: justify;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.Boton_conoceMas{ /*Tiene link a sitio externo tres estrellas */
+    background: #519C45;
+    color: white;
+    font-size: 14pt;
+    font-weight: bold;
+    width: 160px;
+    height: 28px;
+    padding: 0;
+    border: none
+}
+
+.Boton_conoceMas:hover{
+    background: white;
+    color: #519C45;
+}
+
+
+#items{
+    padding-left: 36px;
+}
+
+footer{
+    width: 100%;
+    height: 220px;
+    background-color: #324D53;
+    z-index: 1;
+    position: relative;
+    
+}
+
+#footer_items{
+    padding-top: 25px;
+    padding-left: 2.5%;
+    height: 150px;
+    display: inline-flex;
+}
+
+#contacto{
+    font-size: 16pt;
+    color: #EBE3D5;
+    font-weight: bold;
+}
+
+#contacto_descripcion{
+    font-size: 10pt;
+    color: #EBE3D5;
+    font-weight: lighter;
+    width: 252px;
+    height: 134px;
+    padding-top: 15px;
+}
+
+#footer_items_2{
+    padding-left: 140px;
+}
+
+#footer_items_3{
+    padding-left: 140px;
+}
+
+#footer_items_4{
+    padding-left: 80px;
+}
+
+#boletin{
+    font-size: 16pt;
+    color: #EBE3D5;
+    font-weight: bold;
+    padding-left: 77px;
+}
+
+#boletin_links{
+    font-size: 10pt;
+    color: #EBE3D5;
+    font-weight: lighter;
+    padding-top: 17px;
+    padding-left: 77px;
+}
+
+#bolsa_trabajo{
+    font-size: 16pt;
+    color: #EBE3D5;
+    font-weight: bold;
+    padding-left: 77px;
+}
+
+#bolsa_trabajo_link{
+    font-size: 10pt;
+    color: #EBE3D5;
+    font-weight: lighter;
+    padding-top: 17px;
+    padding-left: 77px;
+}
+
+#siguenos{
+    font-size: 16pt;
+    color: #EBE3D5;
+    font-weight: bold;
+    padding-left: 77px;
+}
+
+#s_media{
+    padding-left: 77px;
+}
+
+
+#fb_icon{
+    display: inline-flex;
+    padding-top: 17px;
+    padding-left: 14px;
+}
+
+#footer_line{
+    width: 85%;
+    height: 1px;
+    background-color: #EBE3D5;
+    border-radius: 25px;
+    margin-left: 8%;
+}
+
+#privacy{
+    margin-left: 41%;
+    display: inline-flex;
+}
+
+#privacy_adv{
+    text-align: center;
+    padding-top: 12px;
+    font-size: 10pt;
+    color: #EBE3D5;
+    font-weight: lighter;
+}
+
+#share{
+    padding-top: 70px;
+    font-weight: bold;
+    font-size: 30px;
+    color: #EBE3D5;
+    width: 164px;
+    padding-left: 17px;
+    height: 50px;
+}

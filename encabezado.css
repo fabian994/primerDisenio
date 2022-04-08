@@ -77,8 +77,6 @@ header{
   height: 140px;
   background-color: #FFFFFF;
   border-bottom: 3px solid #08903E;
-  border-bottom-left-radius: 14px;
-  border-bottom-right-radius: 14px;
   display: inline-flex;
 }
 
@@ -90,21 +88,24 @@ header{
 #menu_button_header{
   margin-top: 20px;
   font-weight: 600;
-  height: 90px;
+  height: 100px;
   width: 100px;
   color: #1E412F;
   background-color: #FFFFFF;
   font-size: 10pt;
   border: none;
   border-right: 1px solid #08903E;
+  border-bottom: 0px;
   padding: 14px;
+  transition: .2s;
+   
 }
 
 #menu_button_header:hover{
-  
   border-bottom: 7px solid #08903E;
-  
+  cursor: pointer;
 }
+
 
 #pirineos_png{
   margin-top: 30px;

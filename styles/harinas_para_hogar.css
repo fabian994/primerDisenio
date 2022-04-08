@@ -1,24 +1,11 @@
-
-@font-face {
-    font-family: Montserrat;
-    src: url(Montserrat-Regular.otf);
-}
-
 *{
     margin: 0%;
     padding: 0%;
-    font-family: Montserrat;
 }
 
 p{
     font-family: Montserrat;
     color: white ;
-    font-family: Montserrat;
-}
-
-@font-face {
-    font-family: Montserrat;
-    src: url(Montserrat-Regular.otf);
 }
 
 .titulo26{
@@ -68,15 +55,45 @@ p{
     align-content: center; 
 }
 
+.tabla_harinas_hogar{
+    align: center;
+    border: none;
+    border-radius: 10px;
+    padding-left: 10%;
+    width: 90%;
+
+}
+
+#tabla_fila1{
+    align: center;
+    border: none;
+    border-radius: 10px;
+    background-color: #ffc627;
+}
+
+#tabla_fila2{
+    align: center;
+    border: none;
+    border-radius: 10px;
+    background-color: #519C45;
+}
+
 #img_producto{
-    width: 178px;
-    border-radius: 25px;
+    border: none;
+    border-radius: 10px;
+    padding-left: 0.5%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    padding-right: 0.5%;
+    width: 225px;
+    
 }
 
 #producto_descripcion{
+    border: none;
     text-align: justify;
     padding-left: 60px;
-    width: 700px;
+    padding-right: 60px;
 }
 
 .Boton_conoceMas{ /*Tiene link a sitio externo tres estrellas */
@@ -95,11 +112,6 @@ p{
     color: #519C45;
 }
 
-#cuadrado{
-    height: 200px;
-    /*width: 100%;*/
-    background: #519C45;
-}
 
 #items{
     padding-left: 36px;

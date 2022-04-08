@@ -1,13 +1,25 @@
-*{
+body{
     margin: 0%;
     padding: 0%;
+    font-family: Montserrat;
+}
+h2{
+    align-self: center;
+    color: white;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(Montserrat-Regular.otf);
+}
+
+.container{
+  display: flex;
+    flex-direction: row;
 }
 
 .body{
-    padding-left: 120px;
-    padding-top: 80px;
-    padding-bottom: 80px;
-
+    width: 70%;
 }
 
 #header_image{
@@ -18,11 +30,9 @@
 }
 
 #nav_bar{
-    width: 400px;
-    height: 1759px;
-    background-color: #08903E;
-    position: absolute;
-    right: 0px;
+  background-color: #08903E;
+  width: 30%;
+  padding-bottom: 10%;
 }
 
 .tres_estrellas{
@@ -70,15 +80,18 @@
 
  /* estilos para pagina de derivados y ¿quienes somos? */
 #deriv_descripcion{
-    width: 850px;
-    text-align: justify-all;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-family: Montserrat;
+    text-align: justify;
 }
 
 .titulos{
-  
+
   color: #519C45;
   font-size: 36pt;
   width: 90%;
+  margin-left: 14%;
 }
 
 #seg_box{
@@ -106,7 +119,7 @@
 }
 
 #catalogo_tabla{
-    padding-left: 14px;
+    padding-left: 20%;
 }
 
 dt{
@@ -173,7 +186,7 @@ dd{
 #bm_receipts_pdf_link{
     width: 247px;
     height: 25px;
-    padding-top: 4px;
+    padding-top: 54px;
     font-size: 14px;
     text-decoration: underline;
     color: #E5A73C;
@@ -206,7 +219,7 @@ dd{
     padding-left: 36px;
 }
 
-footer{
+.foot_con{
     width: 100%;
     height: 220px;
     background-color: #324D53;
@@ -216,8 +229,8 @@ footer{
 }
 
 #footer_items{
-    padding-top: 25px;
-    padding-left: 31px;
+    padding-top: 0px;
+    padding-left: 2.5%;
     height: 150px;
     display: inline-flex;
 }
@@ -234,19 +247,19 @@ footer{
     font-weight: lighter;
     width: 252px;
     height: 134px;
-    padding-top: 15px;
+    padding-top: 0px;
 }
 
 #footer_items_2{
-    padding-left: 70px;
+    padding-left: 140px;
 }
 
 #footer_items_3{
-    padding-left: 70px;
+    padding-left: 140px;
 }
 
 #footer_items_4{
-    padding-left: 70px;
+    padding-left: 80px;
 }
 
 #boletin{
@@ -260,7 +273,7 @@ footer{
     font-size: 10pt;
     color: #EBE3D5;
     font-weight: lighter;
-    padding-top: 17px;
+    padding-top: 0px;
     padding-left: 77px;
 }
 
@@ -275,7 +288,7 @@ footer{
     font-size: 10pt;
     color: #EBE3D5;
     font-weight: lighter;
-    padding-top: 17px;
+    padding-top: 0px;
     padding-left: 77px;
 }
 
@@ -293,26 +306,26 @@ footer{
 
 #fb_icon{
     display: inline-flex;
-    padding-top: 17px;
+    padding-top: 0px;
     padding-left: 14px;
 }
 
 #footer_line{
-    width: 1150px;
+    width: 85%;
     height: 1px;
     background-color: #EBE3D5;
     border-radius: 25px;
-    margin-left: 80px;
+    margin-left: 8%;
 }
 
 #privacy{
-    margin-left: 500px;
+    margin-left: 41%;
     display: inline-flex;
 }
 
 #privacy_adv{
     text-align: center;
-    padding-top: 12px;
+    padding-top: 0px;
     font-size: 10pt;
     color: #EBE3D5;
     font-weight: lighter;
@@ -327,3 +340,128 @@ footer{
     padding-left: 17px;
     height: 50px;
 }
+
+.tabla_prod{
+    margin-left: 10%;
+    width: 80%;
+    
+}
+#fila_tabla{
+    height: 45vh;
+    background-color: green;
+    display: flex;
+    flex-direction: row;
+}
+#celda_imagen{
+    width: 30%;
+    background-color: grey;
+
+}
+
+#info_tabla{
+    width: 75%;
+    text-align: justify; 
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 3%;
+    font-family: Montserrat;
+}
+#info_tabla_am{
+    width: 75%;
+    text-align: justify; 
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: #FFC627;
+    padding-top: 3%;
+    font-family: Montserrat;
+}
+#tabla_image{
+    width: 100%;
+    height: 100%;
+}
+
+
+ /* estilos para display de evolución ¿quienes somos? */
+#fila_ev{
+    height: 15vh;
+    background-color: green;
+    display: flex;
+    flex-direction: row;
+}
+#celda_ev{
+    width: 40%;
+    background-color: grey;
+    text-align: center;
+    padding-top: 3%;
+
+}
+
+#info_ev{
+    width: 75%;
+    text-align: justify; 
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 3%;
+    background-color: #FFC627;
+    font-family: Montserrat;
+
+}
+/* Estilos para mision,vision,valores y politicas ¿quines somos? */
+
+.cuadro_carac{
+    margin-left: 10%;
+    width: 80%;
+
+}
+
+#fila_carac{
+    height: 20vh;
+    display: flex;
+    flex-direction: row;
+}
+
+#apartado_carac{
+    width: 45%;
+    margin-right: 5%;
+    margin-left: 5%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+
+  
+}
+#titulo_ap{
+    background-color: green;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    border-radius: 7px;
+    font-family: Montserrat;
+
+}
+#titulo_ap_am{
+    background-color: grey;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    border-radius: 7px;
+    background-color: #FFC627;
+    font-size: 13px;
+    font-family: Montserrat;
+}
+#info_ap{
+    /*background-color: grey;*/
+    width: 90%;
+    height: 55;
+    margin: auto;
+    text-align: justify;
+    padding: 5%;
+    border-radius: 7px;
+    border-color: blue;
+    font-family: Montserrat;
+    
+    
+}
+

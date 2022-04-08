@@ -5,6 +5,7 @@
     <meta http-equiv = "X-UA-Compatible" content = "IE=edge">
     <meta name = "viewport" content = "width = device-width, height = device-height, initial-scale = 1.0, minimum-scale = 1.0">
     <link rel="stylesheet" href="styles/mejorante_rendimix.css" type="text/css">
+    <script src = "scripts/mejorante_rendimix.js" type = "text/JavaScript"></script>
 
     <title>RendiMix</title>
 
@@ -23,9 +24,14 @@
             <section id = "nav_items_1">
 
                 <p id = "bm_pdf_download"> Descarga el PDF de Bakery Mix </p>
+
+                <br><br>
+
                 <a href = "images/pirineos_logo.png" title = "Bakery_Mix_PDF" target = "_blank">
                     <p id = "bm_pdf_link"> > Descargar PDF </p>
                 </a>
+
+                <br><br>
 
                 <p id = "line"></p>
             
@@ -34,10 +40,11 @@
             <section id = "nav_items_2">
 
                 <p id = "bm_receipts_pdf_download"> Descarga Nuestras Mejores Recetas con Bakery Mix </p>
+                <br><br><br><br><br><br>
                 <a href = "images/pirineos_logo.png" title = "Bakery_Mix_Recepits_PDF" target = "_blank">
                     <p id = "bm_receipts_pdf_link"> > Descargar PDF de Recetas </p>
                 </a>
-
+                <br><br><br><br>
                 <p id = "line"></p>
 
             </section>
@@ -111,10 +118,38 @@
             </div>
         </section>
 
-        <section class = "atributos">
+        <section id = "atributos">
             <div id = "cuadro_de_atributos">
-                <article>
+                <article id = "descripcion_atributos">
                     <h2> Excelente Granado y Volumen </h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non urna vestibulum, euismod mi at, pulvinar ex. Fusce libero justo, euismod id sapien eget, tempus tincidunt nisi. Vestibulum vehicula mattis auctor. Vivamus quis lorem at tortor efficitur dapibus a in dui.
+                    </p>
+                    <br><br>
+                    <h2> Miga Blanca y Uniforme </h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non urna vestibulum, euismod mi at, pulvinar ex. Fusce libero justo, euismod id sapien eget, tempus tincidunt nisi. Vestibulum vehicula mattis auctor. Vivamus quis lorem at tortor efficitur dapibus a in dui.
+                    </p>
+                    <br><br>
+                    <h2> Corteza Crujiente </h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non urna vestibulum, euismod mi at, pulvinar ex. Fusce libero justo, euismod id sapien eget, tempus tincidunt nisi. Vestibulum vehicula mattis auctor. Vivamus quis lorem at tortor efficitur dapibus a in dui.
+                    </p>
+                    <br><br>
+                    <h2> Mejor Vida en sus productos </h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non urna vestibulum, euismod mi at, pulvinar ex. Fusce libero justo, euismod id sapien eget, tempus tincidunt nisi. Vestibulum vehicula mattis auctor. Vivamus quis lorem at tortor efficitur dapibus a in dui.
+                    </p>
+                    <br><br>
+                    <h2> Mayor Rendimiento </h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non urna vestibulum, euismod mi at, pulvinar ex. Fusce libero justo, euismod id sapien eget, tempus tincidunt nisi. Vestibulum vehicula mattis auctor. Vivamus quis lorem at tortor efficitur dapibus a in dui.
+                    </p>
+                    
+                </article>
+
+                <article id = "descripcion_atributos_plus" style="display: none;">
+                    <h2> Excelente Granado y Volumen PLUS </h2>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non urna vestibulum, euismod mi at, pulvinar ex. Fusce libero justo, euismod id sapien eget, tempus tincidunt nisi. Vestibulum vehicula mattis auctor. Vivamus quis lorem at tortor efficitur dapibus a in dui.
                     </p>
@@ -144,11 +179,22 @@
             </div>
         </section>
 
-        <button id = "plus">
+        <button id = "plus" onclick="rendimix_plus()">
+            
             <span id = "circulo">
             <span id = "flecha"></span>
             </span>
             <span id = "texto_en_boton"> ¿Buscas un rendimiento premium? </span>
+
+        </button>
+
+        <button id = "plus_plus" onclick="rendimix_plus()" style = "display: none;">
+            
+            <span id = "circulo_p">
+            <span id = "flecha"></span>
+            </span>
+            <span id = "texto_en_boton"> ¿Buscas un rendimiento estandar? </span>
+
         </button>
         
         <br><br>
@@ -219,7 +265,8 @@
 
         </section>
 
-        <p id = "footer_line"></p>
+        <hr style = "width: 90.5%;
+                    margin-left: 2.5%;">
 
         <section id = "privacy">
             <a href="imagenes/1.txt" target = "_blank" style="text-decoration: none;">

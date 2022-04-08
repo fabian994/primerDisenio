@@ -77,8 +77,6 @@ header{
   height: 140px;
   background-color: #FFFFFF;
   border-bottom: 3px solid #08903E;
-  border-bottom-left-radius: 14px;
-  border-bottom-right-radius: 14px;
   display: inline-flex;
 }
 
@@ -107,9 +105,6 @@ header{
   border-bottom: 7px solid #08903E;
   cursor: pointer;
 }
-
-
-
 
 
 #pirineos_png{

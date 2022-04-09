@@ -16,21 +16,28 @@ p{
     font-family: Montserrat;
 }
 
-@font-face {
-    font-family: Montserrat;
-    src: url(Montserrat-Regular.otf);
-}
-
-.titulo26{
-    font-family: Montserrat;
-    color: white;
-    font-size: 26pt;
-}
-
 .body{
     padding-left: 120px;
     padding-top: 80px;
     padding-bottom: 80px;
+}
+
+.lineamientos_con_la_marca{
+    width: 80%;
+    background-color: #08903E;
+    text-align: justify;
+    padding-top: 14px;
+    padding-bottom: 70px;
+    color: #EBE3D5;
+    border-radius: 14px;
+}
+
+#lineamientos_titulo{
+    margin: 20px;
+}
+
+#lineamientos_descripcion{
+    margin: 20px;
 }
 
 #header_image{
@@ -48,25 +55,6 @@ p{
     right: 0px;
 }
 
-.Harinas_descripcion{
-    
-    text-align: justify;
-    padding-left: 120px;
-    padding-right: 120px;
-    padding-top: 80px;
-    padding-bottom: 80px;
-}
-
-.harinas_hogar{
-    display: inline-flex;
-    text-align: center;
-    height: 225px;
-    width: 100%;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    padding-left: 10%;
-    align-content: center; 
-}
 
 #img_producto{
     width: 178px;
@@ -79,7 +67,7 @@ p{
     width: 700px;
 }
 
-.Boton_conoceMas{ /*Tiene link a sitio externo tres estrellas */
+.Boton_conoceMas{
     background: #519C45;
     color: white;
     font-size: 14pt;
@@ -103,6 +91,57 @@ p{
 
 #items{
     padding-left: 36px;
+}
+
+#catalogo_titulo_box{
+    width: 635px;
+    height: 35px;
+    background-color: #08903E;
+    border-radius: 14px;
+}
+
+#catalogo_titulo{
+    padding: 6px;
+    margin-left: 15px;
+    color: #EBE3D5;
+}
+
+#catalogo_tabla{
+    padding-left: 14px;
+}
+
+dt{
+    color: #08903E;
+    font-size: 14pt;
+    padding-bottom: 15px;
+    padding-top: 10px;
+    font-weight: bold;
+}
+
+#catalog_des_box{
+    width: 1000px;
+    background-color: #282936;
+    border-radius: 14px;
+}
+
+#descripcion_prod{
+    margin: 20px;
+    text-align: justify;
+}
+
+#subtitulo_prod{
+    font-weight: bold;
+}
+
+dd{
+    color: #EBE3D5;
+    padding-top: 5px;
+    padding-left: 14px;
+}
+
+#img_prod{
+    height: 200px;
+    width: 177px;
 }
 
 footer{

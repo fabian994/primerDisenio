@@ -24,7 +24,6 @@ p{
 
 .lineamientos_con_la_marca{
     width: 80%;
-    background-color: #08903E;
     text-align: justify;
     padding-top: 14px;
     padding-bottom: 70px;
@@ -120,7 +119,6 @@ dt{
 
 #catalog_des_box{
     width: 1000px;
-    background-color: #282936;
     border-radius: 14px;
 }
 

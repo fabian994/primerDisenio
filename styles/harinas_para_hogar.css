@@ -63,9 +63,8 @@ p{
 }
 
 .tabla_harinas_hogar{
-    
-    border: none;
-    border-radius: 10px;
+    margin: 0 auto;
+    border-collapse: collapse;
     padding-left: 10%;
     width: 90%;
 
@@ -73,34 +72,39 @@ p{
 
 #tabla_fila1{
     
-    border: none;
     border-radius: 10px;
     background-color: #ffc627;
 }
 
 #tabla_fila2{
     
-    border: none;
     border-radius: 10px;
     background-color: #519C45;
 }
 
 #img_producto{
-    border: none;
-    border-radius: 10px;
-    padding-left: 0.5%;
+    
+    border-radius: 10px 0px 0px 10px;
+    padding-left: 1%;
     padding-top: 0.5%;
     padding-bottom: 0.5%;
     padding-right: 0.5%;
     width: 225px;
     
+    text-align: center;
+    vertical-align: middle;
+    border-right: 0px; 
 }
 
 #producto_descripcion{
-    border: none;
+
+    border-radius: 0px 10px 10px 0px;
     text-align: justify;
-    padding-left: 60px;
+    vertical-align: middle;
+    padding-left: 0.5%;
     padding-right: 60px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .Boton_conoceMas{ /*Tiene link a sitio externo tres estrellas */

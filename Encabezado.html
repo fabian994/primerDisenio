@@ -1,149 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="encabezado.css">
-	<link rel="shortcut icon" type="image/png" href="imagenes/logo_pirineos.png">
+	<meta name = "viewport" content = "width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+	<link rel = "stylesheet" type = "text/css" href = "styles/menu.css">
+	<link rel = "stylesheet" type = "text/css" href = "styles/icons/fonts.css">
+
+	<link rel ="shortcut icon" type = "image/png" href = "imagenes/logo_pirineos.png">
+
+	<script src = "scripts/jquery-latest.js"></script>
+	<script src = "scripts/encabezado.js"></script>
+
 	<title>Pirineos</title>
+
+
 </head>
 <body>
 	
 	<header>
-		<section id = "items">
+		<div class = "menu_bar">
+			<a href = "#" class = "b_menu"><span class = "icon-menu"></span> Pirineos </a>
+		</div>
 
-			<a href = "imagenes/tres_estrellas.png" target = "_blank" style = "text-decoration: none;" >
 
-				<section id = "portal_clientes">
+		<span class = "img_banner">
+			<img src = "imagenes/pirineos_logo.png">
+		</span>
 
-					<div id = "portal_titulo">
-						Portal para Clientes
-					</div>
+		<nav>
 
-				</section>
+			<ul>
 
-			</a>
-
-			<section id = "buscar">
+				<li><a href = "#"><span class = "icon-home"></span> Inicio </a></li>
 				
-				<input name = "header_buscar" type = "text" id = "buscar_campo" style = "border: none;">
+				<li class = "submenu">
 
-			</section>
+					<a href = "#"><span class = "icon-shop"></span> Nuestros Productos <span class = "slide_icon icon-chevron-down"></span></a>
+					<ul class = "children">
+						<li><a href="#"> Harinas de Trigo <span class = "icon-bowl"></span> </a></li>
+						<li><a href="#"> Harinas para el Hogar <span class = "icon-bowl"></span> </a></li>
+						<li><a href="#"> Harinas Preparadas Tres Estrellas <span class = "icon-bowl"></span> </a></li>
+						<li><a href="#"> Polvo para Hornear Tres Estrellas <span class = "icon-bowl"></span> </a></li>
+						<li><a href="#"> Mejorantes RendiMix <span class = "icon-bowl"></span> </a></li>
+						<li><a href="#"> Derivados del Trigo <span class = "icon-bowl"></span> </a></li>
+					</ul>
 
-			<section id = "informacion">
-				<section id = "llamar_titulo"> Llama ahora: &nbsp; </section>
-				<section id = "llamar_numero">  01 800 477 8 9600 </section>
-			</section>
+				</li>
 
-			<section id = "s_media_share">
+				<li><a href = "#"><span class = "icon-open-book"></span> Recetarios </a></li>
+				<li><a href = "#"><span class = "icon-tools"></span> Servicio Tecnico </a></li>
+				<li><a href = "#"><span class = "icon-typing"></span> Contacto </a></li>
 
-				<a href="imagenes/1.txt" target = "_blank" style="text-decoration: none;">
-					<img id = "fb_icon" src = "imagenes/facebook.png">
-				</a>
-
-				<a href="imagenes/1.txt" target = "_blank" style="text-decoration: none;">
-					<img id = "fb_icon" src = "imagenes/twitter.png">
-				</a>
-
-				<a href="imagenes/1.txt" target = "_blank" style="text-decoration: none;">
-					<img id = "fb_icon" src = "imagenes/instagram.png">
-				</a>
-
-			</section>
-
-		
+			</ul>
+		</nav>
 	</header>
 
-	<section id = "menu">
 
-		<section id = "pirineos_logo">
-			<img src = "pirineos.png" id = "pirineos_png">
-		</section>
 
-		<section id = "menu_items">
-
-			<section id = "boton_inicio">
-
-				<a href="inicio.html" target="principal">
-					<button id = "menu_button_header"> Inicio </button>
-				</a>
-
-			</section>
-
-			<section id = "harinas_trigo">
-
-				<a href="harinas_trigo.html" target="principal">
-					<button id = "menu_button_header"> Harinas de Trigo </button>
-				</a>
-
-			</section>
-
-			<section id = "harinas_preparadas_te">
-
-				<a href="harinas_tres_estrellas.html" target = "principal">
-					<button id = "menu_button_header"> Harinas Preparadas Tres Estrellas </button>
-				</a>
-
-			</section>
-
-			<section id = "mejorantes_rendimix">
-
-				<a href="mejorante_rendimix.html" target = "principal">
-					<button id = "menu_button_header"> Mejorantes RendiMix </button>
-				</a>
-
-			</section>
-
-			<section id = "polvo_hornear_te">
-
-				<a href = "polvo_hornear_3Estrellas.html" target = "principal">
-					<button id = "menu_button_header"> Polvo para hornear Tres Estrellas </button>
-				</a>
-
-			</section>
-
-			<section id = "derivados_trigo">
-
-				<a href = "derivados.html" target = "principal">
-					<button id = "menu_button_header"> Derivados de Trigo </button>
-				</a>
-
-			</section>
-
-			<section id = "harinas_hogar">
-
-				<a href = "harinas_hogar.html" target = "principal">
-					<button id = "menu_button_header"> Harinas para el Hogar </button>
-				</a>
-
-			</section>
-
-			<section id = "recetario">
-
-				<a href = "" target = "principal">
-					<button id = "menu_button_header" disabled> Recetario </button>
-				</a>
-
-			</section>
-
-			<section id = "servicio_tecnico">
-
-				<a href = "" target = "principal">
-					<button id = "menu_button_header" disabled> Servicio Tecnico </button>
-				</a>
-
-			</section>
-
-			<section id = "Contacto">
-
-				<a href = "contacto.html" target = "principal">
-					<button id = "menu_button_header"> Contacto </button>
-				</a>
-			</section>
-
-		</section>
-	
-	</section>
 
 </body>
 </html>

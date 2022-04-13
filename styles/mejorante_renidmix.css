@@ -330,7 +330,7 @@ body {
     font-size: 35pt;
 }
 
-/* MEDIA QUIERY - DISPOSITIVOS CON UN ANCHO MAXIMO DE 768 PIXELES */
+/* MEDIA QUIERY - DISPOSITIVOS CON UN ANCHO MAXIMO DE 768 (1180 op) PIXELES */
 
 @media screen and (max-width: 1180px) {
     
@@ -343,6 +343,8 @@ body {
                              "widget-2 widget-2 widget-2"
                              "sidebar sidebar sidebar"
                              "footer footer footer";
+
+        
     }
 
     .container .sidebar div {
@@ -353,3 +355,6 @@ body {
     }
 
 }
+
+
+

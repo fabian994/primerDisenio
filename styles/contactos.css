@@ -9,11 +9,21 @@
     font-family: Montserrat;
 }
 
+
 .body{
     padding-left: 120px;
     padding-top: 2%;
     padding-bottom: 80px;
 
+}
+
+.lineamientos_con_la_marca{
+    width: 80%;
+    text-align: center;
+    font-style: col;
+    padding-top: 14px;
+    padding-bottom: 70px;
+    border-radius: 14px;
 }
 
 #header_image{
@@ -38,6 +48,7 @@
 
 .lineamientos_con_la_marca{
     width: 635px;
+    height: 545px;
     text-align: justify;
     padding-top: 14px;
     padding-bottom: 70px;
@@ -358,14 +369,14 @@ footer{
     margin: -1%;
     padding: 2%;
     font-family: Montserrat;
-    color: black;
+    color: whitesmoke;
 }
 
 #contactostit{
     margin: -1%;
     padding: 0%;
     font-family: Montserrat;
-    color: black;
+    color: whitesmoke;
     font-size: 15pt;
     font-weight: bold; 
     
@@ -374,14 +385,19 @@ footer{
 
 .text_con{
     font-size: 12pt;
+    color: whitesmoke;
 }
 
 .tit_con{
     font-size: 18;
+    color: whitesmoke;
+    font-weight: bold;
 }
 
 .tit_con_p{
     font-size: 35;
+    color: whitesmoke;
+    font-weight: bold;
 }
 
 #kiko-slider{

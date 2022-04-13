@@ -107,7 +107,7 @@ header nav ul li .slide_icon{
 }
 
 /* Menu en pantallas moviles */
-@media screen and (max-width: 983px) {
+@media screen and (max-width: 1180px) {
     body{
         padding-top: 80px;
     }

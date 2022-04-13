@@ -15,6 +15,10 @@
     margin: 0;
 }
 
+body {
+    background-color: #F4F4F4;
+}
+
 /* CONTENEDOR - ENGLOBA TODA LA PAGINA */
 
 .container {
@@ -124,7 +128,10 @@
     font-size: 18pt;
     list-style: none;
     /* CONTROL DEL ESPACIADO ENTRE LOS ELEMENTOS DE LA SIDEBAR */
-    padding: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+
 }
 
 .container .sidebar ul li {
@@ -132,32 +139,35 @@
 }
 
 .container .sidebar ul li a {
-    font-size: 15pt;
+    font-size: 18pt;
 }
 
 .container .sidebar div {
     background-color: transparent;
     padding: 0;
     /* CONTROL DEL ESPACIADO ENTRE LOS ELEMENTOS DE LA SIDEBAR */
-    padding-bottom: 35px;
+    padding-bottom: 262px;
 }
 
 .container .sidebar .share_buttons li {
     display: inline-block;
 }
 
+.container .sidebar .share_buttons li span{
+    font-size: 35pt;
+}
+
 
 /* WIDGETS - ENGLOBA AMBOS WIDGETS */
 
-.container .widget-1, .container .widget-2 {
+.container .widget-1 {
+    background-color: #E5A73C;
+    color: #EBE3D5;
+}
 
-    background-color: #55A8FD;
-    color: aliceblue;
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
+.container .widget-2 {
+    background-color: #08903E;
+    color: #EBE3D5;
 }
 
 /* WIDGET 1 - SOLO EL PRIMER WIDGET */
@@ -175,23 +185,171 @@
 /* FOOTER - ENGLOBA TODO EL FOOTER */
 
 .container .footer {
-    background-color: #12203E;
-    color: aliceblue;
+    background-color: #324D53;
+    color: #EBE3D5;
     grid-area: footer;
+}
+
+.container .footer div {
+    padding: 0;
+    background-color: transparent;
+}
+
+.container .footer .contact #contact,
+.container .footer .contact #boletin,
+.container .footer .contact #bolsa_trabajo,
+.container .footer .contact #siguenos {
+    display: inline-flex;
+    font-size: 14pt;
+}
+
+/* -------------------------------------------------------------------------------- */
+
+/* ELEMENTO - CONTACTO */
+
+.container .footer .contact #contact {
+    padding-right: 290px;
+    /* 370 defualt */
+    padding-bottom: 15px;
+}
+
+/* ELEMENTO - TITULO CONTACTO */
+
+.container .footer .contact #contact ul #footer_title {
+    font-size: 17pt;
+    font-weight: bold;
+    list-style: none;
+    padding-bottom: 3px;
+}
+
+
+/* ELEMENTO - INFORMACION CONTACTO */
+
+.container .footer .contact #contact ul li {
+    font-size: 10pt;
+    list-style: none;
+    padding-top: 3px;
+}
+
+/* -------------------------------------------------------------------------------- */
+
+/* ELEMENTO - BOLETIN */
+
+.container .footer .contact #boletin {
+    padding-right: 290px;
+    padding-bottom: 15px;
+}
+
+/* ELEMENTO - TITULO BOLETIN */
+
+.container .footer .contact #boletin ul #footer_title {
+    font-size: 17pt;
+    font-weight: bold;
+    list-style: none;
+    padding-bottom: 3px;
+}
+
+/* ELEMENTO - INFORMACION BOLETIN */
+
+.container .footer .contact #boletin ul li {
+    font-size: 10pt;
+    list-style: none;
+    padding-top: 7px;
+}
+
+.container .footer .contact #boletin ul li a {
+    color: #EBE3D5;
+    text-decoration: none;
+}
+
+/* -------------------------------------------------------------------------------- */
+
+/* ELEMENTO - BOLETIN */
+
+.container .footer .contact #bolsa_trabajo {
+    padding-right: 290px;
+    padding-bottom: 15px;
+}
+
+/* ELEMENTO - TITULO BOLSA DE TRABAJO */
+
+.container .footer .contact #bolsa_trabajo ul #footer_title {
+    font-size: 17pt;
+    font-weight: bold;
+    list-style: none;
+    padding-bottom: 3px;
+}
+
+/* ELEMENTO - INFORMACION BOLSA DE TRABAJO */
+
+.container .footer .contact #bolsa_trabajo ul li {
+    font-size: 10pt;
+    list-style: none;
+    padding-top: 7px;
+}
+
+.container .footer .contact #bolsa_trabajo ul li a {
+    color: #EBE3D5;
+    text-decoration: none;
+}
+
+/* -------------------------------------------------------------------------------- */
+
+/* ELEMENTO - SIGUENOS EN */
+
+.container .footer .contact #siguenos {
+    padding-right: 0px;
+    padding-bottom: 0px;
+}
+
+/* ELEMENTO - TITULO SIGUENOS EN */
+
+.container .footer .contact #siguenos ul #footer_title {
+    font-size: 17pt;
+    font-weight: bold;
+    list-style: none;
+    padding-bottom: 3px;
+}
+
+/* ELEMENTO - INFORMACION SIGUENOS EN */
+
+.container .footer .contact #siguenos ul li {
+    font-size: 10pt;
+    list-style: none;
+    padding-top: 7px;
+}
+
+.container .footer .contact #siguenos ul .share_buttons_footer li {
+    display: inline-block;
+    padding-right: 7px;
+}
+
+.container .footer .contact #siguenos ul li a {
+    color: #EBE3D5;
+    text-decoration: none;
+    font-size: 35pt;
 }
 
 /* MEDIA QUIERY - DISPOSITIVOS CON UN ANCHO MAXIMO DE 768 PIXELES */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1180px) {
     
     .container {
 
         grid-template-areas: "header header header"
                              "content content content"
                              "content2 content2 content2"
+                             "widget-1 widget-1 widget-1"
+                             "widget-2 widget-2 widget-2"
                              "sidebar sidebar sidebar"
-                             "widget-1 widget-1 widget-2"
                              "footer footer footer";
+    }
+
+    .container .sidebar div {
+        background-color: transparent;
+        padding: 0;
+        /* CONTROL DEL ESPACIADO ENTRE LOS ELEMENTOS DE LA SIDEBAR */
+        padding-bottom: 50px;
     }
 
 }

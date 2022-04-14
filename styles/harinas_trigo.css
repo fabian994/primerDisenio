@@ -162,6 +162,10 @@
     font-size: 18pt;
 }
 
+.container .sidebar .share_buttons li span {
+    font-size: 35pt;
+}
+
 .container .sidebar div {
     background-color: transparent;
     padding: 0;

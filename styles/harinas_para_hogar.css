@@ -1,82 +1,98 @@
-
 @font-face {
     font-family: Montserrat;
     src: url(Montserrat-Regular.otf);
 }
 
-*{
-    margin: 0%;
-    padding: 0%;
+* {
+    margin: 0;
+    padding: 0;
     font-family: Montserrat;
 }
 
-p{
-    font-family: Montserrat;
-    color: white ;
+.menu {
+    position: fixed;
+    padding: 0;
+    margin: 0;
 }
 
-.titulo26{
-    font-family: Montserrat;
-    color: white;
-    font-size: 26pt;
+body {
+    background-color: #F4F4F4;
 }
 
-.body{
-    padding-left: 120px;
-    padding-top: 80px;
-    padding-bottom: 80px;
+/* CONTENEDOR - ENGLOBA TODA LA PAGINA */
+
+.container {
+    width: 95%;
+    padding-top: 100px;
+    margin: 20px auto;
+    margin-top: 0;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(4, auto);
+
+    grid-template-areas: "header"
+                         "content"
+                         "widget-1"
+                         "footer";
 }
 
-#header_image{
-    background-color: #282936;
-    color: whitesmoke;
+/* CLASES DEL CONTENEDOR - CADA UNA DE ELLAS */
+
+.container div, 
+.container .header, 
+.container .content,
+.container .footer {
+    background-color: aliceblue;
+    padding: 20px;
+    border-radius: 14px;
+}
+
+/* HEADER DE LA PAGINA */
+
+.container .header {
+    color: aliceblue;
+    grid-area: header;
+    padding: 0px;
+}
+
+/* IMAGEN DEL HEADER */
+
+.container .header #header_image {
     width: 100%;
-    height: 200px;
+    border-radius: 14px;
 }
 
-#nav_bar{
-    width: 400px;
-    height: 1459px;
-    background-color: #519C45;
-    position: absolute;
-    right: 0px;
-}
+/* CONTENIDO - ENGLOBA EL CONTENIDO PRINCIPAL */
 
-.Harinas_descripcion{
-    
+.container .content {
+    grid-area: content;
+    background-color: #08903E;
+    color: #EBE3D5;
     text-align: justify;
-    padding-left: 120px;
-    padding-right: 120px;
-    padding-top: 80px;
-    padding-bottom: 80px;
 }
 
-.harinas_hogar{
-    display: inline-flex;
-    text-align: center;
-    height: 225px;
-    width: 100%;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    padding-left: 10%;
-    align-content: center; 
+/* WIDGET 1 - SOLO EL PRIMER WIDGET */
+
+.container .widget-1 {
+    color: #EBE3D5;
+    grid-area: widget-1;
 }
 
 .tabla_harinas_hogar{
     margin: 0 auto;
     border-collapse: collapse;
-    padding-left: 10%;
-    width: 90%;
+    width: 100%;
 
 }
 
-#tabla_fila1{
+#tabla_fila:nth-of-type(odd){
     
     border-radius: 10px;
-    background-color: #ffc627;
+    background-color: #E5A73C;
 }
 
-#tabla_fila2{
+#tabla_fila{
     
     border-radius: 10px;
     background-color: #519C45;
@@ -84,168 +100,227 @@ p{
 
 #img_producto{
     
-    border-radius: 10px 0px 0px 10px;
+    border-radius: 4% 0% 0% 4%;
     padding-left: 1%;
     padding-top: 0.5%;
     padding-bottom: 0.5%;
-    padding-right: 0.5%;
-    width: 225px;
-    
+    padding-right: 1%;
     text-align: center;
-    vertical-align: middle;
-    border-right: 0px; 
 }
 
 #producto_descripcion{
 
-    border-radius: 0px 10px 10px 0px;
+    border-radius: 0% 10px 10px 0%;
     text-align: justify;
     vertical-align: middle;
-    padding-left: 0.5%;
-    padding-right: 60px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-left: 1.5%;
+    padding-right: 1%;
+    padding-top: 1%;
+    padding-bottom: 1%;
 }
 
-.Boton_conoceMas{ /*Tiene link a sitio externo tres estrellas */
-    background: #519C45;
-    color: white;
-    font-size: 14pt;
-    font-weight: bold;
-    width: 160px;
-    height: 28px;
-    padding: 0;
-    border: none
-}
+/* FOOTER - ENGLOBA TODO EL FOOTER */
 
-.Boton_conoceMas:hover{
-    background: white;
-    color: #519C45;
-}
-
-
-#items{
-    padding-left: 36px;
-}
-
-footer{
-    width: 100%;
-    height: 220px;
+.container .footer {
     background-color: #324D53;
-    z-index: 1;
-    position: relative;
+    color: #EBE3D5;
+    grid-area: footer;
+}
+
+.container .footer div {
+    padding: 0;
+    background-color: transparent;
+}
+
+.container .footer .contact #contact,
+.container .footer .contact #boletin,
+.container .footer .contact #bolsa_trabajo,
+.container .footer .contact #siguenos {
+    display: inline-flex;
+    font-size: 14pt;
+}
+
+/* -------------------------------------------------------------------------------- */
+
+/* ELEMENTO - CONTACTO */
+
+.container .footer .contact #contact {
+    padding-right: 290px;
+    /* 370 defualt */
+    padding-bottom: 15px;
+}
+
+/* ELEMENTO - TITULO CONTACTO */
+
+.container .footer .contact #contact ul #footer_title {
+    font-size: 17pt;
+    font-weight: bold;
+    list-style: none;
+    padding-bottom: 3px;
+}
+
+
+/* ELEMENTO - INFORMACION CONTACTO */
+
+.container .footer .contact #contact ul li {
+    font-size: 10pt;
+    list-style: none;
+    padding-top: 3px;
+}
+
+/* -------------------------------------------------------------------------------- */
+
+/* ELEMENTO - BOLETIN */
+
+.container .footer .contact #boletin {
+    padding-right: 290px;
+    padding-bottom: 15px;
+}
+
+/* ELEMENTO - TITULO BOLETIN */
+
+.container .footer .contact #boletin ul #footer_title {
+    font-size: 17pt;
+    font-weight: bold;
+    list-style: none;
+    padding-bottom: 3px;
+}
+
+/* ELEMENTO - INFORMACION BOLETIN */
+
+.container .footer .contact #boletin ul li {
+    font-size: 10pt;
+    list-style: none;
+    padding-top: 7px;
+}
+
+.container .footer .contact #boletin ul li a {
+    color: #EBE3D5;
+    text-decoration: none;
+}
+
+/* -------------------------------------------------------------------------------- */
+
+/* ELEMENTO - BOLETIN */
+
+.container .footer .contact #bolsa_trabajo {
+    padding-right: 290px;
+    padding-bottom: 15px;
+}
+
+/* ELEMENTO - TITULO BOLSA DE TRABAJO */
+
+.container .footer .contact #bolsa_trabajo ul #footer_title {
+    font-size: 17pt;
+    font-weight: bold;
+    list-style: none;
+    padding-bottom: 3px;
+}
+
+/* ELEMENTO - INFORMACION BOLSA DE TRABAJO */
+
+.container .footer .contact #bolsa_trabajo ul li {
+    font-size: 10pt;
+    list-style: none;
+    padding-top: 7px;
+}
+
+.container .footer .contact #bolsa_trabajo ul li a {
+    color: #EBE3D5;
+    text-decoration: none;
+}
+
+/* -------------------------------------------------------------------------------- */
+
+/* ELEMENTO - SIGUENOS EN */
+
+.container .footer .contact #siguenos {
+    padding-right: 0px;
+    padding-bottom: 0px;
+}
+
+/* ELEMENTO - TITULO SIGUENOS EN */
+
+.container .footer .contact #siguenos ul #footer_title {
+    font-size: 17pt;
+    font-weight: bold;
+    list-style: none;
+    padding-bottom: 3px;
+}
+
+/* ELEMENTO - INFORMACION SIGUENOS EN */
+
+.container .footer .contact #siguenos ul li {
+    font-size: 10pt;
+    list-style: none;
+    padding-top: 7px;
+}
+
+.container .footer .contact #siguenos ul .share_buttons_footer li {
+    display: inline-block;
+    padding-right: 7px;
+}
+
+.container .footer .contact #siguenos ul li a {
+    color: #EBE3D5;
+    text-decoration: none;
+    font-size: 35pt;
+}
+
+/* MEDIA QUIERY - DISPOSITIVOS CON UN ANCHO MAXIMO DE 768 (1180 op) PIXELES */
+
+@media screen and (max-width: 1180px) {
     
-}
+    .container {
 
-#footer_items{
-    padding-top: 25px;
-    padding-left: 2.5%;
-    height: 150px;
-    display: inline-flex;
-}
+        grid-template-areas: "header header header"
+                             "content content content"
+                             "content2 content2 content2"
+                             "widget-1 widget-1 widget-1"
+                             "widget-2 widget-2 widget-2"
+                             "sidebar sidebar sidebar"
+                             "footer footer footer";
 
-#contacto{
-    font-size: 16pt;
-    color: #EBE3D5;
-    font-weight: bold;
-}
+        
+    }
 
-#contacto_descripcion{
-    font-size: 10pt;
-    color: #EBE3D5;
-    font-weight: lighter;
-    width: 252px;
-    height: 134px;
-    padding-top: 15px;
-}
+    .container .sidebar div {
+        background-color: transparent;
+        padding: 0;
+        /* CONTROL DEL ESPACIADO ENTRE LOS ELEMENTOS DE LA SIDEBAR */
+        padding-bottom: 50px;
+    }
 
-#footer_items_2{
-    padding-left: 140px;
-}
-
-#footer_items_3{
-    padding-left: 140px;
-}
-
-#footer_items_4{
-    padding-left: 80px;
-}
-
-#boletin{
-    font-size: 16pt;
-    color: #EBE3D5;
-    font-weight: bold;
-    padding-left: 77px;
-}
-
-#boletin_links{
-    font-size: 10pt;
-    color: #EBE3D5;
-    font-weight: lighter;
-    padding-top: 17px;
-    padding-left: 77px;
-}
-
-#bolsa_trabajo{
-    font-size: 16pt;
-    color: #EBE3D5;
-    font-weight: bold;
-    padding-left: 77px;
-}
-
-#bolsa_trabajo_link{
-    font-size: 10pt;
-    color: #EBE3D5;
-    font-weight: lighter;
-    padding-top: 17px;
-    padding-left: 77px;
-}
-
-#siguenos{
-    font-size: 16pt;
-    color: #EBE3D5;
-    font-weight: bold;
-    padding-left: 77px;
-}
-
-#s_media{
-    padding-left: 77px;
 }
 
 
-#fb_icon{
-    display: inline-flex;
-    padding-top: 17px;
-    padding-left: 14px;
-}
+@media only screen and (max-width: 1180px)  {
 
-#footer_line{
-    width: 85%;
-    height: 1px;
-    background-color: #EBE3D5;
-    border-radius: 25px;
-    margin-left: 8%;
-}
-
-#privacy{
-    margin-left: 41%;
-    display: inline-flex;
-}
-
-#privacy_adv{
-    text-align: center;
-    padding-top: 12px;
-    font-size: 10pt;
-    color: #EBE3D5;
-    font-weight: lighter;
-}
-
-#share{
-    padding-top: 70px;
-    font-weight: bold;
-    font-size: 30px;
-    color: #EBE3D5;
-    width: 164px;
-    padding-left: 17px;
-    height: 50px;
+  /* Force table to not be like tables anymore */
+  .tabla_harinas_hogar, #img_producto, #producto_descripcion { 
+    display: block; 
+  }
+  
+  #img_producto, #producto_descripcion { 
+    /* Behave  like a "row" */
+    border: none;
+    position: relative; 
+    padding-left: 5%; 
+    padding-right: 5%;
+    padding-top: 2%;
+    padding-bottom: 2;
+  }
+  
+  #img_producto:before { 
+    /* Now like a table header */
+    position: absolute;
+    /* Top/left values mimic padding */
+    padding-left: 2px;
+    padding-right: 2px;
+    width: 45%; 
+    padding-right: 10px; 
+    white-space: nowrap;
+  }
+  
+  
 }

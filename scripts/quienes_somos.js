@@ -1,7 +1,7 @@
 function next_ev(){
 	
-
-	if(document.getElementById("text_1988").style.display === "block"){
+    
+	if (document.getElementById("text_1988").style.display === "block"){
 		document.getElementById("text_1988").style.display = "none";
 		document.getElementById("text_1991").style.display="block";
 		document.getElementById("info_ev").style.background = "#08903E";

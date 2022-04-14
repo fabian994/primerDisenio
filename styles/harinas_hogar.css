@@ -4,6 +4,7 @@
     src: url(Montserrat-Regular.otf);
 }
 
+
 *{
     margin: 0%;
     padding: 0%;
@@ -29,6 +30,10 @@ p{
     padding-bottom: 70px;
     color: #EBE3D5;
     border-radius: 14px;
+    border-width: 10px;
+    background: #ffc72c;
+    box-shadow:  50px 50px 100px #665012,
+             -50px -50px 100px #ffff46;
 }
 
 #lineamientos_titulo{

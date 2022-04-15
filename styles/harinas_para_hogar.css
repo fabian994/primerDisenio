@@ -13,6 +13,7 @@
     position: fixed;
     padding: 0;
     margin: 0;
+    z-index: 1000;
 }
 
 body {
@@ -28,13 +29,13 @@ body {
     margin-top: 0;
     display: grid;
     gap: 20px;
-    grid-template-columns: auto;
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, auto);
 
-    grid-template-areas: "header"
-                         "content"
-                         "widget-1"
-                         "footer";
+    grid-template-areas: "header header header"
+                         "content content sidebar"
+                         "widget-1 widget-1 sidebar"
+                         "footer footer footer";
 }
 
 /* CLASES DEL CONTENEDOR - CADA UNA DE ELLAS */
@@ -42,6 +43,7 @@ body {
 .container div, 
 .container .header, 
 .container .content,
+.container .sidebar,
 .container .footer {
     background-color: aliceblue;
     padding: 20px;
@@ -72,11 +74,71 @@ body {
     text-align: justify;
 }
 
+.container .sidebar {
+    grid-column: 3 / 4;
+    background-color: #1E412F;
+    min-height: 100px;
+    grid-area: sidebar;
+}
+
+.container .sidebar h1 {
+    color: #EBE3D5;
+    font-size: 18pt;
+}
+
+.container .sidebar a {
+    color: #E5A73C;
+    text-decoration: none;
+    font-size: 11pt;
+}
+
+.container .sidebar span {
+    margin-right: 10px;
+}
+
+.container .sidebar ul {
+    color: #EBE3D5;
+    font-size: 18pt;
+    list-style: none;
+    /* CONTROL DEL ESPACIADO ENTRE LOS ELEMENTOS DE LA SIDEBAR */
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.container .sidebar ul li {
+    padding-bottom: 15px;
+}
+
+.container .sidebar ul li a {
+    font-size: 18pt;
+}
+
+.container .sidebar .share_buttons li span {
+    font-size: 35pt;
+}
+
+.container .sidebar div {
+    background-color: transparent;
+    padding: 0;
+    /* CONTROL DEL ESPACIADO ENTRE LOS ELEMENTOS DE LA SIDEBAR */
+    padding-bottom: 150px;
+}
+
+.container .sidebar .share_buttons li {
+    display: inline-block;
+}
+
+
 /* WIDGET 1 - SOLO EL PRIMER WIDGET */
 
 .container .widget-1 {
     color: #EBE3D5;
     grid-area: widget-1;
+}
+
+.container .widget-1{
+    background-color: transparent;
 }
 
 .tabla_harinas_hogar{
@@ -273,12 +335,12 @@ body {
     
     .container {
 
-        grid-template-areas: "header"
-                             "content"
-                             "content2"
-                             "widget-1"
-                             "sidebar"
-                             "footer";
+        grid-template-areas: "header header header"
+                             "content content content"
+                             "content2 content2 content2"
+                             "widget-1 widget-1 widget-1"
+                             "sidebar sidebar sidebar"
+                             "footer footer footer";
 
         
     }

@@ -254,7 +254,7 @@ h1{
 .container .widget-1 {
     grid-area: widget-1;
     background-color: #FFC627;
-    color: black;
+    color: #1E412F;
 }
 
 /* WIDGET 2 - SOLO EL SEGUNDO WIDGET */
@@ -275,14 +275,14 @@ h1{
 .container .widget-4 {
     grid-area: widget-4;
     background-color: #FFC627;
-    color: black;
+    color: #1E412F;
    
 }
 
 .container .widget-5 {
     grid-area: widget-5;
     background-color: #FFC627;
-    color: black;
+    color: #1E412F;
    
 }
 
@@ -298,7 +298,7 @@ h1{
 .container .widget-8 {
     grid-area: widget-8; 
     background-color: #FFC627;
-    color: black;
+    color: #1E412F;
    
    
 }

@@ -2,7 +2,17 @@
     font-family: Montserrat;
     src: url(Montserrat-Regular.otf);
 }
-
+img{
+display:block;
+margin:auto;
+}
+h3{
+    color: green;
+    text-align: justify;
+}
+h1{
+    color:whitesmoke;
+}
 * {
     margin: 0;
     padding: 0;
@@ -25,11 +35,14 @@
     display: grid;
     gap: 20px;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, auto);
+    grid-template-rows: repeat(5, auto);
 
     grid-template-areas: "header header header"
                          "content content sidebar"
                          "content2 content2 sidebar"
+                         "widget-1 widget-2 sidebar"
+                         "widget-3 widget-4 sidebar"
+                         "content3 content3 sidebar"
                          "footer footer footer";
 }
 
@@ -39,6 +52,7 @@
 .container .header, 
 .container .content,
 .container .content2,
+.container .content3,
 .container .sidebar, 
 .container .footer{
     background-color: transparent;
@@ -65,10 +79,13 @@
 
 .container .content {
     grid-area: content;
-    background-color: #EBE3D5;
-    color: #1E412F;
+    background-color: #08903E;
+    color: #EBE3D5;
     text-align: justify;
 }
+
+
+
 #lineamientos_titulo{
     text-align: center;
 }
@@ -99,19 +116,53 @@
 
 .container .content2 {
     grid-area: content2;
-   
+    background-color: #EBE3D5;
+    color: #1E412F;
     text-align: justify;
 }
 
 
 .container .content span {
-    
+    color: #1E412F;
+    font-size: 55pt;
+    display: flex;
+    justify-content: center;
+}
+
+.container .content2 span {
+    color: #1E412F;
     font-size: 55pt;
     display: flex;
     justify-content: center;
 }
 
 
+/* CONTENIDO 3 - ENGLOBA EL CONTENIDO TERCIARIO */
+
+.container .content3 {
+    grid-area: content3;
+    color: #1E412F;
+    text-align: justify;
+}
+
+
+.container .content3 span {
+    color: #1E412F;
+    font-size: 55pt;
+    display: flex;
+    justify-content: center;
+}
+
+#seg_box{
+
+    width: 300px;
+    height: auto;
+    background-color:#EED11F;
+    border-radius: 14px;
+    text-align: center;
+    color: black;
+    margin: auto;
+}
 
 /* SIDEBAR - ENGLOBA TODA LA SIDEBAR */
 
@@ -176,9 +227,7 @@
 .container .widget-1, 
 .container .widget-2, 
 .container .widget-3, 
-.container .widget-4, 
-.container .widget-5, 
-.container .widget-6 {
+.container .widget-4 {
 
     background-color: #08903E;
     color: aliceblue;
@@ -189,17 +238,33 @@
 
 }
 
-/* WIDGET 2 y 4 - Formato de color*/
+/* WIDGET 1 - SOLO EL PRIMER WIDGET */
+
+.container .widget-1 {
+    grid-area: widget-1;
+}
+
+/* WIDGET 2 - SOLO EL SEGUNDO WIDGET */
 
 .container .widget-2 {
+    grid-area: widget-2;
     background-color: #FFC627;
     color: black;
-    
 }
-.container .widget-4 {
+
+/* WIDGET 3 - SOLO EL TERCER WIDGET */
+
+.container .widget-3 {
+    grid-area: widget-3;
     background-color: #FFC627;
     color: black;
-    
+}
+
+/* WIDGET 4 - SOLO EL CUARTO WIDGET */
+
+.container .widget-4 {
+    grid-area: widget-4;
+   
 }
 
 
@@ -238,7 +303,6 @@
 .hover_bkgr_fricc_4 > div,
 .hover_bkgr_fricc_5 > div {
     background-color: #FFC72C;
-    color: whitesmoke;
     box-shadow: 10px 10px 60px #555;
     display: inline-block;
     height: auto;
@@ -280,10 +344,10 @@
 .trigger_popup_fricc_4,
 .trigger_popup_fricc_5 {
     cursor: pointer;
-    font-size: 25px;
+    font-size: 30px;
     display: inline-block;
     font-weight: bold;
-    
+    text-decoration-line: underline;
 }
 
 /* FOOTER - ENGLOBA TODO EL FOOTER */
@@ -443,6 +507,11 @@
         grid-template-areas: "header header header"
                              "content content content"
                              "content2 content2 content2"
+                             "widget-1 widget-1 widget-1"
+                             "widget-2 widget-2 widget-2"
+                             "widget-3 widget-3 widget-3"
+                             "widget-4 widget-4 widget-4"
+                             "content3 content3 content3"
                              "sidebar sidebar sidebar"
                              "footer footer footer";
     }
@@ -493,6 +562,3 @@
 
 
 }
-
-
-

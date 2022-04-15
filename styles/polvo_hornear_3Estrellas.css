@@ -3,43 +3,397 @@
     src: url(Montserrat-Regular.otf);
 }
 
-*{
-    margin: 0%;
-    padding: 0%;
+* {
+    margin: 0;
+    padding: 0;
     font-family: Montserrat;
 }
 
-p{
-    font-family: Montserrat;
-    color: white ;
+.menu {
+    position: fixed;
+    padding: 0;
+    margin: 0;
 }
 
-.titulo26{
-    font-family: Montserrat;
-    color: white;
-    font-size: 26pt;
+body {
+    background-color: #F4F4F4;
 }
 
-.body{
-    padding-left: 120px;
-    padding-top: 80px;
-    padding-bottom: 80px;
+/* CONTENEDOR - ENGLOBA TODA LA PAGINA */
+
+.container {
+    width: 95%;
+    padding-top: 100px;
+    margin: 20px auto;
+    margin-top: 0;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
+
+    grid-template-areas: "header header header"
+                         "content content sidebar"
+                         "content2 content2 sidebar"
+                         "widget-1 widget-1 sidebar"
+                         "footer footer footer";
 }
 
-#header_image{
-    background-color: #282936;
-    color: whitesmoke;
+/* CLASES DEL CONTENEDOR - CADA UNA DE ELLAS */
+
+.container div, 
+.container .header, 
+.container .content,
+.container .content2,
+.container .sidebar, 
+.container .footer {
+    background-color: aliceblue;
+    padding: 20px;
+    border-radius: 14px;
+}
+
+/* HEADER DE LA PAGINA */
+
+.container .header {
+    color: aliceblue;
+    grid-area: header;
+    padding: 0px;
+}
+
+/* IMAGEN DEL HEADER */
+
+.container .header #header_image {
     width: 100%;
-    height: 200px;
+    border-radius: 14px;
 }
 
-#nav_bar{
-    width: 400px;
-    height: 1459px;
-    background-color: #519C45;
-    position: absolute;
-    right: 0px;
+/* CONTENIDO - ENGLOBA EL CONTENIDO PRINCIPAL */
+
+.container .content {
+    grid-area: content;
+    background-color: #08903E;
+    color: #EBE3D5;
+    text-align: justify;
 }
+
+/* CONTENIDO 2 - ENGLOBA EL CONTENIDO SECUNDARIO */
+
+.container .content2 {
+    grid-area: content2;
+    background-color: #EBE3D5;
+    color: #1E412F;
+    text-align: justify;
+}
+
+
+.container .content span {
+    color: #EBE3D5;
+    font-size: 55pt;
+    display: flex;
+    justify-content: center;
+}
+
+.container .content2 span {
+    color: #1E412F;
+    font-size: 55pt;
+    display: flex;
+    justify-content: center;
+}
+
+/* SIDEBAR - ENGLOBA TODA LA SIDEBAR */
+
+.container .sidebar {
+    grid-column: 3 / 4;
+    background-color: #1E412F;
+    min-height: 100px;
+    grid-area: sidebar;
+}
+
+.container .sidebar h1 {
+    color: #EBE3D5;
+    font-size: 18pt;
+}
+
+.container .sidebar a {
+    color: #E5A73C;
+    text-decoration: none;
+    font-size: 11pt;
+}
+
+.container .sidebar span {
+    margin-right: 10px;
+}
+
+.container .sidebar ul {
+    color: #EBE3D5;
+    font-size: 18pt;
+    list-style: none;
+    /* CONTROL DEL ESPACIADO ENTRE LOS ELEMENTOS DE LA SIDEBAR */
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+
+}
+
+.container .sidebar ul li {
+    padding-bottom: 15px;
+}
+
+.container .sidebar ul li a {
+    font-size: 18pt;
+}
+
+.container .sidebar div {
+    background-color: transparent;
+    padding: 0;
+    /* CONTROL DEL ESPACIADO ENTRE LOS ELEMENTOS DE LA SIDEBAR */
+    padding-bottom: 262px;
+}
+
+.container .sidebar .share_buttons li {
+    display: inline-block;
+}
+
+.container .sidebar .share_buttons li span{
+    font-size: 35pt;
+}
+
+
+/* WIDGETS - ENGLOBA AMBOS WIDGETS */
+
+.container .widget-1 {
+    background-color: #E5A73C;
+    color: #EBE3D5;
+}
+
+.container .widget-2 {
+    background-color: #08903E;
+    color: #EBE3D5;
+}
+
+/* WIDGET 1 - SOLO EL PRIMER WIDGET */
+
+.container .widget-1 {
+    grid-area: widget-1;
+}
+
+/* WIDGET 2 - SOLO EL SEGUNDO WIDGET */
+
+.container .widget-2 {
+    grid-area: widget-2;
+}
+
+/* FOOTER - ENGLOBA TODO EL FOOTER */
+
+.container .footer {
+    background-color: #324D53;
+    color: #EBE3D5;
+    grid-area: footer;
+}
+
+.container .footer div {
+    padding: 0;
+    background-color: transparent;
+}
+
+.container .footer .contact #contact,
+.container .footer .contact #boletin,
+.container .footer .contact #bolsa_trabajo,
+.container .footer .contact #siguenos {
+    display: inline-flex;
+    font-size: 14pt;
+}
+
+/* -------------------------------------------------------------------------------- */
+
+/* ELEMENTO - CONTACTO */
+
+.container .footer .contact #contact {
+    padding-right: 290px;
+    /* 370 defualt */
+    padding-bottom: 15px;
+}
+
+/* ELEMENTO - TITULO CONTACTO */
+
+.container .footer .contact #contact ul #footer_title {
+    font-size: 17pt;
+    font-weight: bold;
+    list-style: none;
+    padding-bottom: 3px;
+}
+
+
+/* ELEMENTO - INFORMACION CONTACTO */
+
+.container .footer .contact #contact ul li {
+    font-size: 10pt;
+    list-style: none;
+    padding-top: 3px;
+}
+
+/* -------------------------------------------------------------------------------- */
+
+/* ELEMENTO - BOLETIN */
+
+.container .footer .contact #boletin {
+    padding-right: 290px;
+    padding-bottom: 15px;
+}
+
+/* ELEMENTO - TITULO BOLETIN */
+
+.container .footer .contact #boletin ul #footer_title {
+    font-size: 17pt;
+    font-weight: bold;
+    list-style: none;
+    padding-bottom: 3px;
+}
+
+/* ELEMENTO - INFORMACION BOLETIN */
+
+.container .footer .contact #boletin ul li {
+    font-size: 10pt;
+    list-style: none;
+    padding-top: 7px;
+}
+
+.container .footer .contact #boletin ul li a {
+    color: #EBE3D5;
+    text-decoration: none;
+}
+
+/* -------------------------------------------------------------------------------- */
+
+/* ELEMENTO - BOLETIN */
+
+.container .footer .contact #bolsa_trabajo {
+    padding-right: 290px;
+    padding-bottom: 15px;
+}
+
+/* ELEMENTO - TITULO BOLSA DE TRABAJO */
+
+.container .footer .contact #bolsa_trabajo ul #footer_title {
+    font-size: 17pt;
+    font-weight: bold;
+    list-style: none;
+    padding-bottom: 3px;
+}
+
+/* ELEMENTO - INFORMACION BOLSA DE TRABAJO */
+
+.container .footer .contact #bolsa_trabajo ul li {
+    font-size: 10pt;
+    list-style: none;
+    padding-top: 7px;
+}
+
+.container .footer .contact #bolsa_trabajo ul li a {
+    color: #EBE3D5;
+    text-decoration: none;
+}
+
+/* -------------------------------------------------------------------------------- */
+
+/* ELEMENTO - SIGUENOS EN */
+
+.container .footer .contact #siguenos {
+    padding-right: 0px;
+    padding-bottom: 0px;
+}
+
+/* ELEMENTO - TITULO SIGUENOS EN */
+
+.container .footer .contact #siguenos ul #footer_title {
+    font-size: 17pt;
+    font-weight: bold;
+    list-style: none;
+    padding-bottom: 3px;
+}
+
+/* ELEMENTO - INFORMACION SIGUENOS EN */
+
+.container .footer .contact #siguenos ul li {
+    font-size: 10pt;
+    list-style: none;
+    padding-top: 7px;
+}
+
+.container .footer .contact #siguenos ul .share_buttons_footer li {
+    display: inline-block;
+    padding-right: 7px;
+}
+
+.container .footer .contact #siguenos ul li a {
+    color: #EBE3D5;
+    text-decoration: none;
+    font-size: 35pt;
+}
+
+/* MEDIA QUIERY - DISPOSITIVOS CON UN ANCHO MAXIMO DE 768 (1180 op) PIXELES */
+
+@media screen and (max-width: 1180px) {
+    
+    .container {
+
+        grid-template-areas: "header header header"
+                             "content content content"
+                             "content2 content2 content2"
+                             "widget-1 widget-1 widget-1"
+                             "widget-2 widget-2 widget-2"
+                             "sidebar sidebar sidebar"
+                             "footer footer footer";
+
+        
+    }
+
+    .container .sidebar div {
+        background-color: transparent;
+        padding: 0;
+        /* CONTROL DEL ESPACIADO ENTRE LOS ELEMENTOS DE LA SIDEBAR */
+        padding-bottom: 50px;
+    }
+
+}
+
+@media screen and (min-width: 1180px) and (max-width: 1794px){
+
+    .container .footer .contact #contact {
+        padding-right: 160px;
+        /* 370 defualt */
+        padding-bottom: 15px;
+    }
+    .container .footer .contact #boletin {
+        padding-right: 160px;
+        padding-bottom: 15px;
+    }
+    .container .footer .contact #bolsa_trabajo {
+        padding-right: 160px;
+        padding-bottom: 15px;
+    }
+
+
+}
+
+@media screen and (max-width: 1078px) {
+
+    .container .footer .contact #contact {
+        padding-right: 50px;
+        /* 370 defualt */
+        padding-bottom: 15px;
+    }
+    .container .footer .contact #boletin {
+        padding-right: 50px;
+        padding-bottom: 15px;
+    }
+    .container .footer .contact #bolsa_trabajo {
+        padding-right: 50px;
+        padding-bottom: 15px;
+    }
+
+
+}
+
 
 .Harinas_descripcion{
     
@@ -88,8 +442,8 @@ p{
 
 
 #img_producto{
-    width: 200px;
-    border-radius: 25px;
+    text-align: center;
+    vertical-align: middle;
 }
 .Boton_conoceMas{ /*Tiene link a sitio externo tres estrellas */
     background: #519C45;
@@ -107,204 +461,11 @@ p{
     color: #519C45;
 }
 
-
-
-#bm_pdf_download{
-    padding-top: 110px;
-    font-weight: bold;
-    font-size: 30px;
-    color: #EBE3D5;
-    width: 164px;
-    padding-left: 17px;
-    height: 127px;
-}
-
-#bm_pdf_link{
-    width: 247px;
-    height: 25px;
-    padding-top: 4px;
-    font-size: 14px;
-    text-decoration: underline;
-    color: #E5A73C;
-    padding-left: 30px;
-    padding-bottom: 15px;
-}
-
-#line{
-
-    width: 230px;
-    height: 2px;
-    background-color: #EBE3D5;
-    border-radius: 25px;
-    padding-left: 80px;
-}
-
-#bm_receipts_pdf_download{
-
-    padding-top: 70px;
-    font-weight: bold;
-    font-size: 30px;
-    color: #EBE3D5;
-    width: 164px;
-    padding-left: 17px;
-    height: 200px;
-}
-
-#bm_receipts_pdf_link{
-    width: 247px;
-    height: 25px;
-    padding-top: 4px;
-    font-size: 14px;
-    text-decoration: underline;
-    color: #E5A73C;
-    padding-left: 30px;
-    padding-bottom: 15px;
-}
-
-#rel_products{
-    padding-top: 70px;
-    font-weight: bold;
-    font-size: 30px;
-    color: #EBE3D5;
-    width: 164px;
-    padding-left: 17px;
-    height: 100px;
-}
-
-#rel_products_link{
-    width: 247px;
-    height: 25px;
-    padding-top: 4px;
-    font-size: 24px;
-    font-weight: bold;
-    color: #E5A73C;
-    padding-left: 30px;
-    padding-bottom: 60px;
-}
-
-#items{
-    padding-left: 36px;
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
-footer{
-    width: 100%;
-    height: 220px;
-    background-color: #324D53;
-    z-index: 1;
-    position: relative;
-    
-}
 
-#footer_items{
-    padding-top: 25px;
-    padding-left: 31px;
-    height: 150px;
-    display: inline-flex;
-}
-
-#contacto{
-    font-size: 16pt;
-    color: #EBE3D5;
-    font-weight: bold;
-}
-
-#contacto_descripcion{
-    font-size: 10pt;
-    color: #EBE3D5;
-    font-weight: lighter;
-    width: 252px;
-    height: 134px;
-    padding-top: 15px;
-}
-
-#footer_items_2{
-    padding-left: 70px;
-}
-
-#footer_items_3{
-    padding-left: 70px;
-}
-
-#footer_items_4{
-    padding-left: 70px;
-}
-
-#boletin{
-    font-size: 16pt;
-    color: #EBE3D5;
-    font-weight: bold;
-    padding-left: 77px;
-}
-
-#boletin_links{
-    font-size: 10pt;
-    color: #EBE3D5;
-    font-weight: lighter;
-    padding-top: 17px;
-    padding-left: 77px;
-}
-
-#bolsa_trabajo{
-    font-size: 16pt;
-    color: #EBE3D5;
-    font-weight: bold;
-    padding-left: 77px;
-}
-
-#bolsa_trabajo_link{
-    font-size: 10pt;
-    color: #EBE3D5;
-    font-weight: lighter;
-    padding-top: 17px;
-    padding-left: 77px;
-}
-
-#siguenos{
-    font-size: 16pt;
-    color: #EBE3D5;
-    font-weight: bold;
-    padding-left: 77px;
-}
-
-#s_media{
-    padding-left: 77px;
-}
-
-
-#fb_icon{
-    display: inline-flex;
-    padding-top: 17px;
-    padding-left: 14px;
-}
-
-#footer_line{
-    width: 1150px;
-    height: 1px;
-    background-color: #EBE3D5;
-    border-radius: 25px;
-    margin-left: 80px;
-}
-
-#privacy{
-    margin-left: 500px;
-    display: inline-flex;
-}
-
-#privacy_adv{
-    text-align: center;
-    padding-top: 12px;
-    font-size: 10pt;
-    color: #EBE3D5;
-    font-weight: lighter;
-}
-
-#share{
-    padding-top: 70px;
-    font-weight: bold;
-    font-size: 30px;
-    color: #EBE3D5;
-    width: 164px;
-    padding-left: 17px;
-    height: 50px;
-}

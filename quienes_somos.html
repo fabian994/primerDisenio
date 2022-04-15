@@ -1,40 +1,80 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta charset = "UTF-8">
-    <meta http-equiv = "X-UA-Compatible" content = "IE=edge">
-    <meta name = "viewport" content = "width = device-width, height = device-height, initial-scale = 1.0, minimum-scale = 1.0">
-    <link rel="stylesheet" href="styles/estilos_der.css" type="text/css">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href = "styles/quienes_somos.css" rel = "stylesheet">
+    <link href = "styles/menu.css" rel = "stylesheet">
+    <link href = "styles/icons/fonts.css" rel = "stylesheet">
+
+    <script src = "scripts/jquery-latest.js"></script>
+    <script src = "scripts/encabezado.js"></script>
     <script src="scripts/quienes_somos.js" type = "text/JavaScript"></script>
-     <title>¿Quienes somos?</title>
-  </head>
 
+    <title>¿Quienes somos?</title>
+</head>
+<body>
 
-
-  <body >
-   <div>
-        <img id = "header_image" src = "imagenes/bread_banner.jpg">
+    <header class = "menu">
+    <div class = "menu_bar">
+      <a href = "#" class = "b_menu"><span class = "icon-menu"></span> Pirineos </a>
     </div>
 
-    <div class ="container">
+    <nav>
 
-        <div class = "body">
+      <ul>
 
-            <p><font class="titulos"><b>¿Quíenes somos?</b></font></p>
-            <br>
-            <div id = "deriv_descripcion" >
-                <p><font >Harinera Los Pirineos, filial de Grupo La Moderna, es el molino más grande de México en la producción harinas preparadas para consumo en el hogar e industrial y uno de los compradores más importantes de la producción de trigo en México.</font></p>
-             </div>
+        <li><a href = "inicio.html"><span class = "icon-home"></span> Inicio </a></li>
+        
+        <li class = "submenu">
+
+          <a href = "#"><span class = "icon-shop"></span> Nuestros Productos <span class = "slide_icon icon-chevron-down"></span></a>
+          <ul class = "children">
+            <li><a href="harinas_trigo.html"> Harinas de Trigo <span class = "icon-bowl"></span> </a></li>
+            <li><a href="#"> Harinas para el Hogar <span class = "icon-bowl"></span> </a></li>
+            <li><a href="#"> Harinas Preparadas Tres Estrellas <span class = "icon-bowl"></span> </a></li>
+            <li><a href="#"> Polvo para Hornear Tres Estrellas <span class = "icon-bowl"></span> </a></li>
+            <li><a href="mejorante_rendimix.html"> Mejorantes RendiMix <span class = "icon-bowl"></span> </a></li>
+            <li><a href="#"> Derivados del Trigo <span class = "icon-bowl"></span> </a></li>
+          </ul>
+
+        </li>
+
+        <li><a href = "#"><span class = "icon-open-book"></span> Recetarios </a></li>
+        <li><a href = "#"><span class = "icon-tools"></span> Servicio Tecnico </a></li>
+        <li><a href = "#"><span class = "icon-typing"></span> Contacto </a></li>
+
+      </ul>
+    </nav>
+  </header>
+    
+
+    <div class = "container">
+
+        <header class = "header">
+
+            <img id = "header_image" src = "imagenes/bread_banner.jpg">
+
+        </header>
+
+        
+
+        <main class = "content">
+            <h2 id = "lineamientos_titulo">¿QUÍENES SOMOS?<br><br> </h2>
+            <p id = "lineamientos_descripcion">
+                    Harinera Los Pirineos, filial de Grupo La Moderna, es el molino más grande de México en la producción harinas preparadas para consumo en el hogar e industrial y uno de los compradores más importantes de la producción de trigo en México.
+
+            </p>
+
             <br><br>
 
+        </main>
+        <main class = "content2">
+             <h2 id = "lineamientos_titulo"> Evolución<br><br> </h2>
 
-
-          <div class="tabla_prod">
-                   <div id="fila_ev">
-                    <div id="celda_ev"><h2>Evolucion</h2></div>
-                    <input type="button" name="last" value=" < " onClick="last_ev()" id="boton_1">
-                    <div  id="info_ev" >
+                    <div  >
                         <div id="text_1988" style="display:block;"><p>1988 grupo TABLEX adquiere los activos de la Sociedad Molinos y Campesinos S.A. de C.V., nace así Harinera Los Pirineos, S.A. de C.V.</p></div>
                         <p id="text_1991" style="display:none">1991 Se construye la bodega de Abasolo, Gto., Zona de alta producción de trigo en el Bajío.</p>
                         <p id="text_1996" style="display:none">1996 Grupo La Moderna adquiere La Montaña, S.A. de C.V. ubicada en Irapuato, Gto.</p>
@@ -55,234 +95,261 @@
                         <p id="text_2020" style="display:none">2020 Se instala la planta de ósmosis inversa en planta Salamanca, para el tratamiento de agua proceso.</p>
                   
                     </div>
-                     <input type="button" name="next" value=" > " onClick="next_ev()" id="boton_2">
+                    <a class="boton" name="next" style="float: right;" onclick="next_ev()">></a>
+                    <a class="boton" name="last" onclick="last_ev()"><</a>
+        </main>    
+
+        
+
+             <div class="widget-1">
+                <a class="trigger_popup_fricc">Misión</a>
+
+            </div>
+            <section class="hover_bkgr_fricc">
+                <span class="helper"></span>
+                <div>
+                    <a class="popupCloseButton">&times;</a>
+                        <p id="lineamientos_descripcion" style="text-align: justify;">
+                            Fabricar y comercializar con un enfoque de solución integral, productos y servicios rentables de alto valor agregado para satisfacer el gusto de nuestros consumidores y éxito de nuestros clientes internos y externos.
+                        </p><br>
+                        
                 </div>
-                
-
-
-          </div>
-          <br><br>
-          <br>
-
-          <div class="cuadro_carac">
-             <div id="fila_carac">
-                  <div id="titulo_ap"><h2>Misión</h2></div>
-                  <div id="info_ap"><p>Fabricar y comercializar con un enfoque de solución integral, productos y servicios rentables de alto valor agregado para satisfacer el gusto de nuestros consumidores y éxito de nuestros clientes internos y externos.</p></div>
-              </div>
-              <div id="fila_carac">
-                  <div id="titulo_ap_am"><h1>Visión</h1></div>
-                  <div id="info_ap"><p>Satisfacer las necesidades de nuestros clientes por medio del desarrollo de nuestro personal, la mejora de nuestros procesos y productos conforme a los estándares nacionales e internacionales de legalidad, calidad e inocuidad..</p></div>
-              </div>
-
-              <div id="fila_carac">
-                  <div id="titulo_ap"><h2>Política de calidad</h2></div>
-                  <div id="info_ap"><p>Posicionar el Ferropuerto como un centro de soluciones logísticas y ser el molino de trigo líder en la producción de harinas preparadas para el hogar y subproductos grado alimenticio de alto valor agregado.</p></div>
-              </div>
-
-              <div id="fila_carac">
-                  <div id="titulo_ap_am"><h1>Valores</h1></div>
-                  <div id="info_ap"><p>Nuestro compromiso es siempre respaldar lo que decidimos y hacemos.</p></div>
-              </div>
-              
-              <font size="4" color="#FFC627" ><p>- Trabajo:</p></font>
-              <p>Sin trabajo no hay resultado. Cada deber cumplido es un paso hacia el éxito, la prosperidad y la felicidad. </p>
-              
-              <font size="4" color="#FFC627"><p>- Administración:</p></font>
-              <p>Los recursos bien aprovechados se convierten en objetivos alcanzados.</p>
-              
-              <font size="4" color="#FFC627" ><p>- Buena Fe:</p></font>
-              <p>Confiar en nuestros clientes, proveedores y colaboradores, en su palabra y el cumplimiento de la misma, para cosechar mejores resultados.</p>
-              
-              <font size="4" color="#FFC627" ><p>- Lealtad:</p></font>
-              <p>Mantenemos un compromiso con nuestros clientes, proveedores, colaboradores y amigos, porque son parte de nuestro éxito, así como con las convicciones e ideales que nos sostienen.</p>
-
-              <font size="4" color="#FFC627" ><p>- Excelencia:</p></font>
-              <p>Desarrollamos nuestras labores con calidad total a la primera para tener el mejor resultado. Y si algo puede mejorarse, lo mejoramos.</p>
-
-              <font size="4" color="#FFC627"><p>- Humildad:</p></font>
-              <p>La contribución de cada persona es valiosa y fortalece a la empresa sin importar puestos o jerarquías.</p>
-              
-              <br><br><br>
-
-              <p><font class="titulos" ><b>Segmentos de mercado</b></font></p>
-              <br>
-               <dl id = "catalogo_tabla">
-                  <dt id="seg_box"> 1- Harinas de trigo </dt>
-                  <br>
-                  <dt id="seg_box"> 2- Harinas preparadas </dt>
-                  <br>
-                  <dt id="seg_box"> 3- Mejorantes para panificación </dt>
-                  <br>
-                  <dt id="seg_box"> 4- Polvo para hornear </dt>
-                  <br>
-                  <dt id="seg_box"> 5- Derivados de trigo </dt>
-                  <br>
-                  <dt id="seg_box"> 6- Harinas para el Hogar </dt>   
-                </dl>
-
-
-              <br><br><br>
-            <div  id = "deriv_descripcion" >
-               <p>Nuestras líneas de producción de alta tecnología y capacidad pueden entregar producto terminado en cualquier presentación desde 50gr hasta supersacos de 1 tonelada.La fabricación de nuestras harinas se realiza en equipos de la más alta tecnología que nos permiten el cumplimiento de los más altos estándares internacionales de calidad, inocuidad, seguridad, legalidad y autenticidad. (Logotipos BRCGS, C-TPAT, FDA / FSMA, CRESE, Kosher).</p>
-             </div>
-             <br><br><br>
-            
-          </div>
-              
-
-        </div>
-    <div id = "nav_bar">
-
-        <div id = "items">
-
-            <div id = "nav_items_1">
-
-                <p id = "bm_pdf_download"> Descarga el PDF de derivados </p>
-                <a href = "images/pirineos_logo.png" title = "Derivados_trigo_PDF" target = "_blank">
-                    <p id = "bm_pdf_link"> > Descargar PDF </p>
-                </a>
-
-                <p id = "line"></p>
-
-            </div>
-
-            <div id = "nav_items_2">
-
-                <p id = "bm_receipts_pdf_download"> Descarga Nuestras Mejores Recetas con derivados de trigo </p>
-                <a href = "images/pirineos_logo.png" title = "erivados_trigo_Recepits_PDF" target = "_blank">
-                    <p id = "bm_receipts_pdf_link"> > Descargar PDF de Recetas </p>
-                </a>
-
-                <p id = "line"></p>
-
-            </div>
-
-            <div id = "nav_items_3">
-
-                <p id = "rel_products"> Productos Relacionados </p>
-                <a href = "images/pirineos_logo.png" title = "Bakery_Mix_Recepits_PDF" style = "text-decoration: none;" target = "_blank">
-                    <p id = "rel_products_link"> Producto 1 </p>
-                </a>
-
-                <a href = "images/pirineos_logo.png" title = "Bakery_Mix_Recepits_PDF" style = "text-decoration: none;" target = "_blank">
-                    <p id = "rel_products_link"> Producto 2 </p>
-                </a>
-
-                <p id = "line"></p>
-
-            </div>
-
-            <div id = "nav_items_4">
-
-                <p id = "share"> Compartir: </p>
-
-                <div id = "s_media_share">
-
-                    <a href="imagenes/1.txt" target = "_blank" style="text-decoration: none;">
-                        <img id = "fb_icon" src = "imagenes/facebook.png">
-                    </a>
-
-                    <a href="imagenes/1.txt" target = "_blank" style="text-decoration: none;">
-                        <img id = "fb_icon" src = "imagenes/twitter.png">
-                    </a>
-
-                    <a href="imagenes/1.txt" target = "_blank" style="text-decoration: none;">
-                        <img id = "fb_icon" src = "imagenes/instagram.png">
-                    </a>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-
-  </div>
-
- <div class = "foot_con">
-
-        <div id = "footer_items">
-
-            <div id = "footer_items_1">
-                <p id = "contacto"> Contacto </p>
-                <p id = "contacto_descripcion">
-                    Tel: 00 (000) 000 0000 <br><br>
-                    Carretera Panamericana  - Km.11
-                    Tramo Salamanca - Celaya
-                    Col. Emiliano Zapata C.P 36770
-                    Salamanca, Guanajuato
-                </p>
-            </div>
-
-            <div id = "footer_items_2">
-                <p id = "boletin"> Boletin </p>
-
-                <a href="imagenes/1.txt" target = "_blank" style="text-decoration: none;">
-                    <p id = "boletin_links"> Aviso de Privacidad </p>
-                </a>
-
-                <a href="imagenes/2.txt" style="text-decoration: none;">
-                    <p id = "boletin_links"> Encuentra a tu distribuidor </p>
-                </a>
-
-                <a href="imagenes/3.txt" style="text-decoration: none;">
-                    <p id = "boletin_links"> FAQ </p>
-                </a>
-
-            </div>
-
-            <div id = "footer_items_3">
-                <p id = "bolsa_trabajo"> Bolsa de Trabajo </p>
-
-                <a href="imagenes/1.txt" target = "_blank" style="text-decoration: none;">
-                    <p id = "bolsa_trabajo_link"> Integrate a Nuestro Equipo </p>
-                </a>
-
-            </div>
-
-            <div id = "footer_items_4">
-                <p id = "siguenos"> Siguenos en: </p>
-
-                <div id = "s_media">
-
-                    <a href="imagenes/1.txt" target = "_blank" style="text-decoration: none;">
-                        <img id = "fb_icon" src = "imagenes/facebook.png">
-                    </a>
-
-                    <a href="imagenes/1.txt" target = "_blank" style="text-decoration: none;">
-                        <img id = "fb_icon" src = "imagenes/twitter.png">
-                    </a>
-
-                    <a href="imagenes/1.txt" target = "_blank" style="text-decoration: none;">
-                        <img id = "fb_icon" src = "imagenes/instagram.png">
-                    </a>
-
-                </div>
-
-            </div>
-
-        </div>
-
-        <hr style = "width: 90.5%;
-                    margin-left: 2.5%;
-                    margin-top: 15px;">
-
-        <div id = "privacy">
-            <a href="imagenes/1.txt" target = "_blank" style="text-decoration: none;">
-                <p id = "privacy_adv"> Politica de Privacidad</p>
-            </a>
-
-            <p id = "privacy_adv"> &nbsp; &nbsp; | &nbsp; &nbsp;</p>
-
-            <a href="imagenes/1.txt" target = "_blank" style="text-decoration: none;">
-                <p id = "privacy_adv"> La Moderna® </p>
-            </a>
-        </div>
-
-    </div>
+            </section>
  
+            <div class="widget-2">
+                <a class="trigger_popup_fricc_1">Visión</a>
+            </div>
 
- </body>
-  </html>
+            <section class="hover_bkgr_fricc_1">
+                <span class="helper_1"></span>
+                <div>
+                    <a class="popupCloseButton_1">&times;</a>
+                            <p id="lineamientos_descripcion" style="text-align: justify;">
+                                Satisfacer las necesidades de nuestros clientes por medio del desarrollo de nuestro personal, la mejora de nuestros procesos y productos conforme a los estándares nacionales e internacionales de legalidad, calidad e inocuidad.
+                            </p><br>
+                            
+                </div>
+            </section>
+
+
+            <div class="widget-3">
+                <a class="trigger_popup_fricc_2">Política de calidad</a>
+            </div>
+
+            <section class="hover_bkgr_fricc_2">
+                <span class="helper_2"></span>
+                <div>
+                    <a class="popupCloseButton_2">&times;</a>
+                            <p id="lineamientos_descripcion" style="text-align: justify;">
+                               Posicionar el Ferropuerto como un centro de soluciones logísticas y ser el molino de trigo líder en la producción de harinas preparadas para el hogar y subproductos grado alimenticio de alto valor agregado.
+                            </p><br>
+                           
+                </div>
+            </section>
+
+            <div class="widget-4">
+                <a class="trigger_popup_fricc_3">Valores</a>
+
+            </div>
+
+            <section class="hover_bkgr_fricc_3">
+                <span class="helper_3"></span>
+                <div>
+                    <a class="popupCloseButton_3">&times;</a>
+                            <h1> Nuestro compromiso es siempre respaldar lo que decidimos y hacemos.</h1><br><br>
+                            <h3> - Trabajo:</h3>
+                            <p id="lineamientos_descripcion" style="text-align: justify;">
+                                Sin trabajo no hay resultado. Cada deber cumplido es un paso hacia el éxito, la prosperidad y la felicidad.
+                            </p><br><br>
+                            <h3> - Administración:</h3>
+                            <p id="lineamientos_descripcion" style="text-align: justify;">
+                                os recursos bien aprovechados se convierten en objetivos alcanzados.
+                            </p><br><br>
+                            <h3> - Buena Fe:</h3>
+                            <p id="lineamientos_descripcion" style="text-align: justify;">
+                                Confiar en nuestros clientes, proveedores y colaboradores, en su palabra y el cumplimiento de la misma, para cosechar mejores resultados.
+                            </p><br><br>
+                            <h3> - Lealtad:</h3>
+                            <p id="lineamientos_descripcion" style="text-align: justify;">
+                                Mantenemos un compromiso con nuestros clientes, proveedores, colaboradores y amigos, porque son parte de nuestro éxito, así como con las convicciones e ideales que nos sostienen.
+                            </p><br><br>
+                            <h3> - Excelencia:</h3>
+                            <p id="lineamientos_descripcion" style="text-align: justify;">
+                                Desarrollamos nuestras labores con calidad total a la primera para tener el mejor resultado. Y si algo puede mejorarse, lo mejoramos.
+                            </p><br><br>
+                            <h3> - Humildad:</h3>
+                            <p id="lineamientos_descripcion" style="text-align: justify;">
+                                La contribución de cada persona es valiosa y fortalece a la empresa sin importar puestos o jerarquías.
+                            </p><br><br>
+
+                            
+                </div>
+            </section>
+
+            <main class = "content3">
+                <br><br>
+            <h2 id = "lineamientos_titulo">SEGMENTOS DE MERCADO<br><br> </h2>
+
+                  <div id="seg_box"> 1- Harinas de trigo </div>
+                  <br>
+                  <div id="seg_box"> 2- Harinas preparadas </div>
+                  <br>
+                  <div id="seg_box"> 3- Mejorantes para panificación </div>
+                  <br>
+                  <div id="seg_box"> 4- Polvo para hornear </div>
+                  <br>
+                  <div id="seg_box"> 5- Derivados de trigo </div>
+                  <br>
+                  <div id="seg_box"> 6- Harinas para el Hogar </div>   
+          
+
+
+              <br><br><br>
+            <p id = "lineamientos_descripcion">
+                    Nuestras líneas de producción de alta tecnología y capacidad pueden entregar producto terminado en cualquier presentación desde 50gr hasta supersacos de 1 tonelada.La fabricación de nuestras harinas se realiza en equipos de la más alta tecnología que nos permiten el cumplimiento de los más altos estándares internacionales de calidad, inocuidad, seguridad, legalidad y autenticidad. (Logotipos BRCGS, C-TPAT, FDA / FSMA, CRESE, Kosher).
+
+            </p>
+
+            <br><br>
+
+        </main>
+        
+            
+            
+        
+        
+
+        <aside class = "sidebar">
+
+            <!-- LINK 1 -->
+
+            <div>
+                
+                <h1> Descarga el PDF de Bakery Mix ® </h1>
+                
+                <br>
+                
+                <a href = "#"><span class = "icon-download"></span> Descargar PDF </a>
+
+            </div>
+
+            
+
+            <!-- LINK 2 -->
+
+            <div>
+
+                <h1> Descarga Nuestras Mejores Recetas con Bakery Mix ® </h1>
+                
+                <br>
+                
+                <a href = "#"><span class = "icon-download"></span> Descargar PDF </a>
+            
+            </div>
+
+            
+
+            <!-- LINK 3 -->
+
+            <div>
+                
+                <h1> Productos Relacionados </h1>
+                
+                <br>
+                
+                <ul>
+                    <li><a href = "#"><span class = "icon-bowl"></span> Product-1 </a></li>
+                    <li><a href = "#"><span class = "icon-bowl"></span> Product-1 </a></li>
+                </ul>
+            
+            </div>
+
+
+            <!-- LINK 4 -->
+
+            <h1> Compartir </h1>
+
+            <br>
+
+            <ul class = "share_buttons">
+                <li><a href = "https://www.facebook.com/sharer/sharer.php?u=https://www.lamoderna.com.mx" target = "_blank"><span class = "icon-facebook-with-circle"></span></a></li>
+                <li><a href = "https://www.facebook.com/sharer/sharer.php?u=https://www.lamoderna.com.mx" target = "_blank"><span class = "icon-instagram-with-circle"></span></a></li>
+                <li><a href = "https://www.facebook.com/sharer/sharer.php?u=https://www.lamoderna.com.mx" target = "_blank"><span class = "icon-twitter-with-circle"></span></a></li>
+            </ul>
+
+            
+
+
+        </aside>
+
+
+        <footer class = "footer">
+            <div class = "contact">
+
+                <ul>
+                    <li id = "contact">                    
+
+                        <ul>
+                            <li id = "footer_title"> Contacto </li>
+                            <li> Tel. 01 (800) 147 4444 </li>
+                            <li> <br> 
+                                 Carretera Panamericana Km. 11      <br>
+                                 Tramo Salamanca - Celaya,          <br>
+                                 Col. Emiliano Zapata. C.P. 36770   <br> 
+                                 Salamanca Guanajuato </li>
+                        </ul>
+
+                    </li>
+
+                    <li id = "boletin">
+
+                        <ul>
+                            <li id = "footer_title"> Boletín </li>
+
+                            <li><a href = "#"><span class = "icon-download"></span> Aviso de Prvacidad </a></li>
+                            <li><a href = "#"><span class = "icon-network"></span> Encuentra Tu Distribuidor </a></li>
+                            <li><a href = "#"><span class = "icon-info"></span> FAQ </a></li>
+                            
+                        </ul>
+
+                    </li>
+                    
+                    <li id = "bolsa_trabajo">
+
+                        <ul>
+                            <li id = "footer_title"> Bolsa de Trabajo </li>
+
+                            <li><a href = "#"><span class = "icon-man"></span> Integrate a Nuestro Equipo </a></li>
+                            
+                        </ul>
+
+                    </li>
+
+                    <li id = "siguenos">
+
+                        <ul>
+                            <li id = "footer_title"> Siguenos </li>
+
+                            <ul class = "share_buttons_footer">
+
+                                <li><a href = "#"><span class = "icon-facebook-with-circle"></span></a></li>
+                                <li><a href = "#"><span class = "icon-instagram-with-circle"></span></a></li>
+                                <li><a href = "#"><span class = "icon-twitter-with-circle"></span></a></li>
+
+                            </ul>
+                            
+                        </ul>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </footer>
+
+    </div>
+
+
+</body>
+</html>

@@ -1,241 +1,294 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta charset="utf-8">
-    <meta charset = "UTF-8">
-    <meta http-equiv = "X-UA-Compatible" content = "IE=edge">
-    <meta name = "viewport" content = "width = device-width, height = device-height, initial-scale = 1.0, minimum-scale = 1.0">
-    <link rel="stylesheet" href="styles/estilos_der.css" type="text/css">
-     <title>Derivados</title>
+    <link href = "styles/derivados_2.css" rel = "stylesheet">
+    <link href = "styles/menu.css" rel = "stylesheet">
+    <link href = "styles/icons/fonts.css" rel = "stylesheet">
 
+    <script src = "scripts/jquery-latest.js"></script>
+	<script src = "scripts/encabezado.js"></script>
+    <script src = "scripts/harinas_trigo.js"></script>
 
-  </head>
-  <body >
-     <div>
-        <img id = "header_image" src = "imagenes/bread_banner.jpg">
-    </div>
-    <div class ="container">
+    <title> Derivados </title>
+</head>
+<body>
 
-        <div class = "body">
-
-            <p><font class="titulos"><b>Derivados de trigo</b></font></p>
-            <br>
-            <div id = "deriv_descripcion" >
-                <p><font >Harinera Los Pirineos ofrece un amplio portafolio de derivados de trigo con valor agregado para diferentes usos, abarcando desde grado alimenticio para consumo humano hasta uso forrajero.</font></p>
-             </div>
-            <br><br>
+    <header class = "menu">
+		<div class = "menu_bar">
+			<a href = "#" class = "b_menu"><span class = "icon-menu"></span> Pirineos </a>
+		</div>
 
 
+		<!-- <span class = "img_banner">
+			<img src = "imagenes/pirineos_logo.png">
+		</span> -->
 
-            <div class="tabla_prod">
+		<nav>
 
-               <div id="fila_tabla">
-                    <div id="celda_imagen"><img id = "tabla_image" src = "imagenes/harina_modena.jpeg"></div>
-                    <div  id="info_tabla_am" >
-                        <h2>Granillo de trigo</h2>
-                        <p><font  size="2">Producto con alto contenido de fibra en forma granular de color café rojizo, amarillo y blanco cremoso,obtenido a partir de trigos enteros, –suaves o fuertes-, limpios y sanos de origen nacional, por medio de procesos de trituración, compresión y separación en los que se dividen los diferentes componentes por tamaño de partícula para conseguir el Granillo de trigo. Contiene harinas de trigo, salvado y germen de trigo propios del proceso.</font></p>
-                    </div>
-                </div>
-                <br><br>
+			<ul>
 
-                <div id="fila_tabla">
-                    <div  id="info_tabla" >
-                        <h2>Germen de trigo</h2>
-                        <p><font size="2">Producto en forma de hojuelas color amarillo y café, obtenido a partir de trigos enteros, -suaves y fuertes-,limpios y sanos de variedades de trigo de origen nacional e importados, por medio de procesos de trituración,compresión y separación, en los que se obtiene, casi en su totalidad, el Germen de trigo, seleccionado por el tamaño de partículas, y que es sometido a los tratamientos necesarios para cumplir con las legislaciones para consumo humano, contiene partículas de harina de trigo propias del mismo proceso. Es un alimento muy rico y beneficioso para el organismo.</font></p>
-                    </div>
-                    <div id="celda_imagen"><img id = "tabla_image" src = "imagenes/harina_modena.jpeg"></div>
-                </div>
-                <br><br>
+				<li><a href = "inicio.html"><span class = "icon-home"></span> Inicio </a></li>
+				
+				<li class = "submenu">
 
-                <div id="fila_tabla">
-                    <div id="celda_imagen"><img id = "tabla_image" src = "imagenes/harina_modena.jpeg"></div>
-                    <div  id="info_tabla_am" >
-                        <h2 >Salvado de trigo sanitizado</h2>
-                        <p><font size="2">Producto con alto contenido de fibra en forma de hojuelas de color café rojizo, obtenido a partir de trigos enteros, –suaves o fuertes-, limpios y sanos de origen nacional e importados. Para el consumo humano, se obtiene por medio de procesos de trituración, compresión y separación. Es un alimento rico en nutrientes y minerales esenciales para la salud.Es una de las fuentes más ricas en fibra dietética insoluble, la cual disminuye el riesgo de enfermedades del corazón, cáncer de colon, divertículos y obesidad.</font></p>
-                    </div>
-                </div>
-                <br><br>
+					<a href = "#"><span class = "icon-shop"></span> Nuestros Productos <span class = "slide_icon icon-chevron-down"></span></a>
+					<ul class = "children">
+						<li><a href="harinas_trigo.html"> Harinas de Trigo <span class = "icon-bowl"></span> </a></li>
+						<li><a href="#"> Harinas para el Hogar <span class = "icon-bowl"></span> </a></li>
+						<li><a href="#"> Harinas Preparadas Tres Estrellas <span class = "icon-bowl"></span> </a></li>
+						<li><a href="#"> Polvo para Hornear Tres Estrellas <span class = "icon-bowl"></span> </a></li>
+						<li><a href="mejorante_rendimix.html"> Mejorantes RendiMix <span class = "icon-bowl"></span> </a></li>
+						<li><a href="#"> Derivados del Trigo <span class = "icon-bowl"></span> </a></li>
+					</ul>
 
-                 <div id="fila_tabla">
-                    <div  id="info_tabla" >
-                        <h2>Salvado de trigo (uso forrajero)</h2>
-                        <p><font size="2">Producto con alto contenido de fibra en forma granular donde prevalecen los colores café, amarillo y blanco cremoso, obtenido a partir de trigos enteros, -suaves o fuertes- limpios y sanos, de origen nacional, por medio de procesos de trituración, compresión y separación en los que se separa casi en su totalidad el salvadillo de trigo por tamaño de partículas. Es un complemento importante en la alimentación animal ya que contiene un alto porcentaje de proteína y es una fuente de energía.</font></p>
-                    </div>
-                    <div id="celda_imagen"><img id = "tabla_image" src = "imagenes/harina_modena.jpeg"></div>
-                </div>
-                <br><br>
+				</li>
 
-                 <div id="fila_tabla">
-                    <div id="celda_imagen"><img id = "tabla_image" src = "imagenes/harina_modena.jpeg"></div>
-                    <div  id="info_tabla_am" >
-                        <h2>Trigo</h2>
-                        <p><font  size="2">Producto con alto contenido de fibra en forma de hojuelas color café rojizo, obtenido a partir de trigos enteros,suaves o fuertes-, limpios y sanos de origen nacional e importados. Para el consumo humano, se obtiene en el inicio de la molienda, donde es abierto y laminado.</font></p>
-                    </div>
-                </div>
-                <br><br>
-                <br><br>
-                <br><br>
+				<li><a href = "#"><span class = "icon-open-book"></span> Recetarios </a></li>
+				<li><a href = "#"><span class = "icon-tools"></span> Servicio Tecnico </a></li>
+				<li><a href = "#"><span class = "icon-typing"></span> Contacto </a></li>
 
-
-            </div>
-            
-
-        </div>
-    <div id = "nav_bar">
-
-        <div id = "items">
-
-            <div id = "nav_items_1">
-
-                <p id = "bm_pdf_download"> Descarga el PDF de derivados </p>
-                <a href = "images/pirineos_logo.png" title = "Derivados_trigo_PDF" target = "_blank">
-                    <p id = "bm_pdf_link"> > Descargar PDF </p>
-                </a>
-
-                <p id = "line"></p>
-
-            </div>
-
-            <div id = "nav_items_2">
-
-                <p id = "bm_receipts_pdf_download"> Descarga Nuestras Mejores Recetas con derivados de trigo </p>
-                <a href = "images/pirineos_logo.png" title = "erivados_trigo_Recepits_PDF" target = "_blank">
-                    <p id = "bm_receipts_pdf_link"> > Descargar PDF de Recetas </p>
-                </a>
-
-                <p id = "line"></p>
-
-            </div>
-
-            <div id = "nav_items_3">
-
-                <p id = "rel_products"> Productos Relacionados </p>
-                <a href = "images/pirineos_logo.png" title = "Bakery_Mix_Recepits_PDF" style = "text-decoration: none;" target = "_blank">
-                    <p id = "rel_products_link"> Producto 1 </p>
-                </a>
-
-                <a href = "images/pirineos_logo.png" title = "Bakery_Mix_Recepits_PDF" style = "text-decoration: none;" target = "_blank">
-                    <p id = "rel_products_link"> Producto 2 </p>
-                </a>
-
-                <p id = "line"></p>
-
-            </div>
-
-            <div id = "nav_items_4">
-
-                <p id = "share"> Compartir: </p>
-
-                <div id = "s_media_share">
-
-                    <a href="imagenes/1.txt" target = "_blank" style="text-decoration: none;">
-                        <img id = "fb_icon" src = "imagenes/facebook.png">
-                    </a>
-
-                    <a href="imagenes/1.txt" target = "_blank" style="text-decoration: none;">
-                        <img id = "fb_icon" src = "imagenes/twitter.png">
-                    </a>
-
-                    <a href="imagenes/1.txt" target = "_blank" style="text-decoration: none;">
-                        <img id = "fb_icon" src = "imagenes/instagram.png">
-                    </a>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
+			</ul>
+		</nav>
+	</header>
     
 
+    <div class = "container">
 
-  </div>
+        <header class = "header">
 
- <div class = "foot_con">
+            <img id = "header_image" src = "imagenes/bread_banner.jpg">
 
-    <section id = "footer_items">
+        </header>
 
-        <section id = "footer_items_1">
-            <p id = "contacto"> Contacto </p>
-            <p id = "contacto_descripcion">
-                Tel: 00 (000) 000 0000 <br><br>
-                Carretera Panamericana  - Km.11
-                Tramo Salamanca - Celaya
-                Col. Emiliano Zapata C.P 36770
-                Salamanca, Guanajuato
+        
+
+        <main class = "content">
+            <h2 id = "lineamientos_titulo">DERIVADOS DE TRIGO<br><br> </h2>
+            <p id = "lineamientos_descripcion">
+                    Producto con alto contenido de fibra en forma granular de color café rojizo, amarillo y blanco cremoso,obtenido a partir de trigos enteros, –suaves o fuertes-, limpios y sanos de origen nacional, por medio de procesos de trituración, compresión y separación en los que se dividen los diferentes componentes por tamaño de partícula para conseguir el Granillo de trigo. Contiene harinas de trigo, salvado y germen de trigo propios del proceso.
+
             </p>
-        </section>
 
-        <section id = "footer_items_2">
-            <p id = "boletin"> Boletin </p>
+            <br><br>
 
-            <a href="imagenes/1.txt" target = "_blank" style="text-decoration: none;">
-                <p id = "boletin_links"> Aviso de Privacidad </p>
-            </a>
+            <span class = "icon-bowl"></span>
 
-            <a href="imagenes/2.txt" style="text-decoration: none;">
-                <p id = "boletin_links"> Encuentra a tu distribuidor </p>
-            </a>
+        </main>
+        <main class = "content2">
+             <div class="widget-1">
+                <a class="trigger_popup_fricc">Granillo de trigo</a>
+            </div>
+            <section class="hover_bkgr_fricc">
+                <span class="helper"></span>
+                <div>
+                    <a class="popupCloseButton">&times;</a>
+                        <p id="lineamientos_descripcion" style="text-align: justify;">
+                            Producto con alto contenido de fibra en forma granular de color café rojizo, amarillo y blanco cremoso,obtenido a partir de trigos enteros, –suaves o fuertes-, limpios y sanos de origen nacional, por medio de procesos de trituración, compresión y separación en los que se dividen los diferentes componentes por tamaño de partícula para conseguir el Granillo de trigo. Contiene harinas de trigo, salvado y germen de trigo propios del proceso.
+                        </p><br>
+                        <img src = "imagenes/harina_modena.jpeg">
+                </div>
+            </section>
+            <br><br>
+            <div class="widget-2">
+                <a class="trigger_popup_fricc_1">Germen de trigo</a>
+            </div>
 
-            <a href="imagenes/3.txt" style="text-decoration: none;">
-                <p id = "boletin_links"> FAQ </p>
-            </a>
-
-        </section>
-
-        <section id = "footer_items_3">
-            <p id = "bolsa_trabajo"> Bolsa de Trabajo </p>
-
-            <a href="imagenes/1.txt" target = "_blank" style="text-decoration: none;">
-                <p id = "bolsa_trabajo_link"> Integrate a Nuestro Equipo </p>
-            </a>
-
-        </section>
-
-        <section id = "footer_items_4">
-            <p id = "siguenos"> Siguenos en: </p>
-
-            <section id = "s_media">
-
-                <a href="imagenes/1.txt" target = "_blank" style="text-decoration: none;">
-                    <img id = "fb_icon" src = "imagenes/facebook.png">
-                </a>
-
-                <a href="imagenes/1.txt" target = "_blank" style="text-decoration: none;">
-                    <img id = "fb_icon" src = "imagenes/twitter.png">
-                </a>
-
-                <a href="imagenes/1.txt" target = "_blank" style="text-decoration: none;">
-                    <img id = "fb_icon" src = "imagenes/instagram.png">
-                </a>
-
+            <section class="hover_bkgr_fricc_1">
+                <span class="helper_1"></span>
+                <div>
+                    <a class="popupCloseButton_1">&times;</a>
+                            <p id="lineamientos_descripcion" style="text-align: justify;">
+                                Producto en forma de hojuelas color amarillo y café, obtenido a partir de trigos enteros, -suaves y fuertes-,limpios y sanos de variedades de trigo de origen nacional e importados, por medio de procesos de trituración,compresión y separación, en los que se obtiene, casi en su totalidad, el Germen de trigo, seleccionado por el tamaño de partículas, y que es sometido a los tratamientos necesarios para cumplir con las legislaciones para consumo humano, contiene partículas de harina de trigo propias del mismo proceso. Es un alimento muy rico y beneficioso para el organismo.
+                            </p><br>
+                            <img src = "imagenes/harina_modena.jpeg">
+                </div>
             </section>
 
-        </section>
+            <br><br>
+            <div class="widget-3">
+                <a class="trigger_popup_fricc_2">Salvado de trigo sanitizado</a>
+            </div>
 
-    </section>
+            <section class="hover_bkgr_fricc_2">
+                <span class="helper_2"></span>
+                <div>
+                    <a class="popupCloseButton_2">&times;</a>
+                            <p id="lineamientos_descripcion" style="text-align: justify;">
+                               Producto con alto contenido de fibra en forma de hojuelas de color café rojizo, obtenido a partir de trigos enteros, –suaves o fuertes-, limpios y sanos de origen nacional e importados. Para el consumo humano, se obtiene por medio de procesos de trituración, compresión y separación. Es un alimento rico en nutrientes y minerales esenciales para la salud.Es una de las fuentes más ricas en fibra dietética insoluble, la cual disminuye el riesgo de enfermedades del corazón, cáncer de colon, divertículos y obesidad.
+                            </p><br>
+                            <img src = "imagenes/harina_modena.jpeg">
+                </div>
+            </section>
+            <br><br>
+            <div class="widget-4">
+                <a class="trigger_popup_fricc_3">Salvado de trigo (uso forrajero)</a>
+            </div>
 
-    <hr style = "width: 90.5%;
-                 margin-left: 2.5%;
-                 margin-top: 1.5%;">
+            <section class="hover_bkgr_fricc_3">
+                <span class="helper_3"></span>
+                <div>
+                    <a class="popupCloseButton_3">&times;</a>
+                            <p id="lineamientos_descripcion" style="text-align: justify;">
+                                Producto con alto contenido de fibra en forma granular donde prevalecen los colores café, amarillo y blanco cremoso, obtenido a partir de trigos enteros, -suaves o fuertes- limpios y sanos, de origen nacional, por medio de procesos de trituración, compresión y separación en los que se separa casi en su totalidad el salvadillo de trigo por tamaño de partículas. Es un complemento importante en la alimentación animal ya que contiene un alto porcentaje de proteína y es una fuente de energía.
+                            </p><br>
+                            <img src = "imagenes/harina_modena.jpeg">
+                </div>
+            </section>
+            
+            <br><br>
+            <div class="widget-5">
+                <a class="trigger_popup_fricc_4">Trigo</a>
+            </div>
 
-    <section id = "privacy">
-        <a href="imagenes/1.txt" target = "_blank" style="text-decoration: none;">
-            <p id = "privacy_adv"> Politica de Privacidad</p>
-        </a>
+            <section class="hover_bkgr_fricc_4">
+                <span class="helper_4"></span>
+                <div>
+                    <a class="popupCloseButton_4">&times;</a>
+                            <p id="lineamientos_descripcion" style="text-align: justify;">
+                               Producto con alto contenido de fibra en forma de hojuelas color café rojizo, obtenido a partir de trigos enteros,suaves o fuertes-, limpios y sanos de origen nacional e importados. Para el consumo humano, se obtiene en el inicio de la molienda, donde es abierto y laminado.
+                            </p><br>
+                            <img src = "imagenes/harina_modena.jpeg">
 
-        <p id = "privacy_adv"> &nbsp; &nbsp; | &nbsp; &nbsp;</p>
-        
-        <a href="imagenes/1.txt" target = "_blank" style="text-decoration: none;">
-            <p id = "privacy_adv"> La Moderna® </p>
-        </a>
-    </section>
+                </div>
+            </section>
+        </main>    
+
+
+
+        <aside class = "sidebar">
+
+            <!-- LINK 1 -->
+
+            <div>
+                
+                <h1> Descarga el PDF de Bakery Mix ® </h1>
+                
+                <br>
+                
+                <a href = "#"><span class = "icon-download"></span> Descargar PDF </a>
+
+            </div>
+
+            
+
+            <!-- LINK 2 -->
+
+            <div>
+
+                <h1> Descarga Nuestras Mejores Recetas con Bakery Mix ® </h1>
+                
+                <br>
+                
+                <a href = "#"><span class = "icon-download"></span> Descargar PDF </a>
+            
+            </div>
+
+            
+
+            <!-- LINK 3 -->
+
+            <div>
+                
+                <h1> Productos Relacionados </h1>
+                
+                <br>
+                
+                <ul>
+                    <li><a href = "#"><span class = "icon-bowl"></span> Product-1 </a></li>
+                    <li><a href = "#"><span class = "icon-bowl"></span> Product-1 </a></li>
+                </ul>
+            
+            </div>
+
+
+            <!-- LINK 4 -->
+
+            <h1> Compartir </h1>
+
+            <br>
+
+            <ul class = "share_buttons">
+                <li><a href = "https://www.facebook.com/sharer/sharer.php?u=https://www.lamoderna.com.mx" target = "_blank"><span class = "icon-facebook-with-circle"></span></a></li>
+                <li><a href = "https://www.facebook.com/sharer/sharer.php?u=https://www.lamoderna.com.mx" target = "_blank"><span class = "icon-instagram-with-circle"></span></a></li>
+                <li><a href = "https://www.facebook.com/sharer/sharer.php?u=https://www.lamoderna.com.mx" target = "_blank"><span class = "icon-twitter-with-circle"></span></a></li>
+            </ul>
+
+            
+
+
+        </aside>
+
+
+        <footer class = "footer">
+            <div class = "contact">
+
+                <ul>
+                    <li id = "contact">                    
+
+                        <ul>
+                            <li id = "footer_title"> Contacto </li>
+                            <li> Tel. 01 (800) 147 4444 </li>
+                            <li> <br> 
+                                 Carretera Panamericana Km. 11      <br>
+                                 Tramo Salamanca - Celaya,          <br>
+                                 Col. Emiliano Zapata. C.P. 36770   <br> 
+                                 Salamanca Guanajuato </li>
+                        </ul>
+
+                    </li>
+
+                    <li id = "boletin">
+
+                        <ul>
+                            <li id = "footer_title"> Boletín </li>
+
+                            <li><a href = "#"><span class = "icon-download"></span> Aviso de Prvacidad </a></li>
+                            <li><a href = "#"><span class = "icon-network"></span> Encuentra Tu Distribuidor </a></li>
+                            <li><a href = "#"><span class = "icon-info"></span> FAQ </a></li>
+                            
+                        </ul>
+
+                    </li>
+                    
+                    <li id = "bolsa_trabajo">
+
+                        <ul>
+                            <li id = "footer_title"> Bolsa de Trabajo </li>
+
+                            <li><a href = "#"><span class = "icon-man"></span> Integrate a Nuestro Equipo </a></li>
+                            
+                        </ul>
+
+                    </li>
+
+                    <li id = "siguenos">
+
+                        <ul>
+                            <li id = "footer_title"> Siguenos </li>
+
+                            <ul class = "share_buttons_footer">
+
+                                <li><a href = "#"><span class = "icon-facebook-with-circle"></span></a></li>
+                                <li><a href = "#"><span class = "icon-instagram-with-circle"></span></a></li>
+                                <li><a href = "#"><span class = "icon-twitter-with-circle"></span></a></li>
+
+                            </ul>
+                            
+                        </ul>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </footer>
 
     </div>
-
 
 
 </body>

@@ -163,7 +163,7 @@
     background-color: transparent;
     padding: 0;
     /* CONTROL DEL ESPACIADO ENTRE LOS ELEMENTOS DE LA SIDEBAR */
-    padding-bottom: 262px;
+    padding-bottom: 140px;
 }
 
 .container .sidebar .share_buttons li {
@@ -201,7 +201,6 @@
     color: black;
     
 }
-
 
 
 /* POP-UP */

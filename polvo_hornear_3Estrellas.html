@@ -1,220 +1,253 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset = "UTF-8">
-    <meta http-equiv = "X-UA-Compatible" content = "IE=edge">
-    <meta name = "viewport" content = "width = device-width, height = device-height, initial-scale = 1.0, minimum-scale = 1.0">
-    <link rel="stylesheet" href="styles/polvo_hornear_3Estrellas.css" type="text/css">
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href = "styles/polvo_hornear_3Estrellas.css" rel = "stylesheet">
+    <link href = "styles/menu.css" rel = "stylesheet">
+    <link href = "styles/icons/fonts.css" rel = "stylesheet">
+
+    <script src = "scripts/jquery-latest.js"></script>
+    <script src = "scripts/encabezado.js"></script>
 
 	<title>Polvo para hornear - Tres Estrellas</title>
 </head>
 <body>
 
-	<section id = "header_image">
-        **Imagen del header promocional
-    </section>
+    <header class = "menu">
+        <div class = "menu_bar">
+            <a href = "#" class = "b_menu"><span class = "icon-menu"></span> Pirineos </a>
+        </div>
 
-    <section id = "nav_bar">
 
-        <section id = "items">
+        <!-- <span class = "img_banner">
+            <img src = "imagenes/pirineos_logo.png">
+        </span> -->
 
-            <section id = "nav_items_1">
+        <nav>
 
-                <p id = "bm_pdf_download"> Descarga el PDF de Polvo para hornear </p><br>
-                <a href = "images/pirineos_logo.png" title = "Bakery_Mix_PDF" target = "_blank">
-                    <p id = "bm_pdf_link"> > Descargar PDF </p>
-                </a>
+            <ul>
 
-                <p id = "line"></p>
-            
-            </section>
+                <li><a href = "#"><span class = "icon-home"></span> Inicio </a></li>
+                
+                <li class = "submenu">
 
-            <section id = "nav_items_2">
+                    <a href = "#"><span class = "icon-shop"></span> Nuestros Productos <span class = "slide_icon icon-chevron-down"></span></a>
+                    <ul class = "children">
+                        <li><a href="#"> Harinas de Trigo <span class = "icon-bowl"></span> </a></li>
+                        <li><a href="#"> Harinas para el Hogar <span class = "icon-bowl"></span> </a></li>
+                        <li><a href="#"> Harinas Preparadas Tres Estrellas <span class = "icon-bowl"></span> </a></li>
+                        <li><a href="#"> Polvo para Hornear Tres Estrellas <span class = "icon-bowl"></span> </a></li>
+                        <li><a href="#"> Mejorantes RendiMix <span class = "icon-bowl"></span> </a></li>
+                        <li><a href="#"> Derivados del Trigo <span class = "icon-bowl"></span> </a></li>
+                    </ul>
 
-                <p id = "bm_receipts_pdf_download"> Descarga Nuestras Mejores Recetas con Polvo para hornear </p><br>
-                <a href = "images/pirineos_logo.png" title = "Bakery_Mix_Recepits_PDF" target = "_blank">
-                    <p id = "bm_receipts_pdf_link"> > Descargar PDF de Recetas </p>
-                </a>
+                </li>
 
-                <p id = "line"></p>
+                <li><a href = "#"><span class = "icon-open-book"></span> Recetarios </a></li>
+                <li><a href = "#"><span class = "icon-tools"></span> Servicio Tecnico </a></li>
+                <li><a href = "#"><span class = "icon-typing"></span> Contacto </a></li>
 
-            </section>
+            </ul>
+        </nav>
+    </header>
 
-            <section id = "nav_items_3">
 
-                <p id = "rel_products"> Productos Relacionados </p>
-                <a href = "images/pirineos_logo.png" title = "Bakery_Mix_Recepits_PDF" style = "text-decoration: none;" target = "_blank">
-                    <p id = "rel_products_link"> Producto 1 </p>
-                </a>
 
-                <a href = "images/pirineos_logo.png" title = "Bakery_Mix_Recepits_PDF" style = "text-decoration: none;" target = "_blank">
-                    <p id = "rel_products_link"> Producto 2 </p>
-                </a>
+	<div class = "container">
 
-                <p id = "line"></p>
+        <header class = "header">
 
-            </section>
+            <img id = "header_image" src = "imagenes/bread_banner.jpg">
 
-            <section id = "nav_items_4">
+        </header>
 
-                <p id = "share"> Compartir: </p>
-
-                <section id = "s_media_share">
-
-                    <a href="imagenes/1.txt" target = "_blank" style="text-decoration: none;">
-                        <img id = "fb_icon" src = "imagenes/facebook.png">
-                    </a>
-
-                    <a href="imagenes/1.txt" target = "_blank" style="text-decoration: none;">
-                        <img id = "fb_icon" src = "imagenes/twitter.png">
-                    </a>
-
-                    <a href="imagenes/1.txt" target = "_blank" style="text-decoration: none;">
-                        <img id = "fb_icon" src = "imagenes/instagram.png">
-                    </a>
-
-                </section>
-
-            </section>
-
-        </section>
-
-    </section>
-    
-    <section>
-
-    	<section class = "Harinas_descripcion">
-            <img id = "harinas_tres_estrellas_logo" src = "imagenes/tres_estrellas.png" style="padding-left: 35%;">
-            <article>
-                <h2 class = "titulo26" style="color: black;"> POLVO PARA HORNEAR </h2><br>
-                <p style="color: black;">
+        <main class = "content"> 
+            <h2> POLVO PARA HORNEAR </h2><br>
+                <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non urna vestibulum, euismod mi at, pulvinar ex. Fusce libero justo, euismod id sapien eget, tempus tincidunt nisi. Vestibulum vehicula mattis auctor. Vivamus quis lorem at tortor efficitur dapibus a in dui. Phasellus bibendum ultrices nisl sit amet pretium. Fusce in mi urna. Proin condimentum dui sed odio euismod scelerisque. Curabitur venenatis molestie metus et condimentum. Sed ut ullamcorper dui. Fusce dignissim blandit lectus, id commodo lacus mollis non.
 
                     Fusce at mauris augue. Phasellus congue venenatis odio sed varius. Nam mauris nunc, auctor vitae neque eget, placerat pellentesque tellus. Nullam condimentum arcu sagittis risus finibus aliquam. Ut congue nibh sed luctus dictum. Suspendisse congue quam nec sapien placerat facilisis. Vestibulum vitae iaculis neque. Proin ornare ipsum non posuere elementum. Mauris tempus consectetur sem ut lacinia. Integer molestie, libero eget pulvinar malesuada, tortor nibh rhoncus elit, quis pulvinar orci urna et est. Proin in enim at nisi euismod lacinia eget vitae lorem. Maecenas vitae massa id mi feugiat gravida nec pulvinar nibh. Quisque maximus accumsan dui at auctor. Ut tempus sagittis neque, et accumsan magna sodales eu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Duis at quam id nisl consectetur tincidunt.
 
                 </p>
-            </article>
-        </section>
+        </main>
 
-        <section class = "harinas_hogar">
-            <div id = "img_producto" ><img src = "https://via.placeholder.com/200"></div>
-            <div id = "producto_descripcion">
-                <article>
-                    <h2 class = "titulo26" style="color: black;"> Lorem ipsum dolor  </h2><br>
-                    <p style="color: black;">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non urna vestibulum, euismod mi at, pulvinar ex. Fusce libero justo, euismod id sapien eget, tempus tincidunt nisi. Vestibulum vehicula mattis auctor. Vivamus quis lorem at tortor efficitur dapibus a in dui. Phasellus bibendum ultrices nisl sit amet pretium. Fusce in mi urna. Proin condimentum dui sed odio euismod scelerisque. Curabitur venenatis molestie metus et condimentum. Sed ut ullamcorper dui. Fusce dignissim blandit lectus, id commodo lacus mollis non.
-                    </p>
-                </article>
-            </div>
-        </section><br><br><br><br><br>
+        <!--<main class = "content3"> 
+            <img src="https://via.placeholder.com/200" width="75%" height="50%">
 
-        <section class = "atributos">
-            <div id = "cuadro_de_atributos">
-                <article>
-                    <h2 class = "titulo26"> Lorem ipsum dolor 1</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non urna vestibulum, euismod mi at, pulvinar ex. Fusce libero justo, euismod id sapien eget, tempus tincidunt nisi. Vestibulum vehicula mattis auctor. Vivamus quis lorem at tortor efficitur dapibus a in dui.
-                    </p>
-                    <br><br>
-                    <h2 class = "titulo26"> Lorem ipsum dolor 2</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non urna vestibulum, euismod mi at, pulvinar ex. Fusce libero justo, euismod id sapien eget, tempus tincidunt nisi. Vestibulum vehicula mattis auctor. Vivamus quis lorem at tortor efficitur dapibus a in dui.
-                    </p>
-                    <br><br>
-                    <h2 class = "titulo26"> Lorem ipsum dolor 3 </h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non urna vestibulum, euismod mi at, pulvinar ex. Fusce libero justo, euismod id sapien eget, tempus tincidunt nisi. Vestibulum vehicula mattis auctor. Vivamus quis lorem at tortor efficitur dapibus a in dui.
-                    </p>
-                    <br><br>
-                    
-                </article>
-                
-            </div>
-        </section><br><br><br><br><br> <br><br><br><br><br>
+        </main>-->
 
-        
-        
-    </section>
+        <main class = "content2"> 
+            <img src="https://via.placeholder.com/200" class="center"><br><br>
+            <h2> POLVO PARA HORNEAR </h2><br>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non urna vestibulum, euismod mi at, pulvinar ex. Fusce libero justo, euismod id sapien eget, tempus tincidunt nisi. Vestibulum vehicula mattis auctor. Vivamus quis lorem at tortor efficitur dapibus a in dui. Phasellus bibendum ultrices nisl sit amet pretium. Fusce in mi urna. Proin condimentum dui sed odio euismod scelerisque. Curabitur venenatis molestie metus et condimentum. Sed ut ullamcorper dui. Fusce dignissim blandit lectus, id commodo lacus mollis non.
 
-    <footer>
+                    Fusce at mauris augue. Phasellus congue venenatis odio sed varius. Nam mauris nunc, auctor vitae neque eget, placerat pellentesque tellus. Nullam condimentum arcu sagittis risus finibus aliquam. Ut congue nibh sed luctus dictum. Suspendisse congue quam nec sapien placerat facilisis. Vestibulum vitae iaculis neque. Proin ornare ipsum non posuere elementum. Mauris tempus consectetur sem ut lacinia. Integer molestie, libero eget pulvinar malesuada, tortor nibh rhoncus elit, quis pulvinar orci urna et est. Proin in enim at nisi euismod lacinia eget vitae lorem. Maecenas vitae massa id mi feugiat gravida nec pulvinar nibh. Quisque maximus accumsan dui at auctor. Ut tempus sagittis neque, et accumsan magna sodales eu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Duis at quam id nisl consectetur tincidunt.
 
-        <section id = "footer_items">
-
-            <section id = "footer_items_1">
-                <p id = "contacto"> Contacto </p>
-                <p id = "contacto_descripcion">
-                    Tel: 00 (000) 000 0000 <br><br>
-                    Carretera Panamericana  - Km.11
-                    Tramo Salamanca - Celaya
-                    Col. Emiliano Zapata C.P 36770
-                    Salamanca, Guanajuato
                 </p>
-            </section>
 
-            <section id = "footer_items_2">
-                <p id = "boletin"> Boletin </p>
+        </main>
 
-                <a href="imagenes/1.txt" target = "_blank" style="text-decoration: none;">
-                    <p id = "boletin_links"> Aviso de Privacidad </p>
-                </a>
+        <aside class = "sidebar">
 
-                <a href="imagenes/2.txt" style="text-decoration: none;">
-                    <p id = "boletin_links"> Encuentra a tu distribuidor </p>
-                </a>
+            <!-- LINK 1 -->
 
-                <a href="imagenes/3.txt" style="text-decoration: none;">
-                    <p id = "boletin_links"> FAQ </p>
-                </a>
+            <div>
+                
+                <h1> Descarga el PDF de Polvo para Hornear - Tres Estrellas </h1>
+                
+                <br>
+                
+                <a href = "#"><span class = "icon-download"></span> Descargar PDF </a>
 
-            </section>
+            </div>
 
-            <section id = "footer_items_3">
-                <p id = "bolsa_trabajo"> Bolsa de Trabajo </p>
-
-                <a href="imagenes/1.txt" target = "_blank" style="text-decoration: none;">
-                    <p id = "bolsa_trabajo_link"> Integrate a Nuestro Equipo </p>
-                </a>
-
-            </section>
-
-            <section id = "footer_items_4">
-                <p id = "siguenos"> Siguenos en: </p>
-
-                <section id = "s_media">
-
-                    <a href="imagenes/1.txt" target = "_blank" style="text-decoration: none;">
-                        <img id = "fb_icon" src = "imagenes/facebook.png">
-                    </a>
-
-                    <a href="imagenes/1.txt" target = "_blank" style="text-decoration: none;">
-                        <img id = "fb_icon" src = "imagenes/twitter.png">
-                    </a>
-
-                    <a href="imagenes/1.txt" target = "_blank" style="text-decoration: none;">
-                        <img id = "fb_icon" src = "imagenes/instagram.png">
-                    </a>
-
-                </section>
-
-            </section>
-
-        </section>
-
-        <p id = "footer_line"></p>
-
-        <section id = "privacy">
-            <a href="imagenes/1.txt" target = "_blank" style="text-decoration: none;">
-                <p id = "privacy_adv"> Politica de Privacidad</p>
-            </a>
-
-            <p id = "privacy_adv"> &nbsp; &nbsp; | &nbsp; &nbsp;</p>
             
-            <a href="imagenes/1.txt" target = "_blank" style="text-decoration: none;">
-                <p id = "privacy_adv"> La Moderna® </p>
-            </a>
-        </section>
 
-    </footer>
+            <!-- LINK 2 -->
+
+            <div>
+
+                <h1> Descarga Nuestras Mejores Recetas con Polvo para Hornear - Tres Estrellas </h1>
+                
+                <br>
+                
+                <a href = "#"><span class = "icon-download"></span> Descargar PDF </a>
+            
+            </div>
+
+            
+
+            <!-- LINK 3 -->
+
+            <div>
+                
+                <h1> Productos Relacionados </h1>
+                
+                <br>
+                
+                <ul class = "prod_rel">
+                    <li><a href = "#"><span class = "icon-bowl"></span> Product-1 </a></li>
+                    <li><a href = "#"><span class = "icon-bowl"></span> Product-2 </a></li>
+                </ul>
+
+            </div>
+
+
+            <!-- LINK 4 -->
+
+            <h1> Compartir </h1>
+
+            <br>
+
+            <ul class = "share_buttons">
+                <li><a href = "https://www.facebook.com/sharer/sharer.php?u=https://www.lamoderna.com.mx" target = "_blank"><span class = "icon-facebook-with-circle"></span></a></li>
+                <li><a href = "https://www.facebook.com/sharer/sharer.php?u=https://www.lamoderna.com.mx" target = "_blank"><span class = "icon-instagram-with-circle"></span></a></li>
+                <li><a href = "https://www.facebook.com/sharer/sharer.php?u=https://www.lamoderna.com.mx" target = "_blank"><span class = "icon-twitter-with-circle"></span></a></li>
+            </ul>
+        </aside>
+    
+        <div class="widget-1">
+            <h1> Polvo para Hornear</h1>
+
+            <br>
+
+            <h3> Lorem ipsum dolor 1</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non urna vestibulum, euismod mi at, pulvinar ex. Fusce libero justo, euismod id sapien eget, tempus tincidunt nisi. Vestibulum vehicula mattis auctor. Vivamus quis lorem at tortor efficitur dapibus a in dui.
+            </p>
+
+            <br><br>
+            
+            <h3> Lorem ipsum dolor 2</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non urna vestibulum, euismod mi at, pulvinar ex. Fusce libero justo, euismod id sapien eget, tempus tincidunt nisi. Vestibulum vehicula mattis auctor. Vivamus quis lorem at tortor efficitur dapibus a in dui.
+            </p>
+            
+            <br><br>
+            
+            <h3> Lorem ipsum dolor 3 </h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non urna vestibulum, euismod mi at, pulvinar ex. Fusce libero justo, euismod id sapien eget, tempus tincidunt nisi. Vestibulum vehicula mattis auctor. Vivamus quis lorem at tortor efficitur dapibus a in dui.
+            </p>
+            
+            <br><br>
+            
+            <h3> Lorem ipsum dolor 4</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non urna vestibulum, euismod mi at, pulvinar ex. Fusce libero justo, euismod id sapien eget, tempus tincidunt nisi. Vestibulum vehicula mattis auctor. Vivamus quis lorem at tortor efficitur dapibus a in dui.
+            </p>
+            
+        </div>
+
+        <footer class = "footer">
+                
+            <div class = "contact">
+
+                <ul>
+                    <li id = "contact">                    
+
+                        <ul>
+                            <li id = "footer_title"> Contacto </li>
+                            <li> Tel. 01 (800) 147 4444 </li>
+                            <li> <br> 
+                                 Carretera Panamericana Km. 11      <br>
+                                 Tramo Salamanca - Celaya,          <br>
+                                 Col. Emiliano Zapata. C.P. 36770   <br> 
+                                 Salamanca Guanajuato </li>
+                        </ul>
+
+                    </li>
+
+                    <li id = "boletin">
+
+                        <ul>
+                            <li id = "footer_title"> Boletín </li>
+
+                            <li><a href = "#"><span class = "icon-download"></span> Aviso de Prvacidad </a></li>
+                            <li><a href = "#"><span class = "icon-network"></span> Encuentra Tu Distribuidor </a></li>
+                            <li><a href = "#"><span class = "icon-info"></span> FAQ </a></li>
+                            
+                        </ul>
+
+                    </li>
+                    
+                    <li id = "bolsa_trabajo">
+
+                        <ul>
+                            <li id = "footer_title"> Bolsa de Trabajo </li>
+
+                            <li><a href = "#"><span class = "icon-man"></span> Integrate a Nuestro Equipo </a></li>
+                            
+                        </ul>
+
+                    </li>
+
+                    <li id = "siguenos">
+
+                        <ul>
+                            <li id = "footer_title"> Siguenos </li>
+
+                            <ul class = "share_buttons_footer">
+
+                                <li><a href = "#"><span class = "icon-facebook-with-circle"></span></a></li>
+                                <li><a href = "#"><span class = "icon-instagram-with-circle"></span></a></li>
+                                <li><a href = "#"><span class = "icon-twitter-with-circle"></span></a></li>
+
+                            </ul>
+                            
+                        </ul>
+
+                    </li>
+
+                </ul>
+
+            </div>
+        </footer>
+    </div>
     
 </body>
 </html>

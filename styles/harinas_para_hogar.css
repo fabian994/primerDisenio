@@ -110,7 +110,7 @@ body {
 
 #producto_descripcion{
 
-    border-radius: 0% 10px 10px 0%;
+    border-radius: 0% 0.6em 0.6em 0%;
     text-align: justify;
     vertical-align: middle;
     padding-left: 1.5%;
@@ -273,13 +273,12 @@ body {
     
     .container {
 
-        grid-template-areas: "header header header"
-                             "content content content"
-                             "content2 content2 content2"
-                             "widget-1 widget-1 widget-1"
-                             "widget-2 widget-2 widget-2"
-                             "sidebar sidebar sidebar"
-                             "footer footer footer";
+        grid-template-areas: "header"
+                             "content"
+                             "content2"
+                             "widget-1"
+                             "sidebar"
+                             "footer";
 
         
     }
@@ -291,17 +290,12 @@ body {
         padding-bottom: 50px;
     }
 
-}
-
-
-@media only screen and (max-width: 1180px)  {
-
-  /* Force table to not be like tables anymore */
+    /* Force table to not be like tables anymore */
   .tabla_harinas_hogar, #img_producto, #producto_descripcion { 
     display: block; 
   }
   
-  #img_producto, #producto_descripcion { 
+  #img_producto { 
     /* Behave  like a "row" */
     border: none;
     position: relative; 
@@ -309,8 +303,34 @@ body {
     padding-right: 5%;
     padding-top: 2%;
     padding-bottom: 2;
+    border-radius: 4% 0% 0% 4%;
+  }
+
+  #producto_descripcion { 
+    /* Behave  like a "row" */
+    border: none;
+    position: relative; 
+    padding-left: 5%; 
+    padding-right: 5%;
+    padding-top: 2%;
+    padding-bottom: 2;
+     border-radius: 0% 0.6em 0.6em 0%;
   }
   
+  #tabla_fila:nth-of-type(odd){
+    
+    border-radius: 10px;
+    background-color: #E5A73C;
+    border-radius: 0% 0.6em 0.6em 0%;
+  }
+
+  #tabla_fila{
+    
+    border-radius: 10px;
+    background-color: #519C45;
+    border-radius: 0% 0.6em 0.6em 0%;
+  }
+
   #img_producto:before { 
     /* Now like a table header */
     position: absolute;
@@ -321,6 +341,44 @@ body {
     padding-right: 10px; 
     white-space: nowrap;
   }
-  
-  
+
+}
+
+
+@media screen and (min-width: 1180px) and (max-width: 1794px){
+
+    .container .footer .contact #contact {
+        padding-right: 160px;
+        /* 370 defualt */
+        padding-bottom: 15px;
+    }
+    .container .footer .contact #boletin {
+        padding-right: 160px;
+        padding-bottom: 15px;
+    }
+    .container .footer .contact #bolsa_trabajo {
+        padding-right: 160px;
+        padding-bottom: 15px;
+    }
+
+
+}
+
+@media screen and (max-width: 1078px) {
+
+    .container .footer .contact #contact {
+        padding-right: 50px;
+        /* 370 defualt */
+        padding-bottom: 15px;
+    }
+    .container .footer .contact #boletin {
+        padding-right: 50px;
+        padding-bottom: 15px;
+    }
+    .container .footer .contact #bolsa_trabajo {
+        padding-right: 50px;
+        padding-bottom: 15px;
+    }
+
+
 }

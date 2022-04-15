@@ -30,9 +30,6 @@
     grid-template-areas: "header header header"
                          "content content sidebar"
                          "content2 content2 sidebar"
-                         "widget-1 widget-2 sidebar"
-                         "widget-3 widget-4 sidebar"
-                         "widget-5 widget-6 sidebar"
                          "footer footer footer";
 }
 
@@ -166,7 +163,7 @@
     background-color: transparent;
     padding: 0;
     /* CONTROL DEL ESPACIADO ENTRE LOS ELEMENTOS DE LA SIDEBAR */
-    padding-bottom: 262px;
+    padding-bottom: 140px;
 }
 
 .container .sidebar .share_buttons li {
@@ -212,7 +209,6 @@
     color: black;
     
 }
-
 
 
 /* POP-UP */
@@ -454,9 +450,6 @@
                              "content content content"
                              "content2 content2 content2"
                              "sidebar sidebar sidebar"
-                             "widget-1 widget-1 widget-2"
-                             "widget-3 widget-3 widget-4"
-                             "widget-5 widget-5 widget-6"
                              "footer footer footer";
     }
 

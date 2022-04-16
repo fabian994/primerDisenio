@@ -249,7 +249,7 @@ h1{
 .container .widget-2 {
     grid-area: widget-2;
     background-color: #FFC627;
-    color: black;
+   color: #1E412F;
 }
 
 /* WIDGET 3 - SOLO EL TERCER WIDGET */
@@ -257,7 +257,7 @@ h1{
 .container .widget-3 {
     grid-area: widget-3;
     background-color: #FFC627;
-    color: black;
+    color: #1E412F;
 }
 
 /* WIDGET 4 - SOLO EL CUARTO WIDGET */
@@ -313,7 +313,7 @@ h1{
     position: relative;
     border-radius: 8px;
     padding: 15px 5%;
-    color: whitesmoke;
+    color: #1E412F;
 }
 .popupCloseButton,
 .popupCloseButton_1,

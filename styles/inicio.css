@@ -73,6 +73,14 @@ body {
     text-align: justify;
 }
 
+.container .content #lineamientos_descripcion {
+    width: 60%;
+}
+
+.container .content2 #lineamientos_descripcion {
+    width: 60%;
+}
+
 .container #cont_image {
     width: 30%;
     float: left;
@@ -468,6 +476,7 @@ body {
 
 }
 
+
 @media screen and (max-width: 1078px) {
 
     .container .footer .contact #contact {
@@ -508,6 +517,35 @@ body {
         margin-bottom: 20px;
     }
 
+}
+
+@media screen and (max-width: 500px) {
+    .container .content #lineamientos_descripcion {
+        width: 100%;
+    }
+
+    .container .content2 #lineamientos_descripcion {
+        width: 100%;
+    }
+
+    .container #cont_image {
+        
+        width: 35%;
+        border-radius: 14px;
+        float: none;
+        margin-left: 33%;
+        margin-bottom: 20px;
+    }
+
+    .container #cont_image2 {
+        
+        width: 35%;
+        border-radius: 14px;
+        float: none;
+        margin-right: 33%;
+        margin-left: 33%;
+        margin-bottom: 20px;
+    }
 }
 
 

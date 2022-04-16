@@ -34,7 +34,6 @@ body {
     grid-template-areas: "header header header"
                          "content content content"
                          "content2 content2 content2"
-                         "widget-1 widget-1 widget-1"
                          "footer footer footer";
 }
 
@@ -72,6 +71,14 @@ body {
     background-color: #08903E;
     color: #EBE3D5;
     text-align: justify;
+}
+
+.container .content #lineamientos_descripcion {
+    width: 60%;
+}
+
+.container .content2 #lineamientos_descripcion {
+    width: 60%;
 }
 
 .container #cont_image {
@@ -373,9 +380,6 @@ body {
         grid-template-areas: "header header header"
                              "content content content"
                              "content2 content2 content2"
-                             "widget-1 widget-1 widget-1"
-                             "widget-2 widget-2 widget-2"
-                             "sidebar sidebar sidebar"
                              "footer footer footer";
 
         
@@ -390,7 +394,7 @@ body {
 
 }
 
-@media only screen and (max-width: 1180px)  {
+@media only screen and (min-width: 966px) and (max-width: 1180px)  {
 
   /* Force table to not be like tables anymore */
   .tabla_harinas_hogar, #img_producto, #producto_descripcion { 
@@ -417,6 +421,22 @@ body {
     padding-right: 10px; 
     white-space: nowrap;
   }
+
+  .container #cont_image {
+    width: 35%;
+    height: 100%;
+    float: left;
+    margin-right: 20px;
+    border-radius: 14px;
+}
+
+.container #cont_image2 {
+    width: 35%;
+    height: 100%;
+    float: left;
+    margin-left: 20px;
+    border-radius: 14px;
+}
   
   
 }
@@ -437,8 +457,25 @@ body {
         padding-bottom: 15px;
     }
 
+    .container #cont_image {
+        width: 35%;
+        height: 100%;
+        float: left;
+        margin-right: 20px;
+        border-radius: 14px;
+    }
+
+    .container #cont_image2 {
+        width: 35%;
+        height: 100%;
+        float: left;
+        margin-left: 20px;
+        border-radius: 14px;
+    }
+
 
 }
+
 
 @media screen and (max-width: 1078px) {
 
@@ -459,39 +496,56 @@ body {
 
 }
 
-@media screen and (max-width: 487px) {
-    
+@media screen and (max-width: 965px) {
+
     .container #cont_image {
+        
         width: 35%;
-        float: left;
-        margin-right: 20px;
         border-radius: 14px;
+        float: none;
+        margin-left: 33%;
+        margin-bottom: 20px;
     }
 
     .container #cont_image2 {
-        width: 30%;
-        float: right;
-        margin-right: 14px;
+        
+        width: 35%;
         border-radius: 14px;
+        float: none;
+        margin-right: 33%;
+        margin-left: 33%;
+        margin-bottom: 20px;
     }
+
 }
 
-@media screen and (max-width: 443px) {
+@media screen and (max-width: 500px) {
+    .container .content #lineamientos_descripcion {
+        width: 100%;
+    }
+
+    .container .content2 #lineamientos_descripcion {
+        width: 100%;
+    }
 
     .container #cont_image {
+        
         width: 35%;
-        float: left;
-        margin-right: 10px;
         border-radius: 14px;
+        float: none;
+        margin-left: 33%;
+        margin-bottom: 20px;
     }
 
     .container #cont_image2 {
+        
         width: 35%;
-        float: left;
-        margin-left: 14px;
-        margin-top: 4px;
         border-radius: 14px;
+        float: none;
+        margin-right: 33%;
+        margin-left: 33%;
+        margin-bottom: 20px;
     }
-
-    
 }
+
+

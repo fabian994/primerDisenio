@@ -451,7 +451,7 @@ section{ /* Centra el contenido */
 }
 
 .acordeon-obj:target .respuesta{
-    max-height: 20rem;
+    max-height: 20%;
 
 }
 

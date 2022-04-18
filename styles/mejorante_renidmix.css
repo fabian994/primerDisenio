@@ -15,20 +15,6 @@
     margin: 0;
 }
 
-.headroom {
-    transition: transform .3s ease;
-}
-
-/* Mostrar Menu */
-.headroom--pinned {
-    transform: translateY(0%);
-}
-/* Ocultar Menu */
-.headroom--unpinned {
-    transform: translateY(-100%);
-}
-
-
 
 body {
     background-color: #F4F4F4;
@@ -38,7 +24,7 @@ body {
 
 .container {
     width: 95%;
-    padding-top: 200px;
+    padding-top: 100px;
     margin: 20px auto;
     margin-top: 0;
     display: grid;
@@ -413,5 +399,20 @@ body {
 
 }
 
+@media screen and (min-width: 1181px) {
+
+    .headroom {
+        transition: transform .3s ease;
+    }
+    /* Mostrar Menu */
+    .headroom--pinned {
+        transform: translateY(0%);
+    }
+    /* Ocultar Menu */
+    .headroom--unpinned {
+        transform: translateY(-100%);
+    }
+
+}
 
 

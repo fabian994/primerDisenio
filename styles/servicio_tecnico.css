@@ -459,8 +459,7 @@ section{ /* Centra el contenido */
     max-height: 0;
     overflow: hidden;
     position: relative;
-    background-color: red;
-    transition: max-height 650ms;
+    /*transition: max-height 650ms;*/
 }
 
 .respuesta::before{
@@ -485,12 +484,19 @@ section{ /* Centra el contenido */
 
 }
 
-.acordeon-obj:target .acordeon-link .icono_mas{
+.acordeon-obj .acordeon-link .icon-triangle-up{
     display: none;
 
 }
 
-.acordeon-obj:target .acordeon-link .icono_menos{
+.acordeon-obj:target .acordeon-link .icon-triangle-down{
+    display: none;
+
+}
+
+
+
+.acordeon-obj:target .acordeon-link .icon-triangle-up{
     display: block;
 
 }

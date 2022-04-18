@@ -197,6 +197,7 @@ body {
     padding-bottom: 0.5%;
     padding-right: 1%;
     text-align: center;
+    text-decoration: none;
 }
 
 #producto_descripcion{
@@ -441,15 +442,12 @@ section{ /* Centra el contenido */
     align-items: center;
     justify-content: space-between;
 
+
 }
 
 .acordeon-link i{
-    color: #e7d5ff;
+    color: rgba(255, 255, 255, .8);
     padding: .5rem;
-}
-
-.acordeon-link .icono_mas{
-    display: none;
 }
 
 .contenedor .respuesta{
@@ -493,8 +491,6 @@ section{ /* Centra el contenido */
     display: none;
 
 }
-
-
 
 .acordeon-obj:target .acordeon-link .icon-triangle-up{
     display: block;

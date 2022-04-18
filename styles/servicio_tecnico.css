@@ -34,6 +34,7 @@ body {
 
     grid-template-areas: 
                          "content content content"
+                         "widget-2 widget-2 widget-2"
                          "widget-1 widget-1 widget-1"
                          "footer footer footer";
 }
@@ -71,6 +72,30 @@ body {
     grid-area: content;
     background-color: #EBE3D5;
     text-align: justify;
+}
+
+* CONTENIDO 2 - ENGLOBA EL CONTENIDO SECUNDARIO */
+
+.container .content2 {
+    grid-area: content2;
+    background-color: #EBE3D5;
+    color: #1E412F;
+    text-align: justify;
+}
+
+
+.container .content span {
+    color: #EBE3D5;
+    font-size: 55pt;
+    display: flex;
+    justify-content: center;
+}
+
+.container .content2 span {
+    color: #1E412F;
+    font-size: 55pt;
+    display: flex;
+    justify-content: center;
 }
 
 .container .sidebar {
@@ -129,15 +154,32 @@ body {
 }
 
 
+/* WIDGETS - ENGLOBA AMBOS WIDGETS */
+
+.container .widget-1 {
+    background-color: #E5A73C;
+    color: #EBE3D5;
+}
+
+.container .widget-2 {
+    background-color: transparent;
+    color: #EBE3D5;
+}
+
 /* WIDGET 1 - SOLO EL PRIMER WIDGET */
 
 .container .widget-1 {
-    color: #EBE3D5;
     grid-area: widget-1;
 }
 
-.container .widget-1{
-    background-color: transparent;
+/* WIDGET 2 - SOLO EL SEGUNDO WIDGET */
+
+.container .widget-2 {
+    grid-area: widget-2;
+}
+
+.container .widget-2 h2{
+    color: black;
 }
 
 .tabla_harinas_hogar{
@@ -145,18 +187,6 @@ body {
     border-collapse: collapse;
     width: 100%;
 
-}
-
-#tabla_fila:nth-of-type(odd){
-    
-    border-radius: 10px;
-    background-color: #E5A73C;
-}
-
-#tabla_fila{
-    
-    border-radius: 10px;
-    background-color: #519C45;
 }
 
 #img_producto{
@@ -336,7 +366,7 @@ body {
 
         grid-template-areas: 
                              "content content content"
-                             "content2 content2 content2"
+                             "widget-2 widget-2 widget-2"
                              "widget-1 widget-1 widget-1"
                              "sidebar sidebar sidebar"
                              "footer footer footer";

@@ -32,7 +32,7 @@ body {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, auto);
 
-    grid-template-areas: "header header header"
+    grid-template-areas: 
                          "content content content"
                          "widget-1 widget-1 widget-1"
                          "footer footer footer";
@@ -69,8 +69,7 @@ body {
 
 .container .content {
     grid-area: content;
-    background-color: #08903E;
-    color: #EBE3D5;
+    background-color: #EBE3D5;
     text-align: justify;
 }
 
@@ -335,7 +334,7 @@ body {
     
     .container {
 
-        grid-template-areas: "header header header"
+        grid-template-areas: 
                              "content content content"
                              "content2 content2 content2"
                              "widget-1 widget-1 widget-1"
@@ -356,55 +355,116 @@ body {
   .tabla_harinas_hogar, #img_producto, #producto_descripcion { 
     display: block; 
   }
+}
   
-  #img_producto { 
-    /* Behave  like a "row" */
-    border: none;
-    position: relative; 
-    padding-left: 5%; 
-    padding-right: 5%;
-    padding-top: 2%;
-    padding-bottom: 2;
-    border-radius: 4% 0% 0% 4%;
-  }
+/* ---------------------------------------------------------- */
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
 
-  #producto_descripcion { 
-    /* Behave  like a "row" */
-    border: none;
-    position: relative; 
-    padding-left: 5%; 
-    padding-right: 5%;
-    padding-top: 2%;
-    padding-bottom: 2;
-     border-radius: 0% 0.6em 0.6em 0%;
-  }
-  
-  #tabla_fila:nth-of-type(odd){
-    
-    border-radius: 10px;
-    background-color: #E5A73C;
-    border-radius: 0% 0.6em 0.6em 0%;
-  }
+section{ /* Centra el contenido */
+    width: 100%;
+    background-color: #EBE3D5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+}
 
-  #tabla_fila{
-    
-    border-radius: 10px;
-    background-color: #519C45;
-    border-radius: 0% 0.6em 0.6em 0%;
-  }
+.contenedor div {
+    background-color: #08903E;
+    border-radius: .5rem;
+    padding: 0;
+}
 
-  #img_producto:before { 
-    /* Now like a table header */
-    position: absolute;
-    /* Top/left values mimic padding */
-    padding-left: 2px;
-    padding-right: 2px;
-    width: 45%; 
-    padding-right: 10px; 
-    white-space: nowrap;
-  }
+.contenedor div .lineamientos_titulo{
+    background-color: transparent;
+    color: black;
+}
+
+.contenedor{
+    width: 100%;
+    max-width: 80rem;
+    margin: 0 auto;
+    border-radius: .4rem;
+}
+
+.acordeon-obj{
+    background-color: #283042;
+    border-radius: .4rem;
+    margin-bottom: .5rem;
+    padding: 1rem;
+    box-shadow: .5rem 2px regba(0,0,0,.1);
 
 }
+
+.acordeon-link{
+    font-size: 1.6rem;
+    color: rgba(255, 255, 255, .8);
+    text-decoration: none;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.acordeon-link i{
+    color: #e7d5ff;
+    padding: .5rem;
+}
+
+.acordeon-link .icono_mas{
+    display: none;
+}
+
+.contenedor .respuesta{
+    background-color: #1E412F;
+}
+.respuesta{
+    max-height: 0;
+    overflow: hidden;
+    position: relative;
+    background-color: red;
+    transition: max-height 650ms;
+}
+
+.respuesta::before{
+    position: absolute;
+    width: .6rem;
+    height: 90%;
+    background-color: #8fc460;
+    top: 50%;
+    left: 0;
+    transform: translate(-50%);
+}
+
+.respuesta p{
+    font-size: 1.4rem;
+    color: rgba(255, 255, 255, .6);
+    padding: 2rem;
+
+}
+
+.acordeon-obj:target .respuesta{
+    max-height: 20rem;
+
+}
+
+.acordeon-obj:target .acordeon-link .icono_mas{
+    display: none;
+
+}
+
+.acordeon-obj:target .acordeon-link .icono_menos{
+    display: block;
+
+}
+/* ----------------------------------------------------------- */
 
 
 @media screen and (min-width: 1180px) and (max-width: 1794px){

@@ -16,22 +16,29 @@
     display: none;
 }
 
-.img_banner{
-    display: inline-flex;
-    justify-content: left;
-    padding: 14px;
-    background: #08903E;
-    float: right;
+header .img_banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+}
+
+header .img_banner div {
+    background-color: #08903E;
 }
 
 header{
     width: 100%;
+    background-color: #08903E;
 }
 
 header nav{
     background: #08903E;
     z-index: 1000;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 header nav ul {
@@ -112,8 +119,15 @@ header nav ul li .slide_icon{
         padding-top: 80px;
     }
 
-    .img_banner{
+    header .img_banner{
         display: none;
+    }
+
+    header nav{
+        background: #08903E;
+        z-index: 1000;
+        width: 100%;
+        display: block;
     }
 
     .menu_bar{
@@ -139,6 +153,11 @@ header nav ul li .slide_icon{
     .menu_bar span{
         float: right;
         font-size: 40px;
+    }
+
+    .menu_bar img {
+        width: 80px;
+        height: 50px;
     }
 
     header nav{

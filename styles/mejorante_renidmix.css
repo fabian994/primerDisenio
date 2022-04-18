@@ -9,11 +9,26 @@
     font-family: Montserrat;
 }
 
-.menu {
+#menu {
     position: fixed;
     padding: 0;
     margin: 0;
 }
+
+.headroom {
+    transition: transform .3s ease;
+}
+
+/* Mostrar Menu */
+.headroom--pinned {
+    transform: translateY(0%);
+}
+/* Ocultar Menu */
+.headroom--unpinned {
+    transform: translateY(-100%);
+}
+
+
 
 body {
     background-color: #F4F4F4;
@@ -23,7 +38,7 @@ body {
 
 .container {
     width: 95%;
-    padding-top: 100px;
+    padding-top: 200px;
     margin: 20px auto;
     margin-top: 0;
     display: grid;
@@ -354,6 +369,7 @@ body {
         padding-bottom: 50px;
     }
 
+
 }
 
 @media screen and (min-width: 1180px) and (max-width: 1794px){
@@ -371,6 +387,8 @@ body {
         padding-right: 160px;
         padding-bottom: 15px;
     }
+
+   
 
 
 }
@@ -390,6 +408,7 @@ body {
         padding-right: 50px;
         padding-bottom: 15px;
     }
+
 
 
 }

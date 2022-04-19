@@ -16,12 +16,12 @@
     display: none;
 }
 
-/* header #img_banner{
+header #img_banner{
     display: flex;
     align-items: center;
     justify-content: center;
     height: 80px;
-} */
+}
 
 
 
@@ -94,6 +94,7 @@ header nav ul li .children li:hover{
 
 header nav ul li .children li a{
     display: block;
+    font-size: 12pt;
 }
 
 header nav ul li .children li a span{

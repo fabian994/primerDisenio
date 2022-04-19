@@ -10,7 +10,6 @@
 }
 
 #menu {
-    position: fixed;
     padding: 0;
     margin: 0;
 }
@@ -24,7 +23,7 @@ body {
 
 .container {
     width: 95%;
-    padding-top: 100px;
+    padding-top: 20px;
     margin: 20px auto;
     margin-top: 0;
     display: grid;
@@ -346,6 +345,9 @@ body {
                              "footer footer footer";
 
         
+        padding-top: 50px; 
+
+        
     }
 
     .container .sidebar div {
@@ -399,20 +401,5 @@ body {
 
 }
 
-@media screen and (min-width: 1181px) {
-
-    .headroom {
-        transition: transform .3s ease;
-    }
-    /* Mostrar Menu */
-    .headroom--pinned {
-        transform: translateY(0%);
-    }
-    /* Ocultar Menu */
-    .headroom--unpinned {
-        transform: translateY(-100%);
-    }
-
-}
 
 

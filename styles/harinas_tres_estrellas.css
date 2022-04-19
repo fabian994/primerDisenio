@@ -4,7 +4,7 @@
 }
 img{
 display:block;
-margin:auto;
+/* margin:auto; */
 }
 h3{
     color: green;
@@ -20,7 +20,6 @@ h1{
 }
 
 .menu {
-    position: fixed;
     padding: 0;
     margin: 0;
 }
@@ -29,7 +28,7 @@ h1{
 
 .container {
     width: 95%;
-    padding-top: 100px;
+    padding-top: 20px;
     margin: 20px auto;
     margin-top: 0;
     display: grid;
@@ -575,6 +574,7 @@ h1{
                              "widget-9 widget-9 widget-9"
                              "sidebar sidebar sidebar"
                              "footer footer footer";
+        padding-top: 50px;
     }
 
     .container .sidebar div {

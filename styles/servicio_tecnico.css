@@ -10,7 +10,6 @@
 }
 
 .menu {
-    position: fixed;
     padding: 0;
     margin: 0;
     z-index: 1000;
@@ -24,7 +23,7 @@ body {
 
 .container {
     width: 95%;
-    padding-top: 100px;
+    padding-top: 20px;
     margin: 20px auto;
     margin-top: 0;
     display: grid;
@@ -74,7 +73,7 @@ body {
     text-align: justify;
 }
 
-* CONTENIDO 2 - ENGLOBA EL CONTENIDO SECUNDARIO */
+/* CONTENIDO 2 - ENGLOBA EL CONTENIDO SECUNDARIO */
 
 .container .content2 {
     grid-area: content2;
@@ -371,6 +370,8 @@ body {
                              "widget-1 widget-1 widget-1"
                              "sidebar sidebar sidebar"
                              "footer footer footer";
+
+        padding-top: 50px;
 
         
     }

@@ -10,7 +10,6 @@
 }
 
 .menu {
-    position: fixed;
     padding: 0;
     margin: 0;
 }
@@ -23,7 +22,7 @@ body {
 
 .container {
     width: 95%;
-    padding-top: 100px;
+    padding-top: 20px;
     margin: 20px auto;
     margin-top: 0;
     display: grid;
@@ -343,6 +342,7 @@ body {
                              "widget-2 widget-2 widget-2"
                              "sidebar sidebar sidebar"
                              "footer footer footer";
+        padding-top: 50px;
 
         
     }

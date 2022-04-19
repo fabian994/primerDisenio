@@ -10,7 +10,6 @@
 }
 
 .menu {
-    position: fixed;
     padding: 0;
     margin: 0;
     z-index: 1000;
@@ -24,7 +23,7 @@ body {
 
 .container {
     width: 95%;
-    padding-top: 100px;
+    padding-top: 20px;
     margin: 20px auto;
     margin-top: 0;
     display: grid;
@@ -332,6 +331,10 @@ body {
 /* MEDIA QUIERY - DISPOSITIVOS CON UN ANCHO MAXIMO DE 768 (1180 op) PIXELES */
 
 @media screen and (max-width: 1180px) {
+
+    .menu_bar {
+        z-index: 1000;
+    }
     
     .container {
 
@@ -341,6 +344,7 @@ body {
                              "widget-1 widget-1 widget-1"
                              "sidebar sidebar sidebar"
                              "footer footer footer";
+        padding-top: 50px;
 
         
     }

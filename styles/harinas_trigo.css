@@ -469,9 +469,12 @@
         grid-template-areas: "header header header"
                              "content content content"
                              "content2 content2 content2"
-                             "widget-1 widget-1 widget-2"
-                             "widget-3 widget-3 widget-4"
-                             "widget-5 widget-5 widget-6"
+                             "widget-1 widget-1 widget-1"
+                             "widget-2 widget-2 widget-2"
+                             "widget-3 widget-3 widget-3"
+                             "widget-4 widget-4 widget-4"
+                             "widget-5 widget-5 widget-5"
+                             "widget-6 widget-6 widget-6"
                              "sidebar sidebar sidebar"
                              "footer footer footer";
         padding-top: 50px;

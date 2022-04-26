@@ -322,6 +322,7 @@
 
 .container .footer {
     background-color: #324D53;
+    background-image: url("https://www.transparenttextures.com/patterns/stardust.png");
     color: #EBE3D5;
     grid-area: footer;
 }

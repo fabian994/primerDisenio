@@ -271,6 +271,7 @@
 .hover_bkgr_fricc_4 > div,
 .hover_bkgr_fricc_5 > div {
     background-color: #FFC72C;
+    background-image: url("https://www.transparenttextures.com/patterns/egg-shell.png");
     color: whitesmoke;
     box-shadow: 10px 10px 60px #555;
     display: inline-block;

@@ -54,6 +54,7 @@
     color: aliceblue;
     grid-area: header;
     padding: 0px;
+    background-image: none;
 }
 
 /* IMAGEN DEL HEADER */

@@ -102,8 +102,8 @@
 
 .container .content2 {
     grid-area: content2;
-    background-color: #FFC72C;
-    background-image: url("https://www.transparenttextures.com/patterns/egg-shell.png");
+    background-color: #EBE3D5;
+    background-image: url("https://www.transparenttextures.com/patterns/wall-4-light.png");
     color: #1E412F;
     text-align: justify;
 }
@@ -272,7 +272,7 @@
 .hover_bkgr_fricc_5 > div {
     background-color: #FFC72C;
     background-image: url("https://www.transparenttextures.com/patterns/egg-shell.png");
-    color: whitesmoke;
+    color: #1E412F;
     box-shadow: 10px 10px 60px #555;
     display: inline-block;
     height: auto;

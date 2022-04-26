@@ -54,6 +54,7 @@
     color: aliceblue;
     grid-area: header;
     padding: 0px;
+    background-image: none;
 }
 
 /* IMAGEN DEL HEADER */
@@ -68,16 +69,18 @@
 .container .content {
     grid-area: content;
     background-color: #08903E;
+    background-image: url("https://www.transparenttextures.com/patterns/fabric-1-dark.png");
     color: #EBE3D5;
     text-align: justify;
 }
 
 #slider{
-    background-color: #08903E;
+    background-color: transparent;
 }
 
 .boton {
     background-color:#08903E;
+    background-image: url("https://www.transparenttextures.com/patterns/fabric-1-dark.png");
     border-radius:41px;
     display:inline-block;
     cursor:pointer;
@@ -100,6 +103,7 @@
 .container .content2 {
     grid-area: content2;
     background-color: #EBE3D5;
+    background-image: url("https://www.transparenttextures.com/patterns/wall-4-light.png");
     color: #1E412F;
     text-align: justify;
 }
@@ -124,6 +128,7 @@
 .container .sidebar {
     grid-column: 3 / 4;
     background-color: #1E412F;
+    background-image: url("https://www.transparenttextures.com/patterns/green-dust-and-scratches.png");
     min-height: 100px;
     grid-area: sidebar;
 }
@@ -187,6 +192,7 @@
 .container .widget-6 {
 
     background-color: #08903E;
+    background-image: url("https://www.transparenttextures.com/patterns/fabric-1-dark.png");
     color: aliceblue;
     height: 100px;
     display: flex;
@@ -265,7 +271,8 @@
 .hover_bkgr_fricc_4 > div,
 .hover_bkgr_fricc_5 > div {
     background-color: #FFC72C;
-    color: whitesmoke;
+    background-image: url("https://www.transparenttextures.com/patterns/egg-shell.png");
+    color: #1E412F;
     box-shadow: 10px 10px 60px #555;
     display: inline-block;
     height: auto;
@@ -316,6 +323,7 @@
 
 .container .footer {
     background-color: #324D53;
+    background-image: url("https://www.transparenttextures.com/patterns/stardust.png");
     color: #EBE3D5;
     grid-area: footer;
 }

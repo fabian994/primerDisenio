@@ -1,0 +1,29 @@
+Base de datos: sistema_pirineos
+
+Productos:
+cve_prod			varchar	5
+nom_prod			varchar	50
+tipo_prod			varchar	5
+descripcion_prod	text
+
+Tipos
+cve_tipo		varchar 5
+nom_tipo		varchar 50
+nom_catalog		varchar 50
+nom_recetario	varchar 50
+nom_prod_rel1	varchar 50
+img_prod_rel1	varchar 50
+url_prod_rel1	varchar 255
+
+nom_prod_rel2	varchar 50
+img_prod_rel2	varchar 50
+url_prod_rel2	varchar 255
+
+
+Reportes:
+Lista de Productos
+Lista de Tipos
+Lista de Productos de un tipo
+Consulta X nombre de productos
+Consulta X nombre de Tipos
+

@@ -1,7 +1,7 @@
 <?php
 	function conecta(){
 		$cs=mysqli_connect("localhost","root","");
-		$cbd=mysqli_select_db($cs,"boceto_sis_pirineos");
+		$cbd=mysqli_select_db($cs,"sis_pirineos");
 		return $cs;
 	}
 

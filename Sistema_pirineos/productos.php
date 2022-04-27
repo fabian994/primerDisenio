@@ -12,12 +12,12 @@
 	<?php
 		include 'utilerias.php';
 		$op=$_GET['op'];
-		if ($op==0) sel_tipo_prod();
-		if ($op==1) f_HaTrigo();
-		if ($op==2) f_HaTrigo();
+		//if ($op==0) sel_tipo_prod();
+		if ($op==0) f_HaTrigo();
+		/*if ($op==2) f_HaTrigo();
 		if ($op==3) f_HaTrigo();
 		if ($op==4) f_HaTrigo();
-		if ($op==5) f_HaTrigo();
+		if ($op==5) f_HaTrigo();*/
 
 		if ($op==6) altas();
 		if ($op==7) bajas();
@@ -59,7 +59,7 @@
 			tomar_datos();
 			//echo "cve_prod=".$cve_prod;
 			$cs=conecta();
-			$query="SELECT * FROM harinas_hogar WHERE cve_prod='$cve_prod'";
+			$query="SELECT * FROM productos WHERE cve_prod='$cve_prod'";
 			$sql=mysqli_query($cs,$query);
 			$reg=mysqli_fetch_object($sql);
 			if ($reg==mysqli_fetch_array($sql)){
@@ -110,7 +110,7 @@
 			}
 		} // Termina Cambios
 
-		function sel_tipo_prod(){
+		/*function sel_tipo_prod(){
 			global $cve_prod, $nom_prod, $tipo_prod, $descripcion_prod, $img_prod, $lnk_prod;
 			echo "
 				<br><br>
@@ -137,11 +137,11 @@
 				</table>
 				</form>
 			";
-		} //Termina formulario
+		} //Termina formulario*/
 	
 		function f_HaTrigo(){
 				global $cve_prod, $nom_prod, $tipo_prod, $descripcion_prod, $img_prod;
-				echo "
+				/*echo "
 				<br><br>
 				<form name='f_prod_selec'>
 				<table border='10%' width='80%'>
@@ -165,7 +165,7 @@
 					</tr>
 				</table>
 				</form>
-			";
+			";*/
 
 				echo "
 					<br>

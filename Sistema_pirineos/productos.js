@@ -6,7 +6,7 @@ function tomar_datos(){
 	img_prod=document.f_productos_HaTrigo.img_prod.value;
 }
 
-function prod_op_selec(op){
+/*function prod_op_selec(op){
 	if (op==1) {
 		url="productos.php?op=1"
 		location.href=url;
@@ -32,7 +32,7 @@ function prod_op_selec(op){
 		location.href=url;
 	}
 
-}
+}*/
 
 function altas(){
 	tomar_datos();

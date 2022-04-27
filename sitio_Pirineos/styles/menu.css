@@ -81,7 +81,7 @@ header nav ul li .children{
     background: #1E412F;
     position: absolute;
     width: 150%;
-    z-index: 1000;
+    z-index: 10000;
 }
 
 header nav ul li .children li{
@@ -136,6 +136,7 @@ header nav ul li .slide_icon{
         display: block;
         width: 100%;
         position: fixed;
+        z-index: 1000;
         top: 0;
         background: #08903E;
     }

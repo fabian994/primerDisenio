@@ -1,0 +1,63 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(Montserrat-Regular.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat;
+}
+
+
+p{
+	font-size: 14pt;
+	font-weight: bold;	
+}
+
+
+.titulo36{
+	font-size: 36pt;
+	font-weight: bold;
+}
+
+#titulo24{
+	font-size: 24pt;
+}
+
+#titulo18{
+	font-size: 18pt;
+}
+
+.boton{
+	color: white;
+	background: #08903E;
+	font-size: 14pt;
+	font-weight: bold;
+	height: 30px;
+	width: 200px;
+	border-radius: 10px;
+}
+
+.boton:hover{
+	color: #08903E;
+	background: white;	
+}
+
+#rojo{
+	background: red;	
+}
+
+caption{
+	font-weight: bold;
+	font-size: 20pt;
+}
+.campo{
+	
+	background: #EBE3D5;
+	font-size: 14pt;
+	font-weight: bold;
+	width: 250px;
+	border-radius: 10px;
+	text-align: center;
+}

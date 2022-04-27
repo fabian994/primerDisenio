@@ -1,0 +1,551 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(Montserrat-Regular.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat;
+}
+
+.menu {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #F4F4F4;
+}
+
+/* CONTENEDOR - ENGLOBA TODA LA PAGINA */
+
+.container {
+    width: 95%;
+    padding-top: 20px;
+    margin: 20px auto;
+    margin-top: 0;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
+
+    grid-template-areas: "header header header"
+                         "content content content"
+                         "content2 content2 content2"
+                         "footer footer footer";
+}
+
+/* CLASES DEL CONTENEDOR - CADA UNA DE ELLAS */
+
+.container div, 
+.container .header, 
+.container .content,
+.container .content2,
+.container .footer {
+    background-color: aliceblue;
+    padding: 20px;
+    border-radius: 14px;
+}
+
+/* HEADER DE LA PAGINA */
+
+.container .header {
+    color: aliceblue;
+    grid-area: header;
+    padding: 0px;
+}
+
+/* IMAGEN DEL HEADER */
+
+.container .header #header_image {
+    width: 100%;
+    border-radius: 14px;
+}
+
+/* CONTENIDO - ENGLOBA EL CONTENIDO PRINCIPAL */
+
+.container .content {
+    grid-area: content;
+    background-color: #08903E;
+    color: #EBE3D5;
+    text-align: justify;
+}
+
+.container .content #lineamientos_descripcion {
+    width: 60%;
+}
+
+.container .content2 #lineamientos_descripcion {
+    width: 60%;
+}
+
+.container #cont_image {
+    width: 30%;
+    float: left;
+    margin-right: 50px;
+    border-radius: 14px;
+}
+
+.container #cont_image2 {
+    width: 30%;
+    float: right;
+    margin-left: 50px;
+    border-radius: 14px;
+}
+
+
+.container2{
+    width: 550px;
+    height: 377px;
+    float: right;
+}
+
+.container .content .boton {
+    background-color:#FFC72C;
+    border-radius:41px;
+    cursor:pointer;
+    color:#ffffff;
+    font-family: Montserrat;
+    font-size:20px;
+    font-weight:bold;
+    padding:14px 18px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #5b8a3c;
+}
+
+.container .content div {
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CONTENIDO 2 - ENGLOBA EL CONTENIDO SECUNDARIO */
+
+.container .content2 .boton {
+    background-color:#FFC72C;
+    border-radius:41px;
+    cursor:pointer;
+    color:#ffffff;
+    font-family: Montserrat;
+    font-size:20px;
+    font-weight:bold;
+    padding:14px 18px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #5b8a3c;
+}
+
+.container .content2 div {
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boton:active {
+    position:relative;
+    top:1px;
+}
+
+.container .content2 {
+    grid-area: content2;
+    background-color: #EBE3D5;
+    color: #1E412F;
+    text-align: justify;
+}
+
+.container .content span {
+    color: #EBE3D5;
+    font-size: 55pt;
+    display: flex;
+    justify-content: center;
+}
+
+.container .content2 span {
+    color: #1E412F;
+    font-size: 55pt;
+    display: flex;
+    justify-content: center;
+}
+
+.container3{
+    width: 550px;
+    height: 377px;
+    float: left;
+}
+
+/* WIDGET 1 - SOLO EL PRIMER WIDGET */
+
+.container .widget-1 {
+    color: #EBE3D5;
+    grid-area: widget-1;
+}
+
+.tabla_harinas_hogar{
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 100%;
+
+}
+
+#tabla_fila:nth-of-type(odd){
+    
+    border-radius: 10px;
+    background-color: #E5A73C;
+}
+
+#tabla_fila{
+    
+    border-radius: 10px;
+    background-color: #519C45;
+}
+
+#img_producto{
+    
+    border-radius: 4% 0% 0% 4%;
+    padding-left: 1%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    padding-right: 1%;
+    text-align: center;
+}
+
+#producto_descripcion{
+
+    border-radius: 0% 10px 10px 0%;
+    text-align: justify;
+    vertical-align: middle;
+    padding-left: 1.5%;
+    padding-right: 1%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+/* FOOTER - ENGLOBA TODO EL FOOTER */
+
+.container .footer {
+    background-color: #324D53;
+    color: #EBE3D5;
+    grid-area: footer;
+}
+
+.container .footer div {
+    padding: 0;
+    background-color: transparent;
+}
+
+.container .footer .contact #contact,
+.container .footer .contact #boletin,
+.container .footer .contact #bolsa_trabajo,
+.container .footer .contact #siguenos {
+    display: inline-flex;
+    font-size: 14pt;
+}
+
+/* -------------------------------------------------------------------------------- */
+
+/* ELEMENTO - CONTACTO */
+
+.container .footer .contact #contact {
+    padding-right: 290px;
+    /* 370 defualt */
+    padding-bottom: 15px;
+}
+
+/* ELEMENTO - TITULO CONTACTO */
+
+.container .footer .contact #contact ul #footer_title {
+    font-size: 17pt;
+    font-weight: bold;
+    list-style: none;
+    padding-bottom: 3px;
+}
+
+
+/* ELEMENTO - INFORMACION CONTACTO */
+
+.container .footer .contact #contact ul li {
+    font-size: 10pt;
+    list-style: none;
+    padding-top: 3px;
+}
+
+/* -------------------------------------------------------------------------------- */
+
+/* ELEMENTO - BOLETIN */
+
+.container .footer .contact #boletin {
+    padding-right: 290px;
+    padding-bottom: 15px;
+}
+
+/* ELEMENTO - TITULO BOLETIN */
+
+.container .footer .contact #boletin ul #footer_title {
+    font-size: 17pt;
+    font-weight: bold;
+    list-style: none;
+    padding-bottom: 3px;
+}
+
+/* ELEMENTO - INFORMACION BOLETIN */
+
+.container .footer .contact #boletin ul li {
+    font-size: 10pt;
+    list-style: none;
+    padding-top: 7px;
+}
+
+.container .footer .contact #boletin ul li a {
+    color: #EBE3D5;
+    text-decoration: none;
+}
+
+/* -------------------------------------------------------------------------------- */
+
+/* ELEMENTO - BOLETIN */
+
+.container .footer .contact #bolsa_trabajo {
+    padding-right: 290px;
+    padding-bottom: 15px;
+}
+
+/* ELEMENTO - TITULO BOLSA DE TRABAJO */
+
+.container .footer .contact #bolsa_trabajo ul #footer_title {
+    font-size: 17pt;
+    font-weight: bold;
+    list-style: none;
+    padding-bottom: 3px;
+}
+
+/* ELEMENTO - INFORMACION BOLSA DE TRABAJO */
+
+.container .footer .contact #bolsa_trabajo ul li {
+    font-size: 10pt;
+    list-style: none;
+    padding-top: 7px;
+}
+
+.container .footer .contact #bolsa_trabajo ul li a {
+    color: #EBE3D5;
+    text-decoration: none;
+}
+
+/* -------------------------------------------------------------------------------- */
+
+/* ELEMENTO - SIGUENOS EN */
+
+.container .footer .contact #siguenos {
+    padding-right: 0px;
+    padding-bottom: 0px;
+}
+
+/* ELEMENTO - TITULO SIGUENOS EN */
+
+.container .footer .contact #siguenos ul #footer_title {
+    font-size: 17pt;
+    font-weight: bold;
+    list-style: none;
+    padding-bottom: 3px;
+}
+
+/* ELEMENTO - INFORMACION SIGUENOS EN */
+
+.container .footer .contact #siguenos ul li {
+    font-size: 10pt;
+    list-style: none;
+    padding-top: 7px;
+}
+
+.container .footer .contact #siguenos ul .share_buttons_footer li {
+    display: inline-block;
+    padding-right: 7px;
+}
+
+.container .footer .contact #siguenos ul li a {
+    color: #EBE3D5;
+    text-decoration: none;
+    font-size: 35pt;
+}
+
+/* MEDIA QUIERY - DISPOSITIVOS CON UN ANCHO MAXIMO DE 768 (1180 op) PIXELES */
+
+@media screen and (max-width: 1180px) {
+    
+    .container {
+
+        grid-template-areas: "header header header"
+                             "content content content"
+                             "content2 content2 content2"
+                             "footer footer footer";
+        padding-top: 50px;
+
+        
+    }
+
+    .container .sidebar div {
+        background-color: transparent;
+        padding: 0;
+        /* CONTROL DEL ESPACIADO ENTRE LOS ELEMENTOS DE LA SIDEBAR */
+        padding-bottom: 50px;
+    }
+
+}
+
+@media only screen and (min-width: 966px) and (max-width: 1180px)  {
+
+  /* Force table to not be like tables anymore */
+  .tabla_harinas_hogar, #img_producto, #producto_descripcion { 
+    display: block; 
+  }
+  
+  #img_producto, #producto_descripcion { 
+    /* Behave  like a "row" */
+    border: none;
+    position: relative; 
+    padding-left: 5%; 
+    padding-right: 5%;
+    padding-top: 2%;
+    padding-bottom: 2;
+  }
+  
+  #img_producto:before { 
+    /* Now like a table header */
+    position: absolute;
+    /* Top/left values mimic padding */
+    padding-left: 2px;
+    padding-right: 2px;
+    width: 45%; 
+    padding-right: 10px; 
+    white-space: nowrap;
+  }
+
+  .container #cont_image {
+    width: 35%;
+    height: 100%;
+    float: left;
+    margin-right: 20px;
+    border-radius: 14px;
+}
+
+.container #cont_image2 {
+    width: 35%;
+    height: 100%;
+    float: left;
+    margin-left: 20px;
+    border-radius: 14px;
+}
+  
+  
+}
+
+@media screen and (min-width: 1180px) and (max-width: 1794px){
+
+    .container .footer .contact #contact {
+        padding-right: 160px;
+        /* 370 defualt */
+        padding-bottom: 15px;
+    }
+    .container .footer .contact #boletin {
+        padding-right: 160px;
+        padding-bottom: 15px;
+    }
+    .container .footer .contact #bolsa_trabajo {
+        padding-right: 160px;
+        padding-bottom: 15px;
+    }
+
+    .container #cont_image {
+        width: 35%;
+        height: 100%;
+        float: left;
+        margin-right: 20px;
+        border-radius: 14px;
+    }
+
+    .container #cont_image2 {
+        width: 35%;
+        height: 100%;
+        float: left;
+        margin-left: 20px;
+        border-radius: 14px;
+    }
+
+
+}
+
+
+@media screen and (max-width: 1078px) {
+
+    .container .footer .contact #contact {
+        padding-right: 50px;
+        /* 370 defualt */
+        padding-bottom: 15px;
+    }
+    .container .footer .contact #boletin {
+        padding-right: 50px;
+        padding-bottom: 15px;
+    }
+    .container .footer .contact #bolsa_trabajo {
+        padding-right: 50px;
+        padding-bottom: 15px;
+    }
+
+
+}
+
+@media screen and (max-width: 965px) {
+
+    .container #cont_image {
+        
+        width: 35%;
+        border-radius: 14px;
+        float: none;
+        margin-left: 33%;
+        margin-bottom: 20px;
+    }
+
+    .container #cont_image2 {
+        
+        width: 35%;
+        border-radius: 14px;
+        float: none;
+        margin-right: 33%;
+        margin-left: 33%;
+        margin-bottom: 20px;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    .container .content #lineamientos_descripcion {
+        width: 100%;
+    }
+
+    .container .content2 #lineamientos_descripcion {
+        width: 100%;
+    }
+
+    .container #cont_image {
+        
+        width: 35%;
+        border-radius: 14px;
+        float: none;
+        margin-left: 33%;
+        margin-bottom: 20px;
+    }
+
+    .container #cont_image2 {
+        
+        width: 35%;
+        border-radius: 14px;
+        float: none;
+        margin-right: 33%;
+        margin-left: 33%;
+        margin-bottom: 20px;
+    }
+}
+
+

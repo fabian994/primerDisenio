@@ -1,0 +1,547 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(Montserrat-Regular.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat;
+}
+
+.menu {
+    padding: 0;
+    margin: 0;
+}
+
+/* CONTENEDOR - ENGLOBA TODA LA PAGINA */
+
+.container {
+    width: 95%;
+    padding-top: 20px;
+    margin: 20px auto;
+    margin-top: 0;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
+
+    grid-template-areas: "header header header"
+                         "content3 content3 sidebar"
+                         "content content sidebar"
+                         "widget-1 widget-2 sidebar"
+                         "content2 content2 sidebar"
+                         "widget-3 widget-3 sidebar"
+                         "content4 content4 sidebar"
+                         "widget-5 widget-6 sidebar"
+                         "footer footer footer";
+}
+
+/* CLASES DEL CONTENEDOR - CADA UNA DE ELLAS */
+
+.container div, 
+.container .header,
+.container .content3 
+.container .content,
+.container .sidebar,
+.container .content2,
+.container .content4, 
+.container .footer{
+    background-color: transparent;
+    padding: 20px;
+    border-radius: 14px;
+}
+
+/* HEADER DE LA PAGINA */
+
+.container .header {
+    color: aliceblue;
+    grid-area: header;
+    padding: 0px;
+}
+
+/* IMAGEN DEL HEADER */
+
+.container .header #header_image {
+    width: 100%;
+    border-radius: 14px;
+}
+
+/* CONTENIDO - ENGLOBA EL CONTENIDO PRINCIPAL */
+
+.container .content3{
+    grid-area: content3;
+    background-color: #EBE3D5;
+    height: auto;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 14px;
+}
+
+.container .content4{
+    grid-area: content4;
+    background-color: #08903E;
+    color: #EBE3D5;
+    height: auto;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 14px;
+}
+
+.container .content {
+    grid-area: content;
+    background-color: #08903E;
+    color: #EBE3D5;
+    height: auto;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 14px;
+    
+}
+
+/* CONTENIDO 2 - ENGLOBA EL CONTENIDO SECUNDARIO */
+
+.container .content2 {
+    grid-area: content2;
+    background-color: #EBE3D5;
+    color: #1E412F;
+    height: auto;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 14px;
+}
+
+
+.container .content span {
+    color: #EBE3D5;
+    font-size: 55pt;
+    display: flex;
+    justify-content: center;
+}
+
+.container .content2 span {
+    color: #1E412F;
+    font-size: 55pt;
+    display: flex;
+    justify-content: center;
+}
+
+/* SIDEBAR - ENGLOBA TODA LA SIDEBAR */
+
+.container .sidebar {
+    grid-column: 3 / 4;
+    background-color: #1E412F;
+    min-height: 100px;
+    grid-area: sidebar;
+}
+
+.container .sidebar h1 {
+    color: #EBE3D5;
+    font-size: 18pt;
+}
+
+.container .sidebar a {
+    color: #E5A73C;
+    text-decoration: none;
+    font-size: 11pt;
+}
+
+.container .sidebar span {
+    margin-right: 10px;
+}
+
+.container .sidebar ul {
+    color: #EBE3D5;
+    font-size: 18pt;
+    list-style: none;
+    /* CONTROL DEL ESPACIADO ENTRE LOS ELEMENTOS DE LA SIDEBAR */
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.container .sidebar ul li {
+    padding-bottom: 15px;
+}
+
+.container .sidebar ul li a {
+    font-size: 18pt;
+}
+
+.container .sidebar .share_buttons li span {
+    font-size: 35pt;
+}
+
+.container .sidebar div {
+    background-color: transparent;
+    padding: 0;
+    /* CONTROL DEL ESPACIADO ENTRE LOS ELEMENTOS DE LA SIDEBAR */
+    padding-bottom: 262px;
+}
+
+.container .sidebar .share_buttons li {
+    display: inline-block;
+}
+
+
+/* WIDGETS - ENGLOBA TODOS LOS WIDGETS */
+
+.container .widget-1, 
+.container .widget-2, 
+.container .widget-3, 
+.container .widget-4, 
+.container .widget-5, 
+.container .widget-6 {
+
+    background-color: #FFC72C;
+    color: aliceblue;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+/* WIDGET 1 - SOLO EL PRIMER WIDGET */
+
+.container .widget-1 {
+    grid-area: widget-1;
+    height: auto;
+}
+
+/* WIDGET 2 - SOLO EL SEGUNDO WIDGET */
+
+.container .widget-2 {
+    grid-area: widget-2;
+    height: auto;
+}
+
+/* WIDGET 3 - SOLO EL TERCER WIDGET */
+
+.container .widget-3 {
+    grid-area: widget-3;
+    width: auto;
+    height: auto;
+}
+
+/* WIDGET 4 - SOLO EL CUARTO WIDGET */
+
+.container .widget-4 {
+    grid-area: widget-4;
+    height: auto;
+}
+
+/* WIDGET 5 - SOLO EL QUINTO WIDGET */
+
+.container .widget-5 {
+    grid-area: widget-5;
+    height: auto;
+}
+
+/* WIDGET 6 - SOLO EL SEXTO WIDGET */
+
+.container .widget-6 {
+    grid-area: widget-6;
+    height: auto;
+}
+
+/* POP-UP */
+.hover_bkgr_fricc,
+.hover_bkgr_fricc_1,
+.hover_bkgr_fricc_2,
+.hover_bkgr_fricc_3,
+.hover_bkgr_fricc_4,
+.hover_bkgr_fricc_5 {
+    background:transparent;
+    cursor:default;
+    display:none;
+    height:100%;
+    position:fixed;
+    text-align:center;
+    top:0;
+    width:100%;
+    z-index:10000;
+}
+.hover_bkgr_fricc .helper,
+.hover_bkgr_fricc_1 .helper_1,
+.hover_bkgr_fricc_2 .helper_2,
+.hover_bkgr_fricc_3 .helper_3,
+.hover_bkgr_fricc_4 .helper_4,
+.hover_bkgr_fricc_5 .helper_5 {
+    display:inline-block;
+    height:100%;
+    vertical-align:middle;
+}
+.hover_bkgr_fricc > div,
+.hover_bkgr_fricc_1 > div,
+.hover_bkgr_fricc_2 > div,
+.hover_bkgr_fricc_3 > div,
+.hover_bkgr_fricc_4 > div,
+.hover_bkgr_fricc_5 > div {
+    background-color: #FFC72C;
+    color: whitesmoke;
+    box-shadow: 10px 10px 60px #555;
+    display: inline-block;
+    height: 600px;
+    width: 600px;
+    vertical-align: middle;
+    width: 60%;
+    position: relative;
+    border-radius: 8px;
+    padding: 15px 5%;
+    overflow-y: scroll !important;
+}
+.popupCloseButton,
+.popupCloseButton_1,
+.popupCloseButton_2,
+.popupCloseButton_3,
+.popupCloseButton_4,
+.popupCloseButton_5 {
+    background-color: transparent;
+    color: #08903E;
+    border-radius: 50px;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Monsterrat;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 45px;
+    line-height: 30px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+}
+
+.trigger_popup_fricc,
+.trigger_popup_fricc_1,
+.trigger_popup_fricc_2,
+.trigger_popup_fricc_3,
+.trigger_popup_fricc_4,
+.trigger_popup_fricc_5 {
+    cursor: pointer;
+    font-size: 30px;
+    display: inline-block;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* FOOTER - ENGLOBA TODO EL FOOTER */
+
+.container .footer {
+    background-color: #324D53;
+    color: #EBE3D5;
+    grid-area: footer;
+}
+
+.container .footer div {
+    padding: 0;
+    background-color: transparent;
+}
+
+.container .footer .contact #contact,
+.container .footer .contact #boletin,
+.container .footer .contact #bolsa_trabajo,
+.container .footer .contact #siguenos {
+    display: inline-flex;
+    font-size: 14pt;
+}
+
+/* -------------------------------------------------------------------------------- */
+
+/* ELEMENTO - CONTACTO */
+
+.container .footer .contact #contact {
+    padding-right: 290px;
+    /* 370 defualt */
+    padding-bottom: 15px;
+}
+
+/* ELEMENTO - TITULO CONTACTO */
+
+.container .footer .contact #contact ul #footer_title {
+    font-size: 17pt;
+    font-weight: bold;
+    list-style: none;
+    padding-bottom: 3px;
+}
+
+
+/* ELEMENTO - INFORMACION CONTACTO */
+
+.container .footer .contact #contact ul li {
+    font-size: 10pt;
+    list-style: none;
+    padding-top: 3px;
+}
+
+/* -------------------------------------------------------------------------------- */
+
+/* ELEMENTO - BOLETIN */
+
+.container .footer .contact #boletin {
+    padding-right: 290px;
+    padding-bottom: 15px;
+}
+
+/* ELEMENTO - TITULO BOLETIN */
+
+.container .footer .contact #boletin ul #footer_title {
+    font-size: 17pt;
+    font-weight: bold;
+    list-style: none;
+    padding-bottom: 3px;
+}
+
+/* ELEMENTO - INFORMACION BOLETIN */
+
+.container .footer .contact #boletin ul li {
+    font-size: 10pt;
+    list-style: none;
+    padding-top: 7px;
+}
+
+.container .footer .contact #boletin ul li a {
+    color: #EBE3D5;
+    text-decoration: none;
+}
+
+/* -------------------------------------------------------------------------------- */
+
+/* ELEMENTO - BOLETIN */
+
+.container .footer .contact #bolsa_trabajo {
+    padding-right: 290px;
+    padding-bottom: 15px;
+}
+
+/* ELEMENTO - TITULO BOLSA DE TRABAJO */
+
+.container .footer .contact #bolsa_trabajo ul #footer_title {
+    font-size: 17pt;
+    font-weight: bold;
+    list-style: none;
+    padding-bottom: 3px;
+}
+
+/* ELEMENTO - INFORMACION BOLSA DE TRABAJO */
+
+.container .footer .contact #bolsa_trabajo ul li {
+    font-size: 10pt;
+    list-style: none;
+    padding-top: 7px;
+}
+
+.container .footer .contact #bolsa_trabajo ul li a {
+    color: #EBE3D5;
+    text-decoration: none;
+}
+
+/* -------------------------------------------------------------------------------- */
+
+/* ELEMENTO - SIGUENOS EN */
+
+.container .footer .contact #siguenos {
+    padding-right: 0px;
+    padding-bottom: 0px;
+}
+
+/* ELEMENTO - TITULO SIGUENOS EN */
+
+.container .footer .contact #siguenos ul #footer_title {
+    font-size: 17pt;
+    font-weight: bold;
+    list-style: none;
+    padding-bottom: 3px;
+}
+
+/* ELEMENTO - INFORMACION SIGUENOS EN */
+
+.container .footer .contact #siguenos ul li {
+    font-size: 10pt;
+    list-style: none;
+    padding-top: 7px;
+}
+
+.container .footer .contact #siguenos ul .share_buttons_footer li {
+    display: inline-block;
+    padding-right: 7px;
+}
+
+.container .footer .contact #siguenos ul li a {
+    color: #EBE3D5;
+    text-decoration: none;
+    font-size: 35pt;
+}
+
+/* MEDIA QUIERY - DISPOSITIVOS CON UN ANCHO MAXIMO DE 768 PIXELES */
+
+@media screen and (max-width: 1180px) {
+    
+    .container {
+
+        grid-template-areas: "header header header"
+                             "content3 content3 content3"
+                             "content content content"
+                             "sidebar sidebar sidebar"
+                             "widget-1 widget-1 widget-2"
+                             "content2 content2 content2"
+                             "widget-3 widget-3 widget-3"
+                             "content4 content4 content4"
+                             "widget-5 widget-5 widget-6"
+                             "footer footer footer";
+        padding-top: 50px;
+    }
+
+    .container .sidebar div {
+        background-color: transparent;
+        padding: 0;
+        /* CONTROL DEL ESPACIADO ENTRE LOS ELEMENTOS DE LA SIDEBAR */
+        padding-bottom: 50px;
+    }
+
+}
+
+@media screen and (min-width: 1180px) and (max-width: 1794px){
+
+    .container .footer .contact #contact {
+        padding-right: 160px;
+        /* 370 defualt */
+        padding-bottom: 15px;
+    }
+    .container .footer .contact #boletin {
+        padding-right: 160px;
+        padding-bottom: 15px;
+    }
+    .container .footer .contact #bolsa_trabajo {
+        padding-right: 160px;
+        padding-bottom: 15px;
+    }
+
+
+}
+
+@media screen and (max-width: 1078px) {
+
+    .container .footer .contact #contact {
+        padding-right: 50px;
+        /* 370 defualt */
+        padding-bottom: 15px;
+    }
+    .container .footer .contact #boletin {
+        padding-right: 50px;
+        padding-bottom: 15px;
+    }
+    .container .footer .contact #bolsa_trabajo {
+        padding-right: 50px;
+        padding-bottom: 15px;
+    }
+
+
+}

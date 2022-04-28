@@ -31,7 +31,7 @@ function altas(){
 		if (url_prod_rel2.length==0) document.f_sidebar_HaTrigo.url_prod_rel2.style.background="red";
 	}
 	else{
-		url="sidebar.php?op=1&cve_tipo="+cve_tipo+"&nom_tipo="+nom_tipo+"&nom_catalog="+nom_catalog+"&nom_recetario="+nom_recetario;
+		url="tipos.php?op=1&cve_tipo="+cve_tipo+"&nom_tipo="+nom_tipo+"&nom_catalog="+nom_catalog+"&nom_recetario="+nom_recetario;
 		url=url+"&nom_prod_rel1="+nom_prod_rel1+"&img_prod_rel1="+img_prod_rel1+"&url_prod_rel1="+url_prod_rel1;
 		url=url+"&nom_prod_rel2="+nom_prod_rel2+"&img_prod_rel2="+img_prod_rel2+"&url_prod_rel2="+url_prod_rel2;;
 		location.href=url;
@@ -58,7 +58,7 @@ function bajas(){
 		img_prod_rel2="";
 		url_prod_rel2="";
 		if (confirm("Seguro de Eliminar ??")){
-			url="sidebar.php?op=2&cve_tipo="+cve_tipo+"&nom_tipo="+nom_tipo+"&nom_catalog="+nom_catalog+"&nom_recetario="+nom_recetario;
+			url="tipos.php?op=2&cve_tipo="+cve_tipo+"&nom_tipo="+nom_tipo+"&nom_catalog="+nom_catalog+"&nom_recetario="+nom_recetario;
 			url=url+"&nom_prod_rel1="+nom_prod_rel1+"&img_prod_rel1="+img_prod_rel1+"&url_prod_rel1="+url_prod_rel1;
 			url=url+"&nom_prod_rel2="+nom_prod_rel2+"&img_prod_rel2="+img_prod_rel2+"&url_prod_rel2="+url_prod_rel2;;
 			location.href=url;
@@ -88,7 +88,7 @@ function consultas(){
 		nom_prod_rel2="";
 		img_prod_rel2="";
 		url_prod_rel2="";
-		url="sidebar.php?op=3&cve_tipo="+cve_tipo+"&nom_tipo="+nom_tipo+"&nom_catalog="+nom_catalog+"&nom_recetario="+nom_recetario;
+		url="tipos.php?op=3&cve_tipo="+cve_tipo+"&nom_tipo="+nom_tipo+"&nom_catalog="+nom_catalog+"&nom_recetario="+nom_recetario;
 		url=url+"&nom_prod_rel1="+nom_prod_rel1+"&img_prod_rel1="+img_prod_rel1+"&url_prod_rel1="+url_prod_rel1;
 		url=url+"&nom_prod_rel2="+nom_prod_rel2+"&img_prod_rel2="+img_prod_rel2+"&url_prod_rel2="+url_prod_rel2;;
 		location.href=url;
@@ -103,7 +103,7 @@ function cambios(){
 	}
 	else{
 		document.f_sidebar_HaTrigo.cve_tipo.style.background="blue";
-		url="sidebar.php?op=4&cve_tipo="+cve_tipo+"&nom_tipo="+nom_tipo+"&nom_catalog="+nom_catalog+"&nom_recetario="+nom_recetario;
+		url="tipos.php?op=4&cve_tipo="+cve_tipo+"&nom_tipo="+nom_tipo+"&nom_catalog="+nom_catalog+"&nom_recetario="+nom_recetario;
 		url=url+"&nom_prod_rel1="+nom_prod_rel1+"&img_prod_rel1="+img_prod_rel1+"&url_prod_rel1="+url_prod_rel1;
 		url=url+"&nom_prod_rel2="+nom_prod_rel2+"&img_prod_rel2="+img_prod_rel2+"&url_prod_rel2="+url_prod_rel2;;
 		location.href=url;

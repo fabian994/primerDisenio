@@ -1,6 +1,30 @@
 Base de datos: sistema_pirineos
 
-Productos:
+productos:
+cve_prod			varchar	5
+nom_prod			varchar	50
+tipo_prod			varchar	5
+descripcion_prod	text
+
+harinas_trigo:
+cve_prod			varchar	5
+nom_prod			varchar	50
+tipo_prod			varchar	5
+descripcion_prod	text
+
+derivados_trigo:
+cve_prod			varchar	5
+nom_prod			varchar	50
+tipo_prod			varchar	5
+descripcion_prod	text
+
+harinas_preparadas:
+cve_prod			varchar	5
+nom_prod			varchar	50
+tipo_prod			varchar	5
+descripcion_prod	text
+
+polvo_hornear:
 cve_prod			varchar	5
 nom_prod			varchar	50
 tipo_prod			varchar	5

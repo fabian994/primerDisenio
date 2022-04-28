@@ -352,9 +352,7 @@
 						</tr>
 					</table>
 					</form>
-				";
-
-				
+				";				
 
 		} //Termina formulario
 	?>

@@ -35,6 +35,7 @@ body {
                          "content content content"
                          "widget-2 widget-2 widget-2"
                          "widget-1 widget-1 widget-1"
+                         "content2 content2 content2"
                          "footer footer footer";
 }
 
@@ -43,6 +44,7 @@ body {
 .container div, 
 .container .header, 
 .container .content,
+.container .content2,
 .container .sidebar,
 .container .footer {
     background-color: aliceblue;
@@ -69,7 +71,8 @@ body {
 
 .container .content {
     grid-area: content;
-    background-color: #EBE3D5;
+    background-color: #08903E;
+    color: #EBE3D5;
     text-align: justify;
 }
 
@@ -77,8 +80,8 @@ body {
 
 .container .content2 {
     grid-area: content2;
-    background-color: #EBE3D5;
-    color: #1E412F;
+    background-color: #E5A73C;
+    color: #EBE3D5;
     text-align: justify;
 }
 
@@ -91,7 +94,7 @@ body {
 }
 
 .container .content2 span {
-    color: #1E412F;
+    color: #EBE3D5;
     font-size: 55pt;
     display: flex;
     justify-content: center;
@@ -368,7 +371,7 @@ body {
                              "content content content"
                              "widget-2 widget-2 widget-2"
                              "widget-1 widget-1 widget-1"
-                             "sidebar sidebar sidebar"
+                             "content2 content2 content2"
                              "footer footer footer";
 
         padding-top: 50px;

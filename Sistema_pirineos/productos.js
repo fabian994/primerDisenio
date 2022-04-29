@@ -5,7 +5,6 @@ function tomar_datos(op){
 	tipo_prod=document.f_productos_HaTrigo.tipo_prod.value;
 	descripcion_prod=document.f_productos_HaTrigo.descripcion_prod.value;
 	img_prod=document.f_productos_HaTrigo.img_prod.value;
-	img_prod="imagenes"+img_prod;
 
 	if (op==1) cat=1;
 	if (op==2) cat=2;

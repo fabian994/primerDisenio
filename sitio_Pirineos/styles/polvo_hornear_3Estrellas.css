@@ -74,6 +74,44 @@ body {
     text-align: justify;
 }
 
+
+#lineamientos_titulo{
+    text-align: center;
+}
+#lineamientos_descripcion{
+   padding-top: inherit;
+}
+
+#titulo_catalogo{
+    text-align: center;
+    background-color: #FFC627;
+    border-radius: inherit;
+    color: #1E412F;
+    padding-top: inherit;
+}
+#titulo_productos{
+    text-align: center;
+    color: white;
+    background-color:#08903E;
+    border-radius: 10px;
+}
+
+.catalogo {
+    display: flex;
+}
+#contenido_catalogo{
+    width: 50%;
+    height: auto;
+}
+#imagen_catalogo{
+    width: 50%;
+    height: auto;
+}
+#producto_catalogo{
+width: 96%;
+max-width: 960px;
+margin: 0 auto;
+}
 /* CONTENIDO 2 - ENGLOBA EL CONTENIDO SECUNDARIO */
 
 .container .content2 {

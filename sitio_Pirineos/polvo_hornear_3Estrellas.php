@@ -172,37 +172,29 @@
         </aside>
     
         <div class="widget-1">
-            <h1> Polvo para Hornear</h1>
-
-            <br>
-
-            <h3> Lorem ipsum dolor 1</h3>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non urna vestibulum, euismod mi at, pulvinar ex. Fusce libero justo, euismod id sapien eget, tempus tincidunt nisi. Vestibulum vehicula mattis auctor. Vivamus quis lorem at tortor efficitur dapibus a in dui.
-            </p>
-
-            <br><br>
-            
-            <h3> Lorem ipsum dolor 2</h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non urna vestibulum, euismod mi at, pulvinar ex. Fusce libero justo, euismod id sapien eget, tempus tincidunt nisi. Vestibulum vehicula mattis auctor. Vivamus quis lorem at tortor efficitur dapibus a in dui.
-            </p>
-            
-            <br><br>
-            
-            <h3> Lorem ipsum dolor 3 </h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non urna vestibulum, euismod mi at, pulvinar ex. Fusce libero justo, euismod id sapien eget, tempus tincidunt nisi. Vestibulum vehicula mattis auctor. Vivamus quis lorem at tortor efficitur dapibus a in dui.
-            </p>
-            
-            <br><br>
-            
-            <h3> Lorem ipsum dolor 4</h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non urna vestibulum, euismod mi at, pulvinar ex. Fusce libero justo, euismod id sapien eget, tempus tincidunt nisi. Vestibulum vehicula mattis auctor. Vivamus quis lorem at tortor efficitur dapibus a in dui.
-            </p>
-            
-        </div>
+            <?php
+                
+                $cs=conecta();
+                $query="SELECT * FROM polvo_hornear";
+                $sql=mysqli_query($cs,$query);
+                echo "<table>";
+                while ($reg=mysqli_fetch_object($sql)) {
+                    $x="";
+                    echo"
+                   
+                    <tr class='catalogo'>
+                        <td id='contenido_catalogo'>
+                            <h2 id ='titulo_productos'>$reg->nom_prod</h2><br>
+                            <p>$reg->descripcion_prod</p><br>
+                        </td>
+                        <td ><img src='$reg->img_prod' width='100%' height='100%'></td>
+                    </tr>
+                    ";
+                                       
+                }
+                echo "</table> ";
+            ?>
+        </div>  
 
         <footer class = "footer">
                 

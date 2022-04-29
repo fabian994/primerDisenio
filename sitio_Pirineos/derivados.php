@@ -92,24 +92,24 @@
             <?php
                 include 'utilerias.php';
                 $cs=conecta();
-            $query="SELECT * FROM derivados_trigo";
-            $sql=mysqli_query($cs,$query);
-            echo "<table>";
-            while ($reg=mysqli_fetch_object($sql)) {
-                $x="";
-                echo"
-               
-                <tr class='catalogo'>
-                    <td id='contenido_catalogo'>
-                        <h2 id ='titulo_productos'>$reg->nom_prod</h2><br>
-                        <p>$reg->descripcion_prod</p><br>
-                    </td>
-                    <td ><img src='$reg->img_prod' width='100%' height='100%'></td>
-                </tr>
-                ";
-                                   
-            }
-            echo "</table> ";
+                $query="SELECT * FROM derivados_trigo";
+                $sql=mysqli_query($cs,$query);
+                echo "<table>";
+                while ($reg=mysqli_fetch_object($sql)) {
+                    $x="";
+                    echo"
+                   
+                    <tr class='catalogo'>
+                        <td id='contenido_catalogo'>
+                            <h2 id ='titulo_productos'>$reg->nom_prod</h2><br>
+                            <p>$reg->descripcion_prod</p><br>
+                        </td>
+                        <td ><img src='$reg->img_prod' width='100%' height='100%'></td>
+                    </tr>
+                    ";
+                                       
+                }
+                echo "</table> ";
             ?>
             <br><br>
 

@@ -24,7 +24,7 @@
     display: grid;
     gap: 20px;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, auto);
+    grid-template-rows: repeat(5, auto);
 
     grid-template-areas: "header header header"
                          "content content sidebar"
@@ -484,7 +484,7 @@ padding-left: 10px;
         grid-template-areas: "header header header"
                              "content content content"
                              "content2 content2 content2"
-                             "widget-1 widget-1 sidebar"
+                             "widget-1 widget-1 widget-1"
                              "sidebar sidebar sidebar"
                              "footer footer footer";
 

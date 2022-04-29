@@ -105,11 +105,11 @@ width: 96%;
 max-width: 960px;
 margin: 0 auto;
 }
-img{
+/*img{
 width: 100%;
 height: auto;
 padding-left: 10px;
-}
+}*/
 #slider{
     background-color: #08903E;
 }

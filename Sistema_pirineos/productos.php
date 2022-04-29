@@ -104,8 +104,9 @@
 			if ($cat==1) $query="SELECT * FROM harinas_trigo WHERE cve_prod='$cve_prod'";
 			elseif ($cat==2) $query="SELECT * FROM harinas_preparadas WHERE cve_prod='$cve_prod'";
 			elseif ($cat==3) $query="SELECT * FROM polvo_hornear WHERE cve_prod='$cve_prod'";
-			if ($cat=4) $query="SELECT * FROM rendimix WHERE cve_prod='$cve_prod'";
+			if ($cat==4) $query="SELECT * FROM rendimix WHERE cve_prod='$cve_prod'";
 			elseif ($cat==5) $query="SELECT * FROM derivados_trigo WHERE cve_prod='$cve_prod'";
+			
 			
 			$sql=mysqli_query($cs,$query);
 			$reg=mysqli_fetch_object($sql);

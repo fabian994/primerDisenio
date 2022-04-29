@@ -13,6 +13,13 @@ function tomar_datos(op){
 	img_prod_rel2=document.f_contenidos.img_prod_rel2.value;
 	url_prod_rel2=document.f_contenidos.url_prod_rel2.value;
 
+	nom_catalog="assets/"+nom_catalog;
+	nom_recetario="assets/"+nom_recetario;
+
+	img_prod_rel1="imagenes/"+img_prod_rel1;
+	img_prod_rel2="imagenes/"+img_prod_rel2;
+
+
 	if (op==1) cat=1;
 	if (op==2) cat=2;
 	if (op==3) cat=3;

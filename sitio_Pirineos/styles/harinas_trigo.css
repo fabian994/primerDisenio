@@ -138,18 +138,27 @@ padding-left: 10px;
 
 .container .content2 {
     grid-area: content2;
+    background-color: #EBE3D5;
+    background-image: url("https://www.transparenttextures.com/patterns/wall-4-light.png");
+    color: #1E412F;
+
    
     text-align: justify;
 }
 
 
 .container .content span {
-    
+    color: #EBE3D5;
     font-size: 55pt;
     display: flex;
     justify-content: center;
 }
-
+.container .content2 span {
+    color: #1E412F;
+    font-size: 55pt;
+    display: flex;
+    justify-content: center;
+}
 
 
 /* SIDEBAR - ENGLOBA TODA LA SIDEBAR */

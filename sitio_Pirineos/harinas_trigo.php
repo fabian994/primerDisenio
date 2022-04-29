@@ -207,184 +207,29 @@
         </aside>
 
         <div class="widget-1">
-            <a class="trigger_popup_fricc">Estrella del Bajio</a>
-        </div>
-
-        <section class="hover_bkgr_fricc">
-            <span class="helper"></span>
-            <div>
-                <a class="popupCloseButton">&times;</a>
-                <h2>Origen de Renombre</h2><br><br>
-                    <p id="lineamientos_descripcion" style="text-align: justify;">
-                        Estrella del Bajío es una insignia de la gran familia La Moderna.
-                        Es nuestra marca de harina de trigo que nació cuando Harinera Los Pirineos inició operaciones en 
-                        1988. Su nombre surge al ser considerada esta planta, como la estrella del Grupo La Moderna en el 
-                        Bajío.
-                    </p><br>
-                <h2>Marca Versátil</h2><br><br>
-                    <p id="lineamientos_descripcion" style="text-align: justify;">
-                        Estrella del Bajío es la harina que todo panadero debe tener.
-                        Preferida por su estabilidad y alto desempeño, es nuestra marca especial para cualquier aplicación 
-                        panadera, óptima para un manejo de alto estrés mecánico, conservando su estabilidad, con gran 
-                        tolerancia a la fermentación.
-                        Por su balance adecuado, ofrece un amplio espectro de fuerza panadera y es muy versátil, muy 
-                        fuerte para pan de caja, suficientemente amable para bollos y pasteles: <br><br>
-                        <b style="font-style: italic;">Tradicional</b>, para pan francés, bizcochería, bollería, repostería, churros y tortillas. <br><br>
-                        <b style="font-style: italic;">Extra Fuerte</b>, para preparar pan francés (baguette), bizcochería, donas, pan de caja, bollería, roscas, repostería fina, así como pan de muerto y rosca de reyes, panes rústicos como chapatas o 
-                        multigrano, y panes tradicionales como bolillo o baguette.<br><br>
-                        <b style="font-style: italic;">Integral</b>, comer bien debería saber así de rico. Esta harina tiene el clásico sabor a trigo entero que esponja panes y bollos junto a los beneficios del grano entero.<br><br>
-                        <center>** Tabla de Rendimientos Estrella del Bajío **</center>
-                    </p>
-            </div>
-        </section>
-
-        <div class="widget-2">
-            <a class="trigger_popup_fricc_1">Rancherita</a>
-        </div>
-
-        <section class="hover_bkgr_fricc_1">
-            <span class="helper_1"></span>
-            <div>
-                <a class="popupCloseButton_1">&times;</a>
-                    <h2>Origen de Renombre</h2><br><br>
-                        <p id="lineamientos_descripcion" style="text-align: justify;">
-                            Rancherita es la marca de harinas de trigo de mayor experiencia dentro de la gran familia La 
-                            Moderna. Es sinónimo de tradición, con más de 70 años, llegando a ser un ícono de la harina en el 
-                            Bajío y Occidente de México, integrado a nuestra familia de productos en el año 2002.
-                        </p><br>
-
-                    <h2>La Harina Todo Terreno</h2><br><br>
-                        <p id="lineamientos_descripcion" style="text-align: justify;">
-                            <b style="font-style: italic;">Harina especial para panificación</b>, Por su balance adecuado, ofrece una harina todo terreno que 
-                            responde tanto a condiciones artesanales como a procesos mecanizados exigentes. Es una harina 
-                            de proteína intermedia, lo que le da un notable rendimiento, un desempeño de alta tolerancia al 
-                            manejo y considerable vida en anaquel. <br><br>
-                            <b style="font-style: italic;">Harina especial para pastelería</b>, la repostería es su especialidad. Es la harina confiable para 
-                            producir planchas para pasteles de deliciosa textura, perfecta humedad y gran sabor, todo con 
-                            ingredientes naturales.<br><br>
-                            <b style="font-style: italic;">Harina especial para tortillas</b>, Rancherita Tortillera está formulada para soportar el proceso 
-                            artesanal y mecanizado, además de lograr el mayor diámetro de tortilla. Su calidad se nota en la frescura y aroma de las tortillas con un mejor rolado, que permanecen suaves por más tiempo. También es útil para otros productos como panes planos, pitas, pan árabe, crepas y buñuelos.<br><br>
-                            <center>** Tabla de Rendimientos **</center>
-                        </p>
-            </div>
-        </section>
-
-
-        <div class="widget-3">
-            <a class="trigger_popup_fricc_2">Rendidora</a>
-        </div>
-
-        <section class="hover_bkgr_fricc_2">
-            <span class="helper_2"></span>
-            <div>
-                <a class="popupCloseButton_2">&times;</a>
-                    <h2>De la Mejor Familia</h2><br><br>
-                        <p id="lineamientos_descripcion" style="text-align: justify;">
-                           Rendidora es orgullosa integrante de la gran familia La Moderna.
-                           Nacida en Campeche hace más de 30 años y traída al Bajío por Harinera Los Pirineos, es
-                           considerada la harina de mejor desempeño en la panificación moderna.
-                        </p><br>
-
-                    <h2>Su nombre lo dice todo</h2><br><br>
-                        <p id="lineamientos_descripcion" style="text-align: justify;">
-                           Tu elección de harina hace una gran diferencia en el amasado y en el horneado: usar una harina 
-                           extrafuerte como Rendidora te da un mayor volumen de masa que se convierte en más panes por 
-                           bulto.<br><br>
-                           <center>** Tabla de Rendimientos Rendidora **</center>
-                        </p>
-            </div>
-        </section>
-
-        <div class="widget-4">
-            <a class="trigger_popup_fricc_3">Trigarina</a>
-        </div>
-
-        <section class="hover_bkgr_fricc_3">
-            <span class="helper_3"></span>
-            <div>
-                <a class="popupCloseButton_3">&times;</a>
-                    <h2>De la Mejor Familia</h2><br><br>
-                        <p id="lineamientos_descripcion" style="text-align: justify;">
-                            Trigarina es orgullosa integrante de la gran familia La Moderna.
-                            Nacida en el estado de Michoacán, es considerada la harina más fuerte de nuestra gama de 
-                            productos.
-                        </p><br>
-
-                    <h2>Para Trabajo Pesado</h2><br><br>
-                        <p id="lineamientos_descripcion" style="text-align: justify;">
-                            Trigarina es nuestra harina de alta proteína para panaderías tecnificadas con alto volumen de 
-                            producción, generalmente establecimientos de autoservicio donde se necesita una respuesta rápida. 
-                            Preferida por su estabilidad y alto desempeño en manejo de alto estrés mecánico.
-                        </p><br>
-
-                    <h2>Alto Rendimiento</h2><br><br>
-                        <p id="lineamientos_descripcion"style="text-align: justify;">
-                            Mayor cantidad de piezas por bulto y mayor volumen de pan por pieza, con miga más fina y 
-                            uniforme, corteza firme y crocante en pan francés. Muy adecuada para panes rústicos y panes 
-                            gourmet. La vida de anaquel prolongada que Trigarina proporciona, disminuye mermas e incrementa 
-                            las ventas ya sea en despacho o reparto.<br><br>
-                            Su alta proteína le permite a Trigarina adaptarse a procesos de congelación y ultracongelación de 
-                            gran utilidad en negocios de comida rápida como pan para pizza, pan blanco y pan dulce en tiendas 
-                            de conveniencia.<br><br>
-                            <center>** Tabla de Rendimientos **</center>
-                        </p>
-            </div>
-        </section>
-
-        <div class="widget-5">
-            <a class="trigger_popup_fricc_4">Pirineos</a>
-        </div>
-
-        <section class="hover_bkgr_fricc_4">
-            <span class="helper_4"></span>
-            <div>
-                <a class="popupCloseButton_4">&times;</a>
-                    <h2>Origen de Renombre</h2><br><br>
-                        <p id="lineamientos_descripcion" style="text-align: justify;">
-                           Pirineos es orgulloso integrante de la gran familia La Moderna.
-                           Pirineos es la marca de la casa, aun así, nada le es dado por sentado y se ha ganado su nombre a 
-                           pulso, compitiendo exitosamente en el mercado mexicano como nuestra marca de batalla en el 
-                           segmento de harinas suaves.
-                        </p><br>
-
-                    <h2>Accesible, Versátil y de Calidad</h2><br><br>
-                        <p id="lineamientos_descripcion" style="text-align: justify;">
-                            Pirineos es una harina galletera suave, ideal para procesos industriales y también artesanales, 
-                            logrando pastas suaves, fáciles de moldear, extruir o estampar que resultan en galletas crujientes y 
-                            resistentes al craquelado.<br><br>
-                            Harina Pirineos genera productos de gran volumen con migas suaves, finas y uniformes como 
-                            panqués, roscas, mantecadas, muffins, pastelillos individuales y otros. En pastelería, brinda una 
-                            estructura fuerte para resistir el rellenado y una corteza fuerte para resistir el vestido y decorado.
-                            Aunque es la harina más accesible de nuestra gama, sus ingredientes y calidad de elaboración 
-                            conservan la calidad que distingue a todos nuestros productos.<br><br>
-                            <center>** Tabla de Rendimientos **</center>
-                        </p> 
-            </div>
-        </section>
-
-        <div class="widget-6">
-            <a class="trigger_popup_fricc_5">Curinda</a>
-        </div>
-
-        <section class="hover_bkgr_fricc_5">
-            <span class="helper_5"></span>
-            <div>
-                <a class="popupCloseButton_5">&times;</a>
-                    <h2>De la Mejor Familia</h2><br><br>
-                        <p id="lineamientos_descripcion" style="text-align: justify;">
-                            Curinda es orgullosa integrante de la gran familia La Moderna, nacida en el estado de Michoacán se 
-                            ha convertido en marca de importante en el segmento de harinas suaves.
-                        </p><br>
-
-                    <h2>Accesible, Versátil y de Calidad</h2><br><br>
-                        <p id="lineamientos_descripcion" style="text-align: justify;">
-                            Curinda es una harina suave, ideal para procesos industriales y también artesanales, logrando en 
-                            panquelería migas suaves, finas y uniformes. En otras aplicaciones, como pellets brinda una 
-                            estructura fuerte una corteza crujiente.<br><br>
-                            <center>** Tabla de Rendimientos **</center>
-                        </p>
-            </div>
-        </section>
+            <?php
+                
+                $cs=conecta();
+                $query="SELECT * FROM derivados_trigo";
+                $sql=mysqli_query($cs,$query);
+                echo "<table>";
+                while ($reg=mysqli_fetch_object($sql)) {
+                    $x="";
+                    echo"
+                   
+                    <tr class='catalogo'>
+                        <td id='contenido_catalogo'>
+                            <h2 id ='titulo_productos'>$reg->nom_prod</h2><br>
+                            <p>$reg->descripcion_prod</p><br>
+                        </td>
+                        <td ><img src='$reg->img_prod' width='100%' height='100%'></td>
+                    </tr>
+                    ";
+                                       
+                }
+                echo "</table> ";
+            ?>
+        </div>  
 
         <footer class = "footer">
             <div class = "contact">

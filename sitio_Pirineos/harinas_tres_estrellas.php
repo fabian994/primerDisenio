@@ -162,7 +162,7 @@
 
                 //<!-- LINK 1 -->
 
-                include 'utilerias.php';
+                
                 $cs=conecta();
                 $query="SELECT * FROM contenidos WHERE cve_tipo=2";
                 $sql=mysqli_query($cs,$query);

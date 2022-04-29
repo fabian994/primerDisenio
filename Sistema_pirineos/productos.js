@@ -1,5 +1,5 @@
 function tomar_datos(op){
-	alert(op)
+
 	cve_prod=document.f_productos_HaTrigo.cve_prod.value;
 	nom_prod=document.f_productos_HaTrigo.nom_prod.value;
 	tipo_prod=document.f_productos_HaTrigo.tipo_prod.value;
@@ -11,28 +11,33 @@ function tomar_datos(op){
 	if (op==3) cat=3;
 	if (op==4) cat=4;
 	if (op==5) cat=5;
-	alert(cat);
 }
 
 function prod_op_selec(op){
 	if (op==1) {
-		url="productos.php?op=1";
+		tipo_prod="1";
+		url="productos.php?op=1&tipo_prod="+tipo_prod;
+		
 		location.href=url;
 	}
 	if (op==2) {
-		url="productos.php?op=2";
+		tipo_prod="2";
+		url="productos.php?op=2&tipo_prod="+tipo_prod;
 		location.href=url;
 	}
 	if (op==3) {
-		url="productos.php?op=3";
+		tipo_prod="3";
+		url="productos.php?op=3&tipo_prod="+tipo_prod;
 		location.href=url;
 	}
 	if (op==4) {
-		url="productos.php?op=4";
+		tipo_prod="4";
+		url="productos.php?op=4&tipo_prod="+tipo_prod;
 		location.href=url;
 	}
 	if (op==5) {
-		url="productos.php?op=5";
+		tipo_prod="5";
+		url="productos.php?op=5&tipo_prod="+tipo_prod;
 		location.href=url;
 	}
 	

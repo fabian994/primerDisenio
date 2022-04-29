@@ -19,7 +19,7 @@
 			global $op;
 			//echo "op=".$op;
 			$cs=conecta();
-			if ($op==1) $query="SELECT * FROM harinas_hogar, tipos WHERE tipo_prod=cve_tipo ORDER BY nom_prod";
+			if ($op==1) $query="SELECT * FROM productos ORDER BY nom_prod";
 			if ($op==3){
 				$cve_tipo=$_GET['cve_tipo'];
 				$query="SELECT * FROM harinas_hogar, tipos WHERE tipo_prod='$cve_tipo' and tipo_prod=cve_tipo ORDER BY nom_prod";

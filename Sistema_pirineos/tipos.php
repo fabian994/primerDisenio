@@ -11,11 +11,22 @@
 	<?php
 		include 'utilerias.php';
 		$op=$_GET['op'];
-		if ($op==0) f_HaTrigo1();
-		if ($op==1) altas();
-		if ($op==2) bajas();
-		if ($op==3) consultas();
-		if ($op==4) cambios();
+		$cve_tipo=$_GET['cve_tipo'];
+		$nom_tipo=$_GET['nom_tipo'];
+		echo "$op, $cve_tipo, $nom_tipo";
+		
+		if ($op==0) sel_tipo_prod();
+		
+		if ($op==1) f_contenidos($op, $cve_tipo ,$nom_tipo);
+		if ($op==2) f_contenidos($op, $cve_tipo ,$nom_tipo);
+		if ($op==3) f_contenidos($op, $cve_tipo ,$nom_tipo);
+		if ($op==4) f_contenidos($op, $cve_tipo ,$nom_tipo);
+		if ($op==5) f_contenidos($op, $cve_tipo ,$nom_tipo);
+
+		if ($op==6) altas();
+		if ($op==7) bajas();
+		if ($op==8) consultas();
+		if ($op==9) cambios();
 
 
 		function tomar_datos(){
@@ -34,7 +45,7 @@
 
 		function altas(){
 			global $cve_tipo, $nom_tipo, $nom_catalog, $nom_recetario, $nom_prod_rel1, $img_prod_rel1, $url_prod_rel1, $nom_prod_rel2, $img_prod_rel2, $url_prod_rel2;
-			tomar_datos_side();
+			tomar_datos();
 
 			// Verifica que no se duplique la clave del tipo
 			$cs=conecta();
@@ -54,7 +65,7 @@
 		} // Termina altas
 
 		function consultas(){
-			global $cve_tipo, $nom_tipo, $nom_catalog, $nom_recetario, $nom_prod_rel1, $img_prod_rel1, $url_prod_rel1, $nom_prod_rel2, $img_prod_rel2, $url_prod_rel2;
+			global $cve_tipo, $nom_tipo, $nom_catalog, $nom_recetario, $nom_prod_rel1, $img_prod_rel1, $url_prod_rel1, $nom_prod_rel2, $img_prod_rel2, $url_prod_rel2, $op;
 			tomar_datos();
 			//echo "cve_prod=".$cve_prod;
 			$cs=conecta();
@@ -77,7 +88,7 @@
 				$img_prod_rel2=$reg->img_prod_rel2;
 				$url_prod_rel2=$reg->url_prod_rel2;
 				//echo "cve_prod=".$cve_prod." nom_prod=".$nom_prod." cve_tipo=".$cve_tipo." descripcion_prod=".$descripcion_prod;
-				 f_HaTrigo1();
+				 f_contenidos($op, $cve_tipo ,$nom_tipo);
 			}
 		} // Termina consultas
 
@@ -148,22 +159,76 @@
 				}
 			}
 		} // Termina Cambios
+
+		function sel_tipo_prod(){
+			global $cve_tipo, $nom_tipo, $nom_catalog, $nom_recetario, $nom_prod_rel1, $img_prod_rel1, $url_prod_rel1, $nom_prod_rel2, $img_prod_rel2, $url_prod_rel2, $cat;
+			echo "
+				<br><br>
+				<form name='f_productos'>
+				<table border='10%' width='80%'>
+					<tr align='center'>
+						<td colspan='2'>
+							<table width='100%'>
+								<tr align='center'>
+									<td><input name='b_HaTrigo' type='button' class='boton' value='Harinas de Trigo' onClick='prod_op_selec(1)'>
+									</td>
+									<td><input name='b_Ha3Estrellas' type='button' class='boton' value='Harinas preparadas Tres Estrellas' onClick='prod_op_selec(2)'>
+									</td>
+									<td><input name='b_Polvo3Estrellas' type='button' class='boton' value='Polvo Para Hornear Tres Estrellas' onClick='prod_op_selec(3)'>
+									</td>
+									<td><input name='b_Rendimix' type='button' class='boton' value='Mejorante RendiMix' onClick='prod_op_selec(4)'>
+									</td>
+									<td><input name='b_DevTrigo' type='button' class='boton' value='Derivados de Trigo' onClick='prod_op_selec(5)'>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+				</form>
+			";
+		} //Termina formulario
 	
-		function f_HaTrigo1(){
-				global $cve_tipo, $nom_tipo, $nom_catalog, $nom_recetario, $nom_prod_rel1, $img_prod_rel1, $url_prod_rel1, $nom_prod_rel2, $img_prod_rel2, $url_prod_rel2;
+		function f_contenidos($op, $cve_tipo ,$nom_tipo){
+				global $cve_tipo, $nom_tipo, $nom_catalog, $nom_recetario, $nom_prod_rel1, $img_prod_rel1, $url_prod_rel1, $nom_prod_rel2, $img_prod_rel2, $url_prod_rel2, $cat, $op;
+				echo "
+					<br><br>
+					<form name='f_productos'>
+					<table border='10%' width='80%'>
+						<tr align='center'>
+							<td colspan='2'>
+								<table width='100%'>
+									<tr align='center'>
+										<td><input name='b_HaTrigo' type='button' class='boton' value='Harinas de Trigo' onClick='prod_op_selec(1)'>
+										</td>
+										<td><input name='b_Ha3Estrellas' type='button' class='boton' value='Harinas preparadas Tres Estrellas' onClick='prod_op_selec(2)'>
+										</td>
+										<td><input name='b_Polvo3Estrellas' type='button' class='boton' value='Polvo Para Hornear Tres Estrellas' onClick='prod_op_selec(3)'>
+										</td>
+										<td><input name='b_Rendimix' type='button' class='boton' value='Mejorante RendiMix' onClick='prod_op_selec(4)'>
+										</td>
+										<td><input name='b_DevTrigo' type='button' class='boton' value='Derivados de Trigo' onClick='prod_op_selec(5)'>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+					</form>
+				";
 
 				echo "
 					<br>
-					<form name='f_sidebar_HaTrigo'>
+					<form name='f_contenidos'>
 					<table border='10%' width='80%'>
-						<caption>Tipos</caption>
+						<caption>Contenidos</caption>
 						<tr align='center'>
 							<td><p>Clave de la categoria de Producto</p></td>
-							<td><input name='cve_tipo' type='text' class='campo' maxlength='5'value='$cve_tipo'></td>
+							<td><input name='cve_tipo' type='text' class='campo' maxlength='5' value='$cve_tipo' disabled></td>
 						</tr>
 						<tr align='center'>
 							<td><p>Nombre del tipo</p></td>
-							<td><input name='nom_tipo' type='text' class='campo' maxlength='50' value='$nom_tipo'></td>
+							<td><input name='nom_tipo' type='text' class='campo' maxlength='50' value='$nom_tipo' disabled></td>
 						</tr>
 						<tr align='center'>
 							<td><p>Nombre del PDF catalogo</p></td>
@@ -202,13 +267,13 @@
 							<td colspan='2'>
 								<table width='100%'>
 									<tr align='center'>
-										<td><input name='b_altas' type='button' class='boton' value='Altas' onClick='altas()'>
+										<td><input name='b_altas' type='button' class='boton' value='Altas' onClick='altas($cve_tipo)'>
 										</td>
-										<td><input name='b_bajas' type='button' class='boton' value='Bajas' onClick='bajas()'>
+										<td><input name='b_bajas' type='button' class='boton' value='Bajas' onClick='bajas($cve_tipo)'>
 										</td>
-										<td><input name='b_consultas' type='button' class='boton' value='Consultas' onClick='consultas()'>
+										<td><input name='b_consultas' type='button' class='boton' value='Consultas' onClick='consultas($cve_tipo)'>
 										</td>
-										<td><input name='b_cambios' type='button' class='boton' value='Cambios' onClick='cambios()'>
+										<td><input name='b_cambios' type='button' class='boton' value='Cambios' onClick='cambios($cve_tipo)'>
 										</td>
 										<td><input name='b_reset_sd' type='reset' class='boton' value='Reiniciar' id='rojo'>
 										</td>

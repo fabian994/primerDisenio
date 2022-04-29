@@ -11,13 +11,14 @@
 	<?php
 		include 'utilerias.php';
 		$op=$_GET['op'];
+		$tipo_prod=$_GET['tipo_prod'];
 		//if ($op==0) sel_tipo_prod();
 		if ($op==0) sel_tipo_prod();
-		if ($op==1) f_HaTrigo($op);
-		if ($op==2) f_HaTrigo($op);
-		if ($op==3) f_HaTrigo($op);
-		//if ($op==4) f_HaTrigo($op);
-		if ($op==5) f_HaTrigo($op);
+		if ($op==1) f_HaTrigo($op, $tipo_prod);
+		if ($op==2) f_HaTrigo($op, $tipo_prod);
+		if ($op==3) f_HaTrigo($op, $tipo_prod);
+		if ($op==4) f_HaTrigo($op, $tipo_prod);
+		if ($op==5) f_HaTrigo($op, $tipo_prod);
 
 		if ($op==6) altas();
 		if ($op==7) bajas();
@@ -35,7 +36,7 @@
 		}
 
 		function altas(){
-			global $cve_prod, $nom_prod, $tipo_prod, $descripcion_prod, $img_prod, $cat;
+			global $cve_prod, $nom_prod, $tipo_prod, $descripcion_prod, $img_prod, $cat, $op;
 			tomar_datos();
 
 			// Verifica que no se duplique la clave del producto
@@ -94,7 +95,7 @@
 		} // Termina altas
 
 		function consultas(){
-			global $cve_prod, $nom_prod, $tipo_prod, $descripcion_prod, $img_prod, $cat;
+			global $cve_prod, $nom_prod, $tipo_prod, $descripcion_prod, $img_prod, $cat, $op;
 			tomar_datos();
 			//echo "cve_prod=".$cve_prod;
 			
@@ -117,12 +118,13 @@
 				$descripcion_prod=$reg->descripcion_prod;
 				$img_prod=$reg->img_prod;
 				//echo "cve_prod=".$cve_prod." nom_prod=".$nom_prod." tipo_prod=".$tipo_prod." descripcion_prod=".$descripcion_prod;
-				 f_HaTrigo($cat);
+				
+				f_HaTrigo($op, $tipo_prod);
 			}
 		} // Termina consultas
 
 		function bajas(){
-			global $cve_prod, $nom_prod, $tipo_prod, $descripcion_prod, $img_prod, $cat;
+			global $cve_prod, $nom_prod, $tipo_prod, $descripcion_prod, $img_prod, $cat, $op;
 			consultas();
 			$cs=conecta();
 
@@ -156,7 +158,7 @@
 		} // Termina bajas
 
 		function cambios(){
-			global $cve_prod, $nom_prod, $tipo_prod, $descripcion_prod, $img_prod, $cat;
+			global $cve_prod, $nom_prod, $tipo_prod, $descripcion_prod, $img_prod, $cat, $op;
 			tomar_datos();
 			$cs=conecta();
 
@@ -276,8 +278,7 @@
 			";
 		} //Termina formulario
 	
-		function f_HaTrigo($op){
-				echo "$op";
+		function f_HaTrigo($op, $tipo_prod){
 				global $cve_prod, $nom_prod, $tipo_prod, $descripcion_prod, $img_prod, $op;
 				echo "
 				<br><br>
@@ -321,7 +322,7 @@
 						</tr>
 						<tr align='center'>
 							<td><p>Clave de la categoria de Producto</p></td>
-							<td><input name='tipo_prod' type='text' class='campo' maxlength='5'value='$tipo_prod'></td>
+							<td><input name='tipo_prod' type='text' class='campo' maxlength='5' value='$tipo_prod' disabled style: 'background: grey'></td>
 						</tr>
 						<tr align='center'>
 							<td><p>Descripcion del Producto</p></td>

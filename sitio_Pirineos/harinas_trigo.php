@@ -136,52 +136,57 @@
         </main>
 
         <aside class = "sidebar">
-            
+            <?php
                 
 
-            <!-- LINK 1 -->
+                //<!-- LINK 1 -->
 
-           <div>
-                
-                <h1> Descarga el PDF de Harinas de Trigo </h1>
-                
-                <br>
-                
-                <a href = "#"><span class = "icon-download"></span> Descargar PDF </a>
+                include 'utilerias.php';
+                $cs=conecta();
+                $query="SELECT * FROM contenidos WHERE cve_tipo=1";
+                $sql=mysqli_query($cs,$query);
+                while ($reg=mysqli_fetch_object($sql)){ 
+                    $x='';
+                    echo "
+                        <div>
+                        
+                            <h1> Descarga el PDF de Harinas de Trigo </h1>
+                            
+                            <br>
+                            
+                            <a href = '$reg->nom_catalog'><span class = 'icon-download'></span> Descargar PDF </a>
 
-            </div>"
+                        </div>
+                        
+                        <div>
 
-            
+                            <h1> Descarga Nuestras Mejores Recetas con Harinas de Trigo </h1>
+                            
+                            <br>
+                            
+                            <a href = '$reg->nom_recetario'><span class = 'icon-download'></span> Descargar PDF </a>
+                    
+                        </div>
+                    
+                    
 
-            <!-- LINK 2 -->
+                        //<!-- LINK 3 -->
 
-            <div>
-
-                <h1> Descarga Nuestras Mejores Recetas con Harinas de Trigo </h1>
-                
-                <br>
-                
-                <a href = "#"><span class = "icon-download"></span> Descargar PDF </a>
-            
-            </div>
-
-            
-
-            <!-- LINK 3 -->
-
-            <div>
-                
-                <h1> Productos Relacionados </h1>
-                
-                <br>
-                
-                <ul>
-                    <li><a href = "#"><span class = "icon-bowl"></span> Product-1 </a></li>
-                    <li><a href = "#"><span class = "icon-bowl"></span> Product-2 </a></li>
-                </ul>
-            
-            </div>
-            
+                        <div>
+                            
+                            <h1> Productos Relacionados </h1>
+                            
+                            <br>
+                            
+                            <ul>
+                                <li><a href = '$reg->url_prod_rel1'><span class = 'icon-bowl'></span> $reg->nom_prod_rel1 </a></li>
+                                <li><a href = '$reg->url_prod_rel2'><span class = 'icon-bowl'></span> $reg->nom_prod_rel2 </a></li>
+                            </ul>
+                        
+                        </div>
+                    ";
+                }
+            ?>
 
 
             <!-- LINK 4 -->

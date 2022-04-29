@@ -171,9 +171,9 @@
 						</td>
 					</tr>
 					<tr align='center'>
-						<td><p>Consulta por nombre de producto</p></td>
+						<td><p>Consulta de productos por categoria</p></td>
 						<td>
-							<p>Debe seleccionar el nombre del producto</p> 
+							<p>Debe seleccionar la categoria</p> 
 							<input name='nom_prod' type='search' class='campo' list='lista_nom_prod'>
 						</td>
 						<datalist id='lista_nom_prod'>

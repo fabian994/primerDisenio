@@ -74,14 +74,14 @@
 					$sql=mysqli_query($cs,$query);
 					msg("El registro ha sido grabado correctamente","verde");
 				}
-				/*elseif ($cat==4) {
+				elseif ($cat==4) {
 					$query="INSERT INTO productos VALUES ('$cve_prod','$nom_prod','$tipo_prod','$descripcion_prod','$img_prod')";
 					$sql=mysqli_query($cs,$query);
 
-					$query="INSERT INTO harinas_trigo VALUES ('$cve_prod','$nom_prod','$tipo_prod','$descripcion_prod','$img_prod')";
+					$query="INSERT INTO rendimix VALUES ('$cve_prod','$nom_prod','$tipo_prod','$descripcion_prod','$img_prod')";
 					$sql=mysqli_query($cs,$query);
 					msg("El registro ha sido grabado correctamente","verde");
-				}*/
+				}
 				elseif ($cat==5) {
 					$query="INSERT INTO productos VALUES ('$cve_prod','$nom_prod','$tipo_prod','$descripcion_prod','$img_prod')";
 					$sql=mysqli_query($cs,$query);
@@ -104,7 +104,7 @@
 			if ($cat==1) $query="SELECT * FROM harinas_trigo WHERE cve_prod='$cve_prod'";
 			elseif ($cat==2) $query="SELECT * FROM harinas_preparadas WHERE cve_prod='$cve_prod'";
 			elseif ($cat==3) $query="SELECT * FROM polvo_hornear WHERE cve_prod='$cve_prod'";
-			//if ($cat=4) $query="SELECT * FROM harinas_trigo WHERE cve_prod='$cve_prod'";
+			if ($cat=4) $query="SELECT * FROM rendimix WHERE cve_prod='$cve_prod'";
 			elseif ($cat==5) $query="SELECT * FROM derivados_trigo WHERE cve_prod='$cve_prod'";
 			
 			$sql=mysqli_query($cs,$query);
@@ -141,10 +141,10 @@
 				$query1="DELETE FROM productos WHERE cve_prod='$cve_prod'";
 				$query2="DELETE FROM polvo_hornear WHERE cve_prod='$cve_prod'";
 			}
-			/*elseif ($cat==4) {
+			elseif ($cat==4) {
 				$query1="DELETE FROM productos WHERE cve_prod='$cve_prod'";
-				$query2="DELETE FROM  WHERE cve_prod='$cve_prod'";
-			}*/
+				$query2="DELETE FROM rendimix WHERE cve_prod='$cve_prod'";
+			}
 			elseif ($cat==5) {
 				$query1="DELETE FROM productos WHERE cve_prod='$cve_prod'";
 				$query2="DELETE FROM derivados_trigo WHERE cve_prod='$cve_prod'";
@@ -222,6 +222,25 @@
 						$sql=mysqli_query($cs,$query);
 
 						$query="UPDATE polvo_hornear SET img_prod='$img_prod' WHERE cve_prod='$cve_prod'";
+						$sql=mysqli_query($cs,$query);
+						msg("El cambio ha sido realizado","verde");
+					}
+				}
+
+				if ($cat==4) {
+					if ((strlen($descripcion_prod)!=0) && ($descripcion_prod!=$reg->descripcion_prod)){
+						$query="UPDATE productos SET descripcion_prod='$descripcion_prod' WHERE cve_prod='$cve_prod'";
+						$sql=mysqli_query($cs,$query);
+
+						$query="UPDATE rendimix SET descripcion_prod='$descripcion_prod' WHERE cve_prod='$cve_prod'";
+						$sql=mysqli_query($cs,$query);
+						msg("El cambio ha sido realizado","verde");
+					}
+					if ((strlen($img_prod)!=0) && ($img_prod!=$reg->img_prod)){
+						$query="UPDATE productos SET img_prod='$img_prod' WHERE cve_prod='$cve_prod'";
+						$sql=mysqli_query($cs,$query);
+
+						$query="UPDATE rendimix SET img_prod='$img_prod' WHERE cve_prod='$cve_prod'";
 						$sql=mysqli_query($cs,$query);
 						msg("El cambio ha sido realizado","verde");
 					}

@@ -22,8 +22,5 @@ function r3(op){
 }
 
 function r4(op){
-	cve_prod=document.f_reportes.nom_prod.value;
-	alert("op="+op+" cve_prod="+cve_prod);
-	url="productos.php?op=3&cve_prod="+cve_prod+"&nom_prod=&tipo_prod=&presenta_prod=";
-	location.href=url;
+	alert("1");
 }

@@ -187,7 +187,7 @@
                             <h2 id ='titulo_productos'>$reg->nom_prod</h2><br>
                             <p>$reg->descripcion_prod</p><br>
                         </td>
-                        <td ><img src='$reg->img_prod' width='100%' height='100%'></td>
+                        <td ><img src='$reg->img_prod'  width='189px' height='200px'></td>
                     </tr>
                     ";
                                        

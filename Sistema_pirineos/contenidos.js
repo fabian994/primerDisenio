@@ -19,7 +19,6 @@ function tomar_datos(op){
 	if (op==3) cat=3;
 	if (op==4) cat=4;
 	if (op==5) cat=5;
-	alert(cat);
 
 }
 

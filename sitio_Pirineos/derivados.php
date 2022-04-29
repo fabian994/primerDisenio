@@ -92,7 +92,7 @@
             <?php
                 include 'utilerias.php';
                 $cs=conecta();
-            $query="SELECT * FROM harinas_trigo";
+            $query="SELECT * FROM derivados_trigo";
             $sql=mysqli_query($cs,$query);
             echo "<table>";
             while ($reg=mysqli_fetch_object($sql)) {

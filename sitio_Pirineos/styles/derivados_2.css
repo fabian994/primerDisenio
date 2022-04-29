@@ -79,6 +79,7 @@
     text-align: center;
     background-color: #FFC627;
     border-radius: inherit;
+    color: #1E412F;
     padding-top: inherit;
 }
 #titulo_productos{
@@ -107,6 +108,7 @@ margin: 0 auto;
 img{
 width: 100%;
 height: auto;
+padding-left: 10px;
 }
 #slider{
     background-color: #08903E;

@@ -193,7 +193,7 @@
                                 <li id = "footer_title"> Boletín </li>
 
                                 <li><a href = "#"><span class = "icon-download"></span> Aviso de Prvacidad </a></li>
-                                <li><a href = "#"><span class = "icon-network"></span> Encuentra Tu Distribuidor </a></li>
+                                <li><span class = "icon-man"></span> <a class = "form_popup_2"> Encuentra a tu Distribuidor </a></li>
                                 <li><a href = "#"><span class = "icon-info"></span> FAQ </a></li>
                                 
                             </ul>
@@ -272,6 +272,44 @@
             
             </div>
 
+            <div class = "form_2">
+
+                <span class="helper_s"></span>
+
+                <a class="close_form_distribuidor">&times;</a><br><br><br>
+            
+                <form class = "form_bolsa"
+                      action = "c.php"
+                      method = "post" >
+            
+                    <div class = "form">
+
+                        <h1> Encuentra un Distribuidor </h1>
+                        <div class = "group">
+                            <input type="text" name = "" id = "name" required><span class = "bar"></span>
+                            <label for = ""> Nombre </label>
+                        </div>
+                
+                        <div class = "group">
+                            <input type="file" name = "" id = "cv" required  style="font-size: 12px;"><span class = "bar"></span>
+                            <p id = "choose_file"> Adjunta tu curriculum </p>
+                        </div>
+            
+                        <div class = "group">
+                            <input type="text" name = "" id = "message" required><span class = "bar"></span>
+                            <label for = ""> Mensaje (opcional) </label>
+                        </div>
+                
+                        <button type = "submit"> Enviar </button>
+                
+                    </div>
+
+                </form>
+
+                
+                <br><br><br>
+            
+            </div>
 
     </div>
 </body>

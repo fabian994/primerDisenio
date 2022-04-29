@@ -12,6 +12,7 @@
 
     <script src = "scripts/jquery-latest.js"></script>
     <script src = "scripts/encabezado.js"></script>
+    <script src = "scripts/formulario.js"></script>
 
 	<title>Inicio</title>
 </head>
@@ -90,7 +91,7 @@
                         play: {
                             active: true,
                             effect: "slide",
-                            interval: 5000, //Intervalo de cambio (ms)
+                            interval: 3000, //Intervalo de cambio (ms)
                             auto: false, //Automatizacion de las slides al iniciar la pagina
                             swap: true, 
                             pauseOnHover: false,
@@ -144,7 +145,28 @@
                 <a href="Pilares.html" target="principal" class="boton">CONOCE MÁS</a>
             </div>  
             
-        </main>            
+        </main>
+        
+        <main class = "content3">
+
+            <!-- <img  id="cont_image"src = "imagenes/eje_1.jpeg" style="border-radius: 14px;"> -->
+
+            <h1 id = "lineamientos_titulo" style="text-align: center;"> ¿QUIERES CONOCERNOS MEJOR? </h1><br><br>
+
+            <div>
+                <p id = "lineamientos_descripcion">
+                    En este video te explicaremos todo sobre nosotros para que tengas una vision de nuestra organizacion
+                    <br><br><br>
+                    
+                </p>
+            </div>
+
+            <div>
+                <iframe class = "start_video" width="639" height="377" src = "https://www.youtube.com/embed/Dn1qj4xtohA"></iframe>
+            </div>
+            
+
+        </main>
 
         <footer class = "footer">
                 
@@ -183,7 +205,7 @@
                             <ul>
                                 <li id = "footer_title"> Bolsa de Trabajo </li>
 
-                                <li><a href = "#"><span class = "icon-man"></span> Integrate a Nuestro Equipo </a></li>
+                                <li><span class = "icon-man"></span> <a class = "form_popup"> Integrate a Nuestro Equipo </a></li>
                                 
                             </ul>
 
@@ -210,6 +232,47 @@
 
                 </div>
         </footer>
+
+            <div class = "form_1">
+
+                <span class="helper_s"></span>
+
+                <a class="close_form_bolsa">&times;</a><br><br><br>
+            
+                <form class = "form_bolsa"
+                      action = "c.php"
+                      method = "post" >
+            
+                    <div class = "form">
+
+                        <h1> Unete a Nosotros </h1>
+                        <div class = "group">
+                            <input type="text" name = "" id = "name" required><span class = "bar"></span>
+                            <label for = ""> Nombre </label>
+                        </div>
+                
+                        <div class = "group">
+                            <input type="file" name = "" id = "cv" required  style="font-size: 12px;"><span class = "bar"></span>
+                            <p id = "choose_file"> Adjunta tu curriculum </p>
+                        </div>
+            
+                        <div class = "group">
+                            <input type="text" name = "" id = "message" required><span class = "bar"></span>
+                            <label for = ""> Mensaje (opcional) </label>
+                        </div>
+                
+                        <button type = "submit"> Enviar </button>
+                
+                    </div>
+
+                </form>
+
+                
+                <br><br><br>
+            
+            </div>
+
+
     </div>
 </body>
 </html>

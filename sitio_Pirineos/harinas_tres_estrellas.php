@@ -128,136 +128,32 @@
         </main>    
 
         <div class="widget-0">
-            <h2 class = "catalogo_titulo"> Nuestro Catalogo de Harinas </h2>
+            <h2 id = "titulo_catalogo"> Nuestro Catalogo de Harinas </h2>
+            <?php
+                include 'utilerias.php';
+                $cs=conecta();
+                $query="SELECT * FROM harinas_trigo";
+                $sql=mysqli_query($cs,$query);
+                echo "<table>";
+                while ($reg=mysqli_fetch_object($sql)) {
+                    $x="";
+                    echo"
+                   <script>
+                        console.log('$reg->img_prod');
+                   </script>
+                    <tr class='catalogo'>
+                        <td id='contenido_catalogo'>
+                            <h2 id ='titulo_productos'>$reg->nom_prod</h2><br>
+                            <p>$reg->descripcion_prod</p><br>
+                        </td>
+                        <td ><img src='$reg->img_prod' width='100%' height='100%'></td>
+                    </tr>
+                    ";
+                                       
+                }
+                echo "</table> ";
+            ?>
         </div>
-
-        <div class="widget-1">
-            <a class="trigger_popup_fricc"> Harina preparada para Dona Levadura </a>
-        </div>
-
-        <section class="hover_bkgr_fricc">
-            
-            <span class="helper"></span>
-            
-            <div>
-                <a class="popupCloseButton">&times;</a><br>
-                    <!-- <p id="lineamientos_descripcion" style="text-align: justify;">
-                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non urna vestibulum, euismod mi at, pulvinar ex. Fusce libero justo, euismod id sapien eget, tempus tincidunt nisi. Vestibulum vehicula mattis auctor.
-                    </p><br> -->
-
-                    <img class = "img_recetarios" src = "imagenes/Harinas Preparadas TE/Dona Levadura.png">
-                    
-            </div>
-
-        </section>
-
-        <div class="widget-2">
-            <a class="trigger_popup_fricc_1"> Harina preparada para Bizcocho </a>
-        </div>
-
-        <section class="hover_bkgr_fricc_1">
-            <span class="helper_1"></span>
-            <div>
-                <a class="popupCloseButton_1">&times;</a><br>
-
-                <img class = "img_recetarios" src = "imagenes/Harinas Preparadas TE/Bizcocho_R.png">
-            
-            </div>
-        </section>
-
-
-        <div class="widget-3">
-            <a class="trigger_popup_fricc_2"> Harina preparada para Pan Danés </a>
-        </div>
-
-        <section class="hover_bkgr_fricc_2">
-            <span class="helper_2"></span>
-            <div>
-                <a class="popupCloseButton_2">&times;</a><br>
-                <img class = "img_recetarios" src = "imagenes/Harinas Preparadas TE/Pan Danes.png">
-                        
-            </div>
-        </section>
-
-        <div class="widget-4">
-            <a class="trigger_popup_fricc_3"> Harina preparada para Pan de Muerto </a>
-
-        </div>
-
-        <section class="hover_bkgr_fricc_3">
-            <span class="helper_3"></span>
-            <div>
-
-                <a class="popupCloseButton_3">&times;</a><br>
-                <img class = "img_recetarios" src = "imagenes/Harinas Preparadas TE/Pan de Muerto.png">
-                        
-            </div>
-        </section>
-
-        <div class="widget-5">
-            <a class="trigger_popup_fricc_4"> Harina preparada para Rosca de Reyes </a>
-
-        </div>
-
-        <section class="hover_bkgr_fricc_4">
-            <span class="helper_4"></span>
-            <div>
-                <a class="popupCloseButton_4">&times;</a><br>
-                <img class = "img_recetarios" src = "imagenes/Harinas Preparadas TE/Rosca de Reyes.png">
-            </div>
-        </section>
-
-        <div class="widget-6">
-            <a class="trigger_popup_fricc_5"> Harina preparada para Pizza </a>
-
-        </div>
-
-        <section class="hover_bkgr_fricc_5">
-            <span class="helper_5"></span>
-            <div>
-                <a class="popupCloseButton_5">&times;</a><br>
-                <img class = "img_recetarios" src = "imagenes/Harinas Preparadas TE/Pizza.png">
-            </div>
-        </section>
-
-        <div class="widget-7">
-            <a class="trigger_popup_fricc_6"> Harina preparada para Crepas </a>
-        </div>
-
-        <section class="hover_bkgr_fricc_6">
-            <span class="helper_6"></span>
-            <div>
-                <a class="popupCloseButton_6">&times;</a><br>
-                <img class = "img_recetarios" src = "imagenes/Harinas Preparadas TE/crepas.png">  
-            </div>
-        </section>
-
-        <div class="widget-8">
-            <a class="trigger_popup_fricc_7"> Harina preparada para Esponja </a>
-        </div>
-
-        <section class="hover_bkgr_fricc_7">
-            <span class="helper_7"></span>
-            <div>
-                <a class="popupCloseButton_7">&times;</a><br>
-                <img class = "img_recetarios" src = "imagenes/Harinas Preparadas TE/Pastel_Esponja.png"> 
-            </div>
-        </section>
-
-        <div class="widget-9">
-            <a class="trigger_popup_fricc_8"> Harina preparada para Muffin </a>
-
-        </div>
-
-        <section class="hover_bkgr_fricc_8">
-            <span class="helper_8"></span>
-            <div>
-                <a class="popupCloseButton_8">&times;</a><br>
-                <img class = "img_recetarios" src = "imagenes/Harinas Preparadas TE/Muffin.png">
-
-                        
-            </div>
-        </section>
 
         
         <aside class = "sidebar">

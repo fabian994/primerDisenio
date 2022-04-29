@@ -12,18 +12,17 @@
 		include 'utilerias.php';
 		$op=$_GET['op'];
 		if ($op==0) formulario();
-		if (($op==1) || ($op==3)) r1();
-		if ($op==2)  r2();
+		if ($op==1) r1();
+		if ($op==2) r2();
+		if ($op==3) r3();
+
 
 		function r1(){
-			global $op;
+			global $op, $cve_tipo, $tipo_prod;
 			//echo "op=".$op;
 			$cs=conecta();
-			if ($op==1) $query="SELECT * FROM productos ORDER BY nom_prod";
-			if ($op==3){
-				$cve_tipo=$_GET['cve_tipo'];
-				$query="SELECT * FROM harinas_hogar, tipos WHERE tipo_prod='$cve_tipo' and tipo_prod=cve_tipo ORDER BY nom_prod";
-			}
+			$query="SELECT * FROM productos ORDER BY nom_prod";
+			
 			$sql=mysqli_query($cs,$query);
 			echo "
 				<table border='3' width='90%'>
@@ -61,10 +60,6 @@
 			global $op;
 			$cs=conecta();
 			$query="SELECT * FROM contenidos  ORDER BY cve_tipo";
-			if ($op==3){
-				$cve_tipo=$_GET['cve_tipo'];
-				$query="SELECT * FROM tipos WHERE cve_tipo='$cve_tipo' ORDER BY nom_tipo";
-			}
 			$sql=mysqli_query($cs,$query);
 			echo "
 				<table border='3' width='90%'>
@@ -109,7 +104,51 @@
 			echo "</table>";
 		}
 
+		function r3(){
+			global $op, $cve_tipo, $tipo_prod;
+			$cve_tipo=$_GET['cve_tipo'];
+			$tipo_prod=$_GET['tipo_prod'];
+
+			$cs=conecta();
+			$query="SELECT *, cve_tipo FROM productos, contenidos WHERE tipo_prod = '$cve_tipo' AND cve_tipo = '$tipo_prod'";
+			$sql=mysqli_query($cs,$query);
+			
+
+			echo "
+				<table border='3' width='90%'>
+					<tr align='center'>
+						<td colspan='5'>
+						<p class='titulo36' id='titulo18'>
+						Listado de productos
+						</p>
+					</tr align='center'>
+					<tr align='center'>
+						<td><p class='titulo36' id='titulo18'>Clave Prod.</p></td>
+						<td><p class='titulo36' id='titulo18'>Nombre Producto</p></td>
+						<td><p class='titulo36' id='titulo18'>Tipo Producto</p></td>
+						<td><p class='titulo36' id='titulo18'>Descripcion Producto</p></td>
+						<td><p class='titulo36' id='titulo18'>Imagen Producto</p></td>
+					</tr>
+			";
+			
+
+			while ($reg=mysqli_fetch_object($sql)){	
+				$x='';
+				echo "<tr align='center'>
+						<td><p>$reg->cve_prod</p></td>
+						<td><p>$reg->nom_prod</p></td>
+						<td><p>$reg->tipo_prod</p></td>
+						<td><p>$reg->descripcion_prod</p></td>
+						<td><p>$reg->img_prod</p></td>
+					  </tr>
+				";
+			}
+			echo "</table>";
+
+		}
+
 		function formulario(){
+			global $op, $cve_tipo, $tipo_prod, $nom_tipo;
 			echo "
 				<br><br>
 				<form name='f_reportes'>
@@ -132,23 +171,25 @@
 						</td>
 					</tr>
 					<tr align='center'>
-						<td><p>Consulta de productos por categoria</p></td>
+						<td><p>Consulta por nombre de producto</p></td>
 						<td>
-							<p>Debe seleccionar una categoria</p> 
-							<input name='cat_prod' type='search' class='campo' list='lista_nom_prod'>
+							<p>Debe seleccionar el nombre del producto</p> 
+							<input name='nom_prod' type='search' class='campo' list='lista_nom_prod'>
 						</td>
-						<datalist id='lista_categoria'>
+						<datalist id='lista_nom_prod'>
 			";
 						$cs=conecta();
-						$query="SELECT * FROM productos";
+						$query="SELECT * FROM contenidos";
 						$sql=mysqli_query($cs,$query);
 						while ($reg=mysqli_fetch_object($sql)){
-							$tipo_prod=$reg->tipo_prod;
-							echo "<option value='$tipo_prod'>1</option>";
+							//$tipo_prod=$reg->tipo_prod;
+							$cve_tipo=$reg->cve_tipo;
+							$nom_tipo=$reg->nom_tipo;
+							echo "<option value='$cve_tipo'>$nom_tipo</option>";
 						}
 
 			echo "		</datalist>
-						<td><input name='b_r4' type='button' class='boton' value='Ejecutar' onClick='r4(4)'>
+						<td><input name='b_r4' type='button' class='boton' value='Ejecutar' onClick='r3(3, $cve_tipo)'>
 						</td>
 					</tr>
 					

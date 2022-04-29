@@ -88,7 +88,7 @@
 
         </main>
         <main class = "content2">
-              <h2 id = "titulo_catalogo">Nuestro Catalogo de Harinas<br><br> </h2>
+              <h2 id = "titulo_catalogo">Nuestro Catalogo de Harinas<br><br> </h2><br><br>
             <?php
                 include 'utilerias.php';
                 $cs=conecta();

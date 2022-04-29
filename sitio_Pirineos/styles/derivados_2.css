@@ -71,6 +71,43 @@
 #lineamientos_titulo{
     text-align: center;
 }
+#lineamientos_descripcion{
+   padding-top: inherit;
+}
+
+#titulo_catalogo{
+    text-align: center;
+    background-color: #FFC627;
+    border-radius: inherit;
+    padding-top: inherit;
+}
+#titulo_productos{
+    text-align: center;
+    color: white;
+    background-color:#08903E;
+    border-radius: inherit;
+}
+
+.catalogo {
+    display: flex;
+}
+#contenido_catalogo{
+    width: 50%;
+    height: auto;
+}
+#imagen_catalogo{
+    width: 50%;
+    height: auto;
+}
+#producto_catalogo{
+width: 96%;
+max-width: 960px;
+margin: 0 auto;
+}
+img{
+width: 100%;
+height: auto;
+}
 #slider{
     background-color: #08903E;
 }
@@ -453,6 +490,13 @@
         padding: 0;
         /* CONTROL DEL ESPACIADO ENTRE LOS ELEMENTOS DE LA SIDEBAR */
         padding-bottom: 50px;
+    }
+    .catalogo {
+    flex-direction: column;
+    }
+    #contenido_catalogo{
+    width: 100%;
+    height: auto;
     }
 
 }

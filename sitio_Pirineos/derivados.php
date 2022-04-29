@@ -88,82 +88,32 @@
 
         </main>
         <main class = "content2">
-             <div class="widget-1">
-                <a class="trigger_popup_fricc">Granillo de trigo</a>
-            </div>
-            <section class="hover_bkgr_fricc">
-                <span class="helper"></span>
-                <div>
-                    <a class="popupCloseButton">&times;</a><br>
-                        <p id="lineamientos_descripcion" style="text-align: justify;">
-                            Producto con alto contenido de fibra en forma granular de color café rojizo, amarillo y blanco cremoso,obtenido a partir de trigos enteros, –suaves o fuertes-, limpios y sanos de origen nacional, por medio de procesos de trituración, compresión y separación en los que se dividen los diferentes componentes por tamaño de partícula para conseguir el Granillo de trigo. Contiene harinas de trigo, salvado y germen de trigo propios del proceso.
-                        </p><br>
-                        <img src = "imagenes/harina_modena.jpeg">
-                </div>
-            </section>
+              <h2 id = "titulo_catalogo">Nuestro Catalogo de Harinas<br><br> </h2>
+            <?php
+                include 'utilerias.php';
+                $cs=conecta();
+            $query="SELECT * FROM harinas_trigo";
+            $sql=mysqli_query($cs,$query);
+            echo "<table>";
+            while ($reg=mysqli_fetch_object($sql)) {
+                $x="";
+                echo"
+               
+                <tr class='catalogo'>
+                    <td id='contenido_catalogo'>
+                        <h2 id ='titulo_productos'>$reg->nom_prod</h2><br>
+                        <p>$reg->descripcion_prod</p><br>
+                    </td>
+                    <td ><img src='$reg->img_prod' width='100%' height='100%'></td>
+                </tr>
+                ";
+                                   
+            }
+            echo "</table> ";
+            ?>
             <br><br>
-            <div class="widget-2">
-                <a class="trigger_popup_fricc_1">Germen de trigo</a>
-            </div>
 
-            <section class="hover_bkgr_fricc_1">
-                <span class="helper_1"></span>
-                <div>
-                    <a class="popupCloseButton_1">&times;</a><br>
-                            <p id="lineamientos_descripcion" style="text-align: justify;">
-                                Producto en forma de hojuelas color amarillo y café, obtenido a partir de trigos enteros, -suaves y fuertes-,limpios y sanos de variedades de trigo de origen nacional e importados, por medio de procesos de trituración,compresión y separación, en los que se obtiene, casi en su totalidad, el Germen de trigo, seleccionado por el tamaño de partículas, y que es sometido a los tratamientos necesarios para cumplir con las legislaciones para consumo humano, contiene partículas de harina de trigo propias del mismo proceso. Es un alimento muy rico y beneficioso para el organismo.
-                            </p><br>
-                            <img src = "imagenes/harina_modena.jpeg">
-                </div>
-            </section>
 
-            <br><br>
-            <div class="widget-3">
-                <a class="trigger_popup_fricc_2">Salvado de trigo sanitizado</a>
-            </div>
-
-            <section class="hover_bkgr_fricc_2">
-                <span class="helper_2"></span>
-                <div>
-                    <a class="popupCloseButton_2">&times;</a><br>
-                            <p id="lineamientos_descripcion" style="text-align: justify;">
-                               Producto con alto contenido de fibra en forma de hojuelas de color café rojizo, obtenido a partir de trigos enteros, –suaves o fuertes-, limpios y sanos de origen nacional e importados. Para el consumo humano, se obtiene por medio de procesos de trituración, compresión y separación. Es un alimento rico en nutrientes y minerales esenciales para la salud.Es una de las fuentes más ricas en fibra dietética insoluble, la cual disminuye el riesgo de enfermedades del corazón, cáncer de colon, divertículos y obesidad.
-                            </p><br>
-                            <img src = "imagenes/harina_modena.jpeg">
-                </div>
-            </section>
-            <br><br>
-            <div class="widget-4">
-                <a class="trigger_popup_fricc_3">Salvado de trigo (uso forrajero)</a>
-            </div>
-
-            <section class="hover_bkgr_fricc_3">
-                <span class="helper_3"></span>
-                <div>
-                    <a class="popupCloseButton_3">&times;</a><br>
-                            <p id="lineamientos_descripcion" style="text-align: justify;">
-                                Producto con alto contenido de fibra en forma granular donde prevalecen los colores café, amarillo y blanco cremoso, obtenido a partir de trigos enteros, -suaves o fuertes- limpios y sanos, de origen nacional, por medio de procesos de trituración, compresión y separación en los que se separa casi en su totalidad el salvadillo de trigo por tamaño de partículas. Es un complemento importante en la alimentación animal ya que contiene un alto porcentaje de proteína y es una fuente de energía.
-                            </p><br>
-                            <img src = "imagenes/harina_modena.jpeg">
-                </div>
-            </section>
-            
-            <br><br>
-            <div class="widget-5">
-                <a class="trigger_popup_fricc_4">Trigo</a>
-            </div>
-
-            <section class="hover_bkgr_fricc_4">
-                <span class="helper_4"></span>
-                <div>
-                    <a class="popupCloseButton_4">&times;</a><br>
-                            <p id="lineamientos_descripcion" style="text-align: justify;">
-                               Producto con alto contenido de fibra en forma de hojuelas color café rojizo, obtenido a partir de trigos enteros,suaves o fuertes-, limpios y sanos de origen nacional e importados. Para el consumo humano, se obtiene en el inicio de la molienda, donde es abierto y laminado.
-                            </p><br>
-                            <img src = "imagenes/harina_modena.jpeg">
-
-                </div>
-            </section>
         </main>    
 
 

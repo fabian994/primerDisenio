@@ -73,8 +73,6 @@
 
         </header>
 
-        
-
         <main class = "content">
             <h2 id = "lineamientos_titulo">DERIVADOS DE TRIGO<br><br> </h2>
             <p id = "lineamientos_descripcion">
@@ -87,8 +85,9 @@
             <span class = "icon-bowl"></span>
 
         </main>
+
         <main class = "content2">
-              <h2 id = "titulo_catalogo">Nuestro Catalogo de Harinas<br><br> </h2><br><br>
+            <h2 id = "titulo_catalogo"> Nuestro Catalogo de Harinas </h2>
             <?php
                 include 'utilerias.php';
                 $cs=conecta();
@@ -98,13 +97,15 @@
                 while ($reg=mysqli_fetch_object($sql)) {
                     $x="";
                     echo"
-                   
+                   <script>
+                        console.log('$reg->img_prod');
+                   </script>
                     <tr class='catalogo'>
                         <td id='contenido_catalogo'>
                             <h2 id ='titulo_productos'>$reg->nom_prod</h2><br>
                             <p>$reg->descripcion_prod</p><br>
                         </td>
-                        <td ><img src='$reg->img_prod'  width='189px' height='200px' style='padding-left: 10px></td>
+                        <td ><img src='$reg->img_prod' width='100%' height='100%'></td>
                     </tr>
                     ";
                                        
@@ -116,59 +117,57 @@
 
         </main>    
 
-
-
         <aside class = "sidebar">
             <?php
+            
+
+            //<!-- LINK 1 -->
+
+            
+            $cs=conecta();
+            $query="SELECT * FROM contenidos WHERE cve_tipo=5";
+            $sql=mysqli_query($cs,$query);
+            while ($reg=mysqli_fetch_object($sql)){ 
+                $x='';
+                echo "
+                    <div>
+                    
+                        <h1> Descarga el PDF de Derivados de Trigo </h1>
+                        
+                        <br>
+                        
+                        <a href = '$reg->nom_catalog'><span class = 'icon-download'></span> Descargar PDF </a>
+
+                    </div>
+                    
+                    <div>
+
+                        <h1> Descarga Nuestras Mejores Recetas con Derivados de Trigo </h1>
+                        
+                        <br>
+                        
+                        <a href = '$reg->nom_recetario'><span class = 'icon-download'></span> Descargar PDF </a>
+                
+                    </div>
+                
                 
 
-                //<!-- LINK 1 -->
+                    //<!-- LINK 3 -->
 
-                
-                $cs=conecta();
-                $query="SELECT * FROM contenidos WHERE cve_tipo=5";
-                $sql=mysqli_query($cs,$query);
-                while ($reg=mysqli_fetch_object($sql)){ 
-                    $x='';
-                    echo "
-                        <div>
+                    <div>
                         
-                            <h1> Descarga el PDF de Derivados de Trigo </h1>
-                            
-                            <br>
-                            
-                            <a href = '$reg->nom_catalog'><span class = 'icon-download'></span> Descargar PDF </a>
-
-                        </div>
+                        <h1> Productos Relacionados </h1>
                         
-                        <div>
-
-                            <h1> Descarga Nuestras Mejores Recetas con Derivados de Trigo </h1>
-                            
-                            <br>
-                            
-                            <a href = '$reg->nom_recetario'><span class = 'icon-download'></span> Descargar PDF </a>
-                    
-                        </div>
-                    
-                    
-
-                        //<!-- LINK 3 -->
-
-                        <div>
-                            
-                            <h1> Productos Relacionados </h1>
-                            
-                            <br>
-                            
-                            <ul>
-                                <li><a href = '$reg->url_prod_rel1'><span class = 'icon-bowl'></span> $reg->nom_prod_rel1 </a></li>
-                                <li><a href = '$reg->url_prod_rel2'><span class = 'icon-bowl'></span> $reg->nom_prod_rel2 </a></li>
-                            </ul>
+                        <br>
                         
-                        </div>
-                    ";
-                }
+                        <ul>
+                            <li><a href = '$reg->url_prod_rel1'><span class = 'icon-bowl'></span> $reg->nom_prod_rel1 </a></li>
+                            <li><a href = '$reg->url_prod_rel2'><span class = 'icon-bowl'></span> $reg->nom_prod_rel2 </a></li>
+                        </ul>
+                    
+                    </div>
+                ";
+            }
             ?>
 
 
@@ -188,7 +187,6 @@
 
 
         </aside>
-
 
         <footer class = "footer">
             <div class = "contact">

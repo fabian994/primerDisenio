@@ -10,7 +10,7 @@
     <link href = "styles/icons/fonts.css" rel = "stylesheet">
 
     <script src = "scripts/jquery-latest.js"></script>
-	<script src = "scripts/encabezado.js"></script>
+    <script src = "scripts/encabezado.js"></script>
     <script src = "scripts/harinas_trigo.js"></script>
 
     <title> Derivados </title>
@@ -18,36 +18,36 @@
 <body>
 
     <header class = "menu">
-		<div class = "menu_bar">
-			<a href = "#" class = "b_menu"><span class = "icon-menu"></span> <div> <img src = "pirineos.png"> </div> </a>
-		</div>
+        <div class = "menu_bar">
+            <a href = "#" class = "b_menu"><span class = "icon-menu"></span> <div> <img src = "pirineos.png"> </div> </a>
+        </div>
 
 
-		<div id = "img_banner">
+        <div id = "img_banner">
             <img src = "pirineos.png">
         </div>
 
-		<nav>
+        <nav>
 
-			<ul>
+            <ul>
 
-				<li><a href = "inicio.html"><span class = "icon-home"></span> Inicio </a></li>
-				
-				<li class = "submenu">
+                <li><a href = "inicio.html"><span class = "icon-home"></span> Inicio </a></li>
+                
+                <li class = "submenu">
 
-					<a href = "#"><span class = "icon-shop"></span> Nuestros Productos <span class = "slide_icon icon-chevron-down"></span></a>
-					<ul class = "children">
-						<li><a href="harinas_trigo.php"> Harinas de Trigo <span class = "icon-bowl"></span> </a></li>
-						<li><a href="harinas_hogar.html"> Harinas para el Hogar <span class = "icon-bowl"></span> </a></li>
-						<li><a href="harinas_tres_estrellas.php"> Harinas Preparadas Tres Estrellas <span class = "icon-bowl"></span> </a></li>
-						<li><a href="polvo_hornear_3Estrellas.php"> Polvo para Hornear Tres Estrellas <span class = "icon-bowl"></span> </a></li>
-						<li><a href="mejorante_rendimix.php"> Mejorantes RendiMix <span class = "icon-bowl"></span> </a></li>
-						<li><a href="derivados.php"> Derivados del Trigo <span class = "icon-bowl"></span> </a></li>
-					</ul>
+                    <a href = "#"><span class = "icon-shop"></span> Nuestros Productos <span class = "slide_icon icon-chevron-down"></span></a>
+                    <ul class = "children">
+                        <li><a href="harinas_trigo.php"> Harinas de Trigo <span class = "icon-bowl"></span> </a></li>
+                        <li><a href="harinas_hogar.html"> Harinas para el Hogar <span class = "icon-bowl"></span> </a></li>
+                        <li><a href="harinas_tres_estrellas.php"> Harinas Preparadas Tres Estrellas <span class = "icon-bowl"></span> </a></li>
+                        <li><a href="polvo_hornear_3Estrellas.php"> Polvo para Hornear Tres Estrellas <span class = "icon-bowl"></span> </a></li>
+                        <li><a href="mejorante_rendimix.php"> Mejorantes RendiMix <span class = "icon-bowl"></span> </a></li>
+                        <li><a href="derivados.php"> Derivados del Trigo <span class = "icon-bowl"></span> </a></li>
+                    </ul>
 
-				</li>
+                </li>
 
-				<li class = "submenu">
+                <li class = "submenu">
         
                     <a href = "#"><span class = "icon-open-book"></span> Recetarios <span class = "slide_icon icon-chevron-down"></span></a>
                     <ul class = "children">
@@ -57,12 +57,12 @@
                     </ul>
                 
                 </li>
-				<li><a href = "servicio_tecnico.html"><span class = "icon-tools"></span> Servicio Tecnico </a></li>
-				<li><a href = "Contacto.html"><span class = "icon-typing"></span> Contacto </a></li>
+                <li><a href = "servicio_tecnico.html"><span class = "icon-tools"></span> Servicio Tecnico </a></li>
+                <li><a href = "Contacto.html"><span class = "icon-typing"></span> Contacto </a></li>
 
-			</ul>
-		</nav>
-	</header>
+            </ul>
+        </nav>
+    </header>
     
 
     <div class = "container">
@@ -87,7 +87,6 @@
         </main>
 
         <main class = "content2">
-            <h2 id = "titulo_catalogo"> Nuestro Catalogo de Harinas </h2>
             <?php
                 include 'utilerias.php';
                 $cs=conecta();
@@ -97,24 +96,19 @@
                 while ($reg=mysqli_fetch_object($sql)) {
                     $x="";
                     echo"
-                   <script>
-                        console.log('$reg->img_prod');
-                   </script>
-                    <tr class='catalogo'>
+                   
+                    <tr class='catalogo' id='tabla_fila'>
                         <td id='contenido_catalogo'>
                             <h2 id ='titulo_productos'>$reg->nom_prod</h2><br>
                             <p>$reg->descripcion_prod</p><br>
                         </td>
-                        <td ><img src='$reg->img_prod' width='100%' height='100%'></td>
+                        <td><img src='$reg->img_prod' width='189px' height='200px'></td>
                     </tr>
                     ";
                                        
                 }
                 echo "</table> ";
             ?>
-            <br><br>
-
-
         </main>    
 
         <aside class = "sidebar">

@@ -2,6 +2,10 @@
     font-family: Montserrat;
     src: url(Montserrat-Regular.otf);
 }
+img{
+display:block;
+/* margin:auto; */
+}
 
 * {
     margin: 0;
@@ -80,7 +84,7 @@
     background-color: #FFC627;
     border-radius: inherit;
     color: #1E412F;
-    padding-top: inherit;
+    padding: inherit;
 }
 #titulo_productos{
     text-align: center;
@@ -90,11 +94,36 @@
 }
 
 .catalogo {
-    display: flex;
+    border-collapse: separate;
+    border-spacing: 0 15px;
 }
+
+#tabla_fila:nth-of-type(odd){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #E5A73C;
+    margin-bottom: 30px;
+}
+
+#tabla_fila{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #519C45;
+    margin-bottom: 30px;
+}
+
 #contenido_catalogo{
-    width: 50%;
+    width: 90%;
     height: auto;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    border-right:hidden;
 }
 #imagen_catalogo{
     width: 50%;
@@ -110,6 +139,7 @@ width: 100%;
 height: auto;
 padding-left: 10px;
 }*/
+
 #slider{
     background-color: #08903E;
 }
@@ -137,7 +167,8 @@ padding-left: 10px;
 
 .container .content2 {
     grid-area: content2;
-   
+    background-color: transparent;
+    color: #1E412F;
     text-align: justify;
 }
 

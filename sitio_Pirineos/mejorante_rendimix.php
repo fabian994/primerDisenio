@@ -75,54 +75,75 @@
             
         </header>
 
-        <main class = "content"> 
-            
-            <h1 id = "lineamientos_titulo"> LINEAMIENTOS DE PERSONALIDAD CON LA MARCA <br><br> </h1>
-            <p id = "lineamientos_descripcion">
-
-                <h2> Origen de Renombre </h2> <br>
-
-                <b><i> RendiMix </i></b> es un orgulloso integrante de la familia <i> La Moderna. </i> <br><br>
-
-                <h2> Mejor Desempeño </h2> <br>
-
-                <b><i> RendiMix </i></b> es un mejorante para panificación que refuerza las caracteristicas de la harina, logrando un mayor rendimiento, un mejor volumen del pan, ademas alarga la vida util de cada pieza horneada. <br><br> 
-
-                <h2> Mejora la Calidad </h2> <br>
-
-                Formulado con los mejores ingredientes para procesos industriales y artesanales de amasado. <b><i> RendiMix </i></b> por su calidad mejora el comportamiento de la masa otorgando un excelente volumen, mayor rendimiento, mejor tolerancia a la fermentacion, mayor vida util a los productos, mejor greñado, miga blanca uniforma, asi como una corteza crujiente. <br><br> 
-
-                <h2> Mas Volumen con Menos Grasa </h2> <br>
-
-                Con <b><i> RendiMix </i></b> como sinónimo de rendimiento es seguro obtener mayor cantidad de pan, esto se traduce en un ahorro de tiempo y dinero, pues con el mismo proceso se obtendrán mejores resultados sin afectar la calidad del producto. <br><br> 
-
-                <h2> Confiable </h2> <br>
-
-                <b><i> RendiMix </i></b> elaborado con ingredientres de la mejor calidad para cumplir con las especificaciones de la industria, es la marca de mejorante para la panificacion en la que se puede confiar para disfrutar de excelentes resultados en cantidad y sabor de panes. <br><br>
-
-            </p>
-
-            <br><br>
-
-            <span class = "icon-book"></span>
-
-        </main>
-
         <main class = "content2"> 
             
-            <h2 id = "lineamientos_titulo"> Mejorante RendiMix <br><br> </h2>
+            <h2 id = "lineamientos_titulo"> RendiMix <br><br> </h2>
             <p id = "lineamientos_descripcion">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non urna vestibulum, euismod mi at, pulvinar ex. Fusce libero justo, euismod id sapien eget, tempus tincidunt nisi. Vestibulum vehicula mattis auctor. Vivamus quis lorem at tortor efficitur dapibus a in dui. Phasellus bibendum ultrices nisl sit amet pretium. Fusce in mi urna. Proin condimentum dui sed odio euismod scelerisque. Curabitur venenatis molestie metus et condimentum. Sed ut ullamcorper dui. Fusce dignissim blandit lectus, id commodo lacus mollis non.
+                
+                <b><i> RendiMix </i></b> es un orgulloso integrante de la familia <i> La Moderna. </i> <br><br>
+                Nacido en la Harinera <b> Los Pirineos Bajío </b> y comercializado bajo la marca <b> Tres Estrellas </b>
 
-                    Fusce at mauris augue. Phasellus congue venenatis odio sed varius. Nam mauris nunc, auctor vitae neque eget, placerat pellentesque tellus. Nullam condimentum arcu sagittis risus finibus aliquam. Ut congue nibh sed luctus dictum. Suspendisse congue quam nec sapien placerat facilisis. Vestibulum vitae iaculis neque. Proin ornare ipsum non posuere elementum. Mauris tempus consectetur sem ut lacinia. Integer molestie, libero eget pulvinar malesuada, tortor nibh rhoncus elit, quis pulvinar orci urna et est. Proin in enim at nisi euismod lacinia eget vitae lorem. Maecenas vitae massa id mi feugiat gravida nec pulvinar nibh. Quisque maximus accumsan dui at auctor. Ut tempus sagittis neque, et accumsan magna sodales eu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Duis at quam id nisl consectetur tincidunt. 
+            </p>
+
+
+        </main>
+
+        <main class = "content2_1"> 
+            
+            <h2 id = "lineamientos_titulo"> Mejor Desempeño <br><br> </h2>
+            <p id = "lineamientos_descripcion">
+            <b><i> RendiMix </i></b> es un mejorante para panificación que refuerza las caracteristicas de la harina, logrando un mayor rendimiento, un mejor volumen del pan, ademas alarga la vida util de cada pieza horneada.
+            </p>
+
+            <br><br>
+            <span class = "icon-area-graph"></span>
+
+
+        </main>
+
+        <main class = "content2_2"> 
+            
+            <h2 id = "lineamientos_titulo">  Mejora la Calidad <br><br> </h2>
+            <p id = "lineamientos_descripcion">
+            Formulado con los mejores ingredientes para procesos industriales y artesanales de amasado. <b><i> RendiMix </i></b> por su calidad mejora el comportamiento de la masa otorgando un excelente volumen, mayor rendimiento, mejor tolerancia a la fermentacion, mayor vida util a los productos, mejor greñado, miga blanca uniforma, asi como una corteza crujiente.
 
             </p>
 
             <br><br>
+            <span class = "icon-cake"></span>
 
-            <span class = "icon-bowl"></span>
 
         </main>
+
+        <main class = "content2_3"> 
+            
+            <h2 id = "lineamientos_titulo"> Mas Volumen con Menos Grasa <br><br> </h2>
+            <p id = "lineamientos_descripcion">
+            Con <b><i> RendiMix </i></b> como sinónimo de rendimiento es seguro obtener mayor cantidad de pan, esto se traduce en un ahorro de tiempo y dinero, pues con el mismo proceso se obtendrán mejores resultados sin afectar la calidad del producto.
+
+            </p>
+
+            <br><br>
+            <span class = "icon-bowl"></span>
+
+
+        </main>
+
+        <main class = "content2_4"> 
+            
+            <h2 id = "lineamientos_titulo"> Confiable <br><br> </h2>
+            <p id = "lineamientos_descripcion">
+            <b><i> RendiMix </i></b> elaborado con ingredientres de la mejor calidad para cumplir con las especificaciones de la industria, es la marca de mejorante para la panificacion en la que se puede confiar para disfrutar de excelentes resultados en cantidad y sabor de panes.
+
+            </p>
+
+            <br><br>
+            <span class = "icon-check"></span>
+
+
+        </main>
+
+        
 
         <aside class = "sidebar">
             <?php
@@ -196,81 +217,38 @@
         </aside>
 
         <div class="widget-1">
-            <h1> RENDIMIX ESTANDAR</h1>
+            <h1> RENDIMIX ESTANDAR </h1>
 
             <br>
 
-            <h3> Excelente Granado y Volumen </h3>
+            <h3> Tradicion y Durabilidad </h3>
+            <br>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non urna vestibulum, euismod mi at, pulvinar ex. Fusce libero justo, euismod id sapien eget, tempus tincidunt nisi. Vestibulum vehicula mattis auctor. Vivamus quis lorem at tortor efficitur dapibus a in dui.
+                <b><i> RendiMix </i></b> Estandar ofrece la mejor calidad para procesos mas tradicionales, mas volumen, mas suave por mas tiempo en anaquel.
             </p>
 
             <br><br>
-            
-            <h3> Miga Blanca y Uniforme </h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non urna vestibulum, euismod mi at, pulvinar ex. Fusce libero justo, euismod id sapien eget, tempus tincidunt nisi. Vestibulum vehicula mattis auctor. Vivamus quis lorem at tortor efficitur dapibus a in dui.
-            </p>
-            
-            <br><br>
-            
-            <h3> Corteza Crujiente </h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non urna vestibulum, euismod mi at, pulvinar ex. Fusce libero justo, euismod id sapien eget, tempus tincidunt nisi. Vestibulum vehicula mattis auctor. Vivamus quis lorem at tortor efficitur dapibus a in dui.
-            </p>
-            
-            <br><br>
-            
-            <h3> Mejor Vida en sus productos </h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non urna vestibulum, euismod mi at, pulvinar ex. Fusce libero justo, euismod id sapien eget, tempus tincidunt nisi. Vestibulum vehicula mattis auctor. Vivamus quis lorem at tortor efficitur dapibus a in dui.
-            </p>
-            
-            <br><br>
-            
-            <h3> Mayor Rendimiento </h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non urna vestibulum, euismod mi at, pulvinar ex. Fusce libero justo, euismod id sapien eget, tempus tincidunt nisi. Vestibulum vehicula mattis auctor. Vivamus quis lorem at tortor efficitur dapibus a in dui.
-            </p>
+
+            <span class = "rendi_st"><img src = "imagenes/rendimix/Envase_RendiMix_Std.png"></span>
+
         </div>
 
         <div class="widget-2">
+
             <h1> RENDIMIX PLUS + </h1>
 
             <br>
 
-            <h3> Mayor Granado y Volumen de Alta Calidad</h3>
+            <h3> Desmpeño de Primera Clase </h3>
+            <br>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non urna vestibulum, euismod mi at, pulvinar ex. Fusce libero justo, euismod id sapien eget, tempus tincidunt nisi. Vestibulum vehicula mattis auctor. Vivamus quis lorem at tortor efficitur dapibus a in dui.
+                <b><i> RendiMix </i></b> Plus ofrece desempeño enfocado a procesos mas industrializados, de alto estres mecánico. 
             </p>
+            
+            <br><br>
 
-            <br><br>
-            
-            <h3> Miga Blanca y Uniforme Premium </h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non urna vestibulum, euismod mi at, pulvinar ex. Fusce libero justo, euismod id sapien eget, tempus tincidunt nisi. Vestibulum vehicula mattis auctor. Vivamus quis lorem at tortor efficitur dapibus a in dui.
-            </p>
-            
-            <br><br>
-            
-            <h3> Corteza mas Crujiente </h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non urna vestibulum, euismod mi at, pulvinar ex. Fusce libero justo, euismod id sapien eget, tempus tincidunt nisi. Vestibulum vehicula mattis auctor. Vivamus quis lorem at tortor efficitur dapibus a in dui.
-            </p>
-            
-            <br><br>
-            
-            <h3> Maxima Vida en sus productos </h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non urna vestibulum, euismod mi at, pulvinar ex. Fusce libero justo, euismod id sapien eget, tempus tincidunt nisi. Vestibulum vehicula mattis auctor. Vivamus quis lorem at tortor efficitur dapibus a in dui.
-            </p>
-            
-            <br><br>
-            
-            <h3> Rendimiento Superior de Alta Calidad </h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non urna vestibulum, euismod mi at, pulvinar ex. Fusce libero justo, euismod id sapien eget, tempus tincidunt nisi. Vestibulum vehicula mattis auctor. Vivamus quis lorem at tortor efficitur dapibus a in dui.
-            </p>
+            <span class = "rendi_pl"><img src = "imagenes/rendimix/Envase_RendiMix_Plus.png"></span>
+
         </div>
 
         <footer class = "footer">

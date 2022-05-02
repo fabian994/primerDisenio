@@ -5,7 +5,7 @@
 		<meta charset="utf-8">
 		<link href="estilos.css" rel="stylesheet" type="text/css">
 		<link href="imagenes/logo_pirineos.png" rel="shortcut icon" type="image/png">
-		<script src="productos.js" type="text/JavaScript"></script>
+		<script src="recertario.js" type="text/JavaScript"></script>
 	</head>
 	<body><center>
 	<?php

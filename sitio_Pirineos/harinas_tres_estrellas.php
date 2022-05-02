@@ -128,7 +128,7 @@
         </main>    
 
         <div class="widget-0">
-            <h2 id = "titulo_catalogo"> Nuestro Catalogo de Harinas </h2>
+            <h2 id = "titulo_catalogo"> Nuestro Catalogo de Harinas </h2><br><br>
             <?php
                 include 'utilerias.php';
                 $cs=conecta();
@@ -138,15 +138,13 @@
                 while ($reg=mysqli_fetch_object($sql)) {
                     $x="";
                     echo"
-                   <script>
-                        console.log('$reg->img_prod');
-                   </script>
-                    <tr class='catalogo'>
+                   
+                    <tr class='catalogo' id='tabla_fila'>
                         <td id='contenido_catalogo'>
                             <h2 id ='titulo_productos'>$reg->nom_prod</h2><br>
                             <p>$reg->descripcion_prod</p><br>
                         </td>
-                        <td ><img src='$reg->img_prod' width='100%' height='100%'></td>
+                        <td><img src='$reg->img_prod' width='189px' height='200px'></td>
                     </tr>
                     ";
                                        

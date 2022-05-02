@@ -217,12 +217,12 @@
                     $x="";
                     echo"
                    
-                    <tr class='catalogo'>
+                    <tr class='catalogo' id='tabla_fila'>
                         <td id='contenido_catalogo'>
                             <h2 id ='titulo_productos'>$reg->nom_prod</h2><br>
                             <p>$reg->descripcion_prod</p><br>
                         </td>
-                        <td><img src='$reg->img_prod' width='189px' height='200px' style='padding-left: 10px'></td>
+                        <td><img src='$reg->img_prod' width='189px' height='200px'></td>
                     </tr>
                     ";
                                        

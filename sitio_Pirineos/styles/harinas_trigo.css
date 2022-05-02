@@ -91,11 +91,36 @@
 }
 
 .catalogo {
-    display: flex;
+    border-collapse: separate;
+    border-spacing: 0 15px;
 }
+
+#tabla_fila:nth-of-type(odd){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #E5A73C;
+    margin-bottom: 30px;
+}
+
+#tabla_fila{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #519C45;
+    margin-bottom: 30px;
+}
+
 #contenido_catalogo{
-    width: 50%;
+    width: 90%;
     height: auto;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    border-right:hidden;
 }
 #imagen_catalogo{
     width: 50%;
@@ -222,7 +247,7 @@ padding-left: 10px;
 /* WIDGETS - ENGLOBA AMBOS WIDGETS */
 
 .container .widget-1 {
-    background-color: #E5A73C;
+    background-color: transparent;
     color: #EBE3D5;
 }
 
@@ -498,7 +523,10 @@ padding-left: 10px;
         padding-bottom: 50px;
     }
     .catalogo {
-    flex-direction: column;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     #contenido_catalogo{
     width: 100%;

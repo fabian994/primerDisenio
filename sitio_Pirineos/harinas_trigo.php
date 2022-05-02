@@ -24,7 +24,7 @@
 
 
 		<div id = "img_banner">
-            <img src = "pirineos.png">
+            <img src = "imagenes/Pirineos/Logo HPI contorno_blanco.png" style = "width: 15%; margin-top: 10px;">
         </div>
 
 		<nav>

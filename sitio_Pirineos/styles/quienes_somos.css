@@ -34,15 +34,16 @@ h1{
     display: grid;
     gap: 50px;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(5, auto);
+    grid-template-rows: repeat(6, auto);
 
  grid-template-areas: "header header header"
                          "content content sidebar"
                          "content2 content2 sidebar"
+                         "content3 content3 sidebar"
                          "widget-1 widget-2 sidebar"
                          "widget-3 widget-3 sidebar"
                          "widget-4 widget-4 sidebar"
-                         "content3 content3 sidebar"
+                         "content4 content4 sidebar"
                          "footer footer footer";
 
 }
@@ -54,6 +55,7 @@ h1{
 .container .content,
 .container .content2,
 .container .content3,
+.container .content4,
 .container .sidebar, 
 .container .footer{
     background-color: transparent;
@@ -90,6 +92,14 @@ h1{
 #lineamientos_titulo{
     text-align: center;
 }
+#lineamientos_titulo_2{
+    text-align: center;
+    background-color: darkgreen;
+    color: antiquewhite;
+    border-radius: 14px;
+    padding-top: inherit;
+}
+
 #lineamientos_descripcion{
     text-align: justify;
 }
@@ -151,6 +161,22 @@ h1{
 
 
 .container .content3 span {
+    color: #1E412F;
+    font-size: 55pt;
+    display: flex;
+    justify-content: center;
+}
+
+/* CONTENIDO 4 - ENGLOBA EL CONTENIDO TERCIARIO */
+
+.container .content4 {
+    grid-area: content4;
+    color: #1E412F;
+    text-align: justify;
+}
+
+
+.container .content4 span {
     color: #1E412F;
     font-size: 55pt;
     display: flex;
@@ -512,11 +538,12 @@ h1{
         grid-template-areas: "header header header"
                              "content content content"
                              "content2 content2 content2"
+                             "content3 content3 content3"
                              "widget-1 widget-1 widget-1"
                              "widget-2 widget-2 widget-2"
                              "widget-3 widget-3 widget-3"
                              "widget-4 widget-4 widget-4"
-                             "content3 content3 content3"
+                             "content4 content4 content4"
                              "sidebar sidebar sidebar"
                              "footer footer footer";
         padding-top: 50px;

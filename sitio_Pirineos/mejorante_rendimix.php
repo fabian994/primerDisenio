@@ -143,8 +143,6 @@
 
         </main>
 
-        
-
         <aside class = "sidebar">
             <?php
                 
@@ -217,38 +215,29 @@
         </aside>
 
         <div class="widget-1">
-            <h1> RENDIMIX ESTANDAR </h1>
-
-            <br>
-
-            <h3> Tradicion y Durabilidad </h3>
-            <br>
-            <p>
-                <b><i> RendiMix </i></b> Estandar ofrece la mejor calidad para procesos mas tradicionales, mas volumen, mas suave por mas tiempo en anaquel.
-            </p>
-
-            <br><br>
-
-            <span class = "rendi_st"><img src = "imagenes/rendimix/Envase_RendiMix_Std.png"></span>
-
-        </div>
-
-        <div class="widget-2">
-
-            <h1> RENDIMIX PLUS + </h1>
-
-            <br>
-
-            <h3> Desmpeño de Primera Clase </h3>
-            <br>
-            <p>
-                <b><i> RendiMix </i></b> Plus ofrece desempeño enfocado a procesos mas industrializados, de alto estres mecánico. 
-            </p>
-            
-            <br><br>
-
-            <span class = "rendi_pl"><img src = "imagenes/rendimix/Envase_RendiMix_Plus.png"></span>
-
+        <h2 id = "titulo_catalogo"> Nuestro Catalogo RendiMix </h2><br><br>
+            <?php
+                
+                $cs=conecta();
+                $query="SELECT * FROM rendimix";
+                $sql=mysqli_query($cs,$query);
+                echo "<table>";
+                while ($reg=mysqli_fetch_object($sql)) {
+                    $x="";
+                    echo"
+                   
+                    <tr class='catalogo' id='tabla_fila'>
+                        <td id='contenido_catalogo'>
+                            <h2 id ='titulo_productos'>$reg->nom_prod</h2><br>
+                            <p>$reg->descripcion_prod</p><br>
+                        </td>
+                        <td><img src='$reg->img_prod' width='189px' height='200px'></td>
+                    </tr>
+                    ";
+                                       
+                }
+                echo "</table> ";
+            ?>
         </div>
 
         <footer class = "footer">

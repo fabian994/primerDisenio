@@ -13,6 +13,10 @@ h3{
 }
 h1{
     color:whitesmoke;
+
+}
+h2{
+     text-align: center;
 }
 * {
     margin: 0;
@@ -25,6 +29,8 @@ h1{
     margin: 0;
 }
 
+
+
 /* CONTENEDOR - ENGLOBA TODA LA PAGINA */
 
 .container {
@@ -33,13 +39,15 @@ h1{
     margin: 20px auto;
     margin-top: 0;
     display: grid;
-    gap: 20px;
+    gap: 30px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(5, auto);
 
     grid-template-areas: "header header header"
                          "content content sidebar"
+                         "widget-1 widget-1 sidebar"
                          "content2 content2 sidebar"
+                         "widget-2 widget-2 sidebar"
                          "widget-0 widget-0 sidebar"
                          "footer footer footer";
 }
@@ -77,15 +85,46 @@ h1{
 
 .container .content {
     grid-area: content;
-    background-color: #08903E;
-    color: #EBE3D5;
+    background-color: #EBE3D5;
+    color: #1E412F;
     text-align: justify;
 }
 
-
-
+#lineamientos_titulo_des{
+    text-align: center;
+    border-radius: inherit;
+    padding: inherit;
+    background-color: #E5A73C;
+}
+.lineamientos{
+    display: flex;
+    flex-direction: column;
+}
+.sub_lineamientos{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+#sub_lineamientos_descripcion{
+    width: 50%
+    height:auto;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    background-color: green;
+    color: white;
+}
+#sub_lineamientos_descripcion_am{
+    width: 50%
+    height:auto;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    background-color: #FFC627;
+    color: black;
+}
 #lineamientos_titulo{
     text-align: center;
+    border-radius: inherit;
+    padding: inherit;
 }
 #lineamientos_descripcion{
    padding-top: inherit;
@@ -179,8 +218,8 @@ padding-left: 10px;
 
 .container .content2 {
     grid-area: content2;
-    background-color: #EBE3D5;
-    color: #1E412F;
+    background-color: transparent;
+    color: #08903E;
     text-align: justify;
 }
 
@@ -273,26 +312,13 @@ padding-left: 10px;
 
     background-color: #08903E;
     color: aliceblue;
-    height: 100px;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
 
 }
 
-.container .widget-1 a, 
-.container .widget-2 a, 
-.container .widget-3 a, 
-.container .widget-4 a,
-.container .widget-5 a,
-.container .widget-6 a,
-.container .widget-7 a,
-.container .widget-8 a,
-.container .widget-9 a {
-
-    font-size: 14pt;
-
-}
 
 /* WIDGET 1 - SOLO EL PRIMER WIDGET */
 
@@ -311,13 +337,13 @@ padding-left: 10px;
 .container .widget-1 {
     grid-area: widget-1;
     background-color: transparent;
-    color: #1E412F;
 }
 
 /* WIDGET 2 - SOLO EL SEGUNDO WIDGET */
 
 .container .widget-2 {
     grid-area: widget-2;
+    background-color: transparent;
     
 }
 
@@ -329,41 +355,7 @@ padding-left: 10px;
 
 /* WIDGET 4 - SOLO EL CUARTO WIDGET */
 
-.container .widget-4 {
-    grid-area: widget-4;
-    background-color: #FFC627;
-    color: #1E412F;
-   
-}
 
-.container .widget-5 {
-    grid-area: widget-5;
-    background-color: #FFC627;
-    color: #1E412F;
-   
-}
-
-.container .widget-6 {
-    grid-area: widget-6;
-   
-}
-
-.container .widget-7 {
-    grid-area: widget-7;
-}
-
-.container .widget-8 {
-    grid-area: widget-8; 
-    background-color: #FFC627;
-    color: #1E412F;
-   
-   
-}
-
-.container .widget-9 {
-    grid-area: widget-9;
-   
-}
 
 
 
@@ -624,7 +616,9 @@ padding-left: 10px;
 
         grid-template-areas: "header header header"
                              "content content content"
+                             "widget-1 widget-1 widget-1"
                              "content2 content2 content2"
+                             "widget-2 widget-2 widget-2"
                              "widget-0 widget-0 widget-0"
                              "sidebar sidebar sidebar"
                              "footer footer footer";
@@ -637,6 +631,9 @@ padding-left: 10px;
         /* CONTROL DEL ESPACIADO ENTRE LOS ELEMENTOS DE LA SIDEBAR */
         padding-bottom: 50px;
     }
+    .sub_lineamientos{
+    flex-direction: column;
+}
 
 }
 

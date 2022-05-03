@@ -74,58 +74,72 @@
 
         </header>
 
-        
-
         <main class = "content">
-
-            <h1 id = "lineamientos_titulo"> LINEAMIENTOS DE PERSONALIDAD CON LA MARCA <br><br> </h1>
-            <p id = "lineamientos_descripcion">
-                    
-                <h2> Origen de Renombre </h2> <br>
-                <i><b> Bakery Mix </b></i> Forma parte de la familia <i> La Moderna. </i> <br><br>
-
-                <h2> Elaborada con lo mejor </h2> <br>
-                <i><b> Bakery Mix </b></i> esta elaborada con la tecnologia mas innovadora haciendo una mezcla exacta de los meojres ingredientes y harina proveniente de los granos de trigo de la mas alta calidad, lo cual hace especial y unica a cada premezcla fabricada. <br><br>
-
-                <h2> Hecha a la medida </h2> <br>
-                Fabricada segun las necesidades del cliente, <i><b> Bakery Mix </b></i> acorta los tiempos de produccion, ademas de brindar las mejores caracteristicas a los productos, como una miga uniforme y esponjosa (segun el uso), textura suave, prolongada vida en anaquel, frescura, estructura firme y excelente sabor. <br><br>
-
-                <h2> Hecha a la medida </h2> <br>
-                Fabricada segun las necesidades del cliente, <i><b> Bakery Mix </b></i> acorta los tiempos de produccion, ademas de brindar las mejores caracteristicas a los productos, como una miga uniforme y esponjosa (segun el uso), textura suave, prolongada vida en anaquel, frescura, estructura firme y excelente sabor. <br><br>
-
-                <h2> Solucion Integral </h2> <br>
-                Al estar fabricada de acuerdo a las especificaciones precisas del cliente, <i><b> Bakery Mix </b></i> permite ahorrar en azucar, grasas, saborizantes y emulsificantes, pues evitan los desperdicios y sobrantes que genera el proceso de mezcla de estos ingredientes. Asi mismo, permite realizar un manejo de inventario optimo, pues ayuda a estandarizar la calidad y cantidad de panes que se producen. <br><br>
-
-                <h2> Rapidez, Rendimiento y Calidad </h2> <br>
-                <i><b> Bakery Mix </b></i> es sinónimo de rapidez al brindar un ahorro de tiempos en preparación y pesado de ingredientes, tiempos de amasado y horneado del pan, ya que hace rendir cada gramo de masa otorgándole la mejor calidad en los productos finales. <br><br>
-
-                <h2> Conserva el Sabor Tradicional </h2> <br>
-                Al ser una premezcla especializada para cada tipo de pan con un control de calidad total desde el origen de los trigos, <i><b> Bakery Mix </b></i> permite estandarizar la elaboracion del pan, logrando siempre un producto uniforme que conserva el sabor unico de tu panaderia en cada horneada. <br><br>
-
-                <h2> Confiable </h2> <br>
-                <i><b> Bakery Mix </b></i> es la premezcla en la que se puede confiar para disfrutar de los mejores resultados en el proceso de panificación. Es elaborada con ingredientes de la mejor calidad para cumplir con las expectativas mas exigentes de nuestros clientes. <br><br>
-
-
-            </p>
-
-            <br><br>
-
-            <span class = "icon-book"></span>
-
-        </main>
-
-        <main class = "content2">
             <h2 id = "lineamientos_titulo"> Harinas Tres Estrellas <br><br> </h2>
             <p id = "lineamientos_descripcion">
                     Nacida en <i><b> Harinera los Pirineos </b></i> y comercializada bajo la marca <i><b> Tres Estrellas </b></i>, es una harina preparada con la mezcla exacta de ingredientes para la elaboracion de especialidades en panificación. Al ser una harina lista para usarse, Bakery Mix te garantizará ahorro en tiempo y recursos, así como un pan consistente. 
 
             </p>
+             <br>
+            <img src = "imagenes/Logo_tres_estrellas.png" style = "width: 20%; margin: auto;">
+        </main>  
 
-            <br><br>
+        <main class = "content2">
 
-            <span class = "icon-bowl"></span>
+            <h1 id = "lineamientos_titulo_des"> LINEAMIENTOS DE PERSONALIDAD CON LA MARCA </h1><br><br> 
+            <div class="lineamientos">  
+            <div class="sub_lineamientos"> 
 
-        </main>    
+            </div>
+            <div class="sub_lineamientos"> 
+                <div id="sub_lineamientos_descripcion">
+                    <h2> Origen de Renombre </h2> <br>
+                   <p><i><b> Bakery Mix </b></i> Forma parte de la familia <i> La Moderna. </i></p> <br><br>
+                  
+                </div>
+
+                <div id="sub_lineamientos_descripcion">
+                    <h2> Elaborada con lo mejor </h2> <br>
+                   <p><i><b> Bakery Mix </b></i> esta elaborada con la tecnologia mas innovadora haciendo una mezcla exacta de los meojres ingredientes y harina proveniente de los granos de trigo de la mas alta calidad, lo cual hace especial y unica a cada premezcla fabricada.</p> <br><br>
+                   
+                </div>
+                <div id="sub_lineamientos_descripcion" >
+                    <h2> Hecha a la medida </h2> <br>
+                   <p> Fabricada segun las necesidades del cliente, <i><b> Bakery Mix </b></i> acorta los tiempos de produccion, ademas de brindar las mejores caracteristicas a los productos, como una miga uniforme y esponjosa (segun el uso), textura suave, prolongada vida en anaquel, frescura, estructura firme y excelente sabor.</p> <br><br>
+           
+                </div>
+            </div>
+            <div class="sub_lineamientos"> 
+                 <div id="sub_lineamientos_descripcion_am">
+                    <h2> Solucion Integral </h2> <br>
+                    <p>Al estar fabricada de acuerdo a las especificaciones precisas del cliente, <i><b> Bakery Mix </b></i> permite ahorrar en azucar, grasas, saborizantes y emulsificantes, pues evitan los desperdicios y sobrantes que genera el proceso de mezcla de estos ingredientes. Asi mismo, permite realizar un manejo de inventario optimo, pues ayuda a estandarizar la calidad y cantidad de panes que se producen.</p> <br><br>
+       
+                </div>
+            </div>
+            <div class="sub_lineamientos"> 
+            
+                <div id="sub_lineamientos_descripcion">
+                    <h2> Rapidez, Rendimiento y Calidad </h2> <br>
+                    <p> <i><b> Bakery Mix </b></i> es sinónimo de rapidez al brindar un ahorro de tiempos en preparación y pesado de ingredientes, tiempos de amasado y horneado del pan, ya que hace rendir cada gramo de masa otorgándole la mejor calidad en los productos finales.</p> <br><br>
+          
+                </div>
+                <div id="sub_lineamientos_descripcion">
+                    <h2> Confiable </h2> <br>
+                    <p><i><b> Bakery Mix </b></i> es la premezcla en la que se puede confiar para disfrutar de los mejores resultados en el proceso de panificación. Es elaborada con ingredientes de la mejor calidad para cumplir con las expectativas mas exigentes de nuestros clientes.</p> <br><br>
+                </div>
+                <div id="sub_lineamientos_descripcion">
+                    <h2> Conserva el Sabor Tradicional </h2> <br>
+                    <p>Al ser una premezcla especializada para cada tipo de pan con un control de calidad total desde el origen de los trigos, <i><b> Bakery Mix </b></i> permite estandarizar la elaboracion del pan, logrando siempre un producto uniforme que conserva el sabor unico de tu panaderia en cada horneada.</p> <br><br>
+                </div>
+            </div>
+           
+            </div> 
+        </main>
+        <div class="widget-2">
+             <img src = "imagenes/Envase_Generico_Tres_Estrellas_20kg.png" style = "width: 50%; margin-top: 10px;">
+         </div>
+
+          
 
         <div class="widget-0">
             <h2 id = "titulo_catalogo"> Nuestro Catalogo de Harinas </h2><br><br>

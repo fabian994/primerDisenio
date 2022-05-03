@@ -272,14 +272,18 @@ h1{
 
 .container .widget-1 {
     grid-area: widget-1;
+    border: 10px solid #08903E;
+    background-color: #A3D4A9;
+    color: black;
 }
 
 /* WIDGET 2 - SOLO EL SEGUNDO WIDGET */
 
 .container .widget-2 {
     grid-area: widget-2;
-    background-color: #FFC627;
-   color: #1E412F;
+    background-color: #F7E9C2;
+    color: #1E412F;
+    border: 10px solid #FFC627;
 }
 
 /* WIDGET 3 - SOLO EL TERCER WIDGET */

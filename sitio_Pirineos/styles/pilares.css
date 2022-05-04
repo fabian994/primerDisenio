@@ -13,7 +13,10 @@
     padding: 0;
     margin: 0;
 }
-
+#lineamientos_titulo{
+    padding: 10px;
+    text-align: center;
+}
 /* CONTENEDOR - ENGLOBA TODA LA PAGINA */
 
 .container {
@@ -27,13 +30,10 @@
     grid-template-rows: repeat(4, auto);
 
     grid-template-areas: "header header header"
-                         "content3 content3 sidebar"
-                         "content content sidebar"
-                         "widget-1 widget-2 sidebar"
-                         "content2 content2 sidebar"
-                         "widget-3 widget-3 sidebar"
-                         "content4 content4 sidebar"
-                         "widget-5 widget-6 sidebar"
+                         "content3 content3 content3 "
+                         "content content2 content4"
+                         "widget-1 widget-3 widget-5"
+                         "widget-2 widget-3 widget-6"         
                          "footer footer footer";
 }
 
@@ -81,8 +81,8 @@
 
 .container .content4{
     grid-area: content4;
-    background-color: #08903E;
-    color: #EBE3D5;
+    background-color: green;
+    color: white;
     height: auto;
     align-items: center;
     display: flex;
@@ -92,13 +92,15 @@
 
 .container .content {
     grid-area: content;
-    background-color: #08903E;
-    color: #EBE3D5;
+    background-color: green;
+    color: white;
     height: auto;
     align-items: center;
     display: flex;
     justify-content: center;
     border-radius: 14px;
+    text-align: center;
+    padding: 10px;
     
 }
 
@@ -106,8 +108,8 @@
 
 .container .content2 {
     grid-area: content2;
-    background-color: #EBE3D5;
-    color: #1E412F;
+    background-color: green;
+    color: white;
     height: auto;
     align-items: center;
     display: flex;
@@ -130,62 +132,6 @@
     justify-content: center;
 }
 
-/* SIDEBAR - ENGLOBA TODA LA SIDEBAR */
-
-.container .sidebar {
-    grid-column: 3 / 4;
-    background-color: #1E412F;
-    min-height: 100px;
-    grid-area: sidebar;
-}
-
-.container .sidebar h1 {
-    color: #EBE3D5;
-    font-size: 18pt;
-}
-
-.container .sidebar a {
-    color: #E5A73C;
-    text-decoration: none;
-    font-size: 11pt;
-}
-
-.container .sidebar span {
-    margin-right: 10px;
-}
-
-.container .sidebar ul {
-    color: #EBE3D5;
-    font-size: 18pt;
-    list-style: none;
-    /* CONTROL DEL ESPACIADO ENTRE LOS ELEMENTOS DE LA SIDEBAR */
-    padding-right: 20px;
-    padding-left: 20px;
-    padding-top: 20px;
-}
-
-.container .sidebar ul li {
-    padding-bottom: 15px;
-}
-
-.container .sidebar ul li a {
-    font-size: 18pt;
-}
-
-.container .sidebar .share_buttons li span {
-    font-size: 35pt;
-}
-
-.container .sidebar div {
-    background-color: transparent;
-    padding: 0;
-    /* CONTROL DEL ESPACIADO ENTRE LOS ELEMENTOS DE LA SIDEBAR */
-    padding-bottom: 262px;
-}
-
-.container .sidebar .share_buttons li {
-    display: inline-block;
-}
 
 
 /* WIDGETS - ENGLOBA TODOS LOS WIDGETS */
@@ -331,7 +277,44 @@
     font-weight: bold;
     text-align: center;
 }
+/* Movimientos con mouse*/
+section.hover_bkgr_fricc{
+    display: none;
+}
+              
+div.widget-1:hover + section.hover_bkgr_fricc {
+    display: block;
+}
 
+section.hover_bkgr_fricc_1{
+    display: none;
+}
+              
+div.widget-2:hover + section.hover_bkgr_fricc_1 {
+    display: block;
+}
+
+section.hover_bkgr_fricc_2{
+    display: none;
+}
+              
+div.widget-3:hover + section.hover_bkgr_fricc_2 {
+    display: block;
+}
+section.hover_bkgr_fricc_4{
+    display: none;
+}
+              
+div.widget-5:hover + section.hover_bkgr_fricc_4 {
+    display: block;
+}
+section.hover_bkgr_fricc_5{
+    display: none;
+}
+              
+div.widget-6:hover + section.hover_bkgr_fricc_5 {
+    display: block;
+}
 /* FOOTER - ENGLOBA TODO EL FOOTER */
 
 .container .footer {
@@ -490,11 +473,13 @@
                              "content3 content3 content3"
                              "content content content"
                              "sidebar sidebar sidebar"
-                             "widget-1 widget-1 widget-2"
+                             "widget-1 widget-1 widget-1"
+                             "widget-2 widget-2 widget-2"
                              "content2 content2 content2"
                              "widget-3 widget-3 widget-3"
                              "content4 content4 content4"
-                             "widget-5 widget-5 widget-6"
+                             "widget-5 widget-5 widget-5"
+                             "widget-6 widget-6 widget-6"
                              "footer footer footer";
         padding-top: 50px;
     }

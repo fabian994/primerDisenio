@@ -370,6 +370,20 @@ padding-left: 10px;
   opacity: 1;
   pointer-events: all;
 }
+
+.modal.appear .modalImgD{
+    
+    text-align: center;
+    font-size: 2em;
+    margin: 2em 0;
+    text-align: center;
+    background-color: #FFC627;
+    border-radius: inherit;
+    color: #1E412F;
+    padding: inherit;
+
+}
+
 .modal.appear .modalImg,
 .modal.appear .modalTxt {
   animation: zoom 0.3s linear;

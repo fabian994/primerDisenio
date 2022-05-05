@@ -129,7 +129,7 @@
                             
                             <br>
                             
-                            <a href = '$reg->nom_recetario'><span class = 'icon-download'></span> Descargar PDF </a>
+                            <a href = 'recetario.php?op=3'><span class = 'icon-bowl'></span> Recetas </a>
                     
                         </div>
                     

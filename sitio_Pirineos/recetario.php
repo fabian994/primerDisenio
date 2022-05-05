@@ -102,12 +102,12 @@
               <div class="modal">
                 <span class="close"><i class="icon-cross"></i></span>
                 <div class="modalContent">
-                  <img src="" class="modalImg" />
-
-                  <a href="" download class="modalImg">
-                      <span class="modalTxt"></span>
-                  </a>
-                    
+                    <img src="" class="modalImg" />
+                    <!--imagens/recetas/Abanicos_receta.jpg-->
+                    <a href="" download class="modalImgD">
+                        
+                        <span class="modalTxt" id="titulo_catalogo"></span>
+                    </a>   
                 </div>
               </div>
             </div>
@@ -118,12 +118,14 @@
             const images = document.querySelectorAll(".images img");
             const modal = document.querySelector(".modal");
             const modalImg = document.querySelector(".modalImg");
+             const modalImgD = document.querySelector(".modalImgD");
             const modalTxt = document.querySelector(".modalTxt");
             const close = document.querySelector(".close");
 
             images.forEach((image) => {
               image.addEventListener("click", () => {
                 modalImg.src = image.src;
+                modalImgD.href = image.src;
                 modalTxt.innerHTML = image.alt;
                 modal.classList.add("appear");
 

@@ -160,7 +160,7 @@
                             
                             <br>
                             
-                            <a href = 'recetario.php?op=1'><span class = 'icon-download'></span> Descargar PDF </a>
+                            <a href = 'recetario.php?op=1'><span class = 'icon-bowl'></span> Recetas </a>
                     
                         </div>
                     

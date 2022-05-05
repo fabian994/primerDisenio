@@ -242,7 +242,6 @@
         </div>
 
         <footer class = "footer">
-            
             <div class = "contact">
 
                 <ul>
@@ -266,8 +265,8 @@
                             <li id = "footer_title"> Boletín </li>
 
                             <li><a href = "#"><span class = "icon-download"></span> Aviso de Prvacidad </a></li>
-                            <li><a href = "#"><span class = "icon-network"></span> Encuentra Tu Distribuidor </a></li>
-                            <li><a href = "#"><span class = "icon-info"></span> FAQ </a></li>
+                            <li><a href = "contacto.php"><span class = "icon-network"></span> Encuentra Tu Distribuidor </a></li>
+                            <li><a href = "servicio-tecnico.html"><span class = "icon-info"></span> FAQ </a></li>
                             
                         </ul>
 
@@ -278,7 +277,7 @@
                         <ul>
                             <li id = "footer_title"> Bolsa de Trabajo </li>
 
-                            <li><a href = "#"><span class = "icon-man"></span> Integrate a Nuestro Equipo </a></li>
+                            <li><a href = "contacto.php"><span class = "icon-man"></span> Integrate a Nuestro Equipo </a></li>
                             
                         </ul>
 
@@ -291,9 +290,7 @@
 
                             <ul class = "share_buttons_footer">
 
-                                <li><a href = "#"><span class = "icon-facebook-with-circle"></span></a></li>
-                                <li><a href = "#"><span class = "icon-instagram-with-circle"></span></a></li>
-                                <li><a href = "#"><span class = "icon-twitter-with-circle"></span></a></li>
+                                <li><a href = "https://web.facebook.com/impulsopirineos/?_rdc=1&_rdr"><span class = "icon-facebook-with-circle"></span></a></li>
 
                             </ul>
                             
@@ -304,7 +301,6 @@
                 </ul>
 
             </div>
-
 
         </footer>
 

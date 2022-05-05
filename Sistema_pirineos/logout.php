@@ -1,7 +1,6 @@
 <?php
 	session_start();
 	session_destroy();
-	// Redirect to the login page:
-	header("refresh: 1");
+	// Cierra sesion y Redirigue al Login
 	header('Location: index.html');
 ?>

@@ -3,7 +3,7 @@
 	include 'utilerias.php';
 	$cs=conecta();
 	if ( !isset($_POST['usuario']) ) {
-		// Could not get the data that should have been sent.
+		// Verifica si recibio datos
 		msg("Favor de llenar el campo de usuario","rojo");
 		exit('');
 	}
@@ -16,36 +16,30 @@
 		msg("La contraseña debe de tener entre 8 y 16 caracteres!","rojo");
 		exit('');
 	}
-	if ($stmt = $cs->prepare('SELECT * FROM administaradores WHERE usuario = ?')) {
-		// Bind parameters (s = string, i = int, b = blob, etc), hash the password using the PHP password_hash function.
+	if ($stmt = $cs->prepare('SELECT * FROM administradores WHERE usuario = ?')) {
 		$stmt->bind_param('s', $_POST['usuario']);
 		$stmt->execute();
 		$stmt->store_result();
-		// Store the result so we can check if the account exists in the database.
+		// Almacena el resultado y verifica si existe en la DB
 		if ($stmt->num_rows > 0) {
-			// Username already exists
-			//(strlen($descripcion_prod)!=0) && ($descripcion_prod!=$reg->descripcion_prod)
 			
-			
-			if (strlen($password)!=0 ){
-				if (password_verify($_POST['password'], $password)){
+			if (strlen($password)!=0 ){//Verifica que longitud > 0
+				if (password_verify($_POST['password'], $password)){//Verifica si el hash de la contraseña es igual al de la base de datos
 					$password=$password;
 				}
 				else{
-					$password = password_hash($_POST['password'], PASSWORD_DEFAULT);
+					$password = password_hash($_POST['password'], PASSWORD_DEFAULT);//Crea hash de la contraseña
 				}
 			}
 
-			if ((strlen($nom_admin)!=0) && ($nom_admin!=$stmt->nom_admin)){
+			if ((strlen($nom_admin)!=0) && ($nom_admin!=$stmt->nom_admin)){//Verifica longitud >0 y que no sea identico al contenido de la DB
 				$nom_admin=$_POST['nom_admin'];
 			}
 			else{
-				$nom_admin=$stmt->nom_admin;
+				$nom_admin=$stmt->nom_admin;//
 			}
 
-			if ($stmt = $cs->prepare("UPDATE administaradores SET password='$password', nom_admin='$nom_admin' WHERE usuario='$usuario'")) {
-				// We do not want to expose passwords in our database, so hash the password and use password_verify when a user logs in.
-				
+			if ($stmt = $cs->prepare("UPDATE administradores SET password='$password', nom_admin='$nom_admin' WHERE usuario='$usuario'")) {//Actualiza registro en la DB
 				$stmt->bind_param('ss', $password, $_POST['nom_admin']);
 				$stmt->execute();
 				msg("Cambio(s) completado exitosamente","verde");

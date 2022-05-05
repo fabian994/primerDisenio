@@ -3,19 +3,29 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Login</title>
-		<link rel="stylesheet" href="login.css">
+		<link rel="stylesheet" href="estilos.css">
 		<link href="imagenes/logo_pirineos.png" rel="shortcut icon" type="image/png">
 	</head>
-	<body>
-		<div class="login" width="400px">
-			<h1>Login</h1>
+	<body><center>
+		<div class="login">
 			<form action="login.php" method="post">
-				<!--<label for="usuario"><b>Nombre de Usuario: </b></label>-->
-				<input type="text" name="usuario" class="campo" placeholder="Nombre de Usuario" id="usuario" required><br><br>
-				<!--<label for="password"><b>Contraseña: </b></label>-->
-				<input type="password" name="password" class="campo" placeholder="Password" id="password" required><br><br>
-				<input type="submit" value="Login">
+				<table border='10%' width='80%'>
+					<caption>Registro de Administradores</caption>
+					<tr align='center'>
+							<td><h2><b>Nombre de Usuario:  </b></h2></td>
+							<td><input type="text" name="usuario" class="campo" placeholder="Nombre de Usuario" id="usuario" required></td>
+					</tr>
+					<tr align='center'>
+							<td><h2><b>Contraseña:  </b></h2></td>
+							<td><input type="password" name="password" class="campo" placeholder="Password" id="password" required></td>
+					</tr>
+					<tr align="center">
+						<td colspan="2">
+							<input type="submit" value="Login" class="boton">
+						</td>
+					</tr>
+				
 			</form>
 		</div>
-	</body>
+	</center></body>
 </html>

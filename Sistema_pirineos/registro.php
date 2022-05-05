@@ -46,7 +46,7 @@
 				msg("Favor de llenar la forma de registro","rojo");
 				exit('');
 				}
-				if ($stmt = $cs->prepare('SELECT id, password FROM administaradores WHERE usuario = ?')) {
+				if ($stmt = $cs->prepare('SELECT id, password FROM administradores WHERE usuario = ?')) {
 				// Bind parameters (s = string, i = int, b = blob, etc), hash the password using the PHP password_hash function.
 				$stmt->bind_param('s', $_POST['usuario']);
 				$stmt->execute();
@@ -58,7 +58,7 @@
 				} else {
 					// Insert new account
 					// Username doesnt exists, insert new account
-					if ($stmt = $cs->prepare('INSERT INTO administaradores (usuario, password, nom_admin) VALUES (?, ?, ?)')) {
+					if ($stmt = $cs->prepare('INSERT INTO administradores (usuario, password, nom_admin) VALUES (?, ?, ?)')) {
 						// We do not want to expose passwords in our database, so hash the password and use password_verify when a user logs in.
 						$password = password_hash($_POST['password'], PASSWORD_DEFAULT);
 						$stmt->bind_param('sss', $_POST['usuario'], $password, $_POST['nom_admin']);
@@ -101,7 +101,7 @@
 			}
 			$usuario_n=$_POST['usuario'];
 			$nom_admin='';
-			$query="SELECT * FROM administaradores WHERE usuario = '$usuario_n'";
+			$query="SELECT * FROM administradores WHERE usuario = '$usuario_n'";
 			$sql=mysqli_query($cs,$query);
 			$reg=mysqli_fetch_object($sql);
 			if ($reg==mysqli_fetch_array($sql)){
@@ -155,7 +155,7 @@
 					
 					$usuario_n=$_POST['usuario'];
 					$nom_admin='';
-					$query="DELETE FROM administaradores WHERE usuario='$usuario_n'";
+					$query="DELETE FROM administradores WHERE usuario='$usuario_n'";
 					$sql=mysqli_query($cs,$query);
 					if (mysqli_affected_rows($cs)!=0){
 						msg("El registro ha sido eliminado correctamente","verde");
@@ -169,7 +169,7 @@
 
 		if ($_POST['op']=="4") {//Seccion de cambios
 			$usuario=$_POST['usuario'];
-			$query="SELECT * FROM administaradores WHERE usuario='$usuario'";
+			$query="SELECT * FROM administradores WHERE usuario='$usuario'";
 
 			$sql=mysqli_query($cs,$query);
 			$reg=mysqli_fetch_object($sql);
@@ -179,12 +179,12 @@
 			else{
 				$nom_admin=$_POST['nom_admin'];
 				if ((strlen($nom_admin)!=0) && ($nom_admin!=$reg->nom_admin)){
-					$query="UPDATE administaradores SET nom_admin='$nom_admin' WHERE usuario='$usuario'";
+					$query="UPDATE administradores SET nom_admin='$nom_admin' WHERE usuario='$usuario'";
 					$sql=mysqli_query($cs,$query);
 				}
 				$password = password_hash($_POST['password'], PASSWORD_DEFAULT);
 				if ((strlen($password)!=0) && ($password!=$reg->password)){
-					$query="UPDATE administaradores SET password='$password' WHERE usuario='$usuario'";
+					$query="UPDATE administradores SET password='$password' WHERE usuario='$usuario'";
 					$sql=mysqli_query($cs,$query);
 				}
 				msg("Cambio realizado correctamente","verde");

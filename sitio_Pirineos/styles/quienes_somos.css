@@ -37,13 +37,12 @@ h1{
     grid-template-rows: repeat(6, auto);
 
  grid-template-areas: "header header header"
-                         "content content sidebar"
-                         "content2 content2 sidebar"
-                         "content3 content3 sidebar"
-                         "widget-1 widget-2 sidebar"
-                         "widget-3 widget-3 sidebar"
-                         "widget-4 widget-4 sidebar"
-                         "content4 content4 sidebar"
+                         "content content content"
+                         "content2 content2 content2"
+                         "content3 content3 content3"
+                         "widget-1 widget-2 widget-3"
+                         "widget-4 widget-4 widget-4"
+                         "content4 content4 content4"
                          "footer footer footer";
 
 }
@@ -194,63 +193,6 @@ h1{
     margin: auto;
 }
 
-/* SIDEBAR - ENGLOBA TODA LA SIDEBAR */
-
-.container .sidebar {
-    grid-column: 3 / 4;
-    background-color: #1E412F;
-    min-height: 100px;
-    grid-area: sidebar;
-}
-
-.container .sidebar h1 {
-    color: #EBE3D5;
-    font-size: 18pt;
-}
-
-.container .sidebar a {
-    color: #E5A73C;
-    text-decoration: none;
-    font-size: 11pt;
-}
-
-.container .sidebar span {
-    margin-right: 10px;
-}
-
-.container .sidebar ul {
-    color: #EBE3D5;
-    font-size: 18pt;
-    list-style: none;
-    /* CONTROL DEL ESPACIADO ENTRE LOS ELEMENTOS DE LA SIDEBAR */
-    padding-right: 20px;
-    padding-left: 20px;
-    padding-top: 20px;
-}
-
-.container .sidebar ul li {
-    padding-bottom: 15px;
-}
-
-.container .sidebar ul li a {
-    font-size: 18pt;
-}
-
-.container .sidebar .share_buttons li span {
-    font-size: 35pt;
-}
-
-.container .sidebar div {
-    background-color: transparent;
-    padding: 0;
-    /* CONTROL DEL ESPACIADO ENTRE LOS ELEMENTOS DE LA SIDEBAR */
-    padding-bottom: 262px;
-}
-
-.container .sidebar .share_buttons li {
-    display: inline-block;
-}
-
 
 /* WIDGETS - ENGLOBA TODOS LOS WIDGETS */
 
@@ -292,6 +234,7 @@ h1{
     grid-area: widget-3;
     background-color: #EBE3D5;
     color: #1E412F;
+    border: 10px solid #F8E3A9;
 }
 
 /* WIDGET 4 - SOLO EL CUARTO WIDGET */
@@ -548,7 +491,6 @@ h1{
                              "widget-3 widget-3 widget-3"
                              "widget-4 widget-4 widget-4"
                              "content4 content4 content4"
-                             "sidebar sidebar sidebar"
                              "footer footer footer";
         padding-top: 50px;
     }

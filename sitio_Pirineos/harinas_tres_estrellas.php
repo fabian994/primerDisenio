@@ -18,10 +18,10 @@
 <body>
 
     <header class = "menu">
-
         <div class = "menu_bar">
             <a href = "#" class = "b_menu"><span class = "icon-menu"></span> <div> <img src = "pirineos.png"> </div> </a>
         </div>
+
 
         <div id = "img_banner">
             <img src = "imagenes/Pirineos/Logo HPI contorno_blanco.png" style = "width: 15%; margin-top: 10px;">
@@ -29,31 +29,30 @@
 
         <nav>
 
-        <ul>
+            <ul>
 
-            <li><a href = "inicio.html"><span class = "icon-home"></span> Inicio </a></li>
-            
-            <li class = "submenu">
+                <li><a href = "inicio.html"><span class = "icon-home"></span> Inicio </a></li>
+                
+                <li class = "submenu">
 
-                <a href = "#"><span class = "icon-shop"></span> Nuestros Productos <span class = "slide_icon icon-chevron-down"></span></a>
-                <ul class = "children">
-                    <li><a href="harinas_trigo.php"> Harinas de Trigo <span class = "icon-bowl"></span> </a></li>
-                    <li><a href="harinas_hogar.html"> Harinas para el Hogar <span class = "icon-bowl"></span> </a></li>
-                    <li><a href="harinas_tres_estrellas.php"> Harinas Preparadas Tres Estrellas <span class = "icon-bowl"></span> </a></li>
-                    <li><a href="polvo_hornear_3Estrellas.php"> Polvo para Hornear Tres Estrellas <span class = "icon-bowl"></span> </a></li>
-                    <li><a href="mejorante_rendimix.php"> Mejorantes RendiMix <span class = "icon-bowl"></span> </a></li>
-                    <li><a href="derivados.php"> Derivados del Trigo <span class = "icon-bowl"></span> </a></li>
-                </ul>
+                    <a href = "#"><span class = "icon-shop"></span> Nuestros Productos <span class = "slide_icon icon-chevron-down"></span></a>
+					<ul class = "children">
+						<li><a href="harinas_trigo.php"> Harinas de Trigo <span class = "icon-bowl"></span> </a></li>
+						<li><a href="harinas_hogar.html"> Harinas para el Hogar <span class = "icon-bowl"></span> </a></li>
+						<li><a href="harinas_tres_estrellas.php"> Harinas Preparadas Tres Estrellas <span class = "icon-bowl"></span> </a></li>
+						<li><a href="polvo_hornear_3Estrellas.php"> Polvo para Hornear Tres Estrellas <span class = "icon-bowl"></span> </a></li>
+						<li><a href="mejorante_rendimix.php"> Mejorantes RendiMix <span class = "icon-bowl"></span> </a></li>
+						<li><a href="derivados.php"> Derivados del Trigo <span class = "icon-bowl"></span> </a></li>
+					</ul>
 
-            </li>
+                </li>
 
-            <li><a href = "recetario.php?op=0"><span class = "icon-bowl"></span> Recetas </a></li>
-            <li><a href = "servicio_tecnico.html"><span class = "icon-tools"></span> Servicio Tecnico </a></li>
-            <li><a href = "Contacto.html"><span class = "icon-typing"></span> Contacto </a></li>
+                <li><a href = "recetario.php?op=0"><span class = "icon-bowl"></span> Recetas </a></li>
+                <li><a href = "servicio_tecnico.html"><span class = "icon-tools"></span> Servicio Tecnico </a></li>
+                <li><a href = "contacto.php"><span class = "icon-typing"></span> Contacto </a></li>
 
-        </ul>
+            </ul>
         </nav>
-
     </header>
     
 
@@ -199,8 +198,20 @@
                             <br>
                             
                             <ul>
-                                <li><a href = '$reg->url_prod_rel1'><span class = 'icon-bowl'></span> $reg->nom_prod_rel1 </a></li>
-                                <li><a href = '$reg->url_prod_rel2'><span class = 'icon-bowl'></span> $reg->nom_prod_rel2 </a></li>
+
+                                <li>
+                                    <a href = '$reg->url_prod_rel1'>
+                                    <span class = 'icon-bowl'></span>
+                                    $reg->nom_prod_rel1 
+                                    <img src='imagenes/$reg->img_prod_rel1' width='100px' height='100px'><br>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href = '$reg->url_prod_rel2'>
+                                    <span class = 'icon-bowl'></span> 
+                                    $reg->nom_prod_rel2 </a>
+                                    <img src='imagenes/$reg->img_prod_rel1' width='100px' height='100px'><br>
+                                </li>
                             </ul>
                         
                         </div>
@@ -250,8 +261,8 @@
                             <li id = "footer_title"> Boletín </li>
 
                             <li><a href = "#"><span class = "icon-download"></span> Aviso de Prvacidad </a></li>
-                            <li><a href = "#"><span class = "icon-network"></span> Encuentra Tu Distribuidor </a></li>
-                            <li><a href = "#"><span class = "icon-info"></span> FAQ </a></li>
+                            <li><a href = "contacto.php"><span class = "icon-network"></span> Encuentra Tu Distribuidor </a></li>
+                            <li><a href = "servicio-tecnico.html"><span class = "icon-info"></span> FAQ </a></li>
                             
                         </ul>
 
@@ -262,7 +273,7 @@
                         <ul>
                             <li id = "footer_title"> Bolsa de Trabajo </li>
 
-                            <li><a href = "#"><span class = "icon-man"></span> Integrate a Nuestro Equipo </a></li>
+                            <li><a href = "contacto.php"><span class = "icon-man"></span> Integrate a Nuestro Equipo </a></li>
                             
                         </ul>
 
@@ -275,9 +286,7 @@
 
                             <ul class = "share_buttons_footer">
 
-                                <li><a href = "#"><span class = "icon-facebook-with-circle"></span></a></li>
-                                <li><a href = "#"><span class = "icon-instagram-with-circle"></span></a></li>
-                                <li><a href = "#"><span class = "icon-twitter-with-circle"></span></a></li>
+                                <li><a href = "https://web.facebook.com/impulsopirineos/?_rdc=1&_rdr"><span class = "icon-facebook-with-circle"></span></a></li>
 
                             </ul>
                             

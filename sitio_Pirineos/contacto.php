@@ -38,28 +38,19 @@
 
                     <a href = "#"><span class = "icon-shop"></span> Nuestros Productos <span class = "slide_icon icon-chevron-down"></span></a>
 					<ul class = "children">
-						<li><a href="harinas_trigo.html"> Harinas de Trigo <span class = "icon-bowl"></span> </a></li>
+						<li><a href="harinas_trigo.php"> Harinas de Trigo <span class = "icon-bowl"></span> </a></li>
 						<li><a href="harinas_hogar.html"> Harinas para el Hogar <span class = "icon-bowl"></span> </a></li>
-						<li><a href="harinas_tres_estrellas.html"> Harinas Preparadas Tres Estrellas <span class = "icon-bowl"></span> </a></li>
-						<li><a href="polvo_hornear_3Estrellas.html"> Polvo para Hornear Tres Estrellas <span class = "icon-bowl"></span> </a></li>
-						<li><a href="mejorante_rendimix.html"> Mejorantes RendiMix <span class = "icon-bowl"></span> </a></li>
-						<li><a href="derivados.html"> Derivados del Trigo <span class = "icon-bowl"></span> </a></li>
+						<li><a href="harinas_tres_estrellas.php"> Harinas Preparadas Tres Estrellas <span class = "icon-bowl"></span> </a></li>
+						<li><a href="polvo_hornear_3Estrellas.php"> Polvo para Hornear Tres Estrellas <span class = "icon-bowl"></span> </a></li>
+						<li><a href="mejorante_rendimix.php"> Mejorantes RendiMix <span class = "icon-bowl"></span> </a></li>
+						<li><a href="derivados.php"> Derivados del Trigo <span class = "icon-bowl"></span> </a></li>
 					</ul>
 
                 </li>
 
-                <li class = "submenu">
-        
-                    <a href = "#"><span class = "icon-open-book"></span> Recetarios <span class = "slide_icon icon-chevron-down"></span></a>
-                    <ul class = "children">
-                        <li><a href = "#"> Bakery Mix <span class = "icon-bowl"></span></a></li>
-                        <li><a href = "#"> Harinas Tres Estrellas <span class = "icon-bowl"></span></a></li>
-                        <li><a href = "#"> Polvo para Hornear Tres Estrellas <span class = "icon-bowl"></span></a></li>
-                    </ul>
-                
-                </li>
+                <li><a href = "recetario.php?op=0"><span class = "icon-bowl"></span> Recetas </a></li>
                 <li><a href = "servicio_tecnico.html"><span class = "icon-tools"></span> Servicio Tecnico </a></li>
-                <li><a href = "Contacto.html"><span class = "icon-typing"></span> Contacto </a></li>
+                <li><a href = "contacto.php"><span class = "icon-typing"></span> Contacto </a></li>
 
             </ul>
         </nav>
@@ -132,7 +123,7 @@
             <span class="helper_2"></span>
             <div style="height: auto; overflow-y: scroll !important;">
                 <a class="popupCloseButton_2">&times;</a><br>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3736.368625184416!2d-101.09407758512509!3d20.53209308626952!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842c9a2c0a96c4c9%3A0x57460b27468d2901!2sHARINERA%20LOS%20PIRINEOS%20S.A%20DE%20C.V!5e0!3m2!1ses!2smx!4v1648409364623!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><br><br>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7054.3730002421125!2d-100.97751134238422!3d20.50935311608943!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842cbd69c0d9f781%3A0x760f222aa2cbb9aa!2sLA%20MODERNA%20FERROPUERTO%20UWE%20SCHWARZ!5e0!3m2!1ses-419!2smx!4v1651768615102!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><br><br>
                 <div style="background-color: #08903E;">
                     Dirección: Carretera Panamericana km 292.4, tramo Celaya-Salamanca, Villagrán, Gto.
                 </div><br>
@@ -190,8 +181,8 @@
                             <li id = "footer_title"> Boletín </li>
 
                             <li><a href = "#"><span class = "icon-download"></span> Aviso de Prvacidad </a></li>
-                            <li><a href = "#"><span class = "icon-network"></span> Encuentra Tu Distribuidor </a></li>
-                            <li><a href = "#"><span class = "icon-info"></span> FAQ </a></li>
+                            <li><a href = "contacto.php"><span class = "icon-network"></span> Encuentra Tu Distribuidor </a></li>
+                            <li><a href = "servicio-tecnico.html"><span class = "icon-info"></span> FAQ </a></li>
                             
                         </ul>
 
@@ -202,7 +193,7 @@
                         <ul>
                             <li id = "footer_title"> Bolsa de Trabajo </li>
 
-                            <li><a href = "#"><span class = "icon-man"></span> Integrate a Nuestro Equipo </a></li>
+                            <li><a href = "contacto.php"><span class = "icon-man"></span> Integrate a Nuestro Equipo </a></li>
                             
                         </ul>
 
@@ -215,9 +206,7 @@
 
                             <ul class = "share_buttons_footer">
 
-                                <li><a href = "#"><span class = "icon-facebook-with-circle"></span></a></li>
-                                <li><a href = "#"><span class = "icon-instagram-with-circle"></span></a></li>
-                                <li><a href = "#"><span class = "icon-twitter-with-circle"></span></a></li>
+                                <li><a href = "https://web.facebook.com/impulsopirineos/?_rdc=1&_rdr"><span class = "icon-facebook-with-circle"></span></a></li>
 
                             </ul>
                             
@@ -234,7 +223,8 @@
         <div class = "form_1">
         
             <form class = "form_bolsa"
-                  method = "post" >
+                  method = "post"
+                  enctypec = "multipart/form-data" >
         
                 <div class = "form">
 

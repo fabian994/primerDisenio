@@ -184,7 +184,7 @@
     color: #EBE3D5;
 }
 
-.container .form_2 .form_bolsa .group input:focus~label, .container .form_1 .form_bolsa .group input:valid~label {
+.container .form_2 .form_bolsa .group input:focus~label, .container .form_2 .form_bolsa .group input:valid~label {
     top: -14px;
     font-size: 12px;
     color: #08903E;

@@ -179,8 +179,20 @@
                             <br>
                             
                             <ul>
-                                <li><a href = '$reg->url_prod_rel1'><span class = 'icon-bowl'></span> $reg->nom_prod_rel1 </a></li>
-                                <li><a href = '$reg->url_prod_rel2'><span class = 'icon-bowl'></span> $reg->nom_prod_rel2 </a></li>
+
+                                <li>
+                                    <a href = '$reg->url_prod_rel1'>
+                                    <span class = 'icon-bowl'></span>
+                                    $reg->nom_prod_rel1 
+                                    <img src='imagenes/$reg->img_prod_rel1' width='100px' height='100px'><br>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href = '$reg->url_prod_rel2'>
+                                    <span class = 'icon-bowl'></span> 
+                                    $reg->nom_prod_rel2 </a>
+                                    <img src='imagenes/$reg->img_prod_rel1' width='100px' height='100px'><br>
+                                </li>
                             </ul>
                         
                         </div>

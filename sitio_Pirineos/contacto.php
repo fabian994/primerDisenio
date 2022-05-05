@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link href = "styles/contacto.css" rel = "stylesheet">
+    <link href = "styles/formularios.css" rel="stylesheet">
     <link href = "styles/menu.css" rel = "stylesheet">
     <link href = "styles/icons/fonts.css" rel = "stylesheet">
 
@@ -231,81 +232,84 @@
         </footer>
 
         <div class = "form_1">
-
-            <span class="helper_s"></span>
-
-            <a class="close_form_bolsa">&times;</a><br><br><br>
         
             <form class = "form_bolsa"
-                  action = "c.php"
                   method = "post" >
         
                 <div class = "form">
 
-                    <h1> Unete a Nosotros </h1>
+                    <h1> ¿Quieres formar parte de nuestro equipo? </h1>
                     <div class = "group">
-                        <input type="text" name = "" id = "name" required><span class = "bar"></span>
+                        <input type="text" name = "name" id = "name" required><span class = "bar"></span>
                         <label for = ""> Nombre </label>
                     </div>
             
                     <div class = "group">
-                        <input type="file" name = "" id = "cv" required  style="font-size: 12px;"><span class = "bar"></span>
+                        <input type="file" name = "cv" id = "cv" required  style="font-size: 12px;"><span class = "bar"></span>
                         <p id = "choose_file"> Adjunta tu curriculum </p>
                     </div>
-        
+                    
                     <div class = "group">
-                        <input type="text" name = "" id = "message" required><span class = "bar"></span>
+                        <input type="text" name = "mail" id = "message" required><span class = "bar"></span>
+                        <label for = ""> Correo Electronico </label>
+                    </div>
+
+                    <div class = "group">
+                        <input type="text" name = "message" id = "message" required><span class = "bar"></span>
                         <label for = ""> Mensaje (opcional) </label>
                     </div>
-            
-                    <button type = "submit"> Enviar </button>
+
+                    <button type = "submit" name = "send_career"> Enviar </button>
             
                 </div>
 
             </form>
-
-            
-            <br><br><br>
         
         </div>
 
+        <?php
+
+            include("mail.php")
+        
+        ?>
+
         <div class = "form_2">
-
-            <span class="helper_s"></span>
-
-            <a class="close_form_distribuidor">&times;</a><br><br><br>
         
             <form class = "form_bolsa"
-                  action = "c.php"
                   method = "post" >
         
                 <div class = "form">
 
-                    <h1> Encuentra un Distribuidor </h1>
+                    <h1> ¿Necesitas Encontrar un Distribuidor? </h1>
                     <div class = "group">
-                        <input type="text" name = "" id = "name" required><span class = "bar"></span>
-                        <label for = ""> ¿Que Producto te interesa? </label>
+                        <input type="text" name = "name" id = "name" required><span class = "bar"></span>
+                        <label for = ""> ¿Que producto te interesa? </label>
                     </div>
             
                     <div class = "group">
-                        <input type="text" name = "" id = "message" required><span class = "bar"></span>
-                        <label for = ""> ¿Desde Donde nos Escribes? </label>
+                        <input type="text" name = "location" id = "message" required><span class = "bar"></span>
+                        <label for = ""> ¿Desde donde nos escribes? </label>
+                        <p id = "choose_file">&nbsp;</p>
+                    </div>
+
+                    <div class = "group">
+                        <input type="text" name = "mail" id = "message" required><span class = "bar"></span>
+                        <label for = ""> Correo electronico </label>
                     </div>
         
                     <div class = "group">
-                        <input type="text" name = "" id = "message" required><span class = "bar"></span>
+                        <input type="text" name = "message" id = "message" required><span class = "bar"></span>
                         <label for = ""> Mensaje (opcional) </label>
                     </div>
             
-                    <button type = "submit"> Enviar </button>
+                    <button type = "submit" name = "send_dis"> Enviar </button>
             
                 </div>
 
             </form>
 
             
-            <br><br><br>
-        
+
         </div>
 
     </div>

@@ -23,17 +23,16 @@
     margin-top: 0;
     display: grid;
     gap: 20px;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, auto);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, auto);
 
-    grid-template-areas: "header header header"
-                         "content content content"
-                         "content2 content2 content2"
-                         "widget-1 widget-1 widget-1"
-                         "widget-2 widget-2 widget-2"
-                         "widget-3 widget-3 widget-3"
-                         "widget-4 widget-4 widget-4"
-                         "footer footer footer";
+    grid-template-areas: "header header header header"
+                         "content content content content"
+                         "content2 content2 content2 content2"
+                         "widget-1 widget-1 widget-2 widget-2"
+                         "widget-3 widget-3 widget-4 widget-4"
+                         "form_1 form_1 form_2 form_2"
+                         "footer footer footer footer";
 }
 
 /* CLASES DEL CONTENEDOR - CADA UNA DE ELLAS */
@@ -295,6 +294,14 @@
     font-weight: bold;
 }
 
+.container .form_1 {
+    grid-area: form_1;
+}
+
+.container .form_2 {
+    grid-area: form_2;
+}
+
 /* FOOTER - ENGLOBA TODO EL FOOTER */
 
 .container .footer {
@@ -449,15 +456,16 @@
     
     .container {
 
-        grid-template-areas: "header header header"
-                             "content content content"
-                             "content2 content2 content2"
-                             "widget-1 widget-1 widget-1"
-                             "widget-2 widget-2 widget-2"
-                             "widget-3 widget-3 widget-3"
-                             "widget-4 widget-4 widget-4"
-                             /*"widget-5 widget-5 widget-6"*/
-                             "footer footer footer";
+        grid-template-areas: "header header header header"
+                             "content content content content"
+                             "content2 content2 content2 content2"
+                             "widget-1 widget-1 widget-1 widget-1"
+                             "widget-2 widget-2 widget-2 widget-2"
+                             "widget-3 widget-3 widget-3 widget-3"
+                             "widget-4 widget-4 widget-4 widget-4"
+                             "form_1 form_1 form_1 form_1"
+                             "form_2 form_2 form_2 form_2"
+                             "footer footer footer footer";
         padding-top: 50px;
     }
 

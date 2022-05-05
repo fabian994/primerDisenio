@@ -1,0 +1,629 @@
+
+@font-face {
+    font-family: Montserrat;
+    src: url(Montserrat-Regular.otf);
+}
+img{
+display:block;
+/* margin:auto; */
+}
+h3{
+    color: green;
+    text-align: justify;
+}
+h1{
+    color:whitesmoke;
+
+}
+h2{
+     text-align: center;
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat;
+}
+
+.menu {
+    padding: 0;
+    margin: 0;
+}
+
+
+
+/* CONTENEDOR - ENGLOBA TODA LA PAGINA */
+
+.container {
+    width: 95%;
+    padding-top: 20px;
+    margin: 20px auto;
+    margin-top: 0;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, auto);
+
+    grid-template-areas: "header header header"
+                         "content content content"
+                         "widget-1 widget-1 widget-1"
+                         "content2 content2 content2"
+                         "widget-2 widget-2 widget-2"
+                         "widget-0 widget-0 widget-0"
+                         "footer footer footer";
+}
+
+/* CLASES DEL CONTENEDOR - CADA UNA DE ELLAS */
+
+.container div, 
+.container .header, 
+.container .content,
+.container .content2,
+.container .content3,
+.container .sidebar, 
+.container .footer{
+    background-color: transparent;
+    padding: 20px;
+    border-radius: 14px;
+}
+
+/* HEADER DE LA PAGINA */
+
+.container .header {
+    color: aliceblue;
+    grid-area: header;
+    padding: 0px;
+}
+
+/* IMAGEN DEL HEADER */
+
+.container .header #header_image {
+    width: 100%;
+    border-radius: 14px;
+}
+
+/* CONTENIDO - ENGLOBA EL CONTENIDO PRINCIPAL */
+
+.container .content {
+    grid-area: content;
+    background-color: #EBE3D5;
+    color: #1E412F;
+    text-align: justify;
+}
+
+#lineamientos_titulo_des{
+    text-align: center;
+    border-radius: inherit;
+    padding: inherit;
+    background-color: #E5A73C;
+}
+.lineamientos{
+    display: flex;
+    flex-direction: column;
+}
+.sub_lineamientos{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+#sub_lineamientos_descripcion{
+    width: 50%
+    height:auto;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    background-color: green;
+    color: white;
+}
+#sub_lineamientos_descripcion_am{
+    width: 50%
+    height:auto;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    background-color: #FFC627;
+    color: black;
+}
+#lineamientos_titulo{
+    text-align: center;
+    border-radius: inherit;
+    padding: inherit;
+}
+#lineamientos_descripcion{
+   padding-top: inherit;
+}
+
+#titulo_catalogo{
+    text-align: center;
+    background-color: #FFC627;
+    border-radius: inherit;
+    color: #1E412F;
+    padding: inherit;
+}
+#titulo_productos{
+    text-align: center;
+    color: white;
+    background-color:#08903E;
+    border-radius: 10px;
+}
+
+.catalogo {
+    border-collapse: separate;
+    border-spacing: 0 15px;
+}
+
+#tabla_fila:nth-of-type(odd){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #E5A73C;
+    margin-bottom: 30px;
+}
+
+#tabla_fila{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #519C45;
+    margin-bottom: 30px;
+}
+
+#contenido_catalogo{
+    width: 90%;
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    border-right:hidden;
+}
+#imagen_catalogo{
+    width: 50%;
+    height: auto;
+}
+#producto_catalogo{
+width: 96%;
+max-width: 960px;
+margin: 0 auto;
+}
+/*img{
+width: 100%;
+height: auto;
+padding-left: 10px;
+}*/
+
+#slider{
+    background-color: #08903E;
+}
+
+.boton {
+    background-color:#08903E;
+    border-radius:41px;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family: Montserrat;
+    font-size:28px;
+    font-weight:bold;
+    padding:14px 18px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #5b8a3c;
+}
+
+.boton:active {
+    position:relative;
+    top:1px;
+}
+
+/* CONTENIDO 2 - ENGLOBA EL CONTENIDO SECUNDARIO */
+
+.container .content2 {
+    grid-area: content2;
+    background-color: transparent;
+    color: #08903E;
+    text-align: justify;
+}
+
+
+.container .content span {
+    color: #EBE3D5;
+    font-size: 55pt;
+    display: flex;
+    justify-content: center;
+}
+
+.container .content2 span {
+    color: #1E412F;
+    font-size: 55pt;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/* SIDEBAR - ENGLOBA TODA LA SIDEBAR */
+
+.container .sidebar {
+    grid-column: 3 / 4;
+    background-color: #1E412F;
+    min-height: 100px;
+    grid-area: sidebar;
+}
+
+.container .sidebar h1 {
+    color: #EBE3D5;
+    font-size: 18pt;
+}
+
+.container .sidebar a {
+    color: #E5A73C;
+    text-decoration: none;
+    font-size: 11pt;
+}
+
+.container .sidebar span {
+    margin-right: 10px;
+}
+
+.container .sidebar ul {
+    color: #EBE3D5;
+    font-size: 18pt;
+    list-style: none;
+    /* CONTROL DEL ESPACIADO ENTRE LOS ELEMENTOS DE LA SIDEBAR */
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.container .sidebar ul li {
+    padding-bottom: 15px;
+}
+
+.container .sidebar ul li a {
+    font-size: 18pt;
+}
+
+.container .sidebar .share_buttons li span {
+    font-size: 35pt;
+}
+
+.container .sidebar div {
+    background-color: transparent;
+    padding: 0;
+    /* CONTROL DEL ESPACIADO ENTRE LOS ELEMENTOS DE LA SIDEBAR */
+    padding-bottom: 300px;
+}
+
+.container .sidebar .share_buttons li {
+    display: inline-block;
+}
+
+
+/* WIDGET 0 - SOLO EL PRIMER WIDGET */
+
+.container .widget-0 {
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    align-items: center;
+    background-color: #08903E;
+    grid-area: widget-0;
+}
+
+.heading {
+  color: #fff;
+  text-align: center;
+  font-size: 2em;
+  margin: 2em 0;
+}
+.images {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1em;
+  margin: 0 1em;
+}
+.images img {
+  width: 100%;
+  cursor: pointer;
+  transition: 0.3s all ease;
+}
+.images img:hover {
+  transform: scale(0.9);
+}
+.modal {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  z-index: 1;
+  overflow: auto;
+  opacity: 0;
+  pointer-events: none;
+}
+.widget-0 .contenedor .modal{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.modalContent {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.modalImg {
+  width: 80%;
+  max-width: 700px;
+}
+.modalTxt {
+  margin-top: 1em;
+}
+.close {
+  position: absolute;
+  top: 1em;
+  right: 1.5em;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+.modal.appear {
+  opacity: 1;
+  pointer-events: all;
+}
+.modal.appear .modalImg,
+.modal.appear .modalTxt {
+  animation: zoom 0.3s linear;
+}
+@keyframes zoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+/* WIDGET 1 - SOLO EL PRIMER WIDGET */
+
+.container .widget-1 {
+    grid-area: widget-1;
+    background-color: transparent;
+}
+
+/* WIDGET 2 - SOLO EL SEGUNDO WIDGET */
+
+.container .widget-2 {
+    grid-area: widget-2;
+    background-color: transparent;
+    
+}
+
+/* WIDGET 3 - SOLO EL TERCER WIDGET */
+
+.container .widget-3 {
+    grid-area: widget-3;
+}
+
+/* WIDGET 4 - SOLO EL CUARTO WIDGET */
+
+
+
+
+/* FOOTER - ENGLOBA TODO EL FOOTER */
+
+.container .footer {
+    background-color: #324D53;
+    color: #EBE3D5;
+    grid-area: footer;
+}
+
+.container .footer div {
+    padding: 0;
+    background-color: transparent;
+}
+
+.container .footer .contact #contact,
+.container .footer .contact #boletin,
+.container .footer .contact #bolsa_trabajo,
+.container .footer .contact #siguenos {
+    display: inline-flex;
+    font-size: 14pt;
+}
+
+.img_recetarios {
+    width: 100%;
+    border-radius: 14px;
+}
+
+/* -------------------------------------------------------------------------------- */
+
+/* ELEMENTO - CONTACTO */
+
+.container .footer .contact #contact {
+    padding-right: 290px;
+    /* 370 defualt */
+    padding-bottom: 15px;
+}
+
+/* ELEMENTO - TITULO CONTACTO */
+
+.container .footer .contact #contact ul #footer_title {
+    font-size: 17pt;
+    font-weight: bold;
+    list-style: none;
+    padding-bottom: 3px;
+}
+
+
+/* ELEMENTO - INFORMACION CONTACTO */
+
+.container .footer .contact #contact ul li {
+    font-size: 10pt;
+    list-style: none;
+    padding-top: 3px;
+}
+
+/* -------------------------------------------------------------------------------- */
+
+/* ELEMENTO - BOLETIN */
+
+.container .footer .contact #boletin {
+    padding-right: 290px;
+    padding-bottom: 15px;
+}
+
+/* ELEMENTO - TITULO BOLETIN */
+
+.container .footer .contact #boletin ul #footer_title {
+    font-size: 17pt;
+    font-weight: bold;
+    list-style: none;
+    padding-bottom: 3px;
+}
+
+/* ELEMENTO - INFORMACION BOLETIN */
+
+.container .footer .contact #boletin ul li {
+    font-size: 10pt;
+    list-style: none;
+    padding-top: 7px;
+}
+
+.container .footer .contact #boletin ul li a {
+    color: #EBE3D5;
+    text-decoration: none;
+}
+
+/* -------------------------------------------------------------------------------- */
+
+/* ELEMENTO - BOLETIN */
+
+.container .footer .contact #bolsa_trabajo {
+    padding-right: 290px;
+    padding-bottom: 15px;
+}
+
+/* ELEMENTO - TITULO BOLSA DE TRABAJO */
+
+.container .footer .contact #bolsa_trabajo ul #footer_title {
+    font-size: 17pt;
+    font-weight: bold;
+    list-style: none;
+    padding-bottom: 3px;
+}
+
+/* ELEMENTO - INFORMACION BOLSA DE TRABAJO */
+
+.container .footer .contact #bolsa_trabajo ul li {
+    font-size: 10pt;
+    list-style: none;
+    padding-top: 7px;
+}
+
+.container .footer .contact #bolsa_trabajo ul li a {
+    color: #EBE3D5;
+    text-decoration: none;
+}
+
+/* -------------------------------------------------------------------------------- */
+
+/* ELEMENTO - SIGUENOS EN */
+
+.container .footer .contact #siguenos {
+    padding-right: 0px;
+    padding-bottom: 0px;
+}
+
+/* ELEMENTO - TITULO SIGUENOS EN */
+
+.container .footer .contact #siguenos ul #footer_title {
+    font-size: 17pt;
+    font-weight: bold;
+    list-style: none;
+    padding-bottom: 3px;
+}
+
+/* ELEMENTO - INFORMACION SIGUENOS EN */
+
+.container .footer .contact #siguenos ul li {
+    font-size: 10pt;
+    list-style: none;
+    padding-top: 7px;
+}
+
+.container .footer .contact #siguenos ul .share_buttons_footer li {
+    display: inline-block;
+    padding-right: 7px;
+}
+
+.container .footer .contact #siguenos ul li a {
+    color: #EBE3D5;
+    text-decoration: none;
+    font-size: 35pt;
+}
+
+/* MEDIA QUIERY - DISPOSITIVOS CON UN ANCHO MAXIMO DE 768 PIXELES */
+
+@media screen and (max-width: 1180px) {
+    
+    .container {
+
+        grid-template-areas: "header header header"
+                             "content content content"
+                             "widget-1 widget-1 widget-1"
+                             "content2 content2 content2"
+                             "widget-2 widget-2 widget-2"
+                             "widget-0 widget-0 widget-0"
+                             "sidebar sidebar sidebar"
+                             "footer footer footer";
+        padding-top: 50px;
+    }
+
+    .container .sidebar div {
+        background-color: transparent;
+        padding: 0;
+        /* CONTROL DEL ESPACIADO ENTRE LOS ELEMENTOS DE LA SIDEBAR */
+        padding-bottom: 50px;
+    }
+    .sub_lineamientos{
+    flex-direction: column;
+}
+
+}
+
+@media screen and (min-width: 1180px) and (max-width: 1794px){
+
+    .container .footer .contact #contact {
+        padding-right: 160px;
+        /* 370 defualt */
+        padding-bottom: 15px;
+    }
+    .container .footer .contact #boletin {
+        padding-right: 160px;
+        padding-bottom: 15px;
+    }
+    .container .footer .contact #bolsa_trabajo {
+        padding-right: 160px;
+        padding-bottom: 15px;
+    }
+
+
+}
+
+@media screen and (max-width: 1078px) {
+
+    .container .footer .contact #contact {
+        padding-right: 50px;
+        /* 370 defualt */
+        padding-bottom: 15px;
+    }
+    .container .footer .contact #boletin {
+        padding-right: 50px;
+        padding-bottom: 15px;
+    }
+    .container .footer .contact #bolsa_trabajo {
+        padding-right: 50px;
+        padding-bottom: 15px;
+    }
+
+}

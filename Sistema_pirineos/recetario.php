@@ -111,8 +111,14 @@
 				if ((strlen($img_rec)!=0) && ($img_rec!=$reg->img_rec)){
 					$query="UPDATE recetas SET img_rec='$img_rec' WHERE cve_rec='$cve_rec'";
 					$sql=mysqli_query($cs,$query);
-					msg("El cambio ha sido realizado","verde");
+					
 				}
+				if ((strlen($nom_rec)!=0) && ($nom_rec!=$reg->nom_rec)){
+					$query="UPDATE recetas SET nom_rec='$nom_rec' WHERE cve_rec='$cve_rec'";
+					$sql=mysqli_query($cs,$query);
+					
+				}
+				msg("El cambio ha sido realizado","verde");
 			}
 			
 		} // Termina Cambios

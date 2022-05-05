@@ -3,7 +3,6 @@ function tomar_datos(op){
 	cve_tipo=document.f_contenidos.cve_tipo.value;
 	nom_tipo=document.f_contenidos.nom_tipo.value;
 	nom_catalog=document.f_contenidos.nom_catalog.value;
-	nom_recetario=document.f_contenidos.nom_recetario.value;
 
 	nom_prod_rel1=document.f_contenidos.nom_prod_rel1.value;
 	img_prod_rel1=document.f_contenidos.img_prod_rel1.value;
@@ -65,7 +64,6 @@ function altas(op){
 		if (cve_tipo.length==0) document.f_contenidos.cve_tipo.style.background="red";
 		if (nom_tipo.length==0) document.f_contenidos.nom_tipo.style.background="red";
 		if (nom_catalog.length==0) document.f_contenidos.nom_catalog.style.background="red";
-		if (nom_recetario.length==0) document.f_contenidos.nom_recetarioetario.style.background="red";
 		if (nom_prod_rel1.length==0) document.f_contenidos.nom_prod_rel1.style.background="red";
 		if (img_prod_rel1.length==0) document.f_contenidos.img_prod_rel1.style.background="red";
 		if (url_prod_rel1.length==0) document.f_contenidos.url_prod_rel1.style.background="red";
@@ -75,7 +73,7 @@ function altas(op){
 		if (url_prod_rel2.length==0) document.f_contenidos.url_prod_rel2.style.background="red";
 	}
 	else{
-		url="contenidos.php?op=6&cve_tipo="+cve_tipo+"&nom_tipo="+nom_tipo+"&nom_catalog="+nom_catalog+"&nom_recetario="+nom_recetario;
+		url="contenidos.php?op=6&cve_tipo="+cve_tipo+"&nom_tipo="+nom_tipo+"&nom_catalog="+nom_catalog;
 		url=url+"&nom_prod_rel1="+nom_prod_rel1+"&img_prod_rel1="+img_prod_rel1+"&url_prod_rel1="+url_prod_rel1;
 		url=url+"&nom_prod_rel2="+nom_prod_rel2+"&img_prod_rel2="+img_prod_rel2+"&url_prod_rel2="+url_prod_rel2+"&cat="+cat;;
 		location.href=url;
@@ -92,7 +90,6 @@ function bajas(op){
 		document.f_contenidos.cve_tipo.style.background="blue";
 		nom_tipo="";
 		nom_catalog="";
-		nom_recetario="";
 
 		nom_prod_rel1="";
 		img_prod_rel1="";
@@ -102,7 +99,7 @@ function bajas(op){
 		img_prod_rel2="";
 		url_prod_rel2="";
 		if (confirm("Seguro de Eliminar ??")){
-			url="contenidos.php?op=7&cve_tipo="+cve_tipo+"&nom_tipo="+nom_tipo+"&nom_catalog="+nom_catalog+"&nom_recetario="+nom_recetario;
+			url="contenidos.php?op=7&cve_tipo="+cve_tipo+"&nom_tipo="+nom_tipo+"&nom_catalog="+nom_catalog;
 			url=url+"&nom_prod_rel1="+nom_prod_rel1+"&img_prod_rel1="+img_prod_rel1+"&url_prod_rel1="+url_prod_rel1;
 			url=url+"&nom_prod_rel2="+nom_prod_rel2+"&img_prod_rel2="+img_prod_rel2+"&url_prod_rel2="+url_prod_rel2+"&cat="+cat;
 			location.href=url;
@@ -123,7 +120,6 @@ function consultas(op){
 		document.f_contenidos.cve_tipo.style.background="blue";
 		
 		nom_catalog="";
-		nom_recetario="";
 
 		nom_prod_rel1="";
 		img_prod_rel1="";
@@ -132,7 +128,7 @@ function consultas(op){
 		nom_prod_rel2="";
 		img_prod_rel2="";
 		url_prod_rel2="";
-		url="contenidos.php?op=8&cve_tipo="+cve_tipo+"&nom_tipo="+nom_tipo+"&nom_catalog="+nom_catalog+"&nom_recetario="+nom_recetario;
+		url="contenidos.php?op=8&cve_tipo="+cve_tipo+"&nom_tipo="+nom_tipo+"&nom_catalog="+nom_catalog;
 		url=url+"&nom_prod_rel1="+nom_prod_rel1+"&img_prod_rel1="+img_prod_rel1+"&url_prod_rel1="+url_prod_rel1;
 		url=url+"&nom_prod_rel2="+nom_prod_rel2+"&img_prod_rel2="+img_prod_rel2+"&url_prod_rel2="+url_prod_rel2+"&cat="+cat;
 		
@@ -148,7 +144,7 @@ function cambios(op){
 	}
 	else{
 		document.f_contenidos.cve_tipo.style.background="blue";
-		url="contenidos.php?op=9&cve_tipo="+cve_tipo+"&nom_tipo="+nom_tipo+"&nom_catalog="+nom_catalog+"&nom_recetario="+nom_recetario;
+		url="contenidos.php?op=9&cve_tipo="+cve_tipo+"&nom_tipo="+nom_tipo+"&nom_catalog="+nom_catalog;
 		url=url+"&nom_prod_rel1="+nom_prod_rel1+"&img_prod_rel1="+img_prod_rel1+"&url_prod_rel1="+url_prod_rel1;
 		url=url+"&nom_prod_rel2="+nom_prod_rel2+"&img_prod_rel2="+img_prod_rel2+"&url_prod_rel2="+url_prod_rel2+"&cat="+cat;
 		location.href=url;

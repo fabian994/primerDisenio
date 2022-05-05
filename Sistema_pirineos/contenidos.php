@@ -29,21 +29,22 @@
 
 
 		function tomar_datos(){
-			global $cve_tipo, $nom_tipo, $nom_catalog, $nom_recetario, $nom_prod_rel1, $img_prod_rel1, $url_prod_rel1, $nom_prod_rel2, $img_prod_rel2, $url_prod_rel2;
+			global $cve_tipo, $nom_tipo, $nom_catalog, $nom_prod_rel1, $img_prod_rel1, $url_prod_rel1, $nom_prod_rel2, $img_prod_rel2, $url_prod_rel2;
 			$cve_tipo=$_GET['cve_tipo'];
 			$nom_tipo=$_GET['nom_tipo'];
 			$nom_catalog=$_GET['nom_catalog'];
-			$nom_recetario=$_GET['nom_recetario'];
+
 			$nom_prod_rel1=$_GET['nom_prod_rel1'];
 			$img_prod_rel1=$_GET['img_prod_rel1'];
 			$url_prod_rel1=$_GET['url_prod_rel1'];
+			
 			$nom_prod_rel2=$_GET['nom_prod_rel2'];
 			$img_prod_rel2=$_GET['img_prod_rel2'];
 			$url_prod_rel2=$_GET['url_prod_rel2'];
 		}
 
 		function altas(){
-			global $cve_tipo, $nom_tipo, $nom_catalog, $nom_recetario, $nom_prod_rel1, $img_prod_rel1, $url_prod_rel1, $nom_prod_rel2, $img_prod_rel2, $url_prod_rel2;
+			global $cve_tipo, $nom_tipo, $nom_catalog, $nom_prod_rel1, $img_prod_rel1, $url_prod_rel1, $nom_prod_rel2, $img_prod_rel2, $url_prod_rel2;
 			tomar_datos();
 
 			// Verifica que no se duplique la clave del tipo
@@ -55,7 +56,7 @@
 				msg("Error, clave de tipo se duplica en base de datos","rojo");
 			}
 			else{
-				$query="INSERT INTO contenidos VALUES ('$cve_tipo', '$nom_tipo', '$nom_catalog', '$nom_recetario', '$nom_prod_rel1', '$img_prod_rel1', '$url_prod_rel1', '$nom_prod_rel2', '$img_prod_rel2', '$url_prod_rel2')";
+				$query="INSERT INTO contenidos VALUES ('$cve_tipo', '$nom_tipo', '$nom_catalog', '$nom_prod_rel1', '$img_prod_rel1', '$url_prod_rel1', '$nom_prod_rel2', '$img_prod_rel2', '$url_prod_rel2')";
 				$sql=mysqli_query($cs,$query);
 				msg("El registro ha sido grabado correctamente","verde");
 			}
@@ -64,7 +65,7 @@
 		} // Termina altas
 
 		function consultas(){
-			global $cve_tipo, $nom_tipo, $nom_catalog, $nom_recetario, $nom_prod_rel1, $img_prod_rel1, $url_prod_rel1, $nom_prod_rel2, $img_prod_rel2, $url_prod_rel2, $op;
+			global $cve_tipo, $nom_tipo, $nom_catalog, $nom_prod_rel1, $img_prod_rel1, $url_prod_rel1, $nom_prod_rel2, $img_prod_rel2, $url_prod_rel2, $op;
 			tomar_datos();
 			//echo "cve_prod=".$cve_prod;
 			$cs=conecta();
@@ -77,7 +78,6 @@
 			else{
 				$nom_tipo=$reg->nom_tipo;
 				$nom_catalog=$reg->nom_catalog;
-				$nom_recetario=$reg->nom_recetario;
 
 				$nom_prod_rel1=$reg->nom_prod_rel1;
 				$img_prod_rel1=$reg->img_prod_rel1;
@@ -94,7 +94,7 @@
 		} // Termina consultas
 
 		function bajas(){
-			global $cve_tipo, $nom_tipo, $nom_catalog, $nom_recetario, $nom_prod_rel1, $img_prod_rel1, $url_prod_rel1, $nom_prod_rel2, $img_prod_rel2, $url_prod_rel2;
+			global $cve_tipo, $nom_tipo, $nom_catalog, $nom_prod_rel1, $img_prod_rel1, $url_prod_rel1, $nom_prod_rel2, $img_prod_rel2, $url_prod_rel2;
 			consultas();
 			$cs=conecta();
 			$query="DELETE FROM contenidos WHERE cve_tipo='$cve_tipo'";
@@ -105,7 +105,7 @@
 		} // Termina bajas
 
 		function cambios(){
-			global $cve_tipo, $nom_tipo, $nom_catalog, $nom_recetario, $nom_prod_rel1, $img_prod_rel1, $url_prod_rel1, $nom_prod_rel2, $img_prod_rel2, $url_prod_rel2;
+			global $cve_tipo, $nom_tipo, $nom_catalog, $nom_prod_rel1, $img_prod_rel1, $url_prod_rel1, $nom_prod_rel2, $img_prod_rel2, $url_prod_rel2;
 			tomar_datos();
 			$cs=conecta();
 			$query="SELECT * FROM contenidos WHERE cve_tipo='$cve_tipo'";
@@ -118,11 +118,6 @@
 
 				if ((strlen($nom_catalog)!=0) && ($nom_catalog!=$reg->nom_catalog)){
 					$query="UPDATE contenidos SET nom_catalog='$nom_catalog' WHERE cve_tipo='$cve_tipo'";
-					$sql=mysqli_query($cs,$query);
-					msg("El cambio ha sido realizado","verde");
-				}
-				if ((strlen($nom_recetario)!=0) && ($nom_recetario!=$reg->nom_recetario)){
-					$query="UPDATE contenidos SET nom_recetario='$nom_recetario' WHERE cve_tipo='$cve_tipo'";
 					$sql=mysqli_query($cs,$query);
 					msg("El cambio ha sido realizado","verde");
 				}
@@ -162,7 +157,7 @@
 		} // Termina Cambios
 
 		function sel_tipo_prod(){
-			global $cve_tipo, $nom_tipo, $nom_catalog, $nom_recetario, $nom_prod_rel1, $img_prod_rel1, $url_prod_rel1, $nom_prod_rel2, $img_prod_rel2, $url_prod_rel2, $cat;
+			global $cve_tipo, $nom_tipo, $nom_catalog, $nom_prod_rel1, $img_prod_rel1, $url_prod_rel1, $nom_prod_rel2, $img_prod_rel2, $url_prod_rel2, $cat;
 			echo "
 				<br><br>
 				<form name='f_productos'>
@@ -191,7 +186,7 @@
 		} //Termina formulario
 	
 		function f_contenidos($op, $cve_tipo ,$nom_tipo){
-				global $cve_tipo, $nom_tipo, $nom_catalog, $nom_recetario, $nom_prod_rel1, $img_prod_rel1, $url_prod_rel1, $nom_prod_rel2, $img_prod_rel2, $url_prod_rel2, $cat, $op;
+				global $cve_tipo, $nom_tipo, $nom_catalog, $nom_prod_rel1, $img_prod_rel1, $url_prod_rel1, $nom_prod_rel2, $img_prod_rel2, $url_prod_rel2, $cat, $op;
 				echo "
 					<br><br>
 					<form name='f_productos'>
@@ -235,10 +230,7 @@
 							<td><p>Nombre del PDF catalogo</p></td>
 							<td><input name='nom_catalog' type='text' class='campo' maxlength='50' value='$nom_catalog'></td>
 						</tr>
-						<tr align='center'>
-							<td><p>Nombre del PDF del recetario</p></td>
-							<td><input name='nom_recetario' type='text' class='campo' maxlength='50' value='$nom_recetario'></td>
-						</tr>
+						
 						<tr align='center'>
 							<td><p>Nombre producto relacionado 1</p></td>
 							<td><input name='nom_prod_rel1' type='text' class='campo' maxlength='50' value='$nom_prod_rel1'></td>

@@ -46,16 +46,7 @@
 
 				</li>
 
-				<li class = "submenu">
-        
-                    <a href = "#"><span class = "icon-open-book"></span> Recetarios <span class = "slide_icon icon-chevron-down"></span></a>
-                    <ul class = "children">
-                        <li><a href = "assets/Recetario_Harinas_Preparadas.pdf"> Bakery Mix <span class = "icon-bowl"></span></a></li>
-                        <li><a href = "assets/Recetario_Harinas_Preparadas.pdf"> Harinas Tres Estrellas <span class = "icon-bowl"></span></a></li>
-                        <li><a href = "#"> Polvo para Hornear Tres Estrellas <span class = "icon-bowl"></span></a></li>
-                    </ul>
-                
-                </li>
+				<li><a href = "recetario.php?op=0"><span class = "icon-bowl"></span> Recetas </a></li>
 				<li><a href = "servicio_tecnico.html"><span class = "icon-tools"></span> Servicio Tecnico </a></li>
 				<li><a href = "Contacto.html"><span class = "icon-typing"></span> Contacto </a></li>
 
@@ -168,11 +159,11 @@
                         
                         <div>
 
-                            <h1> Descarga Nuestras Mejores Recetas con Harinas de Trigo </h1>
+                            <h1> Conoce Nuestras Mejores Recetas con Harinas de Trigo </h1>
                             
                             <br>
                             
-                            <a href = '$reg->nom_recetario'><span class = 'icon-download'></span> Descargar PDF </a>
+                            <a href = 'recetario.php?op=4'><span class = 'icon-download'></span> Descargar PDF </a>
                     
                         </div>
                     

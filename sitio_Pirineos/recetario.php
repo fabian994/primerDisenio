@@ -43,16 +43,7 @@
 
             </li>
 
-            <li class = "submenu">
-        
-                <a href = "#"><span class = "icon-open-book"></span> Recetarios <span class = "slide_icon icon-chevron-down"></span></a>
-                <ul class = "children">
-                    <li><a href = "#"> Bakery Mix <span class = "icon-bowl"></span></a></li>
-                    <li><a href = "#"> Harinas Tres Estrellas <span class = "icon-bowl"></span></a></li>
-                    <li><a href = "#"> Polvo para Hornear Tres Estrellas <span class = "icon-bowl"></span></a></li>
-                </ul>
-            
-            </li>
+            <li><a href = "recetario.php?op=0"><span class = "icon-bowl"></span> Recetas </a></li>
             <li><a href = "servicio_tecnico.html"><span class = "icon-tools"></span> Servicio Tecnico </a></li>
             <li><a href = "Contacto.html"><span class = "icon-typing"></span> Contacto </a></li>
 
@@ -86,28 +77,36 @@
               <div class="images">
                 <?php
                     include 'utilerias.php';
-                    $cs=conecta();
-                    $query="SELECT * FROM recetas";
-                    $sql=mysqli_query($cs,$query);
-                    while ($reg=mysqli_fetch_object($sql)) {
-                        $x="";
-                        echo"
-                        <img src='imagenes/recetas/$reg->img_rec' alt='$reg->nom_rec' />
-                        ";
-                                           
+                    $op=$_GET['op'];
+                    if ($op==0) fil_rec($op);
+                    if ($op!=0) fil_rec($op);
+
+                    function fil_rec($op){
+                        $cs=conecta();
+                        if ($op==0) $query="SELECT * FROM recetas";
+                        if ($op!=0) $query="SELECT * FROM recetas where tipo_rec='$op'";
+                        $sql=mysqli_query($cs,$query);
+                        while ($reg=mysqli_fetch_object($sql)) {
+                            $x="";
+                            echo"
+                            <img src='imagenes/recetas/$reg->img_rec' alt='$reg->nom_rec' />
+                            ";
+                                               
+                        }
+
                     }
+                    
                 ?>
                 
               </div>
               <div class="modal">
                 <span class="close"><i class="icon-cross"></i></span>
                 <div class="modalContent">
-                  <img src="" class="modalImg" />
-
-                  <a href="" download class="modalImg">
-                      <span class="modalTxt"></span>
-                  </a>
-                    
+                    <img src="" class="modalImg" />
+                    <a href="" download class="modalImg">
+                        
+                        <span class="modalTxt"></span>
+                    </a>   
                 </div>
               </div>
             </div>
@@ -124,6 +123,7 @@
             images.forEach((image) => {
               image.addEventListener("click", () => {
                 modalImg.src = image.src;
+                modalTxt.href = image.src;
                 modalTxt.innerHTML = image.alt;
                 modal.classList.add("appear");
 

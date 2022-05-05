@@ -36,22 +36,20 @@
                 <li class = "submenu">
 
                     <a href = "#"><span class = "icon-shop"></span> Nuestros Productos <span class = "slide_icon icon-chevron-down"></span></a>
-                    <ul class = "children">
-                        <li><a href="harinas_trigo.php"> Harinas de Trigo <span class = "icon-bowl"></span> </a></li>
-                        <li><a href="harinas_hogar.html"> Harinas para el Hogar <span class = "icon-bowl"></span> </a></li>
-                        <li><a href="harinas_tres_estrellas.php"> Harinas Preparadas Tres Estrellas <span class = "icon-bowl"></span> </a></li>
-                        <li><a href="polvo_hornear_3Estrellas.php"> Polvo para Hornear Tres Estrellas <span class = "icon-bowl"></span> </a></li>
-                        <li><a href="mejorante_rendimix.php"> Mejorantes RendiMix <span class = "icon-bowl"></span> </a></li>
-                        <li><a href="derivados.php"> Derivados del Trigo <span class = "icon-bowl"></span> </a></li>
-                    </ul>
+					<ul class = "children">
+						<li><a href="harinas_trigo.php"> Harinas de Trigo <span class = "icon-bowl"></span> </a></li>
+						<li><a href="harinas_hogar.html"> Harinas para el Hogar <span class = "icon-bowl"></span> </a></li>
+						<li><a href="harinas_tres_estrellas.php"> Harinas Preparadas Tres Estrellas <span class = "icon-bowl"></span> </a></li>
+						<li><a href="polvo_hornear_3Estrellas.php"> Polvo para Hornear Tres Estrellas <span class = "icon-bowl"></span> </a></li>
+						<li><a href="mejorante_rendimix.php"> Mejorantes RendiMix <span class = "icon-bowl"></span> </a></li>
+						<li><a href="derivados.php"> Derivados del Trigo <span class = "icon-bowl"></span> </a></li>
+					</ul>
 
                 </li>
-                
 
-				<li><a href = "recetario.php?op=0"><span class = "icon-bowl"></span> Recetas </a></li>
-				<li><a href = "servicio_tecnico.html"><span class = "icon-tools"></span> Servicio Tecnico </a></li>
-				<li><a href = "Contacto.html"><span class = "icon-typing"></span> Contacto </a></li>
-
+                <li><a href = "recetario.php?op=0"><span class = "icon-bowl"></span> Recetas </a></li>
+                <li><a href = "servicio_tecnico.html"><span class = "icon-tools"></span> Servicio Tecnico </a></li>
+                <li><a href = "contacto.php"><span class = "icon-typing"></span> Contacto </a></li>
 
             </ul>
         </nav>

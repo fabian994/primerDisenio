@@ -48,13 +48,11 @@
 
                 <li><a href = "recetario.php?op=0"><span class = "icon-bowl"></span> Recetas </a></li>
                 <li><a href = "servicio_tecnico.html"><span class = "icon-tools"></span> Servicio Tecnico </a></li>
-                <li><a href = "Contacto.html"><span class = "icon-typing"></span> Contacto </a></li>
+                <li><a href = "contacto.php"><span class = "icon-typing"></span> Contacto </a></li>
 
             </ul>
         </nav>
     </header>
-
-
 
 	<div class = "container">
 

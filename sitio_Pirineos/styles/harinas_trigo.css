@@ -22,14 +22,16 @@
     margin: 20px auto;
     margin-top: 0;
     display: grid;
-    gap: 20px;
+    gap: 40px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(5, auto);
 
     grid-template-areas: "header header header"
                          "content content sidebar"
-                         "content2 content2 sidebar"
-                         "widget-1 widget-1 sidebar"
+                         "widget-1 widget-2 sidebar"
+                         "widget-3 widget-4 sidebar"
+                         "widget-5 widget-5 sidebar"
+                         "widget-6 widget-6 sidebar"
                          "footer footer footer";
 }
 
@@ -38,7 +40,6 @@
 .container div, 
 .container .header, 
 .container .content,
-.container .content2,
 .container .sidebar, 
 .container .footer{
     background-color: transparent;
@@ -74,6 +75,7 @@
 }
 #lineamientos_descripcion{
    padding-top: inherit;
+   text-align: justify;
 }
 
 #titulo_catalogo{
@@ -81,7 +83,7 @@
     background-color: #FFC627;
     border-radius: inherit;
     color: #1E412F;
-    padding-top: inherit;
+    padding: inherit;
 }
 #titulo_productos{
     text-align: center;
@@ -159,32 +161,12 @@ padding-left: 10px;
     top:1px;
 }
 
-/* CONTENIDO 2 - ENGLOBA EL CONTENIDO SECUNDARIO */
-
-.container .content2 {
-    grid-area: content2;
-    background-color: #EBE3D5;
-    background-image: url("https://www.transparenttextures.com/patterns/wall-4-light.png");
-    color: #1E412F;
-
-   
-    text-align: justify;
-}
-
-
 .container .content span {
     color: #EBE3D5;
     font-size: 55pt;
     display: flex;
     justify-content: center;
 }
-.container .content2 span {
-    color: #1E412F;
-    font-size: 55pt;
-    display: flex;
-    justify-content: center;
-}
-
 
 /* SIDEBAR - ENGLOBA TODA LA SIDEBAR */
 
@@ -243,29 +225,69 @@ padding-left: 10px;
     display: inline-block;
 }
 
+/* WIDGETS - ENGLOBA TODOS LOS WIDGETS */
 
-/* WIDGETS - ENGLOBA AMBOS WIDGETS */
+.container .widget-1, 
+.container .widget-2, 
+.container .widget-3, 
+.container .widget-4,
+.container .widget-5,
+.container .widget-6{
 
-.container .widget-1 {
-    background-color: transparent;
-    color: #EBE3D5;
-}
-
-.container .widget-2 {
     background-color: #08903E;
-    color: #EBE3D5;
+    color: aliceblue;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+
 }
+
+
 
 /* WIDGET 1 - SOLO EL PRIMER WIDGET */
 
 .container .widget-1 {
     grid-area: widget-1;
+    background-color: #1E412F;
+    color: #EBE3D5;
 }
 
 /* WIDGET 2 - SOLO EL SEGUNDO WIDGET */
 
 .container .widget-2 {
     grid-area: widget-2;
+    background-color: #08903E;
+    color: #EBE3D5;
+}
+/* WIDGET 3 - SOLO EL TERCER WIDGET */
+
+.container .widget-3 {
+    grid-area: widget-3;
+    background-color: #08903E;
+    color: #EBE3D5;
+}
+
+/* WIDGET 4 - SOLO EL CUARTO WIDGET */
+
+.container .widget-4 {
+    grid-area: widget-4;
+    background-color: #1E412F;
+    color: #EBE3D5;
+}
+/* WIDGET 5 - SOLO EL QUINTO WIDGET */
+
+.container .widget-5 {
+    grid-area: widget-5;
+    background-color: #1E412F;
+    color: #EBE3D5;
+}
+/* WIDGET 6 - SOLO EL SEXTO WIDGET */
+
+.container .widget-6 {
+    grid-area: widget-6;
+    background-color: transparent;
+    color: #EBE3D5;
 }
 
 
@@ -427,8 +449,12 @@ padding-left: 10px;
 
         grid-template-areas: "header header header"
                              "content content content"
-                             "content2 content2 content2"
                              "widget-1 widget-1 widget-1"
+                             "widget-2 widget-2 widget-2"
+                             "widget-3 widget-3 widget-3"
+                             "widget-4 widget-4 widget-4"
+                             "widget-5 widget-5 widget-5"
+                             "widget-6 widget-6 widget-6"
                              "sidebar sidebar sidebar"
                              "footer footer footer";
 
@@ -490,7 +516,7 @@ padding-left: 10px;
     }
 
 
-}
 
+}
 
 

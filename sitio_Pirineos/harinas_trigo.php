@@ -10,7 +10,7 @@
     <link href = "styles/icons/fonts.css" rel = "stylesheet">
 
     <script src = "scripts/jquery-latest.js"></script>
-	<script src = "scripts/encabezado.js"></script>
+    <script src = "scripts/encabezado.js"></script>
     <script src = "scripts/harinas_trigo.js"></script>
 
     <title> Harinas de Trigo </title>
@@ -18,36 +18,37 @@
 <body>
 
     <header class = "menu">
-		<div class = "menu_bar">
-			<a href = "#" class = "b_menu"><span class = "icon-menu"></span> <div> <img src = "pirineos.png"> </div> </a>
-		</div>
+        <div class = "menu_bar">
+            <a href = "#" class = "b_menu"><span class = "icon-menu"></span> <div> <img src = "pirineos.png"> </div> </a>
+        </div>
 
 
-		<div id = "img_banner">
+        <div id = "img_banner">
             <img src = "imagenes/Pirineos/Logo HPI contorno_blanco.png" style = "width: 15%; margin-top: 10px;">
         </div>
 
-		<nav>
+        <nav>
 
-			<ul>
+            <ul>
 
-				<li><a href = "inicio.html"><span class = "icon-home"></span> Inicio </a></li>
-				
-				<li class = "submenu">
+                <li><a href = "inicio.html"><span class = "icon-home"></span> Inicio </a></li>
+                
+                <li class = "submenu">
 
-					<a href = "#"><span class = "icon-shop"></span> Nuestros Productos <span class = "slide_icon icon-chevron-down"></span></a>
-					<ul class = "children">
-						<li><a href="harinas_trigo.php"> Harinas de Trigo <span class = "icon-bowl"></span> </a></li>
-						<li><a href="harinas_hogar.html"> Harinas para el Hogar <span class = "icon-bowl"></span> </a></li>
-						<li><a href="harinas_tres_estrellas.php"> Harinas Preparadas Tres Estrellas <span class = "icon-bowl"></span> </a></li>
-						<li><a href="polvo_hornear_3Estrellas.php"> Polvo para Hornear Tres Estrellas <span class = "icon-bowl"></span> </a></li>
-						<li><a href="mejorante_rendimix.php"> Mejorantes RendiMix <span class = "icon-bowl"></span> </a></li>
-						<li><a href="derivados.php"> Derivados del Trigo <span class = "icon-bowl"></span> </a></li>
-					</ul>
+                    <a href = "#"><span class = "icon-shop"></span> Nuestros Productos <span class = "slide_icon icon-chevron-down"></span></a>
+                    <ul class = "children">
+                        <li><a href="harinas_trigo.php"> Harinas de Trigo <span class = "icon-bowl"></span> </a></li>
+                        <li><a href="harinas_hogar.html"> Harinas para el Hogar <span class = "icon-bowl"></span> </a></li>
+                        <li><a href="harinas_tres_estrellas.php"> Harinas Preparadas Tres Estrellas <span class = "icon-bowl"></span> </a></li>
+                        <li><a href="polvo_hornear_3Estrellas.php"> Polvo para Hornear Tres Estrellas <span class = "icon-bowl"></span> </a></li>
+                        <li><a href="mejorante_rendimix.php"> Mejorantes RendiMix <span class = "icon-bowl"></span> </a></li>
+                        <li><a href="derivados.php"> Derivados del Trigo <span class = "icon-bowl"></span> </a></li>
+                    </ul>
 
-				</li>
+                </li>
 
-				<li class = "submenu">
+<<<<<<< HEAD
+                <li class = "submenu">
         
                     <a href = "#"><span class = "icon-open-book"></span> Recetarios <span class = "slide_icon icon-chevron-down"></span></a>
                     <ul class = "children">
@@ -57,12 +58,17 @@
                     </ul>
                 
                 </li>
+                <li><a href = "servicio_tecnico.html"><span class = "icon-tools"></span> Servicio Tecnico </a></li>
+                <li><a href = "Contacto.html"><span class = "icon-typing"></span> Contacto </a></li>
+=======
+				<li><a href = "recetario.php?op=0"><span class = "icon-bowl"></span> Recetas </a></li>
 				<li><a href = "servicio_tecnico.html"><span class = "icon-tools"></span> Servicio Tecnico </a></li>
 				<li><a href = "Contacto.html"><span class = "icon-typing"></span> Contacto </a></li>
+>>>>>>> main
 
-			</ul>
-		</nav>
-	</header>
+            </ul>
+        </nav>
+    </header>
     
     <div class = "container">
 
@@ -71,69 +77,59 @@
             <img id = "header_image" src = "imagenes/harinas_trigo/harinas_trigo.jpeg">
 
         </header>
-
         <main class = "content">
-            <div id="slider" >
-                <div id="text_1" style="display:block; background-color: transparent;">
-                    <h2 id = "lineamientos_titulo"> HARINAS DE ALTA PROTEINA <br><br> </h2>
-                    <p id = "lineamientos_descripcion">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non urna vestibulum, euismod mi at, pulvinar ex. Fusce libero justo, euismod id sapien eget, tempus tincidunt nisi. Vestibulum vehicula mattis auctor. Vivamus quis lorem at tortor efficitur dapibus a in dui. Phasellus bibendum ultrices nisl sit amet pretium. Fusce in mi urna. Proin condimentum dui sed odio euismod scelerisque. Curabitur venenatis molestie metus et condimentum. Sed ut ullamcorper dui. Fusce dignissim blandit lectus, id commodo lacus mollis non.
-
-                            Fusce at mauris augue. Phasellus congue venenatis odio sed varius. Nam mauris nunc, auctor vitae neque eget, placerat pellentesque tellus. Nullam condimentum arcu sagittis risus finibus aliquam. Ut congue nibh sed luctus dictum. Suspendisse congue quam nec sapien placerat facilisis. Vestibulum vitae iaculis neque. Proin ornare ipsum non posuere elementum. Mauris tempus consectetur sem ut lacinia. Integer molestie, libero eget pulvinar malesuada, tortor nibh rhoncus elit, quis pulvinar orci urna et est. Proin in enim at nisi euismod lacinia eget vitae lorem. Maecenas vitae massa id mi feugiat gravida nec pulvinar nibh. Quisque maximus accumsan dui at auctor. Ut tempus sagittis neque, et accumsan magna sodales eu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Duis at quam id nisl consectetur tincidunt. 
-                    </p>
-                </div>
-                <div id="text_2" style="display:none; background-color: transparent;">
-                    <h2 id = "lineamientos_titulo"> HARINAS EXTRAFUERTES <br><br> </h2>
-                    <p id = "lineamientos_descripcion">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non urna vestibulum, euismod mi at, pulvinar ex. Fusce libero justo, euismod id sapien eget, tempus tincidunt nisi. Vestibulum vehicula mattis auctor. Vivamus quis lorem at tortor efficitur dapibus a in dui. Phasellus bibendum ultrices nisl sit amet pretium. Fusce in mi urna. Proin condimentum dui sed odio euismod scelerisque. Curabitur venenatis molestie metus et condimentum. Sed ut ullamcorper dui. Fusce dignissim blandit lectus, id commodo lacus mollis non.
-
-                            Fusce at mauris augue. Phasellus congue venenatis odio sed varius. Nam mauris nunc, auctor vitae neque eget, placerat pellentesque tellus. Nullam condimentum arcu sagittis risus finibus aliquam. Ut congue nibh sed luctus dictum. Suspendisse congue quam nec sapien placerat facilisis. Vestibulum vitae iaculis neque. Proin ornare ipsum non posuere elementum. Mauris tempus consectetur sem ut lacinia. Integer molestie, libero eget pulvinar malesuada, tortor nibh rhoncus elit, quis pulvinar orci urna et est. Proin in enim at nisi euismod lacinia eget vitae lorem. Maecenas vitae massa id mi feugiat gravida nec pulvinar nibh. Quisque maximus accumsan dui at auctor. Ut tempus sagittis neque, et accumsan magna sodales eu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Duis at quam id nisl consectetur tincidunt. 
-                    </p>
-                </div>
-                <div id="text_3" style="display:none; background-color: transparent;">
-                    <h2 id = "lineamientos_titulo"> HARINAS DE FUERZA MEDIA <br><br> </h2>
-                    <p id = "lineamientos_descripcion">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non urna vestibulum, euismod mi at, pulvinar ex. Fusce libero justo, euismod id sapien eget, tempus tincidunt nisi. Vestibulum vehicula mattis auctor. Vivamus quis lorem at tortor efficitur dapibus a in dui. Phasellus bibendum ultrices nisl sit amet pretium. Fusce in mi urna. Proin condimentum dui sed odio euismod scelerisque. Curabitur venenatis molestie metus et condimentum. Sed ut ullamcorper dui. Fusce dignissim blandit lectus, id commodo lacus mollis non.
-
-                            Fusce at mauris augue. Phasellus congue venenatis odio sed varius. Nam mauris nunc, auctor vitae neque eget, placerat pellentesque tellus. Nullam condimentum arcu sagittis risus finibus aliquam. Ut congue nibh sed luctus dictum. Suspendisse congue quam nec sapien placerat facilisis. Vestibulum vitae iaculis neque. Proin ornare ipsum non posuere elementum. Mauris tempus consectetur sem ut lacinia. Integer molestie, libero eget pulvinar malesuada, tortor nibh rhoncus elit, quis pulvinar orci urna et est. Proin in enim at nisi euismod lacinia eget vitae lorem. Maecenas vitae massa id mi feugiat gravida nec pulvinar nibh. Quisque maximus accumsan dui at auctor. Ut tempus sagittis neque, et accumsan magna sodales eu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Duis at quam id nisl consectetur tincidunt. 
-                    </p>
-                </div>
-                <div id="text_4" style="display:none; background-color: transparent;">
-                    <h2 id = "lineamientos_titulo"> HARINAS SUAVES <br><br> </h2>
-                    <p id = "lineamientos_descripcion">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non urna vestibulum, euismod mi at, pulvinar ex. Fusce libero justo, euismod id sapien eget, tempus tincidunt nisi. Vestibulum vehicula mattis auctor. Vivamus quis lorem at tortor efficitur dapibus a in dui. Phasellus bibendum ultrices nisl sit amet pretium. Fusce in mi urna. Proin condimentum dui sed odio euismod scelerisque. Curabitur venenatis molestie metus et condimentum. Sed ut ullamcorper dui. Fusce dignissim blandit lectus, id commodo lacus mollis non.
-
-                            Fusce at mauris augue. Phasellus congue venenatis odio sed varius. Nam mauris nunc, auctor vitae neque eget, placerat pellentesque tellus. Nullam condimentum arcu sagittis risus finibus aliquam. Ut congue nibh sed luctus dictum. Suspendisse congue quam nec sapien placerat facilisis. Vestibulum vitae iaculis neque. Proin ornare ipsum non posuere elementum. Mauris tempus consectetur sem ut lacinia. Integer molestie, libero eget pulvinar malesuada, tortor nibh rhoncus elit, quis pulvinar orci urna et est. Proin in enim at nisi euismod lacinia eget vitae lorem. Maecenas vitae massa id mi feugiat gravida nec pulvinar nibh. Quisque maximus accumsan dui at auctor. Ut tempus sagittis neque, et accumsan magna sodales eu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Duis at quam id nisl consectetur tincidunt. 
-                    </p>
-                </div>
-                <div id="text_5" style="display:none; background-color: transparent">
-                    <h2 id = "lineamientos_titulo"> HARINAS INTEGRALES <br><br> </h2>
-                    <p id = "lineamientos_descripcion">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non urna vestibulum, euismod mi at, pulvinar ex. Fusce libero justo, euismod id sapien eget, tempus tincidunt nisi. Vestibulum vehicula mattis auctor. Vivamus quis lorem at tortor efficitur dapibus a in dui. Phasellus bibendum ultrices nisl sit amet pretium. Fusce in mi urna. Proin condimentum dui sed odio euismod scelerisque. Curabitur venenatis molestie metus et condimentum. Sed ut ullamcorper dui. Fusce dignissim blandit lectus, id commodo lacus mollis non.
-
-                            Fusce at mauris augue. Phasellus congue venenatis odio sed varius. Nam mauris nunc, auctor vitae neque eget, placerat pellentesque tellus. Nullam condimentum arcu sagittis risus finibus aliquam. Ut congue nibh sed luctus dictum. Suspendisse congue quam nec sapien placerat facilisis. Vestibulum vitae iaculis neque. Proin ornare ipsum non posuere elementum. Mauris tempus consectetur sem ut lacinia. Integer molestie, libero eget pulvinar malesuada, tortor nibh rhoncus elit, quis pulvinar orci urna et est. Proin in enim at nisi euismod lacinia eget vitae lorem. Maecenas vitae massa id mi feugiat gravida nec pulvinar nibh. Quisque maximus accumsan dui at auctor. Ut tempus sagittis neque, et accumsan magna sodales eu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Duis at quam id nisl consectetur tincidunt. 
-                    </p>
-                </div>
-            </div>
-            <a class="boton" name="next" style="float: right;" onclick="next_ev()">></a>
-            <a class="boton" name="last" onclick="last_ev()"><</a>
-
-        </main>
-
-        <main class = "content2">
             <h2 id = "lineamientos_titulo"> HARINAS DE TRIGO <br><br> </h2>
             <p id = "lineamientos_descripcion">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non urna vestibulum, euismod mi at, pulvinar ex. Fusce libero justo, euismod id sapien eget, tempus tincidunt nisi. Vestibulum vehicula mattis auctor. Vivamus quis lorem at tortor efficitur dapibus a in dui. Phasellus bibendum ultrices nisl sit amet pretium. Fusce in mi urna. Proin condimentum dui sed odio euismod scelerisque. Curabitur venenatis molestie metus et condimentum. Sed ut ullamcorper dui. Fusce dignissim blandit lectus, id commodo lacus mollis non.
-
-                    Fusce at mauris augue. Phasellus congue venenatis odio sed varius. Nam mauris nunc, auctor vitae neque eget, placerat pellentesque tellus. Nullam condimentum arcu sagittis risus finibus aliquam. Ut congue nibh sed luctus dictum. Suspendisse congue quam nec sapien placerat facilisis. Vestibulum vitae iaculis neque. Proin ornare ipsum non posuere elementum. Mauris tempus consectetur sem ut lacinia. Integer molestie, libero eget pulvinar malesuada, tortor nibh rhoncus elit, quis pulvinar orci urna et est. Proin in enim at nisi euismod lacinia eget vitae lorem. Maecenas vitae massa id mi feugiat gravida nec pulvinar nibh. Quisque maximus accumsan dui at auctor. Ut tempus sagittis neque, et accumsan magna sodales eu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Duis at quam id nisl consectetur tincidunt. 
-
             </p>
 
             <br><br>
 
-            <span class = "icon-bowl"></span>
+            <span class = "icon-bowl-trigo"></span>
 
         </main>
+        <div class = "widget-1">
+           
+            <h2 id = "lineamientos_titulo"> HARINAS DE ALTA PROTEINA <br><br> </h2>
+            <p id = "lineamientos_descripcion">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non urna vestibulum, euismod mi at, pulvinar ex. Fusce libero justo, euismod id sapien eget, tempus tincidunt nisi. Vestibulum vehicula mattis auctor. Vivamus quis lorem at tortor efficitur dapibus a in dui. Phasellus bibendum ultrices nisl sit amet pretium. Fusce in mi urna. Proin condimentum dui sed odio euismod scelerisque. Curabitur venenatis molestie metus et condimentum. Sed ut ullamcorper dui. Fusce dignissim blandit lectus, id commodo lacus mollis non.
+            </p>
+            <br><br>
+            <img src = "imagenes/Logo_Trigarina.png" style = "width: 50%; margin-left: 25%;">
+        </div>
+        <div class = "widget-2">
+                <h2 id = "lineamientos_titulo"> HARINAS EXTRAFUERTES <br><br> </h2>
+                <p id = "lineamientos_descripcion">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non urna vestibulum, euismod mi at, pulvinar ex. Fusce libero justo, euismod id sapien eget, tempus tincidunt nisi. Vestibulum vehicula mattis auctor. Vivamus quis lorem at tortor efficitur dapibus a in dui. Phasellus bibendum ultrices nisl sit amet pretium. Fusce in mi urna. Proin condimentum dui sed odio euismod scelerisque. Curabitur venenatis molestie metus et condimentum. Sed ut ullamcorper dui. 
+                </p>
+                <br><br>
+                <img src = "imagenes/Logo_Trigarina.png" style = "width: 50%; margin-left: 25%;">
+        </div>
+        <div class = "widget-3">
+                <h2 id = "lineamientos_titulo"> HARINAS DE FUERZA MEDIA <br><br> </h2>
+                <p id = "lineamientos_descripcion">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non urna vestibulum, euismod mi at, pulvinar ex. Fusce libero justo, euismod id sapien eget, tempus tincidunt nisi. Vestibulum vehicula mattis auctor. Vivamus quis lorem at tortor efficitur dapibus a in dui. Phasellus bibendum ultrices nisl sit amet pretium. Fusce in mi urna. Proin condimentum dui sed odio euismod scelerisque. Curabitur venenatis molestie metus et condimentum. Sed ut ullamcorper dui. Fusce dignissim blandit lectus, id commodo lacus mollis non.
+
+                    Fusce at mauris augue. Phasellus congue venenatis odio sed varius. Nam mauris nunc, auctor vitae neque eget, placerat pellentesque tellus. 
+                </p>
+                <br><br>
+                <img src = "imagenes/Logo_Trigarina.png" style = "width: 50%; margin-left: 25%;">
+        </div>
+        <div class = "widget-4">
+                <h2 id = "lineamientos_titulo"> HARINAS SUAVES <br><br> </h2>
+                <p id = "lineamientos_descripcion">
+                    Fusce at mauris augue. Phasellus congue venenatis odio sed varius. Nam mauris nunc, auctor vitae neque eget, placerat pellentesque tellus. Nullam condimentum arcu sagittis risus finibus aliquam. Ut congue nibh sed luctus dictum. Suspendisse congue quam nec sapien placerat facilisis. Vestibulum vitae iaculis neque. Proin ornare ipsum non posuere elementum. Mauris tempus consectetur sem ut lacinia. Integer molestie, libero eget pulvinar malesuada, tortor nibh rhoncus elit, quis pulvinar orci urna et est. Proin in enim at nisi euismod lacinia eget vitae lorem. Maecenas vitae massa id mi feugiat gravida nec pulvinar nibh. Quisque maximus accumsan dui at auctor. Ut tempus sagittis neque, et accumsan magna sodales eu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Duis at quam id nisl consectetur tincidunt. 
+                </p>
+                <br><br>
+                <img src = "imagenes/Logo_Trigarina.png" style = "width: 50%; margin-left: 25%;">
+        </div>
+        <div class = "widget-5">
+                <h2 id = "lineamientos_titulo"> HARINAS INTEGRALES <br><br> </h2>
+                <p id = "lineamientos_descripcion">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non urna vestibulum, euismod mi at, pulvinar ex. Fusce libero justo, euismod id sapien eget, tempus tincidunt nisi. Vestibulum vehicula mattis auctor. Vivamus quis lorem at tortor efficitur dapibus a in dui. Phasellus bibendum ultrices nisl sit amet pretium. Fusce in mi urna. Proin condimentum dui sed odio euismod scelerisque. Curabitur venenatis molestie metus et condimentum. Sed ut ullamcorper dui. Fusce dignissim blandit lectus, id commodo lacus mollis non.
+                 </p>
+
+        </div>
 
         <aside class = "sidebar">
             <?php
@@ -160,11 +156,11 @@
                         
                         <div>
 
-                            <h1> Descarga Nuestras Mejores Recetas con Harinas de Trigo </h1>
+                            <h1> Conoce Nuestras Mejores Recetas con Harinas de Trigo </h1>
                             
                             <br>
                             
-                            <a href = '$reg->nom_recetario'><span class = 'icon-download'></span> Descargar PDF </a>
+                            <a href = 'recetario.php?op=1'><span class = 'icon-download'></span> Descargar PDF </a>
                     
                         </div>
                     
@@ -206,7 +202,8 @@
 
         </aside>
 
-        <div class="widget-1">
+        <div class="widget-6">
+            <h2 id = "titulo_catalogo"> Nuestro Catalogo de Harinas </h2><br><br>
             <?php
                 
                 $cs=conecta();

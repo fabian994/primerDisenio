@@ -47,16 +47,7 @@
 
                 </li>
 
-                <li class = "submenu">
-        
-                    <a href = "#"><span class = "icon-open-book"></span> Recetarios <span class = "slide_icon icon-chevron-down"></span></a>
-                    <ul class = "children">
-                        <li><a href = "#"> Bakery Mix <span class = "icon-bowl"></span></a></li>
-                        <li><a href = "#"> Harinas Tres Estrellas <span class = "icon-bowl"></span></a></li>
-                        <li><a href = "#"> Polvo para Hornear Tres Estrellas <span class = "icon-bowl"></span></a></li>
-                    </ul>
-                
-                </li>
+                 <li><a href = "recetario.php?op=0"><span class = "icon-bowl"></span> Recetas </a></li>
                 <li><a href = "servicio_tecnico.html"><span class = "icon-tools"></span> Servicio Tecnico </a></li>
                 <li><a href = "Contacto.html"><span class = "icon-typing"></span> Contacto </a></li>
 
@@ -86,13 +77,14 @@
 
         </main>
 
-        <main class = "content2">
+        <div class="widget-1">
+            <h2 id = "titulo_catalogo"> Nuestro Catalogo RendiMix </h2><br><br>
             <?php
                 include 'utilerias.php';
                 $cs=conecta();
                 $query="SELECT * FROM derivados_trigo";
                 $sql=mysqli_query($cs,$query);
-                echo "<table>";
+                echo "<table style='width: 100%;'>";
                 while ($reg=mysqli_fetch_object($sql)) {
                     $x="";
                     echo"
@@ -109,14 +101,11 @@
                 }
                 echo "</table> ";
             ?>
-        </main>    
+        </div>    
 
         <aside class = "sidebar">
             <?php
             
-
-            //<!-- LINK 1 -->
-
             
             $cs=conecta();
             $query="SELECT * FROM contenidos WHERE cve_tipo=5";
@@ -143,11 +132,6 @@
                         <a href = 'recetario.php?op=5'><span class = 'icon-bowl'></span> Recetas </a>
                 
                     </div>
-                
-                
-
-                    
-
                     <div>
                         
                         <h1> Productos Relacionados </h1>

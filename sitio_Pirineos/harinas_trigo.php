@@ -46,25 +46,12 @@
                     </ul>
 
                 </li>
-
-<<<<<<< HEAD
-                <li class = "submenu">
-        
-                    <a href = "#"><span class = "icon-open-book"></span> Recetarios <span class = "slide_icon icon-chevron-down"></span></a>
-                    <ul class = "children">
-                        <li><a href = "#"> Bakery Mix <span class = "icon-bowl"></span></a></li>
-                        <li><a href = "#"> Harinas Tres Estrellas <span class = "icon-bowl"></span></a></li>
-                        <li><a href = "#"> Polvo para Hornear Tres Estrellas <span class = "icon-bowl"></span></a></li>
-                    </ul>
                 
-                </li>
-                <li><a href = "servicio_tecnico.html"><span class = "icon-tools"></span> Servicio Tecnico </a></li>
-                <li><a href = "Contacto.html"><span class = "icon-typing"></span> Contacto </a></li>
-=======
+
 				<li><a href = "recetario.php?op=0"><span class = "icon-bowl"></span> Recetas </a></li>
 				<li><a href = "servicio_tecnico.html"><span class = "icon-tools"></span> Servicio Tecnico </a></li>
 				<li><a href = "Contacto.html"><span class = "icon-typing"></span> Contacto </a></li>
->>>>>>> main
+
 
             </ul>
         </nav>
@@ -163,10 +150,6 @@
                             <a href = 'recetario.php?op=1'><span class = 'icon-bowl'></span> Recetas </a>
                     
                         </div>
-                    
-                    
-
-                        //<!-- LINK 3 -->
 
                         <div>
                             
@@ -185,7 +168,7 @@
             ?>
 
 
-            <!-- LINK 4 -->
+            
 
             <h1> Compartir </h1>
 
@@ -209,7 +192,7 @@
                 $cs=conecta();
                 $query="SELECT * FROM harinas_trigo";
                 $sql=mysqli_query($cs,$query);
-                echo "<table>";
+                echo "<table style='width: 100%;'>";
                 while ($reg=mysqli_fetch_object($sql)) {
                     $x="";
                     echo"

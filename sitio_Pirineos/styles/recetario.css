@@ -601,7 +601,11 @@ padding-left: 10px;
     }
     .sub_lineamientos{
     flex-direction: column;
-}
+    }
+    .images {
+    display: flex;
+    flex-direction: column;
+    }
 
 }
 

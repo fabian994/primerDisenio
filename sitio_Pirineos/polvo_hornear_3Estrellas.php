@@ -173,6 +173,7 @@
         </aside>
     
         <div class="widget-1">
+            <h2 id = "titulo_catalogo"> Nuestro Catalogo Polvo para Hornear </h2><br><br>
             <?php
                 
                 $cs=conecta();
@@ -183,7 +184,7 @@
                     $x="";
                     echo"
                    
-                    <tr class='catalogo'>
+                    <tr class='catalogo' id='tabla_fila'>
                         <td id='contenido_catalogo'>
                             <h2 id ='titulo_productos'>$reg->nom_prod</h2><br>
                             <p>$reg->descripcion_prod</p><br>

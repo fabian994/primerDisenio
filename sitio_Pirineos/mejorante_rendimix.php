@@ -46,16 +46,7 @@
 
 				</li>
 
-				<li class = "submenu">
-        
-                    <a href = "#"><span class = "icon-open-book"></span> Recetarios <span class = "slide_icon icon-chevron-down"></span></a>
-                    <ul class = "children">
-                        <li><a href = "assets/Recetario_Harinas_Preparadas.pdf"> Bakery Mix <span class = "icon-bowl"></span></a></li>
-                        <li><a href = "assets/Recetario_Harinas_Preparadas.pdf"> Harinas Tres Estrellas <span class = "icon-bowl"></span></a></li>
-                        <li><a href = "#"> Polvo para Hornear Tres Estrellas <span class = "icon-bowl"></span></a></li>
-                    </ul>
-                
-                </li>
+				<li><a href = "recetario.php?op=0"><span class = "icon-bowl"></span> Recetas </a></li>
 				<li><a href = "servicio_tecnico.html"><span class = "icon-tools"></span> Servicio Tecnico </a></li>
 				<li><a href = "Contacto.html"><span class = "icon-typing"></span> Contacto </a></li>
 
@@ -179,7 +170,7 @@
                     
                     
 
-                        //<!-- LINK 3 -->
+                        
 
                         <div>
                             
@@ -222,7 +213,7 @@
                 $cs=conecta();
                 $query="SELECT * FROM rendimix";
                 $sql=mysqli_query($cs,$query);
-                echo "<table>";
+                echo "<table style='width: 100%;'>";
                 while ($reg=mysqli_fetch_object($sql)) {
                     $x="";
                     echo"

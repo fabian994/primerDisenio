@@ -15,3 +15,9 @@ function r3(op, cve_tipo){
 	alert(url);
 	location.href=url;
 }
+
+function r4(op){
+
+	url="reportes.php?op="+op;
+	location.href=url;
+}

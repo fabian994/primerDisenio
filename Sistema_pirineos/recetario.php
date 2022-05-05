@@ -11,14 +11,14 @@
 	<?php
 		include 'utilerias.php';
 		$op=$_GET['op'];
-		$tipo_prod=$_GET['tipo_prod'];
+		$tipo_rec=$_GET['tipo_rec'];
 		//if ($op==0) sel_tipo_prod();
 		if ($op==0) sel_tipo_prod();
-		if ($op==1) f_recetario($op, $tipo_prod);
-		if ($op==2) f_recetario($op, $tipo_prod);
-		if ($op==3) f_recetario($op, $tipo_prod);
-		if ($op==4) f_recetario($op, $tipo_prod);
-		if ($op==5) f_recetario($op, $tipo_prod);
+		if ($op==1) f_recetario($op, $tipo_rec);
+		if ($op==2) f_recetario($op, $tipo_rec);
+		if ($op==3) f_recetario($op, $tipo_rec);
+		if ($op==4) f_recetario($op, $tipo_rec);
+		if ($op==5) f_recetario($op, $tipo_rec);
 
 		if ($op==6) altas();
 		if ($op==7) bajas();
@@ -26,70 +26,44 @@
 		if ($op==9) cambios();
 
 		function tomar_datos(){
-			global $cve_prod, $nom_prod, $tipo_prod, $img_prod, $cat;
-			$cve_prod=$_GET['cve_prod'];
-			$nom_prod=$_GET['nom_prod'];
-			$tipo_prod=$_GET['tipo_prod'];
-			$img_prod=$_GET['img_prod'];
+			global $cve_rec, $nom_rec, $tipo_rec, $img_rec, $cat;
+			$cve_rec=$_GET['cve_rec'];
+			$nom_rec=$_GET['nom_rec'];
+			$tipo_rec=$_GET['tipo_rec'];
+			$img_rec=$_GET['img_rec'];
 			$cat=$_GET['cat'];
 		}
 
 		function altas(){
-			global $cve_prod, $nom_prod, $tipo_prod, $img_prod, $cat, $op;
+			global $cve_rec, $nom_rec, $tipo_rec, $img_rec, $cat, $op;
 			tomar_datos();
 
-			// Verifica que no se duplique la clave del producto
+			// Verifica que no se duplique la clave del recetas
 			$cs=conecta();
 
-			$query="SELECT * FROM productos WHERE cve_prod='$cve_prod'";
+			$query="SELECT * FROM recetas WHERE cve_rec='$cve_rec'";
 			$sql=mysqli_query($cs,$query);
 			$reg=mysqli_fetch_object($sql);
 			if ($reg!=mysqli_fetch_array($sql)){
 				msg("Error, clave de producto se duplica en base de datos","rojo");
 			}
 			else{
+				$query="INSERT INTO recetas VALUES ('$cve_rec','$nom_rec','$tipo_rec','$img_rec')";
+				$sql=mysqli_query($cs,$query);
+				msg("El registro ha sido grabado correctamente","verde");
 				
-				if ($cat==1) {
-					$query="INSERT INTO productos VALUES ('$cve_prod','$nom_prod','$tipo_prod','$img_prod')";
-					$sql=mysqli_query($cs,$query);
-					msg("El registro ha sido grabado correctamente","verde");
-				}
-				elseif ($cat==2) {
-					$query="INSERT INTO productos VALUES ('$cve_prod','$nom_prod','$tipo_prod','$img_prod')";
-					$sql=mysqli_query($cs,$query);
-					msg("El registro ha sido grabado correctamente","verde");
-				}
-				elseif ($cat==3) {
-					$query="INSERT INTO productos VALUES ('$cve_prod','$nom_prod','$tipo_prod','$img_prod')";
-					$sql=mysqli_query($cs,$query);
-					msg("El registro ha sido grabado correctamente","verde");
-				}
-				elseif ($cat==4) {
-					$query="INSERT INTO productos VALUES ('$cve_prod','$nom_prod','$tipo_prod','$img_prod')";
-					$sql=mysqli_query($cs,$query);
-					msg("El registro ha sido grabado correctamente","verde");
-				}
-				elseif ($cat==5) {
-					$query="INSERT INTO productos VALUES ('$cve_prod','$nom_prod','$tipo_prod','$img_prod')";
-					$sql=mysqli_query($cs,$query);
-					msg("El registro ha sido grabado correctamente","verde");
-				}
 			}
 			
 		} // Termina altas
 
 		function consultas(){
-			global $cve_prod, $nom_prod, $tipo_prod, $img_prod, $cat, $op;
+			global $cve_rec, $nom_rec, $tipo_rec, $img_rec, $cat, $op;
 			tomar_datos();
 			//echo "cve_prod=".$cve_prod;
 			
 			$cs=conecta();
 
-			if ($cat==1) $query="SELECT * FROM harinas_trigo WHERE cve_prod='$cve_prod'";
-			elseif ($cat==2) $query="SELECT * FROM harinas_preparadas WHERE cve_prod='$cve_prod'";
-			elseif ($cat==3) $query="SELECT * FROM polvo_hornear WHERE cve_prod='$cve_prod'";
-			if ($cat==4) $query="SELECT * FROM rendimix WHERE cve_prod='$cve_prod'";
-			elseif ($cat==5) $query="SELECT * FROM derivados_trigo WHERE cve_prod='$cve_prod'";
+			$query="SELECT * FROM recetas WHERE cve_rec='$cve_rec'";
 			
 			
 			$sql=mysqli_query($cs,$query);
@@ -98,37 +72,22 @@
 				msg("Error, clave de producto inexistente en base de datos","rojo");
 			}
 			else{
-				$nom_prod=$reg->nom_prod;
-				$tipo_prod=$reg->tipo_prod;
-				$img_prod=$reg->img_prod;
+				$nom_rec=$reg->nom_rec;
+				$tipo_rec=$reg->tipo_rec;
+				$img_rec=$reg->img_rec;
 				//echo "cve_prod=".$cve_prod." nom_prod=".$nom_prod." tipo_prod=".$tipo_prod." descripcion_prod=".$descripcion_prod;
-				
-				f_recetario($op, $tipo_prod);
+				msg("Accion realizada","verde");
+				f_recetario($op, $tipo_rec);
 			}
 		} // Termina consultas
 
 		function bajas(){
-			global $cve_prod, $nom_prod, $tipo_prod, $img_prod, $cat, $op;
+			global $cve_rec, $nom_rec, $tipo_rec, $img_rec, $cat, $op;
 			consultas();
 			$cs=conecta();
 
-			//$query="DELETE FROM productos WHERE cve_prod='$cve_prod'";
-			if ($cat==1) {
-				$query1="DELETE FROM productos WHERE cve_prod='$cve_prod'";
-			}
-			elseif ($cat==2) {
-				$query1="DELETE FROM productos WHERE cve_prod='$cve_prod'";
-			}
-			elseif ($cat==3) {
-				$query1="DELETE FROM productos WHERE cve_prod='$cve_prod'";
-			}
-			elseif ($cat==4) {
-				$query1="DELETE FROM productos WHERE cve_prod='$cve_prod'";
-			}
-			elseif ($cat==5) {
-				$query1="DELETE FROM productos WHERE cve_prod='$cve_prod'";
-			}
-
+			//$query="DELETE Fif ($cat==1) {
+			$query1="DELETE FROM recetas WHERE cve_rec='$cve_rec'";
 			$sql1=mysqli_query($cs,$query1);
 			if (mysqli_affected_rows($cs)!=0){
 				msg("El registro ha sido eliminado","verde");
@@ -136,11 +95,11 @@
 		} // Termina bajas
 
 		function cambios(){
-			global $cve_prod, $nom_prod, $tipo_prod, $img_prod, $cat, $op;
+			global $cve_rec, $nom_rec, $tipo_rec, $img_rec, $cat, $op;
 			tomar_datos();
 			$cs=conecta();
 
-			$query="SELECT * FROM productos WHERE cve_prod='$cve_prod'";
+			$query="SELECT * FROM recetas WHERE cve_rec='$cve_rec'";
 
 			$sql=mysqli_query($cs,$query);
 			$reg=mysqli_fetch_object($sql);
@@ -148,59 +107,18 @@
 				msg("Error, clave de producto inexistente en base de datos","rojo");
 			}
 			else{
-				if ($cat==1) {
-					
-					if ((strlen($img_prod)!=0) && ($img_prod!=$reg->img_prod)){
-						$query="UPDATE productos SET img_prod='$img_prod' WHERE cve_prod='$cve_prod'";
-						$sql=mysqli_query($cs,$query);
-						msg("El cambio ha sido realizado","verde");
-					}
-				}
-
-				if ($cat==2) {
-					
-					if ((strlen($img_prod)!=0) && ($img_prod!=$reg->img_prod)){
-						$query="UPDATE productos SET img_prod='$img_prod' WHERE cve_prod='$cve_prod'";
-						$sql=mysqli_query($cs,$query);
-						msg("El cambio ha sido realizado","verde");
-					}
-				}
-
-				if ($cat==3) {
-					
-					if ((strlen($img_prod)!=0) && ($img_prod!=$reg->img_prod)){
-						$query="UPDATE productos SET img_prod='$img_prod' WHERE cve_prod='$cve_prod'";
-						$sql=mysqli_query($cs,$query);
-						msg("El cambio ha sido realizado","verde");
-					}
-				}
-
-				if ($cat==4) {
-					
-					if ((strlen($img_prod)!=0) && ($img_prod!=$reg->img_prod)){
-						$query="UPDATE productos SET img_prod='$img_prod' WHERE cve_prod='$cve_prod'";
-						$sql=mysqli_query($cs,$query);
-						msg("El cambio ha sido realizado","verde");
-					}
-				}
-
-				if ($cat==5) {
-					
-					if ((strlen($img_prod)!=0) && ($img_prod!=$reg->img_prod)){
-						$query="UPDATE productos SET img_prod='$img_prod' WHERE cve_prod='$cve_prod'";
-						$sql=mysqli_query($cs,$query);
-
-						$query="UPDATE derivados_trigo SET img_prod='$img_prod' WHERE cve_prod='$cve_prod'";
-						$sql=mysqli_query($cs,$query);
-						msg("El cambio ha sido realizado","verde");
-					}
+				
+				if ((strlen($img_rec)!=0) && ($img_rec!=$reg->img_rec)){
+					$query="UPDATE recetas SET img_rec='$img_rec' WHERE cve_rec='$cve_rec'";
+					$sql=mysqli_query($cs,$query);
+					msg("El cambio ha sido realizado","verde");
 				}
 			}
 			
 		} // Termina Cambios
 
 		function sel_tipo_prod(){
-			global $cve_prod, $nom_prod, $tipo_prod, $img_prod, $cat;
+			global $cve_rec, $nom_rec, $tipo_rec, $img_rec, $cat;
 			echo "
 				<br><br>
 				<form name='f_recetario'>
@@ -209,15 +127,15 @@
 						<td colspan='2'>
 							<table width='100%'>
 								<tr align='center'>
-									<td><input name='b_HaTrigo' type='button' class='boton' value='Harinas de Trigo' onClick='prod_op_selec(1)'>
+									<td><input name='b_HaTrigo' type='button' class='boton_prod' value='Harinas de Trigo' onClick='prod_op_selec(1)'>
 									</td>
-									<td><input name='b_Ha3Estrellas' type='button' class='boton' value='Harinas preparadas Tres Estrellas' onClick='prod_op_selec(2)'>
+									<td><input name='b_Ha3Estrellas' type='button' class='boton_prod' value='Harinas preparadas Tres Estrellas' onClick='prod_op_selec(2)'>
 									</td>
-									<td><input name='b_Polvo3Estrellas' type='button' class='boton' value='Polvo Para Hornear Tres Estrellas' onClick='prod_op_selec(3)'>
+									<td><input name='b_Polvo3Estrellas' type='button' class='boton_prod' value='Polvo Para Hornear Tres Estrellas' onClick='prod_op_selec(3)'>
 									</td>
-									<td><input name='b_Rendimix' type='button' class='boton' value='Mejorante RendiMix' onClick='prod_op_selec(4)'>
+									<td><input name='b_Rendimix' type='button' class='boton_prod' value='Mejorante RendiMix' onClick='prod_op_selec(4)'>
 									</td>
-									<td><input name='b_DevTrigo' type='button' class='boton' value='Derivados de Trigo' onClick='prod_op_selec(5)'>
+									<td><input name='b_DevTrigo' type='button' class='boton_prod' value='Derivados de Trigo' onClick='prod_op_selec(5)'>
 									</td>
 								</tr>
 							</table>
@@ -228,8 +146,8 @@
 			";
 		} //Termina formulario
 	
-		function f_recetario($op, $tipo_prod){
-				global $cve_prod, $nom_prod, $tipo_prod, $img_prod, $op;
+		function f_recetario($op, $tipo_rec){
+				global $cve_rec, $nom_rec, $tipo_rec, $img_rec, $op;
 				echo "
 				<br><br>
 				<form name='f_prod_selec'>
@@ -238,15 +156,15 @@
 						<td colspan='2'>
 							<table width='100%'>
 								<tr align='center'>
-									<td><input name='b_HaTrigo' type='button' class='boton' value='Harinas de Trigo' onClick='prod_op_selec(1)'>
+									<td><input name='b_HaTrigo' type='button' class='boton_prod' value='Harinas de Trigo' onClick='prod_op_selec(1)'>
 									</td>
-									<td><input name='b_Ha3Estrellas' type='button' class='boton' value='Harinas preparadas Tres Estrellas' onClick='prod_op_selec(2)'>
+									<td><input name='b_Ha3Estrellas' type='button' class='boton_prod' value='Harinas preparadas Tres Estrellas' onClick='prod_op_selec(2)'>
 									</td>
-									<td><input name='b_Polvo3Estrellas' type='button' class='boton' value='Polvo Para Hornear Tres Estrellas' onClick='prod_op_selec(3)'>
+									<td><input name='b_Polvo3Estrellas' type='button' class='boton_prod' value='Polvo Para Hornear Tres Estrellas' onClick='prod_op_selec(3)'>
 									</td>
-									<td><input name='b_Rendimix' type='button' class='boton' value='Mejorante RendiMix' onClick='prod_op_selec(4)'>
+									<td><input name='b_Rendimix' type='button' class='boton_prod' value='Mejorante RendiMix' onClick='prod_op_selec(4)'>
 									</td>
-									<td><input name='b_DevTrigo' type='button' class='boton' value='Derivados de Trigo' onClick='prod_op_selec(5)'>
+									<td><input name='b_DevTrigo' type='button' class='boton_prod' value='Derivados de Trigo' onClick='prod_op_selec(5)'>
 									</td>
 								</tr>
 							</table>
@@ -260,24 +178,24 @@
 					<br>
 					<form name='f_recetario'>
 					<table border='10%' width='80%'>
-						<caption>Producto</caption>
+						<caption>Recetario</caption>
 						
 						<tr align='center'>
-							<td><p>Clave del Producto</p></td>
-							<td><input name='cve_prod' type='text' class='campo' maxlength='5' value='$cve_prod'></td>
+							<td><p>Clave del Recetario</p></td>
+							<td><input name='cve_rec' type='text' class='campo' maxlength='5' value='$cve_rec'></td>
 						</tr>
 						<tr align='center'>
-							<td><p>Nombre del Producto</p></td>
-							<td><input name='nom_prod' type='text' class='campo' maxlength='50' value='$nom_prod'></td>
+							<td><p>Nombre del Recetario</p></td>
+							<td><input name='nom_rec' type='text' class='campo' maxlength='50' value='$nom_rec'></td>
 						</tr>
 						<tr align='center'>
-							<td><p>Clave de la categoria de Producto</p></td>
-							<td><input name='tipo_prod' type='text' class='campo' maxlength='5' value='$tipo_prod' disabled style: 'background: grey'></td>
+							<td><p>Clave de la categoria de Recetario</p></td>
+							<td><input name='tipo_rec' type='text' class='campo' maxlength='5' value='$tipo_rec' disabled style: 'background: grey'></td>
 						</tr>
 						
 						<tr align='center'>
-							<td><p>Imagen del Producto</p></td>
-							<td><input name='img_prod' type='text' class='campo' maxlength='255' value='$img_prod'></td>
+							<td><p>Imagen del Recetario</p></td>
+							<td><input name='img_rec' type='text' class='campo' maxlength='255' value='$img_rec'></td>
 						</tr>
 						
 						<tr align='center'>

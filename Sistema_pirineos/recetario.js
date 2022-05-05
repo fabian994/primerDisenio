@@ -1,9 +1,9 @@
 function tomar_datos(op){
 
-	cve_prod=document.f_Productos.cve_prod.value;
-	nom_prod=document.f_Productos.nom_prod.value;
-	tipo_prod=document.f_Productos.tipo_prod.value;
-	img_prod=document.f_Productos.img_prod.value;
+	cve_rec=document.f_recetario.cve_rec.value;
+	nom_rec=document.f_recetario.nom_rec.value;
+	tipo_rec=document.f_recetario.tipo_rec.value;
+	img_rec=document.f_recetario.img_rec.value;
 
 	if (op==1) cat=1;
 	if (op==2) cat=2;
@@ -15,29 +15,29 @@ function tomar_datos(op){
 
 function prod_op_selec(op){
 	if (op==1) {
-		tipo_prod="1";
-		url="recetario.php?op=1&tipo_prod="+tipo_prod;
+		tipo_rec="1";
+		url="recetario.php?op=1&tipo_rec="+tipo_rec;
 		
 		location.href=url;
 	}
 	if (op==2) {
-		tipo_prod="2";
-		url="recetario.php?op=2&tipo_prod="+tipo_prod;
+		tipo_rec="2";
+		url="recetario.php?op=2&tipo_rec="+tipo_rec;
 		location.href=url;
 	}
 	if (op==3) {
-		tipo_prod="3";
-		url="recetario.php?op=3&tipo_prod="+tipo_prod;
+		tipo_rec="3";
+		url="recetario.php?op=3&tipo_rec="+tipo_rec;
 		location.href=url;
 	}
 	if (op==4) {
-		tipo_prod="4";
-		url="recetario.php?op=4&tipo_prod="+tipo_prod;
+		tipo_rec="4";
+		url="recetario.php?op=4&tipo_rec="+tipo_rec;
 		location.href=url;
 	}
 	if (op==5) {
-		tipo_prod="5";
-		url="recetario.php?op=5&tipo_prod="+tipo_prod;
+		tipo_rec="5";
+		url="recetario.php?op=5&tipo_rec="+tipo_rec;
 		location.href=url;
 	}
 	
@@ -47,58 +47,58 @@ function prod_op_selec(op){
 function altas(op){
 	tomar_datos(op);
 	//alert(cve_prod+" "+nom_prod+" "+tipo_prod+" "+descripcion_prod);
-	if ((cve_prod.length==0) || (nom_prod.length==0) || (tipo_prod.length==0) || (img_prod.length==0)){
+	if ((cve_rec.length==0) || (nom_rec.length==0) || (tipo_rec.length==0) || (img_rec.length==0)){
 		alert("Error, todos los campos son obligatorios");
-		if (cve_prod.length==0) document.f_Productos.cve_prod.style.background="red";
-		if (nom_prod.length==0) document.f_Productos.nom_prod.style.background="red";
-		if (tipo_prod.length==0) document.f_Productos.tipo_prod.style.background="red";
-		if (img_prod.length==0) document.f_Productos.img_prod.style.background="red";
+		if (cve_rec.length==0) document.f_recetario.cve_rec.style.background="red";
+		if (nom_rec.length==0) document.f_recetario.nom_rec.style.background="red";
+		if (tipo_rec.length==0) document.f_recetario.tipo_rec.style.background="red";
+		if (img_rec.length==0) document.f_recetario.img_rec.style.background="red";
 	}
 	else{
-		document.f_Productos.cve_prod.style.background="blue";
-		document.f_Productos.nom_prod.style.background="blue";
-		document.f_Productos.tipo_prod.style.background="blue";
-		document.f_Productos.img_prod.style.background="blue";
-		url="recetario.php?op=6&cve_prod="+cve_prod+"&nom_prod="+nom_prod;
-		url=url+"&tipo_prod="+tipo_prod;
-		url=url+"&img_prod="+img_prod+"&cat="+cat;
+		document.f_recetario.cve_rec.style.background="blue";
+		document.f_recetario.nom_rec.style.background="blue";
+		document.f_recetario.tipo_rec.style.background="blue";
+		document.f_recetario.img_rec.style.background="blue";
+		url="recetario.php?op=6&cve_rec="+cve_rec+"&nom_rec="+nom_rec;
+		url=url+"&tipo_rec="+tipo_rec;
+		url=url+"&img_rec="+img_rec+"&cat="+cat;
 		location.href=url;
 	}
 } // Termina altas
 
 function consultas(op){
 	tomar_datos(op);
-	if (cve_prod.length==0){
+	if (cve_rec.length==0){
 		alert("Error, se debe indicar la clave de producto a consultar");
-		document.f_Productos.cve_prod.style.background="red";
+		document.f_recetario.cve_rec.style.background="red";
 	}
 	else{
-		document.f_Productos.cve_prod.style.background="blue";
-		nom_prod="";
-		tipo_prod="";
-		img_prod="";
-		url="recetario.php?op=8&cve_prod="+cve_prod+"&nom_prod="+nom_prod;
-		url=url+"&tipo_prod="+tipo_prod;
-		url=url+"&img_prod="+img_prod+"&cat="+cat;
+		document.f_recetario.cve_rec.style.background="blue";
+		nom_rec="";
+		tipo_rec="";
+		img_rec="";
+		url="recetario.php?op=8&cve_rec="+cve_rec+"&nom_rec="+nom_rec;
+		url=url+"&tipo_rec="+tipo_rec;
+		url=url+"&img_rec="+img_rec+"&cat="+cat;
 		location.href=url;
 	}
 } // Termina consultas
 
 function bajas(op){
 	tomar_datos(op);
-	if (cve_prod.length==0){
+	if (cve_rec.length==0){
 		alert("Error, se debe indicar la clave de producto a eliminar");
-		document.f_Productos.cve_prod.style.background="red";
+		document.f_recetario.cve_rec.style.background="red";
 	}
 	else{
-		document.f_Productos.cve_prod.style.background="blue";
-		nom_prod="";
-		tipo_prod="";
-		img_prod="";
+		document.f_recetario.cve_rec.style.background="blue";
+		nom_rec="";
+		tipo_rec="";
+		img_rec="";
 		if (confirm("Seguro de Eliminar ??")){
-			url="recetario.php?op=7&cve_prod="+cve_prod+"&nom_prod="+nom_prod;
-			url=url+"&tipo_prod="+tipo_prod;
-			url=url+"&img_prod="+img_prod+"&cat="+cat;
+			url="recetario.php?op=7&cve_rec="+cve_rec+"&nom_rec="+nom_rec;
+			url=url+"&tipo_rec="+tipo_rec;
+			url=url+"&img_rec="+img_rec+"&cat="+cat;
 			location.href=url;
 		}
 		else{
@@ -109,15 +109,15 @@ function bajas(op){
 
 function cambios(op){
 	tomar_datos(op);
-	if (cve_prod.length==0){
+	if (cve_rec.length==0){
 		alert("Error, se debe indicar la clave de producto a modificar");
-		document.f_Productos.cve_prod.style.background="red";
+		document.f_recetario.cve_rec.style.background="red";
 	}
 	else{
-		document.f_Productos.cve_prod.style.background="blue";
-		url="recetario.php?op=9&cve_prod="+cve_prod+"&nom_prod="+nom_prod;
-		url=url+"&tipo_prod="+tipo_prod;
-		url=url+"&img_prod="+img_prod+"&cat="+cat;
+		document.f_recetario.cve_rec.style.background="blue";
+		url="recetario.php?op=9&cve_rec="+cve_rec+"&nom_rec="+nom_rec;
+		url=url+"&tipo_rec="+tipo_rec;
+		url=url+"&img_rec="+img_rec+"&cat="+cat;
 		location.href=url;
 	}
 } // Termina cambios

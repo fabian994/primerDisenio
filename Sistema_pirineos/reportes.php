@@ -15,6 +15,7 @@
 		if ($op==1) r1();
 		if ($op==2) r2();
 		if ($op==3) r3();
+		if ($op==4) r4();
 
 
 		function r1(){
@@ -147,6 +148,43 @@
 
 		}
 
+		function r4(){
+			global $op, $cve_rec, $tipo_rec;
+			//echo "op=".$op;
+			$cs=conecta();
+			$query="SELECT * FROM recetas ORDER BY nom_rec";
+			
+			$sql=mysqli_query($cs,$query);
+			echo "
+				<table border='3' width='90%'>
+					<tr align='center'>
+						<td colspan='5'>
+						<p class='titulo36' id='titulo18'>
+						Listado de productos
+						</p>
+					</tr align='center'>
+					<tr align='center'>
+						<td><p class='titulo36' id='titulo18'>Clave Recetas.</p></td>
+						<td><p class='titulo36' id='titulo18'>Nombre Receta</p></td>
+						<td><p class='titulo36' id='titulo18'>Categoria Producto</p></td>
+						<td><p class='titulo36' id='titulo18'>Imagen Receta</p></td>
+					</tr>
+			";
+			
+
+			while ($reg=mysqli_fetch_object($sql)){	
+				$x='';
+				echo "<tr align='center'>
+						<td><p>$reg->cve_rec</p></td>
+						<td><p>$reg->nom_rec</p></td>
+						<td><p>$reg->tipo_rec</p></td>
+						<td><p>$reg->img_rec</p></td>
+					  </tr>
+				";
+			}
+			echo "</table>";
+		}
+
 		function formulario(){
 			global $op, $cve_tipo, $tipo_prod, $nom_tipo;
 			echo "
@@ -190,6 +228,11 @@
 
 			echo "		</datalist>
 						<td><input name='b_r4' type='button' class='boton' value='Ejecutar' onClick='r3(3, $cve_tipo)'>
+						</td>
+					</tr>
+					<tr align='center'>
+						<td colspan='2'><p>Listado de Recetas</p></td>
+						<td><input name='b_r4' type='button' class='boton' value='Ejecutar' onClick='r4(4)'>
 						</td>
 					</tr>
 					

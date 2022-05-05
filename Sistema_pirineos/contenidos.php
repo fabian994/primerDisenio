@@ -87,7 +87,9 @@
 				$img_prod_rel2=$reg->img_prod_rel2;
 				$url_prod_rel2=$reg->url_prod_rel2;
 				//echo "cve_prod=".$cve_prod." nom_prod=".$nom_prod." cve_tipo=".$cve_tipo." descripcion_prod=".$descripcion_prod;
+				 msg("Accion realizada","verde");
 				 f_contenidos($op, $cve_tipo ,$nom_tipo);
+
 			}
 		} // Termina consultas
 
@@ -169,15 +171,15 @@
 						<td colspan='2'>
 							<table width='100%'>
 								<tr align='center'>
-									<td><input name='b_HaTrigo' type='button' class='boton' value='Harinas de Trigo' onClick='prod_op_selec(1)'>
+									<td><input name='b_HaTrigo' type='button' class='boton_prod' value='Harinas de Trigo' onClick='prod_op_selec(1)'>
 									</td>
-									<td><input name='b_Ha3Estrellas' type='button' class='boton' value='Harinas preparadas Tres Estrellas' onClick='prod_op_selec(2)'>
+									<td><input name='b_Ha3Estrellas' type='button' class='boton_prod' value='Harinas preparadas Tres Estrellas' onClick='prod_op_selec(2)'>
 									</td>
-									<td><input name='b_Polvo3Estrellas' type='button' class='boton' value='Polvo Para Hornear Tres Estrellas' onClick='prod_op_selec(3)'>
+									<td><input name='b_Polvo3Estrellas' type='button' class='boton_prod' value='Polvo Para Hornear Tres Estrellas' onClick='prod_op_selec(3)'>
 									</td>
-									<td><input name='b_Rendimix' type='button' class='boton' value='Mejorante RendiMix' onClick='prod_op_selec(4)'>
+									<td><input name='b_Rendimix' type='button' class='boton_prod' value='Mejorante RendiMix' onClick='prod_op_selec(4)'>
 									</td>
-									<td><input name='b_DevTrigo' type='button' class='boton' value='Derivados de Trigo' onClick='prod_op_selec(5)'>
+									<td><input name='b_DevTrigo' type='button' class='boton_prod' value='Derivados de Trigo' onClick='prod_op_selec(5)'>
 									</td>
 								</tr>
 							</table>
@@ -198,15 +200,15 @@
 							<td colspan='2'>
 								<table width='100%'>
 									<tr align='center'>
-										<td><input name='b_HaTrigo' type='button' class='boton' value='Harinas de Trigo' onClick='prod_op_selec(1)'>
+										<td><input name='b_HaTrigo' type='button' class='boton_prod' value='Harinas de Trigo' onClick='prod_op_selec(1)'>
 										</td>
-										<td><input name='b_Ha3Estrellas' type='button' class='boton' value='Harinas preparadas Tres Estrellas' onClick='prod_op_selec(2)'>
+										<td><input name='b_Ha3Estrellas' type='button' class='boton_prod' value='Harinas preparadas Tres Estrellas' onClick='prod_op_selec(2)'>
 										</td>
-										<td><input name='b_Polvo3Estrellas' type='button' class='boton' value='Polvo Para Hornear Tres Estrellas' onClick='prod_op_selec(3)'>
+										<td><input name='b_Polvo3Estrellas' type='button' class='boton_prod' value='Polvo Para Hornear Tres Estrellas' onClick='prod_op_selec(3)'>
 										</td>
-										<td><input name='b_Rendimix' type='button' class='boton' value='Mejorante RendiMix' onClick='prod_op_selec(4)'>
+										<td><input name='b_Rendimix' type='button' class='boton_prod' value='Mejorante RendiMix' onClick='prod_op_selec(4)'>
 										</td>
-										<td><input name='b_DevTrigo' type='button' class='boton' value='Derivados de Trigo' onClick='prod_op_selec(5)'>
+										<td><input name='b_DevTrigo' type='button' class='boton_prod' value='Derivados de Trigo' onClick='prod_op_selec(5)'>
 										</td>
 									</tr>
 								</table>

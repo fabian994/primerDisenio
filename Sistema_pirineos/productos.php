@@ -119,7 +119,7 @@
 				$descripcion_prod=$reg->descripcion_prod;
 				$img_prod=$reg->img_prod;
 				//echo "cve_prod=".$cve_prod." nom_prod=".$nom_prod." tipo_prod=".$tipo_prod." descripcion_prod=".$descripcion_prod;
-				
+				msg("Consulta realizada exitosamente","verde");
 				f_Productos($op, $tipo_prod);
 			}
 		} // Termina consultas
@@ -279,15 +279,15 @@
 						<td colspan='2'>
 							<table width='100%'>
 								<tr align='center'>
-									<td><input name='b_HaTrigo' type='button' class='boton' value='Harinas de Trigo' onClick='prod_op_selec(1)'>
+									<td><input name='b_HaTrigo' type='button' value='Harinas de Trigo' class='boton_prod' onClick='prod_op_selec(1)'>
 									</td>
-									<td><input name='b_Ha3Estrellas' type='button' class='boton' value='Harinas preparadas Tres Estrellas' onClick='prod_op_selec(2)'>
+									<td><input name='b_Ha3Estrellas' type='button' class='boton_prod' value='Harinas preparadas Tres Estrellas' onClick='prod_op_selec(2)'>
 									</td>
-									<td><input name='b_Polvo3Estrellas' type='button' class='boton' value='Polvo Para Hornear Tres Estrellas' onClick='prod_op_selec(3)'>
+									<td><input name='b_Polvo3Estrellas' type='button' class='boton_prod' value='Polvo Para Hornear Tres Estrellas' onClick='prod_op_selec(3)'>
 									</td>
-									<td><input name='b_Rendimix' type='button' class='boton' value='Mejorante RendiMix' onClick='prod_op_selec(4)'>
+									<td><input name='b_Rendimix' type='button' class='boton_prod' value='Mejorante RendiMix' onClick='prod_op_selec(4)'>
 									</td>
-									<td><input name='b_DevTrigo' type='button' class='boton' value='Derivados de Trigo' onClick='prod_op_selec(5)'>
+									<td><input name='b_DevTrigo' type='button' class='boton_prod' value='Derivados de Trigo' onClick='prod_op_selec(5)'>
 									</td>
 								</tr>
 							</table>
@@ -308,15 +308,15 @@
 						<td colspan='2'>
 							<table width='100%'>
 								<tr align='center'>
-									<td><input name='b_HaTrigo' type='button' class='boton' value='Harinas de Trigo' onClick='prod_op_selec(1)'>
+									<td><input name='b_HaTrigo' type='button' class='boton_prod' value='Harinas de Trigo' onClick='prod_op_selec(1)'>
 									</td>
-									<td><input name='b_Ha3Estrellas' type='button' class='boton' value='Harinas preparadas Tres Estrellas' onClick='prod_op_selec(2)'>
+									<td><input name='b_Ha3Estrellas' type='button' class='boton_prod' value='Harinas preparadas Tres Estrellas' onClick='prod_op_selec(2)'>
 									</td>
-									<td><input name='b_Polvo3Estrellas' type='button' class='boton' value='Polvo Para Hornear Tres Estrellas' onClick='prod_op_selec(3)'>
+									<td><input name='b_Polvo3Estrellas' type='button' class='boton_prod' value='Polvo Para Hornear Tres Estrellas' onClick='prod_op_selec(3)'>
 									</td>
-									<td><input name='b_Rendimix' type='button' class='boton' value='Mejorante RendiMix' onClick='prod_op_selec(4)'>
+									<td><input name='b_Rendimix' type='button' class='boton_prod' value='Mejorante RendiMix' onClick='prod_op_selec(4)'>
 									</td>
-									<td><input name='b_DevTrigo' type='button' class='boton' value='Derivados de Trigo' onClick='prod_op_selec(5)'>
+									<td><input name='b_DevTrigo' type='button' class='boton_prod' value='Derivados de Trigo' onClick='prod_op_selec(5)'>
 									</td>
 								</tr>
 							</table>
@@ -342,11 +342,12 @@
 						</tr>
 						<tr align='center'>
 							<td><p>Clave de la categoria de Producto</p></td>
-							<td><input name='tipo_prod' type='text' class='campo' maxlength='5' value='$tipo_prod' disabled style: 'background: grey'></td>
+							<td><input name='tipo_prod' type='text' class='campo' maxlength='5' value='$tipo_prod' disabled style= 'background: grey'></td>
 						</tr>
 						<tr align='center'>
 							<td><p>Descripcion del Producto</p></td>
-							<td><input name='descripcion_prod' type='text' class='campo' value='$descripcion_prod'></td>
+							<td><textarea id='textarea_descripcion_prod' name='descripcion_prod' rows='4' cols='50'>$descripcion_prod</textarea></td>
+							
 						</tr>
 						<tr align='center'>
 							<td><p>Imagen del Producto</p></td>

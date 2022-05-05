@@ -3,8 +3,18 @@ function tomar_datos(op){
 	cve_prod=document.f_Productos.cve_prod.value;
 	nom_prod=document.f_Productos.nom_prod.value;
 	tipo_prod=document.f_Productos.tipo_prod.value;
-	descripcion_prod=document.f_Productos.descripcion_prod.value;
+	//descripcion_prod=document.f_Productos.descripcion_prod.value;
+	descripcion_prod=document.getElementById("textarea_descripcion_prod").value;
 	img_prod=document.f_Productos.img_prod.value;
+
+	tag_html1="<p>"
+	tag_html2="</p>"
+	if ((descripcion_prod.includes(tag_html1)) || (descripcion_prod.includes(tag_html2))) {
+		descripcion_prod=descripcion_prod;
+	}
+	else{
+		descripcion_prod=tag_html1+descripcion_prod+tag_html2;
+	}
 
 	if (op==1) cat=1;
 	if (op==2) cat=2;

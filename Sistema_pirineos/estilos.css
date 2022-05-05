@@ -48,6 +48,23 @@ p{
 	background: red;	
 }
 
+.boton_prod{
+	white-space: normal;
+    word-wrap: break-word;
+    height: 50px;
+    color: white;
+	background: #08903E;
+	font-size: 14pt;
+	font-weight: bold;
+	width: 200px;
+	border-radius: 10px;
+}
+
+.boton_prod:hover{
+	color: #08903E;
+	background: white;	
+}
+
 caption{
 	font-weight: bold;
 	font-size: 20pt;

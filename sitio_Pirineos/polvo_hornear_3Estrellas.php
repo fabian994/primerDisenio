@@ -108,7 +108,7 @@
                             
                             <br>
                             
-                            <a href = '$reg->nom_catalog'><span class = 'icon-download'></span> Descargar PDF </a>
+                            <a href = 'assets/$reg->nom_catalog'><span class = 'icon-download'></span> Descargar PDF </a>
 
                         </div>
                         
@@ -173,6 +173,7 @@
         </aside>
     
         <div class="widget-1">
+            <h2 id = "titulo_catalogo"> Nuestro Catalogo Polvo para Hornear </h2><br><br>
             <?php
                 
                 $cs=conecta();
@@ -183,12 +184,12 @@
                     $x="";
                     echo"
                    
-                    <tr class='catalogo'>
+                    <tr class='catalogo' id='tabla_fila'>
                         <td id='contenido_catalogo'>
                             <h2 id ='titulo_productos'>$reg->nom_prod</h2><br>
                             <p>$reg->descripcion_prod</p><br>
                         </td>
-                        <td ><img src='$reg->img_prod'  width='189px' height='200px'></td>
+                        <td ><img src='imagenes/$reg->img_prod'  width='189px' height='200px'></td>
                     </tr>
                     ";
                                        

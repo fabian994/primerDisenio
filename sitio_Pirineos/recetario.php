@@ -56,7 +56,7 @@
 
         <header class = "header">
 
-            <img id = "header_image" src = "imagenes/Harinas Preparadas TE/Bizcocho.JPG">
+            <img id = "header_image" src = "imagenes/bread_banner.jpg">
 
         </header>
 

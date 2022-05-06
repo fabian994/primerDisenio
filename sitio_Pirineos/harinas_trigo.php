@@ -199,21 +199,22 @@
             <h2 id = "titulo_catalogo"> Nuestro Catalogo de Harinas </h2><br><br>
             <?php
                 
-                $cs=conecta();
+                
                 $query="SELECT * FROM harinas_trigo";
                 $sql=mysqli_query($cs,$query);
                 echo "<table style='width: 100%;'>";
                 while ($reg=mysqli_fetch_object($sql)) {
+                    $des=nl2br($reg->descripcion_prod);
                     $x="";
                     echo"
                    
                     <tr class='catalogo' id='tabla_fila'>
                         <td id='contenido_catalogo'>
                             <h2 id ='titulo_productos'>$reg->nom_prod</h2><br>
-                            $reg->descripcion_prod
+                            $des
                             <br>
                         </td>
-                        <td><img src='imagenes/$reg->img_prod' width='189px' height='200px'></td>
+                        <td><img src='imagenes/$reg->img_prod' width='300px' height='417px'></td>
                     </tr>
                     ";
                                        

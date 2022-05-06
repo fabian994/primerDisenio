@@ -5,6 +5,7 @@ function tomar_datos(op){
 	tipo_prod=document.f_Productos.tipo_prod.value;
 	//descripcion_prod=document.f_Productos.descripcion_prod.value;
 	descripcion_prod=document.getElementById("textarea_descripcion_prod").value;
+	descripcion_prod=descripcion_prod.replace(/(?:\r\n|\r|\n)/g, '\\n');
 	img_prod=document.f_Productos.img_prod.value;
 
 	tag_html1="<p>"
@@ -21,7 +22,7 @@ function tomar_datos(op){
 	if (op==3) cat=3;
 	if (op==4) cat=4;
 	if (op==5) cat=5;
-	alert(cat);
+	
 }
 
 function prod_op_selec(op){
@@ -75,7 +76,10 @@ function altas(op){
 		url="productos.php?op=6&cve_prod="+cve_prod+"&nom_prod="+nom_prod;
 		url=url+"&tipo_prod="+tipo_prod+"&descripcion_prod="+descripcion_prod;
 		url=url+"&img_prod="+img_prod+"&cat="+cat;
+		//alert(url);
+		//console.log(url);
 		location.href=url;
+
 	}
 } // Termina altas
 

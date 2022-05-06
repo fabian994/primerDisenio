@@ -87,14 +87,15 @@
                 echo "<table style='width: 100%;'>";
                 while ($reg=mysqli_fetch_object($sql)) {
                     $x="";
+                    $des=nl2br($reg->descripcion_prod);
                     echo"
                    
                     <tr class='catalogo' id='tabla_fila'>
                         <td id='contenido_catalogo'>
                             <h2 id ='titulo_productos'>$reg->nom_prod</h2><br>
-                            <p>$reg->descripcion_prod</p><br>
+                            $des<br>
                         </td>
-                        <td><img src='imagenes/$reg->img_prod' width='189px' height='200px'></td>
+                        <td><img src='imagenes/$reg->img_prod' width='300px' height='417px'></td>
                     </tr>
                     ";
                                        

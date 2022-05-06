@@ -73,6 +73,8 @@
 
             </p>
 
+            <div class = "rendi_logo"><img src = "imagenes/rendimix/Logo_RendiMix.png"></div>
+
 
         </main>
 

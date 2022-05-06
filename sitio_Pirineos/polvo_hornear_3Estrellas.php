@@ -137,15 +137,16 @@
                                 <li>
                                     <a href = '$reg->url_prod_rel1'>
                                     <span class = 'icon-bowl'></span>
-                                    $reg->nom_prod_rel1 
+                                    $reg->nom_prod_rel1 <br>
                                     <img src='imagenes/$reg->img_prod_rel1' width='100px' height='100px'><br>
                                     </a>
                                 </li>
                                 <li>
                                     <a href = '$reg->url_prod_rel2'>
                                     <span class = 'icon-bowl'></span> 
-                                    $reg->nom_prod_rel2 </a>
+                                    $reg->nom_prod_rel2 <br>
                                     <img src='imagenes/$reg->img_prod_rel1' width='100px' height='100px'><br>
+                                    </a>
                                 </li>
                             </ul>
                         
@@ -163,8 +164,6 @@
 
             <ul class = "share_buttons">
                 <li><a href = "https://www.facebook.com/sharer/sharer.php?u=https://www.lamoderna.com.mx" target = "_blank"><span class = "icon-facebook-with-circle"></span></a></li>
-                <li><a href = "https://www.facebook.com/sharer/sharer.php?u=https://www.lamoderna.com.mx" target = "_blank"><span class = "icon-instagram-with-circle"></span></a></li>
-                <li><a href = "https://twitter.com/intent/tweet?text=www.lamoderna.com.mx" target = "_blank"><span class = "icon-twitter-with-circle"></span></a></li>
             </ul>
 
             

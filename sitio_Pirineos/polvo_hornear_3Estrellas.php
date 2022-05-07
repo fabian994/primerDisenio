@@ -58,7 +58,7 @@
 
         <header class = "header">
 
-            <img id = "header_image" src = "imagenes/bread_banner.jpg">
+            <img id = "header_image" src = "imagenes/polvo_hornear/bread_banner.jpg">
 
         </header>
 

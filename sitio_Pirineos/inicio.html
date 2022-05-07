@@ -78,13 +78,30 @@
                 $(function() {
                     $(".slides").slidesjs({
                         play: {
-                            active: true,
-                            effect: "slide",
-                            interval: 3000, //Intervalo de cambio (ms)
-                            auto: true, //Automatizacion de las slides al iniciar la pagina
-                            swap: true, 
-                            pauseOnHover: false,
-                            restartDelay: 2500
+                            active: true, // Controla si el slideshow esta activado o no
+                                          // (true) es activado
+                                          // (false) es desactivado
+
+                            effect: "slide", // Controla el efecto de animacion
+                                             // (slide) es la animacion predeterminada
+                                             // (fade) es la animacion de difuminado
+
+                            interval: 3000, //Intervalo de cambio (ms) (1000 ms = 1 segundo)
+
+                            auto: true, //Controla si el slideshow es automatico o no al iniciar la pagina
+                                        // (true) es automatico hasta que se presione el boton de pausa
+                                        // (false) es manual hasta que se presione el boton de play
+
+                            swap: true, // Controla si todos los botones son visibles o no
+                                        // (true) son los botones intercambiables dependiendo de si es automatico o no el slideshow
+                                        // (false) los botones de play y pausa estarán siempre visibles
+
+                            pauseOnHover: false, // Controla si las imagenes segiran intercambiandose cuando el cursor este sobre ellas
+                                                 // (true) la presentacion se pausa al tener el cursor sobre la imagen
+                                                 // (false) la presentacion no se pausara cuando el cursor este sobre la imagen
+
+                            restartDelay: 2500 // Controla el tiempo de espera hasta que la presentacion se reincie (ms) 
+                                               // (1000 ms = 1 segundo)
                         }
                     });
                 });

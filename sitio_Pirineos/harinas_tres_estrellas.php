@@ -11,7 +11,6 @@
 
     <script src = "scripts/jquery-latest.js"></script>
     <script src = "scripts/encabezado.js"></script>
-    <script src="scripts/harinas_tres_estrellas.js" type = "text/JavaScript"></script>
 
     <title> Harinas Preparadas Tres Estrellas </title>
 </head>
@@ -167,7 +166,6 @@
                 //<!-- LINK 1 -->
 
                 
-                $cs=conecta();
                 $query="SELECT * FROM contenidos WHERE cve_tipo=2";
                 $sql=mysqli_query($cs,$query);
                 while ($reg=mysqli_fetch_object($sql)){ 
@@ -185,11 +183,15 @@
                         
                         <div>
 
-                            <h1> Descarga Nuestras Mejores Recetas con Harinas Preparadas Tres Estrellas</h1>
+                            <h1> Conoce Nuestras Mejores Recetas con Harinas Preparadas Tres Estrellas</h1>
                             
                             <br>
                             
+<<<<<<< Updated upstream
                             <a href = 'recetario.php?op=2'><span class = 'icon-bowl'></span> Recetas </a>
+=======
+                            <a href = 'recetario.php?op=2'><span class = 'icon-download'></span> Descargar PDF </a>
+>>>>>>> Stashed changes
                     
                         </div>
 

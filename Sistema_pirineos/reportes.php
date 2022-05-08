@@ -74,7 +74,6 @@
 						<td><p class='titulo36' id='titulo18'>Clave Categoria</p></td>
 						<td><p class='titulo36' id='titulo18'>Nom. Categoria</p></td>
 						<td><p class='titulo36' id='titulo18'>Nom. Catalogo</p></td>
-						<td><p class='titulo36' id='titulo18'>Nom. Recetario</p></td>
 						<td><p class='titulo36' id='titulo18'>Nom. Prod. Rel. 1</p></td>
 						<td><p class='titulo36' id='titulo18'>Img. Prod. Rel. 1</p></td>
 						<td><p class='titulo36' id='titulo18'>Link Prod. Rel. 1</p></td>
@@ -90,7 +89,6 @@
 
 						<td><p>$reg->nom_tipo</p></td>
 						<td><p>$reg->nom_catalog</p></td>
-						<td><p>$reg->nom_recetario</p></td>
 
 						<td><p>$reg->nom_prod_rel1</p></td>
 						<td><p>$reg->img_prod_rel1</p></td>

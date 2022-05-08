@@ -19,7 +19,7 @@
 
 		if ($_POST['op']=="1") {//Empieza Altas
 			if ( !isset($_POST['usuario'], $_POST['password'], $_POST['nom_admin'], $_POST['op']) ) {
-				// Could not get the data that should have been sent.
+				// No recibe valores
 				msg("Favor de llenar la forma de registro","rojo");
 				exit('');
 			}
@@ -42,60 +42,44 @@
 			}
 
 			if (empty($_POST['usuario']) || empty($_POST['password']) || empty($_POST['nom_admin'])) {
-				// One or more values are empty.
+				// Los verifica que los valores no este vacios
 				msg("Favor de llenar la forma de registro","rojo");
 				exit('');
 				}
 				if ($stmt = $cs->prepare('SELECT id, password FROM administradores WHERE usuario = ?')) {
-				// Bind parameters (s = string, i = int, b = blob, etc), hash the password using the PHP password_hash function.
 				$stmt->bind_param('s', $_POST['usuario']);
 				$stmt->execute();
 				$stmt->store_result();
-				// Store the result so we can check if the account exists in the database.
+				// Verifica que el usuario exista en la DB
 				if ($stmt->num_rows > 0) {
-					// Username already exists
+					// Usuario ya existe
 					msg("El nombre de usuario ya existe, favor de escoger otro","rojo");
 				} else {
-					// Insert new account
-					// Username doesnt exists, insert new account
+					// Prepara para crear nueva cuenta
 					if ($stmt = $cs->prepare('INSERT INTO administradores (usuario, password, nom_admin) VALUES (?, ?, ?)')) {
-						// We do not want to expose passwords in our database, so hash the password and use password_verify when a user logs in.
+						// Se encripta la contrasela usado password_hash y en el login password_verify se usa para verifcarla al momento de ingresar
 						$password = password_hash($_POST['password'], PASSWORD_DEFAULT);
 						$stmt->bind_param('sss', $_POST['usuario'], $password, $_POST['nom_admin']);
 						$stmt->execute();
 						msg("Registro completado exitosamente","verde");
-						/*$usuario = $_POST['usuario'];
-						$nom_admin = $_POST['nom_admin'];
-						$op = $_POST['op'];
-						echo "<h2>Your Input:</h2>";
-						echo $usuario;
-						echo "<br>";
-						echo $password;
-						echo "<br>";
-						echo $nom_admin;
-						echo "<br>";
-						echo $op;*/
 
 					} else {
-						// Something is wrong with the sql statement, check to make sure accounts table exists with all 3 fields.
 						msg("No se pudo realizar la operacion","rojo");
 					}
 				}
 				$stmt->close();
 			} else {
-				// Something is wrong with the sql statement, check to make sure accounts table exists with all 3 fields.
 				msg("No se pudo realizar la operacion","rojo");
 			}
 		}//Termina Altas
 
-		if (($_POST['op']=="2" || $_POST['op']=="3" || $_POST['op']=="4")) {//Comienza Consultas
+		if (($_POST['op']=="2" || $_POST['op']=="3")) {//Comienza Consultas
 			if ( !isset($_POST['usuario'], $_POST['op']) ) {
-				// Could not get the data that should have been sent.
+				// No se escribio el usuario
 				msg("Es necesario seleccionar una opcion y escribir el usuario","rojo");
 				exit('');
 			}
 			if (empty($_POST['usuario'])) {
-				// One or more values are empty.
 				msg("Favor de ingresar el usuario a consultar","rojo");
 				exit('');
 			}
@@ -105,7 +89,7 @@
 			$sql=mysqli_query($cs,$query);
 			$reg=mysqli_fetch_object($sql);
 			if ($reg==mysqli_fetch_array($sql)){
-				msg("Error, clave de producto inexistente en base de datos","rojo");
+				msg("Error, usuario inexistente en base de datos","rojo");
 			}
 			else{
 				
@@ -184,6 +168,13 @@
 				}
 				$password = password_hash($_POST['password'], PASSWORD_DEFAULT);
 				if ((strlen($password)!=0) && ($password!=$reg->password)){
+					if (preg_match('/^[a-zA-Z0-9]+$/', $_POST['password']) == 0) {
+						msg("La contraseña solo puede contener letras y numeros!","rojo");
+					    exit('');
+					}
+					if (strlen($_POST['password']) > 16 || strlen($_POST['password']) < 8) {
+						msg("La contraseña debe de tener entre 8 y 16 caracteres!","rojo");
+						exit('');
 					$query="UPDATE administradores SET password='$password' WHERE usuario='$usuario'";
 					$sql=mysqli_query($cs,$query);
 				}

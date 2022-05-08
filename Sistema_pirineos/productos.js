@@ -76,8 +76,6 @@ function altas(op){
 		url="productos.php?op=6&cve_prod="+cve_prod+"&nom_prod="+nom_prod;
 		url=url+"&tipo_prod="+tipo_prod+"&descripcion_prod="+descripcion_prod;
 		url=url+"&img_prod="+img_prod+"&cat="+cat;
-		//alert(url);
-		//console.log(url);
 		location.href=url;
 
 	}

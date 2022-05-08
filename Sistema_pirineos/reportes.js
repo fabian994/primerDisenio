@@ -12,7 +12,6 @@ function r2(op){
 function r3(op, cve_tipo){
 	tipo_prod=cve_tipo;
 	url="reportes.php?op="+op+"&cve_tipo="+cve_tipo+"&tipo_prod="+tipo_prod;
-	alert(url);
 	location.href=url;
 }
 

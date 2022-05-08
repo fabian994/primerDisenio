@@ -8,7 +8,10 @@
     <link href = "styles/recetario.css" rel = "stylesheet">
     <link href = "styles/menu.css" rel = "stylesheet">
     <link href = "styles/icons/fonts.css" rel = "stylesheet">
+    
+    <script src = "scripts/jquery-latest.js"></script>
     <script src = "scripts/encabezado.js"></script>
+    
 
     <title> Recetario </title>
 </head>
@@ -18,6 +21,8 @@
         <div class = "menu_bar">
             <a href = "#" class = "b_menu"><span class = "icon-menu"></span> <div> <img src = "pirineos.png"> </div> </a>
         </div>
+
+        
 
 
         <div id = "img_banner">

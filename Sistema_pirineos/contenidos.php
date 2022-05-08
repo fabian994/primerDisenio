@@ -220,11 +220,11 @@
 						<caption>Contenidos</caption>
 						<tr align='center'>
 							<td><p>Clave de la categoria de Producto</p></td>
-							<td><input name='cve_tipo' type='text' class='campo' maxlength='5' value='$cve_tipo' disabled></td>
+							<td><input name='cve_tipo' type='text' class='campo' maxlength='5' value='$cve_tipo' disabled style= 'background: grey'></td>
 						</tr>
 						<tr align='center'>
 							<td><p>Nombre del tipo</p></td>
-							<td><input name='nom_tipo' type='text' class='campo' maxlength='50' value='$nom_tipo' disabled></td>
+							<td><input name='nom_tipo' type='text' class='campo' maxlength='50' value='$nom_tipo' disabled style= 'background: grey'></td>
 						</tr>
 						<tr align='center'>
 							<td><p>Nombre del PDF catalogo</p></td>

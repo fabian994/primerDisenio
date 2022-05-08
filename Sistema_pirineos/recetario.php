@@ -187,20 +187,20 @@
 						<caption>Recetario</caption>
 						
 						<tr align='center'>
-							<td><p>Clave del Recetario</p></td>
+							<td><p>Clave de la receta</p></td>
 							<td><input name='cve_rec' type='text' class='campo' maxlength='5' value='$cve_rec'></td>
 						</tr>
 						<tr align='center'>
-							<td><p>Nombre del Recetario</p></td>
+							<td><p>Nombre de la receta</p></td>
 							<td><input name='nom_rec' type='text' class='campo' maxlength='50' value='$nom_rec'></td>
 						</tr>
 						<tr align='center'>
-							<td><p>Clave de la categoria de Recetario</p></td>
-							<td><input name='tipo_rec' type='text' class='campo' maxlength='5' value='$tipo_rec' disabled style: 'background: grey'></td>
+							<td><p>Clave de la categoria de la receta</p></td>
+							<td><input name='tipo_rec' type='text' class='campo' maxlength='5' value='$tipo_rec' disabled style= 'background: grey'></td>
 						</tr>
 						
 						<tr align='center'>
-							<td><p>Imagen del Recetario</p></td>
+							<td><p>Imagen de la receta</p></td>
 							<td><input name='img_rec' type='text' class='campo' maxlength='255' value='$img_rec'></td>
 						</tr>
 						

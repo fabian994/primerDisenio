@@ -4,10 +4,7 @@ function r1(op){
 	location.href=url;
 }
 
-function r2(op){
-	url="reportes.php?op="+op;
-	location.href=url;
-}
+
 
 function r3(op, cve_tipo){
 	tipo_prod=cve_tipo;
@@ -15,8 +12,3 @@ function r3(op, cve_tipo){
 	location.href=url;
 }
 
-function r4(op){
-
-	url="reportes.php?op="+op;
-	location.href=url;
-}

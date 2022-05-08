@@ -16,6 +16,7 @@
 		if ($op==2) r2();
 		if ($op==3) r3();
 		if ($op==4) r4();
+		if ($op==5) r5();
 
 
 		function r1(){
@@ -67,7 +68,7 @@
 					<tr align='center'>
 						<td colspan='10'>
 						<p class='titulo36' id='titulo18'>
-						Listado de tipos
+						Listado de Contenido
 						</p>
 					</tr align='center'>
 					<tr align='center'>
@@ -118,7 +119,7 @@
 					<tr align='center'>
 						<td colspan='5'>
 						<p class='titulo36' id='titulo18'>
-						Listado de productos
+						Listado de productos por categoria
 						</p>
 					</tr align='center'>
 					<tr align='center'>
@@ -158,7 +159,7 @@
 					<tr align='center'>
 						<td colspan='5'>
 						<p class='titulo36' id='titulo18'>
-						Listado de productos
+						Listado de recetas
 						</p>
 					</tr align='center'>
 					<tr align='center'>
@@ -183,6 +184,40 @@
 			echo "</table>";
 		}
 
+		function r5(){
+			global $op, $usuario;
+			//echo "op=".$op;
+			$cs=conecta();
+			$query="SELECT * FROM administradores ORDER BY id";
+			
+			$sql=mysqli_query($cs,$query);
+			echo "
+				<table border='3' width='90%'>
+					<tr align='center'>
+						<td colspan='3'>
+						<p class='titulo36' id='titulo18'>
+						Listado de Administradores
+						</p>
+					</tr align='center'>
+					<tr align='center'>
+						<td><p class='titulo36' id='titulo18'>Id Administrador</p></td>
+						<td><p class='titulo36' id='titulo18'>Nombre de usuario</p></td>
+						<td><p class='titulo36' id='titulo18'>Nombre de Administrador</p></td>
+					</tr>
+			";
+			
+
+			while ($reg=mysqli_fetch_object($sql)){	
+				$x='';
+				echo "<tr align='center'>
+						<td><p>$reg->id</p></td>
+						<td><p>$reg->usuario</p></td>
+						<td><p>$reg->nom_admin</p></td>
+					  </tr>
+				";
+		}
+	}
+
 		function formulario(){
 			global $op, $cve_tipo, $tipo_prod, $nom_tipo;
 			echo "
@@ -203,7 +238,7 @@
 					</tr>
 					<tr align='center'>
 						<td colspan='2'><p>Listado de Contenido por categoria</p></td>
-						<td><input name='b_r2' type='button' class='boton' value='Ejecutar' onClick='r2(2)'>
+						<td><input name='b_r2' type='button' class='boton' value='Ejecutar' onClick='r1(2)'>
 						</td>
 					</tr>
 					<tr align='center'>
@@ -230,7 +265,12 @@
 					</tr>
 					<tr align='center'>
 						<td colspan='2'><p>Listado de Recetas</p></td>
-						<td><input name='b_r4' type='button' class='boton' value='Ejecutar' onClick='r4(4)'>
+						<td><input name='b_r4' type='button' class='boton' value='Ejecutar' onClick='r1(4)'>
+						</td>
+					</tr>
+					<tr align='center'>
+						<td colspan='2'><p>Listado de Administradores</p></td>
+						<td><input name='b_r5' type='button' class='boton' value='Ejecutar' onClick='r1(5)'>
 						</td>
 					</tr>
 					

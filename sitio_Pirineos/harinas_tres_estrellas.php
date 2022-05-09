@@ -186,12 +186,7 @@
                             <h1> Conoce Nuestras Mejores Recetas con Harinas Preparadas Tres Estrellas</h1>
                             
                             <br>
-                            
-<<<<<<< Updated upstream
                             <a href = 'recetario.php?op=2'><span class = 'icon-bowl'></span> Recetas </a>
-=======
-                            <a href = 'recetario.php?op=2'><span class = 'icon-download'></span> Descargar PDF </a>
->>>>>>> Stashed changes
                     
                         </div>
 

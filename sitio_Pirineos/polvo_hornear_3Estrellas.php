@@ -78,7 +78,7 @@
         </main>-->
 
         <main class = "content2"> 
-            <img src="https://via.placeholder.com/200" class="center"><br><br>
+            <img src="imagenes/polvo_hornear/Logo_Tres_Estrellas.png" class="center" width="149px" height="115px"><br><br>
             <h2> POLVO PARA HORNEAR </h2><br>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non urna vestibulum, euismod mi at, pulvinar ex. Fusce libero justo, euismod id sapien eget, tempus tincidunt nisi. Vestibulum vehicula mattis auctor. Vivamus quis lorem at tortor efficitur dapibus a in dui. Phasellus bibendum ultrices nisl sit amet pretium. Fusce in mi urna. Proin condimentum dui sed odio euismod scelerisque. Curabitur venenatis molestie metus et condimentum. Sed ut ullamcorper dui. Fusce dignissim blandit lectus, id commodo lacus mollis non.

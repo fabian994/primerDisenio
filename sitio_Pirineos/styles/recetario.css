@@ -606,6 +606,13 @@ padding-left: 10px;
     display: flex;
     flex-direction: column;
     }
+    .close {
+      position: absolute;
+      top: 9em;
+      right: 1.5em;
+      font-size: 2.5em;
+      cursor: pointer;
+    }
 
 }
 

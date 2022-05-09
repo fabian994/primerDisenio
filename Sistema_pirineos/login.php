@@ -15,7 +15,7 @@
 		$stmt->store_result();
 
 		if ($stmt->num_rows > 0) {// Usuario existe
-			$stmt->bind_result($id, $password);// encripta la contraseña.
+			$stmt->bind_result($id, $password);// guarda la contraseña.
 			$stmt->fetch();
 			if (password_verify($_POST['password'], $password)) {// Verifica la contrasena con la de la DB
 				// Abre sesion para el sistema

@@ -1,36 +1,48 @@
-Base de datos: sistema_pirineos
+Base de datos: sis_pirineos
 
 productos:
 cve_prod			varchar	5
 nom_prod			varchar	50
 tipo_prod			varchar	5
 descripcion_prod	text
+img_prod			varchar 255	
 
 harinas_trigo:
 cve_prod			varchar	5
 nom_prod			varchar	50
 tipo_prod			varchar	5
 descripcion_prod	text
+img_prod			varchar 255	
 
 derivados_trigo:
 cve_prod			varchar	5
 nom_prod			varchar	50
 tipo_prod			varchar	5
 descripcion_prod	text
+img_prod			varchar 255	
 
 harinas_preparadas:
 cve_prod			varchar	5
 nom_prod			varchar	50
 tipo_prod			varchar	5
 descripcion_prod	text
+img_prod			varchar 255	
 
 polvo_hornear:
 cve_prod			varchar	5
 nom_prod			varchar	50
 tipo_prod			varchar	5
 descripcion_prod	text
+img_prod			varchar 255	
 
-Tipos
+rendimix:
+cve_prod			varchar	5
+nom_prod			varchar	50
+tipo_prod			varchar	5
+descripcion_prod	text
+img_prod			varchar 255	
+
+contenidos
 cve_tipo		varchar 5
 nom_tipo		varchar 50
 nom_catalog		varchar 50
@@ -44,10 +56,23 @@ img_prod_rel2	varchar 50
 url_prod_rel2	varchar 255
 
 
+recetas:
+cve_rec 	varchar 5
+nom_rec 	varchar 50
+tipo_rec	varchar 5
+img_rec		varchar 255
+
+administradores:
+id 			int 	11
+usuario		varchar 30
+password	varchar 255
+nom_admin	varchar 100
+
 Reportes:
 Lista de Productos
-Lista de Tipos
-Lista de Productos de un tipo
-Consulta X nombre de productos
-Consulta X nombre de Tipos
+Lista de Contenido por categoria
+Consulta de productos por categoria
+Lista de recetas
+Listado de administradores
+
 
